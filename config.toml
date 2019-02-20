@@ -1,21 +1,10 @@
 baseurl = "https://tristanberchoux.netlify.com/"
 languageCode = "en-us"
 theme = "blackburn"
+title = "Tristan's website"
 author = "Tristan Berchoux"
 copyright = "&copy; 2019 by Tristan Berchoux"
 paginate = 10
-
-[languages]
-  [languages.en]
-  LanguageName = "English"
-  title = "Tristan's website"
-  subtitle = "Spatial Planning • Economic Geography • Rural Development"
-  weight = 1
-
-  [languages.fr]
-    weight = 2
-    title "Le site de Tristan"
-    subtitle="Aménagement du territoire • Géographie Économique • Développement Rural"
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"

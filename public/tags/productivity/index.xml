@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productivity on Tristan Berchoux</title>
+    <link>/tags/productivity/</link>
+    <description>Recent content in Productivity on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sat, 08 Oct 2011 14:25:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Single Screen Productivity</title>
+      <link>/2011/10/08/single-screen-productivity/</link>
+      <pubDate>Sat, 08 Oct 2011 14:25:00 +0000</pubDate>
+      
+      <guid>/2011/10/08/single-screen-productivity/</guid>
+      <description>Here&amp;#8217;s a claim for which I have absolutely no data: I believe I am more productive with a smaller screen/monitor. I have a 13&amp;#8221; MacBook Air that I occasionally hook up to a 21-inch external monitor. Sometimes, when I want to read a document I&amp;#8217;ll hook up the external monitor so that I can see a whole page at a time. Other times, when I&amp;#8217;m using R, I&amp;#8217;ll have the graphics window on the external and then the R console and Emacs on the main screen.</description>
+    </item>
+    
+  </channel>
+</rss>

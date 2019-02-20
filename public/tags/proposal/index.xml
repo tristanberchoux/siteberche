@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Proposal on Tristan Berchoux</title>
+    <link>/tags/proposal/</link>
+    <description>Recent content in Proposal on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Thu, 13 Sep 2012 13:55:16 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/proposal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An experimental foundation for statistics</title>
+      <link>/2012/09/13/an-experimental-foundation-for-statistics/</link>
+      <pubDate>Thu, 13 Sep 2012 13:55:16 +0000</pubDate>
+      
+      <guid>/2012/09/13/an-experimental-foundation-for-statistics/</guid>
+      <description>In a recent conversation with Brian (of abstraction fame) about the relationship between mathematics and statistics. Statistics, for historical reasons, has been treated as a mathematical sub-discipline (this is the NSF&amp;#8217;s view).
+One reason statistics is viewed as a sub-discipline of math is because the foundations of statistics are built on the basis of deductive reasoning, where you start with a few general propositions or foundations that you assume to be true and then systematically prove more specific results.</description>
+    </item>
+    
+    <item>
+      <title>A proposal for a really fast statistics journal</title>
+      <link>/2012/03/14/a-proposal-for-a-really-fast-statistics-journal/</link>
+      <pubDate>Wed, 14 Mar 2012 13:53:20 +0000</pubDate>
+      
+      <guid>/2012/03/14/a-proposal-for-a-really-fast-statistics-journal/</guid>
+      <description>I know we need a new journal like we need a good poke in the eye. But I got fired up by the recent discussion of open science (by Paul Krugman and others) and the seriously misguided Research Works Act- that aimed to make it illegal to deposit published papers funded by the government in Pubmed central or other open access databases.
+ I also realized that I spend a huge amount of time/effort on the following things: (1) waiting for reviews (typically months), (2) addressing reviewer comments that are unrelated to the accuracy of my work - just adding citations to referees papers or doing additional simulations, and (3) resubmitting rejected papers to new journals - this is a huge time suck since I have to reformat, etc.</description>
+    </item>
+    
+    <item>
+      <title>The 5 Most Critical Statistical Concepts</title>
+      <link>/2011/10/29/the-5-most-critical-statistical-concepts/</link>
+      <pubDate>Sat, 29 Oct 2011 16:05:05 +0000</pubDate>
+      
+      <guid>/2011/10/29/the-5-most-critical-statistical-concepts/</guid>
+      <description>It seems like everywhere we look, data is being generated - from politics, to biology, to publishing, to social networks. There are also diverse new computational tools, like GPGPU and cloud computing, that expand the statistical toolbox. Statistical theory is more advanced than its ever been, with exciting work in a range of areas. With all the excitement going on around statistics, there is also increasing diversity. It is increasingly hard to define &amp;#8220;statistician&amp;#8221; since the definition ranges from very mathematical to very applied.</description>
+    </item>
+    
+    <item>
+      <title>The future of graduate education</title>
+      <link>/2011/09/28/the-future-of-graduate-education/</link>
+      <pubDate>Wed, 28 Sep 2011 11:49:00 +0000</pubDate>
+      
+      <guid>/2011/09/28/the-future-of-graduate-education/</guid>
+      <description>Stanford is offering a free online course and more than 100,000 students have registered. This got the blogosphere talking about the future of universities. Matt Yglesias thinks that &amp;#8220;colleges are the next newspaper and are destined for some very uncomfortable adjustments&amp;#8221;. Tyler Cowen reminded us that since 2003 he has been saying that professors are becoming obsolete. His main point is that thanks to the internet, the need for lecturers will greatly diminish.</description>
+    </item>
+    
+    <item>
+      <title>The p&gt;0.05 journal</title>
+      <link>/2011/09/28/the-p-0-05-journal/</link>
+      <pubDate>Wed, 28 Sep 2011 01:49:00 +0000</pubDate>
+      
+      <guid>/2011/09/28/the-p-0-05-journal/</guid>
+      <description>I want to start a journal called &amp;#8220;P&amp;gt;0.05&amp;#8221;. This journal will publish all the negative results in science. These would also be stored in a database. Think of all the great things we could do with this. We could, for example, plot p-value histograms for different disciplines. I bet most would have a flat distribution. We could also do it by specific association. A paper comes out saying chocolate is linked to weaker bones?</description>
+    </item>
+    
+    <item>
+      <title>Unoriginal genius</title>
+      <link>/2011/09/26/unoriginal-genius/</link>
+      <pubDate>Mon, 26 Sep 2011 16:11:00 +0000</pubDate>
+      
+      <guid>/2011/09/26/unoriginal-genius/</guid>
+      <description>&amp;#8220;The world is full of texts, more or less interesting; I do not wish to add any more&amp;#8221;
+ This quote is from an article in the Chronicle Review. I highly recommend reading the article, particularly check out the section on the author&amp;#8217;s &amp;#8220;Uncreative writing&amp;#8221; class at UPenn. The article is about how there is a trend in literature toward combining/using other people&amp;#8217;s words to create new content.</description>
+    </item>
+    
+    <item>
+      <title>25 minute seminars</title>
+      <link>/2011/09/26/25-minute-seminars/</link>
+      <pubDate>Mon, 26 Sep 2011 13:32:00 +0000</pubDate>
+      
+      <guid>/2011/09/26/25-minute-seminars/</guid>
+      <description>Most Statistics and Biostatistics departments have weekly seminars. We usually invite outside speakers to share their knowledge via a 50 minute powerpoint (or beamer) presentation. This gives us the opportunity to meet colleagues from other Universities and pick their brains in small group meetings. This is all great. But, giving a good one hour seminar is hard. Really hard. Few people can pull it off. I propose to the statistical community that we cut the seminars to 25 minutes with 35 minutes for questions and further discussion.</description>
+    </item>
+    
+    <item>
+      <title>Getting email responses from busy people</title>
+      <link>/2011/09/23/getting-email-responses-from-busy-people/</link>
+      <pubDate>Fri, 23 Sep 2011 15:39:00 +0000</pubDate>
+      
+      <guid>/2011/09/23/getting-email-responses-from-busy-people/</guid>
+      <description>I&amp;#8217;ve had the good fortune of working with some really smart and successful people during my career. As a young person, one problem with working with really successful people is that they get a _ton_ of email. Some only see the subject lines on their phone before deleting them. I&amp;#8217;ve picked up a few tricks for getting email responses from important/successful people: The SI Rules
+ Try to send no more than one email a day.</description>
+    </item>
+    
+    <item>
+      <title>Dongle communism</title>
+      <link>/2011/09/23/dongle-communism/</link>
+      <pubDate>Fri, 23 Sep 2011 13:30:00 +0000</pubDate>
+      
+      <guid>/2011/09/23/dongle-communism/</guid>
+      <description>If you have a mac and give talks or teach, chances are you have embarrassed yourself by forgetting your dongle. Our lab meetings and classes were constantly delayed due to missing dongles. Communism solved this problem. We bought 10 dongles, sprinkled them around the department, and declared all dongles public property. All dongles, not just the 10. No longer do we have to ask to borrow dongles because they have no owner.</description>
+    </item>
+    
+    <item>
+      <title>The Killer App for Peer Review</title>
+      <link>/2011/09/22/the-killer-app-for-peer-review/</link>
+      <pubDate>Thu, 22 Sep 2011 16:10:00 +0000</pubDate>
+      
+      <guid>/2011/09/22/the-killer-app-for-peer-review/</guid>
+      <description>A little while ago, over at Genomes Unzipped, Joe Pickrell asked, &amp;#8220;Why publish science in peer reviewed journals?&amp;#8221; He points out the flaws with the current peer review system and suggests how we can do better. What he suggests is missing is the killer app for peer review. Well, PLoS has now developed an API, where you can easily access tons of data on the papers published in those journals including downloads, citations, number of social bookmarks, and mentions in major science blogs.</description>
+    </item>
+    
+  </channel>
+</rss>

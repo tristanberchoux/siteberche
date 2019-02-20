@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Government on Tristan Berchoux</title>
+    <link>/tags/government/</link>
+    <description>Recent content in Government on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Fri, 09 Nov 2012 15:53:02 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/government/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Interview with Tom Louis - New Chief Scientist at the Census Bureau</title>
+      <link>/2012/11/09/interview-with-tom-louis-new-chief-scientist-at-the/</link>
+      <pubDate>Fri, 09 Nov 2012 15:53:02 +0000</pubDate>
+      
+      <guid>/2012/11/09/interview-with-tom-louis-new-chief-scientist-at-the/</guid>
+      <description>Tom Louis  
+    
+  Tom Louis is a professor of Biostatistics at Johns Hopkins and will be joining the Census Bureau through an interagency personnel agreement as the new associate director for research and methodology and chief scientist. Tom has an impressive history of accomplishment in developing statistical methods for everything from environmental science to genomics. We talked to Tom about his new role at the Census, how it relates to his impressive research career, and how young statisticians can get involved in the statistical work at the Census.</description>
+    </item>
+    
+  </channel>
+</rss>

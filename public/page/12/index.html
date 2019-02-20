@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2016/10/12/weighting-survey/">The Dangers of Weighting Up a Sample</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/10/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  There&rsquo;s a great story by Nate Cohn over at the New York Times&rsquo; Upshot about the dangers of &ldquo;weighting up&rdquo; a sample from a survey. In this case, it is in regards to a U.S.C/LA Times poll asking who people will vote for President:
+ The U.S.C./LAT poll weights for many tiny categories: like 18-to-21-year-old men, which U.S.C./LAT estimates make up around 3.3 percent of the adult citizen population. Weighting simply for 18-to-21-year-olds would be pretty bold for a political survey; 18-to-21-year-old men is really unusual.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/10/12/weighting-survey/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/10/03/the-information-vc/">Information and VC Investing</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/10/03</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Sam Lessin at The Information has a nice post (sorry, paywall, but it&rsquo;s a great publication) about how increased measurement and analysis is changing the nature of venture capital investing.
+ This brings me back to what is happening at series A financings. Investors have always, obviously, tried to do diligence at all financing rounds. But series A investments used to be an exercise in a few top-level metrics a company might know, some industry interviews and analysis, and a whole lot of trust.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/10/03/the-information-vc/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/10/03/papr/">papr - it&#39;s like tinder, but for academic preprints</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/10/03</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  As part of the Johns Hopkins Data Science Lab we are setting up a web and mobile data product prototyping shop. As part of that process I&rsquo;ve been working on different types of very cheap and easy to prototype apps. A few days ago I posted about creating a distributed data collection app with Google Sheets.
+So for fun I built another kind of app. This one I&rsquo;m calling papr and its sort of like &ldquo;Tinder for preprints&rdquo;.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/10/03/papr/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/10/01/nssd-episode-23/">Not So Standard Deviations Episode 23 - Special Guest Walt Hickey</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/10/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Hilary and Roger invite Walt Hickey of FiveThirtyEight.com on to the show to talk about polling, movies, and data analysis reproducibility (of course).
+If you have questions you’d like us to answer, you can send them to nssdeviations @ gmail.com or tweet us at @NSSDeviations.
+Subscribe to the podcast on iTunes or Google Play.
+Please leave us a review on iTunes.
+Support us through our Patreon page.
+Get the Not So Standard Deviations book.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/10/01/nssd-episode-23/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/09/29/statistical-vitriol/">Statistical vitriol</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/09/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Over the last few months there has been a lot of vitriol around statistical ideas. First there were data parasites and then there were methodological terrorists. These epithets came from established scientists who have relatively little statistical training. There was the predictable backlash to these folks from their counterparties, typically statisticians or statistically trained folks who care about open source.
+I&rsquo;m a statistician who cares about open source but I also frequently collaborate with scientists from different fields.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/09/29/statistical-vitriol/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/09/28/mystery-palantir-continues/">The Mystery of Palantir Continues</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/09/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Palantir, the secretive data science/consulting/software company, continues to be a mystery to most people, but recent reports have not been great. Reuters reports that the U.S. Department of Labor is suing it for employment discrimination:
+ The lawsuit alleges Palantir routinely eliminated Asian applicants in the resume screening and telephone interview phases, even when they were as qualified as white applicants.
+ Interestingly, the report indicates a statistical argument:
+ In one example cited by the Labor Department, Palantir reviewed a pool of more than 130 qualified applicants for the role of engineering intern.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/09/28/mystery-palantir-continues/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/09/27/thinking-like-statistician-election-2016/">Thinking like a statistician: this is not the election for progressives to vote third party</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/09/27</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Democratic elections permit us to vote for whomever we perceive has the highest expectation to do better with the issues we care about. Let&rsquo;s simplify and assume we can quantify how satisfied we are with an elected official&rsquo;s performance. Denote this quantity with X. Because when we cast our vote we still don&rsquo;t know for sure how the candidate will perform, we base our decision on what we expect, denoted here with E(X).
+  </p>
+
+  
+  <footer>
+    <a href="/2016/09/27/thinking-like-statistician-election-2016/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/09/26/facebook-left-censoring/">Facebook and left censoring</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/09/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  From the Wall Street Journal:
+ Several weeks ago, Facebook disclosed in a post on its &ldquo;Advertiser Help Center&rdquo; that its metric for the average time users spent watching videos was artificially inflated because it was only factoring in video views of more than three seconds. The company said it was introducing a new metric to fix the problem.
+ A classic case of left censoring (in this case, by &ldquo;accident&rdquo;).
+  </p>
+
+  
+  <footer>
+    <a href="/2016/09/26/facebook-left-censoring/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/09/19/msdr-launch-announcement/">Mastering Software Development in R</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/09/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Today I&rsquo;m happy to announce that we&rsquo;re launching a new specialization on Coursera titled Mastering Software Development in R. This is a 5-course sequence developed with Sean Kross and Brooke Anderson.
+This sequence differs from our previous Data Science Specialization because it focuses primarily on using R for developing software. We&rsquo;ve found that as the field of data science evolves, it is becoming ever more clear that software development skills are essential for producing useful data science results and products.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/09/19/msdr-launch-announcement/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/09/19/nssd-episode-22/">Not So Standard Deviations Episode 22 - Number 1 Side Project</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/09/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Hilary and I celebrate our one year anniversary doing the podcast together by discussing whether there are cities that are good for data scientists, reproducible research, and professionalizing data science.
+Also, Hilary and I have just published a new book, Conversations on Data Science, which collects some of our episodes in an easy-to-read format. The book is available from Leanpub and will be updated as we record more episodes. If you&rsquo;re new to the podcast, this is a good way to do some catching up!
+  </p>
+
+  
+  <footer>
+    <a href="/2016/09/19/nssd-episode-22/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/11/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;12 / 104&nbsp;</span>
+  
+  <a href="/page/13/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

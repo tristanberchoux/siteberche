@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quantile Normalization on Tristan Berchoux</title>
+    <link>/tags/quantile-normalization/</link>
+    <description>Recent content in Quantile Normalization on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Fri, 26 Apr 2013 10:49:08 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/quantile-normalization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mindlessly normalizing genomics data is bad - but ignoring unwanted variability can be worse</title>
+      <link>/2013/04/26/mindlessly-normalizing-genomics-data-is-bad-but-ignoring-unwanted-variability-can-be-worse/</link>
+      <pubDate>Fri, 26 Apr 2013 10:49:08 +0000</pubDate>
+      
+      <guid>/2013/04/26/mindlessly-normalizing-genomics-data-is-bad-but-ignoring-unwanted-variability-can-be-worse/</guid>
+      <description>&lt;p&gt;Yesterday, and bleeding over into today, &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/12538238&#34;&gt;quantile normalization&lt;/a&gt; (QN) was being discussed on Twitter. This is the &lt;a href=&#34;https://twitter.com/mbeisen/status/327563522185764864&#34;&gt;Yesterday, and bleeding over into today, &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/12538238&#34;&gt;quantile normalization&lt;/a&gt; (QN) was being discussed on Twitter. This is the&lt;/a&gt; that started the whole thing off. The conversation went a bunch of different directions and then this happened:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;well, this happens all over bio-statistics - ie, naive use in seemingly undirected ways until you get a &amp;ldquo;good&amp;rdquo; pvalue. And then end&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So Jeff and I felt it was important to respond - since we are biostatisticians that work in genomics. We felt a couple of points were worth making:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Most statisticians we know, including us, know QN&amp;rsquo;s limitations and are always nervous about using QN&lt;/strong&gt;. But with most datasets we see, unwanted variability is overwhelming  and we are left with no choice but to normalize in orde to extract anything useful from the data.  In fact, many times QN is not enough and we have to apply further transformations, e.g., to remove &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/20838408&#34;&gt;batch effects&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;2. &lt;strong&gt;We would be curious to know which biostatisticians were being referred to. &lt;/strong&gt;We would like some examples, because most of the genomic statisticians we know work very closely with biologists to aid them in cleaning dirty data to help them find real sources of signal. Furthermore, we encourage biologists to validate their results. In many cases, quantile normalization (or other transforms) are critical to finding results that validate and there is a long literature (both biological and statistical) supporting the importance of appropriate normalization.&lt;/p&gt;
+
+&lt;p&gt;3. &lt;strong&gt;Assuming the data that you get (sequences, probe intensities, etc.) from high-throughput tech = direct measurement of abundance is incorrect.&lt;/strong&gt; Before worrying about QN (or other normalization) being an arbitrary transformation that distorts the data, keep in mind that what you want to measure has already been distorted by PCR, the imperfections of the microarray, scanner measurement error, image bleeding, cross hybridization or alignment artifacts, ozone effects, etc&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;To go into a little more detail about the reasons that normalization may be important in many cases, so I have written a little more detail below with data if you are interested.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

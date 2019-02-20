@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>An experimental foundation for statistics &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>An experimental foundation for statistics</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/13</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/abstraction">abstraction</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/experiments">experiments</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/nsf">nsf</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/proposal">proposal</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <p>In a recent conversation with Brian (<a href="http://simplystatistics.org/post/28840726358/in-which-brian-debates-abstraction-with-t-bone" target="_blank">of abstraction fame</a>) about the relationship between mathematics and statistics. Statistics, for historical reasons, has been treated as a mathematical sub-discipline (this is the <a href="http://simplystatistics.org/post/29899900125/nsf-recognizes-math-and-statistics-are-not-the-same" target="_blank">NSF&#8217;s view</a>).</p>
+
+<p>One reason statistics is viewed as a sub-discipline of math is because the foundations of statistics are built on the basis of <a href="http://en.wikipedia.org/wiki/Deductive_reasoning" target="_blank">deductive reasoning</a>, where you start with a few general propositions or foundations that you assume to be true and then systematically prove more specific results. A similar approach is taken in most mathematical disciplines. </p>
+
+<p>In contrast, scientific disciplines like biology are largely built on the basis of <a href="http://en.wikipedia.org/wiki/Inductive_reasoning" target="_blank">inductive reasoning</a> and the <a href="http://en.wikipedia.org/wiki/Scientific_method" target="_blank">scientific method</a>. Specific individual discoveries are described and used as a framework for building up more general theories and principles. </p>
+
+<p>So the question Brian and I had was: what if you started over and built statistics from the ground up on the basis of inductive reasoning and experimentation? Instead of making mathematical assumptions and then proving statistical results, you would use experiments to identify core principals. This actually isn&#8217;t without precedent in the statistics community. Bill Cleveland and Robert McGill studied how people <a href="http://elibrary.unm.edu/courses/documents/ClevelandandMcGill1985-GraphicalPerceptionandGraphicalMethodsforAnalyzingScientificData.pdf" target="_blank">perceive graphical information</a> and produced some general recommendations about the use of area/linear contrasts, common axes, etc. There has also been a lot of work on experimental understanding of how humans <a href="http://www.sciencemag.org/content/333/6048/1393.short" target="_blank">understand uncertainty</a>. </p>
+
+<p>So what if we put statistics on an experimental, rather than on a mathematical foundation. We performed experiments to see what kind of regression models people were able to interpret most clearly, what were the best ways to evaluate confounding/outliers, or what measure of statistical significance people understood best? Basically, what if the &#8220;quality&#8221; of a statistical method did not rest on the mathematics behind the method, but on the basis of experimental results demonstrating how people used the methods? So, instead of justifying lowess mathematically, we justified it on the basis of its practical usefulness through specific, controlled experiments. Some of this is already happening when people do surveys of the most successful methods in Kaggle contests or with the <a href="http://www.fda.gov/ScienceResearch/BioinformaticsTools/MicroarrayQualityControlProject/default.htm" target="_blank">MAQC</a>.</p>
+
+<p>I wonder what methods would survive the change in paradigm?</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2012/09/13/coursera-introduces-three-courses-in-statistics/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2012/09/13/coursera-introduces-three-courses-in-statistics/">Coursera introduces three courses in statistics</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2012/09/14/after-our-interview-with-steven-salzberg-someone/"></a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2012/09/14/after-our-interview-with-steven-salzberg-someone/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

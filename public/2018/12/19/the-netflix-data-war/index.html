@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>The Netflix Data War &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>The Netflix Data War</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2018/12/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<p>A recent article in the Wall Street Journal, <a href="https://www.wsj.com/articles/at-netflix-who-wins-when-its-hollywood-vs-the-algorithm-1541826015?emailToken=43ff1b39ad606a5db59c9fcf2d69741fSCIKNr2MhQ2fDt14GnpJCnpmuOt4cIRNRVTmT3dVTRtcCRfo9MAfxHbyK7XQlCGz9nkhmaBGU/K/gkZ+EeG5tJ6k/mjzxfV4AzIWJiG6g529n+n9dS0XOrKDelzIe3qd&amp;reflink=article_copyURL_share">&ldquo;At Netflix, Who Wins When It’s Hollywood vs. the Algorithm?&rdquo;</a> by Shalini Ramachandran and Joe Flint details some of the internal debates within Netflix between the Los Angeles-based content team, which is in charge of developing and marketing new content for the streaming service, and the data team. The initial example described is an advertising image for a new show (“Grace and Frankie&rdquo;&ldquo;) starring Jane Fonda and Lily Tomlin.</p>
+
+<blockquote>
+<p>After the streaming-video giant released the second season of the comedy “Grace and Frankie” in 2016, its product team put up an image to promote the show to U.S. subscribers that only included Ms. Fonda’s co-star, Lily Tomlin. Tests showed that more users clicked on the show when the photo didn’t include Ms. Fonda.</p>
+
+<p>The decision set off a high-pitched internal debate. The Los Angeles-based content team was concerned that Netflix risked alienating Ms. Fonda, and that the move could even violate her contract, while the tech group in the Los Gatos, Calif., headquarters argued the company shouldn’t ignore the data, according to people familiar with the discussions.</p>
+
+<p>In the end, Netflix chose to put images that included Ms. Fonda back in the mix.</p>
+</blockquote>
+
+<p>With the caveat that news articles about internal workings of companies always only contain a sliver of what actually happened, I thought it was a useful place to launch a discussion about the activity of a data team and how it interfaces with other aspects of a company.</p>
+
+<p>First off, anytime an article comes out like this detailing internal conflict, the first question to ask is always &ldquo;Why is this article appearing now?&rdquo; Most likely, it’s because one side feels like they are losing and is therefore talking to the press. My guess in this case, given the above-quoted example, is that the data team is losing some battles. Why is that? Don’t the data speak the truth? Why won’t people listen??</p>
+
+<h2 id="the-whole-truth-or-is-it">The Whole Truth (or is it?)</h2>
+
+<p>It’s difficult to know what the data team did to analyze the situation here, but it probably went something like this:</p>
+
+<ol>
+<li>&ldquo;Gracie and Frankie&rdquo; ran its first season prior to 2016 and so Netflix therefore had a season’s worth of data to look at, including how it was marketed and what was the response to the marketing</li>
+<li>During that time, they likely A/B tested a number of marketing images of the show containing various combinations of the star actors.</li>
+<li>Customers clicked on these different marketing images at different rates and presumably went on to watch the show at some rate.</li>
+<li>The product team chose the marketing image that maximized the number of clicks.</li>
+</ol>
+
+<p>This is where the story picks up. The data/product team proposed to use a marketing image that only includes Tomlin and the content team objected. What are the reasons for the objection? According to the article,</p>
+
+<ol>
+<li>Potential contract violation concerning not putting Jane Fonda in the marketing image; and</li>
+<li>Damaging a relationship with (i.e. “alienating”) a Hollywood star.</li>
+</ol>
+
+<p>More guessing here, but the data team likely did <em>not</em> know the terms of the company’s contract with Fonda and probably did not consider the concern of maintaining a long-term relationship with an actor. The former is simply a factual issue that was likely not disclosed to the data team and the latter is vague and difficult to quantify even if it had been disclosed to the data team.</p>
+
+<p>So, from a business perspective, what is the correct decision? What’s a data analyst at Netflix supposed to do? What is a successful data analysis in this case?</p>
+
+<p>Given that the final marketing image did include Fonda, it would seem like the data analysis was unsuccessful because the ultimate decision went against “what the data said&rdquo;. On the other hand, the data (and the analysts) didn’t know anything about the contract terms and the need for a relationship.</p>
+
+<h2 id="the-whole-truth-and-nothing-but">The Whole Truth (and nothing but?)</h2>
+
+<p>I don’t think it’s right to declare data analytic failure when a decision seems to go against what the data recommend. In a previous article on Netflix (<a href="https://www.vulture.com/2018/06/how-netflix-swallowed-tv-industry.html">&ldquo;Inside the Binge Factory&rdquo;</a>, Vulture reporter Josef Adalian talked to Cindy Holland and Ted Sarandos, who are in charge of content at Netflix:</p>
+
+<blockquote>
+<p>Sarandos and Holland tell me, again, that while data is a tool for them, their various projection models and cost analyses don’t dictate their decisions. “It’s 70 percent gut and 30 percent data,” Sarandos says. “Most of it is informed hunches and intuition. Data either reinforces your worst notion or it just supports what you want to do, either way.” The company also sometimes ignores the data if executives have enough passion for a new project, Sarandos says, calling such cases “forward bets, where you go to a full season even though the model’s not quite there.”</p>
+</blockquote>
+
+<p>Now, you might argue that those are Hollywood people claiming that the way “they’ve always done it” is the best way. But say what you will about Holland’s and Sarandos’s breakdown, in almost any decision-making situation involving data, there is <em>some</em> non-zero percentage of the process that involves &ldquo;gut&rdquo;. The reason is because not all information about a process can be incorporated into a data analysis, and it’s important for data analysts to realize that.</p>
+
+<p>One reaction to the example described above might be to say that the data team should be privy to <em>more information</em>. They should have the contract terms and they should know everything about the company’s relationship with the talent on shows. But the truth is not all information is equally well-measured, well-characterized, and well-quantified. It would be misleading for a data analyst to suggest that they could incorporate all sources of information equally well. Yes, there are methods to balance differing levels of uncertainty, but some measurements are simply not good measurements.</p>
+
+<p>In the example above, there’s no evidence in the reporting that the content team didn’t believe the data or the analysis. It’s just that their fear of damaging a relationship with an actor overruled whatever desire they might have had to maximize clicks or views. The logic was probably along the lines of &ldquo;We may take a hit in the short-run but we will benefit from this relationship in the long-run.&rdquo; Whether that’s true or not is unclear, but it’s a tricky question to answer with data. It’s not even clear to me how you would formulate that question.</p>
+
+<p>Ultimately, the data analysis got ignored in this case, which is something that can in fact happen. Organizations that don’t look at data can hardly be called data driven, but organizations that look at data and ignore it are basically in the same boat. How much weight should a data analysis be assigned, given that no analysis can include all the information that plays a role in a decision? Are Holland and Sarandos right that it’s 30%?</p>
+
+<h2 id="relationships">Relationships</h2>
+
+<p>In any data analysis, there are aspects over which the analyst will not have control. In a company driven to create new content, the people in charge of making that content will likely want to have some say over how it’s done.</p>
+
+<blockquote>
+<p>Some shows at risk of being canceled due to poor performance have gotten a reprieve because Netflix doesn’t want to damage relationships with key producers or actors, people familiar with Netflix’s deliberations say. <em>Stars have inserted language in their contracts giving them approval over everything from the short video that plays when users hover over a photo to the trailers promoting Netflix shows and movies</em>. [emphasis added]</p>
+</blockquote>
+
+<p>Should Netflix not deal with showrunners who want to have control over their shows because their decisions might come into conflict with the data? It’s possible that Netflix is missing out on better showrunners out there who are willing to submit to such contract terms, but then it’s not clear to me that they want to work with people who don’t really care that strongly about their shows. Part of the problem is that Netflix isn’t the only game in town, and everyone is competing for good talent. Netflix’s strategy is to mop up as much good talent as possible to create as many shows as possible.</p>
+
+<p>Finally, I thought this dichotomization of the content team and the tech/data team was interesting:</p>
+
+<blockquote>
+<p>Josh Evans, a former Netflix technology executive, said that while the tech team is more “data-driven and analytical” and the Hollywood side more “relationship-oriented” the two sides manage to reach common ground.</p>
+</blockquote>
+
+<p>To me it seems like both the tech and content teams could afford to be a bit more &ldquo;relationship-driven&rdquo; <a href="https://simplystatistics.org/2018/04/30/relationships-in-data-analysis/">with each other</a>.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2018/12/11/the-role-of-theory-in-data-analysis/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2018/12/11/the-role-of-theory-in-data-analysis/">The Role of Theory in Data Analysis</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2019/01/09/how-data-scientists-think-a-mini-case-study/">How Data Scientists Think - A Mini Case Study</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2019/01/09/how-data-scientists-think-a-mini-case-study/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

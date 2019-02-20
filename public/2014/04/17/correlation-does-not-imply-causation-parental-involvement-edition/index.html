@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Correlation does not imply causation (parental involvement edition) &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Correlation does not imply causation (parental involvement edition)</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/04/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>The New York Times recently published <a href="http://opinionator.blogs.nytimes.com/2014/04/12/parental-involvement-is-overrated/?rref=opinion&amp;module=ArrowsNav&amp;contentCollection=Opinion&amp;action=keypress&amp;region=FixedLeft&amp;pgtype=Blogs">an article</a> on education titled &ldquo;Parental Involvement Is Overrated&rdquo;. Most research in this area supports the opposite view, but the authors claim that &ldquo;evidence from our research suggests otherwise&rdquo;.  Before you stop helping your children understand long division or correcting their grammar, you should learn about one of the most basic statistical concepts: correlation does not imply causation. The first two chapters of this <a href="http://www.amazon.com/Statistics-4th-Edition-David-Freedman/dp/0393929728">very popular text book</a> describes the problem and even <a href="https://www.khanacademy.org/math/probability/regression/regression-correlation/v/correlation-and-causality">Khan Academy</a> has a class on it. As several of the commenters in the  NYT article point out, the authors fail to make this distinction.</p>
+
+<p>To illustrate the problem, imagine you want to know how effective tutoring is for students in a math class you are teaching.  So you compare the test scores of students that received tutoring to those that don&rsquo;t. You find that receiving tutoring is correlated with lower test scores. So do you conclude that tutoring causes lower grades? Of course not!  In this particular case we are confusing cause and effect: students that have trouble with math are much more likely to seek out tutoring and this is what drives the observed correlation. With that example in mind,  consider this quote from the New York Times article:</p>
+
+<blockquote>
+<p>When we examined whether regular help with homework had a positive impact on children’s academic performance, we were quite startled by what we found. Regardless of a family’s social class, racial or ethnic background, or a child’s grade level, consistent homework help almost never improved test scores or grades&hellip;. Even more surprising to us was that when parents regularly helped with homework, kids usually performed worse.</p>
+</blockquote>
+
+<p>A first question we would ask here is: how do we know that the children&rsquo;s performance would not have been even worse had they not received help? I imagine the authors made use of <em>controls</em>: we compare the group that received the treatment (regular help with homework) to a control group that did not. But this brings up a more difficult question: how do we know that the treatment and control groups are comparable?</p>
+
+<p>In a randomized controlled experiment, we would take a group of kids and randomly assign each one to the treatment group (will be helped with their homework) or control group (no help with homework). By doing this we can use probability calculations to determine the range of differences we expect to see by chance when the treatment has no effect.  Note that by chance one group may end up with a few more &ldquo;better testers&rdquo; than the other. However, if we see a big enough difference that can&rsquo;t be explained by chance, then the alternative that the treatment is responsible for the observed differences becomes more believable.</p>
+
+<p>Given all the prior research (and common sense) suggesting that parent involvement, in its many manifestations, is in fact helpful to students, many would consider it unethical to run a randomized controlled trial on this issue (you would knowingly hurt the control group). Therefore, the authors are left with no choice than to use an <em>observational study</em> to reach their conclusions. In this case, we have no control over who receives help and who doesn&rsquo;t. Kids that require regular help with their homework are different in many ways to kids that don&rsquo;t, even after correcting for all the factors mentioned. For example, one can envision how kids that have a mediocre teacher or have trouble with tests are more likely to be in the treatment group, while kids who naturally test well or go to schools that offer in-school tutoring are more likely to be in the control group.</p>
+
+<p>I am not an expert on education, but as a statistician I am skeptical of the conclusions of this data-driven article.  In fact, I would  recommend parents actually do get involved early on by, for example, teaching children that correlation does not imply causation.</p>
+
+<p>Note that I am not saying that observational studies are uninformative. If properly analyzed, observational data can be very valuable. For example, the data supporting smoking as a cause of lung cancer is all observational. Furthermore, there is an entire subfield within statistics (referred to as causal inference) that develops methodologies to deal with observational data. But unfortunately, observational data are commonly misinterpreted.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2014/04/10/the-ropensci-hackathon-ropenhack/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2014/04/10/the-ropensci-hackathon-ropenhack/">The #rOpenSci hackathon #ropenhack</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2014/04/22/picking-a-biostatistics-thesis-topic-for-real-world-impact-and-transferable-skills/">Picking a (bio)statistics thesis topic for real world impact and transferable skills</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2014/04/22/picking-a-biostatistics-thesis-topic-for-real-world-impact-and-transferable-skills/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

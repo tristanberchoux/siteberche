@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Humor on Tristan Berchoux</title>
+    <link>/tags/humor/</link>
+    <description>Recent content in Humor on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Tue, 09 Jun 2015 11:47:27 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/humor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Batch effects are everywhere! Deflategate edition</title>
+      <link>/2015/06/09/batch-effects-are-everywhere-deflategate-edition/</link>
+      <pubDate>Tue, 09 Jun 2015 11:47:27 +0000</pubDate>
+      
+      <guid>/2015/06/09/batch-effects-are-everywhere-deflategate-edition/</guid>
+      <description>In my opinion, batch effects are the biggest challenge faced by genomics research, especially in precision medicine. As we point out in this review, they are everywhere among high-throughput experiments. But batch effects are not specific to genomics technology. In fact, in this 1972 paper (paywalled), WJ Youden describes batch effects in the context of measurements made by physicists. Check out this plot of astronomical unit speed of light estimates with an estimate of spread confidence intervals (red and green are same lab).</description>
+    </item>
+    
+    <item>
+      <title>Confession: I sometimes enjoy reading the fake journal/conference spam</title>
+      <link>/2014/04/30/confession-i-sometimes-enjoy-reading-the-fake-journalconference-spam/</link>
+      <pubDate>Wed, 30 Apr 2014 10:00:06 +0000</pubDate>
+      
+      <guid>/2014/04/30/confession-i-sometimes-enjoy-reading-the-fake-journalconference-spam/</guid>
+      <description>I&#39;ve spent a considerable amount of time setting up filters to avoid getting spam from fake journals and conferences. Unfortunately, they are exceptionally good at thwarting my defenses. This does not annoy me as much as I pretend because, secretly, I enjoy reading some of these emails. Here are three of my favorites. 1) Over-the-top robot:  It gives us immense pleasure to invite you and your research allies to submit a manuscript for the journal “REDACTED”.</description>
+    </item>
+    
+    <item>
+      <title>paste0 is statistical computing&#39;s most influential contribution of the 21st century</title>
+      <link>/2013/01/31/paste0-is-statistical-computings-most-influential-contribution-of-the-21st-century/</link>
+      <pubDate>Thu, 31 Jan 2013 11:11:24 +0000</pubDate>
+      
+      <guid>/2013/01/31/paste0-is-statistical-computings-most-influential-contribution-of-the-21st-century/</guid>
+      <description>The day I discovered paste0 I literally cried. No more paste(bla,bla, sep=&amp;ldquo;&amp;rdquo;). While looking through code written by a student who did not know about paste0 I started pondering about how many person hours it has saved humanity. So typing sep=&amp;ldquo;&amp;rdquo; takes about 1 second. We R users use paste about 100 times a day and there are about 1,000,000 R users in the world. That&amp;rsquo;s over 3 person years a day!</description>
+    </item>
+    
+    <item>
+      <title>R package meme</title>
+      <link>/2013/01/16/r-package-meme/</link>
+      <pubDate>Wed, 16 Jan 2013 05:00:20 +0000</pubDate>
+      
+      <guid>/2013/01/16/r-package-meme/</guid>
+      <description>I just got this from a former student who is working on a project with me:
+Awesome.
+&amp;nbsp;
+&amp;nbsp;</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (12/2/12)</title>
+      <link>/2012/12/02/sunday-datastatistics-link-roundup-12212/</link>
+      <pubDate>Sun, 02 Dec 2012 10:18:06 +0000</pubDate>
+      
+      <guid>/2012/12/02/sunday-datastatistics-link-roundup-12212/</guid>
+      <description>An interview with Anthony Goldbloom, CEO of Kaggle. I&amp;rsquo;m not sure I&amp;rsquo;d agree with the characterization that all data scientists are: creative, curious, and competitive and certainly those characteristics aren&amp;rsquo;t unique to data scientists. And I didn&amp;rsquo;t know this: &amp;ldquo;We have 65,000 data scientists signed up to Kaggle, and just like with golf tournaments, we have them all ranked from 1 to 65,000.&amp;ldquo;  Check it out, art with R!</description>
+    </item>
+    
+    <item>
+      <title>I give up, I am embracing pie charts</title>
+      <link>/2012/11/27/i-give-up-i-am-embracing-pie-charts/</link>
+      <pubDate>Tue, 27 Nov 2012 20:53:20 +0000</pubDate>
+      
+      <guid>/2012/11/27/i-give-up-i-am-embracing-pie-charts/</guid>
+      <description>Most statisticians know that pie charts are a terrible way to plot percentages. You can find explanations here, here, and here as well as the R help file for the pie function which states:
+ Pie charts are a very bad way of displaying information. The eye is good at judging linear measures and bad at judging relative areas. A bar chart or dot chart is a preferable way of displaying this type of data.</description>
+    </item>
+    
+    <item>
+      <title>The pebbles of academia</title>
+      <link>/2012/09/10/the-pebbles-of-academia/</link>
+      <pubDate>Mon, 10 Sep 2012 19:02:00 +0000</pubDate>
+      
+      <guid>/2012/09/10/the-pebbles-of-academia/</guid>
+      <description>I have just been awarded a certificate for successful completion of the Conflict of Interest Commitment training (I barely passed). Lately, I have been totally swamped by administrative duties and have had little time for actual research. The experience reminded me of something I read in this NYTimes article by Tyler Cowen
+ Michael Mandel, an economist with the Progressive Policy Institute, compares government regulation of innovation to the accumulation of pebbles in a stream.</description>
+    </item>
+    
+    <item>
+      <title>When dealing with poop, it&#39;s best to just get your hands dirty</title>
+      <link>/2012/08/11/when-dealing-with-poop-its-best-to-just-get-your/</link>
+      <pubDate>Sat, 11 Aug 2012 13:21:47 +0000</pubDate>
+      
+      <guid>/2012/08/11/when-dealing-with-poop-its-best-to-just-get-your/</guid>
+      <description>I&amp;#8217;m a relatively new dad. Before the kid we affectionately call the &amp;#8220;tiny tornado&amp;#8221; (TT) came into my life, I had relatively little experience dealing with babies and all the fluids they emit. So admittedly, I was a little squeamish dealing with the poopy explosions the TT would create. Inevitably, things would get much more messy than they had to be while I was being too delicate with the issue. It took me an embarrassingly long time for an educated man, but I finally realized you just have to get in there and change the thing even if it is messy, then wash your hands after.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (5/27)</title>
+      <link>/2012/05/27/sunday-data-statistics-link-roundup-5-27/</link>
+      <pubDate>Sun, 27 May 2012 17:09:06 +0000</pubDate>
+      
+      <guid>/2012/05/27/sunday-data-statistics-link-roundup-5-27/</guid>
+      <description>Amanda Cox on the process they went through to come up with this graphic about the Facebook IPO. So cool to see how R is used in the development process. A favorite quote of mine, &amp;#8220;But rather than bringing clarity, it just sort of looked chaotic, even to the seasoned chart freaks of 620 8th Avenue.&amp;#8221; One of the more interesting things about posts like this is you get to see how statistics versus a deadline works.</description>
+    </item>
+    
+    <item>
+      <title>Computational biologist blogger saves computer science department</title>
+      <link>/2012/05/14/computational-biologist-blogger-saves-computer-science/</link>
+      <pubDate>Mon, 14 May 2012 15:01:00 +0000</pubDate>
+      
+      <guid>/2012/05/14/computational-biologist-blogger-saves-computer-science/</guid>
+      <description>People who read the news should be aware by now that we are in the midst of a big data era. The New York Times, for example, has been writing about this frequently. One of their most recent articles describes how UC Berkeley is getting $60 million dollars for a new computer science center. Meanwhile, at University of Florida the administration seems to be oblivious to all this and about a month ago announced it was dropping its computer science department to save $.</description>
+    </item>
+    
+    <item>
+      <title>Just like regular communism, dongle communism has failed</title>
+      <link>/2012/05/02/just-like-regular-communism-dongle-communism-has/</link>
+      <pubDate>Wed, 02 May 2012 17:09:37 +0000</pubDate>
+      
+      <guid>/2012/05/02/just-like-regular-communism-dongle-communism-has/</guid>
+      <description>Bad news comrades. Dongle communism in under attack. Check out how this poor dongle has been subjugated. This is in our lab meeting room. To add insult to injury, this happened on May 1st! </description>
+    </item>
+    
+    <item>
+      <title>I don&#39;t think it means what ESPN thinks it means</title>
+      <link>/2012/02/20/i-dont-think-it-means-what-espn-thinks-it-means/</link>
+      <pubDate>Mon, 20 Feb 2012 15:30:17 +0000</pubDate>
+      
+      <guid>/2012/02/20/i-dont-think-it-means-what-espn-thinks-it-means/</guid>
+      <description>Given ESPN&amp;#8217;s recent headline difficulties it seems like they might want a headline editor or something&amp;#8230;</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (1/29)</title>
+      <link>/2012/01/29/sunday-data-statistics-link-roundup-1-29/</link>
+      <pubDate>Sun, 29 Jan 2012 17:52:08 +0000</pubDate>
+      
+      <guid>/2012/01/29/sunday-data-statistics-link-roundup-1-29/</guid>
+      <description>A really nice D3 tutorial. I&amp;#8217;m 100% on board with D3, if they could figure out a way to export the graphics as pdfs, I think this would be the best visualization tool out there. A personalized calculator that tells you what number (of the 7 billion or so) that you are based on your birth day. I&amp;#8217;m person 4,590,743,884. Makes me feel so special&amp;#8230;. An old post of ours, on dongle communism.</description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Engineering Review Question Oops</title>
+      <link>/2012/01/19/fundamentals-of-engineering-review-question-oops/</link>
+      <pubDate>Thu, 19 Jan 2012 02:13:25 +0000</pubDate>
+      
+      <guid>/2012/01/19/fundamentals-of-engineering-review-question-oops/</guid>
+      <description>The Fundamentals of Engineering Exam is the first licensing exam for engineers. You have to pass it on your way to becoming a professional engineer (PE). I was recently shown a problem from a review manual:  When it is operating properly, a chemical plant has a daily production rate that is normally distributed with a mean of 880 tons/day and a standard deviation of 21 tons/day. During an analysis period, the output is measured with random sampling on 50 consecutive days, and the mean output is found to be 871 tons/day.</description>
+    </item>
+    
+    <item>
+      <title>Dear editors/associate editors/referees, Please reject my papers quickly</title>
+      <link>/2011/12/14/dear-editors-associate-editors-referees-please-reject/</link>
+      <pubDate>Wed, 14 Dec 2011 16:36:41 +0000</pubDate>
+      
+      <guid>/2011/12/14/dear-editors-associate-editors-referees-please-reject/</guid>
+      <description>The review times for most journals in our field are ridiculous. Check out Figure 1&amp;#160;here. A careful review takes time, but not six months. Let&amp;#8217;s be honest, those papers are sitting on desks for the great majority of those six months. But here is what really kills me: waiting six months for a review basically saying the paper is not of sufficient interest to the readership of the journal. That decision you can come to in half a day.</description>
+    </item>
+    
+    <item>
+      <title>Getting email responses from busy people</title>
+      <link>/2011/09/23/getting-email-responses-from-busy-people/</link>
+      <pubDate>Fri, 23 Sep 2011 15:39:00 +0000</pubDate>
+      
+      <guid>/2011/09/23/getting-email-responses-from-busy-people/</guid>
+      <description>I&amp;#8217;ve had the good fortune of working with some really smart and successful people during my career. As a young person, one problem with working with really successful people is that they get a _ton_ of email. Some only see the subject lines on their phone before deleting them. I&amp;#8217;ve picked up a few tricks for getting email responses from important/successful people: The SI Rules
+ Try to send no more than one email a day.</description>
+    </item>
+    
+    <item>
+      <title>Dongle communism</title>
+      <link>/2011/09/23/dongle-communism/</link>
+      <pubDate>Fri, 23 Sep 2011 13:30:00 +0000</pubDate>
+      
+      <guid>/2011/09/23/dongle-communism/</guid>
+      <description>If you have a mac and give talks or teach, chances are you have embarrassed yourself by forgetting your dongle. Our lab meetings and classes were constantly delayed due to missing dongles. Communism solved this problem. We bought 10 dongles, sprinkled them around the department, and declared all dongles public property. All dongles, not just the 10. No longer do we have to ask to borrow dongles because they have no owner.</description>
+    </item>
+    
+    <item>
+      <title>StatistiX</title>
+      <link>/2011/09/22/statistix/</link>
+      <pubDate>Thu, 22 Sep 2011 12:01:00 +0000</pubDate>
+      
+      <guid>/2011/09/22/statistix/</guid>
+      <description>I think our field would attract more students if we changed the name to something ending with X or K. I&amp;#8217;ve joked about this for years, but someone has actually done it (kind of):
+http://www.bitlifesciences.com/AnalytiX2012/</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Speed on Tristan Berchoux</title>
+    <link>/tags/speed/</link>
+    <description>Recent content in Speed on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 28 Dec 2011 19:25:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/speed/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Grad students in (bio)statistics - do a postdoc!</title>
+      <link>/2011/12/28/grad-students-in-bio-statistics-do-a-postdoc/</link>
+      <pubDate>Wed, 28 Dec 2011 19:25:00 +0000</pubDate>
+      
+      <guid>/2011/12/28/grad-students-in-bio-statistics-do-a-postdoc/</guid>
+      <description>Up until about 20 years ago, postdocs were scarce in Statistics. In contrast, during the same time period, it was rare for a Biology PhD to go straight into a tenure track position.
+Driven mostly by the availability of research funding for those working in applied areas, postdocs are becoming much more common in our field and I think this is great. It is great for PhD students to expand their horizons during two years in which they don&amp;#8217;t have to worry about teaching, committee meetings, or grant writing.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2013/09/01/sunday-datastatistics-link-roundup-9113/">Sunday data/statistics link roundup (9/1/13)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/09/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  There has been a lot of discussion of the importance of open access on Twitter. I am 100% in favor of open access (I do wish it was less expensive), but I also think that sometimes people lose sight of other important issues for junior scientists that go beyond open access. Dr. Isis has agreat example of this on her blog.  Sherri R. has a great list of resources for stats minded folks at the undergrad, grad, and faculty levels.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/09/01/sunday-datastatistics-link-roundup-9113/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/30/aaas-st-fellows-for-big-data-and-analytics/">AAAS S&amp;amp;T Fellows for Big Data and Analytics</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Thanks to Steve Pierson of the ASA for letting us know that the AAAS Science and Technology Fellowship program has a new category for &ldquo;Big Data and Analytics&rdquo;. For those not familiar, AAAS organizes the S&amp;T Fellowship program to get scientists involved in the policy-making process in Washington and at the federal agencies. In general, the requirements for the program are
+ Applicants must have a PhD or an equivalent doctoral-level degree at the time of application.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/08/30/aaas-st-fellows-for-big-data-and-analytics/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/29/the-return-of-the-stat-computing-for-data-analysis-data-analysis-back-on-coursera/">The return of the stat - Computing for Data Analysis &amp;#038; Data Analysis back on Coursera!</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  It&rsquo;s the return of the stat. Roger and I are going to be re-offering our Coursera courses:
+Computing for Data Analysis (starts Sept 23)
+Sign up here.
+Data Analysis (starts Oct 28)
+Sign up here.
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/28/evidence-based-data-analysis-treading-a-new-path-for-reproducible-research-part-2/">Evidence-based Data Analysis: Treading a New Path for Reproducible Research (Part 2)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Last week I posted about how I thought the notion of reproducible research did not go far enough to address the question of whether you could trust that a given data analysis was conducted appropriately. From some of the discussion on the post, it seems some of you thought I believed therefore that reproducibility had no value. That’s definitely not true and I’m hoping I can clarify my thinking in this followup post.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/08/28/evidence-based-data-analysis-treading-a-new-path-for-reproducible-research-part-2/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/27/interview-with-ani-eloyan-and-betsy-ogburn/">Interview with Ani Eloyan and Betsy Ogburn</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/27</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Jeff and I interview Ani Eloyan and Betsy Ogburn, two new Assistant Professors in the Department of Biostatistics here.
+Jeff and I talk to Ani and Betsy about their research interests and finally answer the burning question: &ldquo;What is the future of statistics?&rdquo;
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/26/statistics-meme-sad-p-value-bear/">Statistics meme: Sad p-value bear</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Sad p-value bear wishes you had a bigger sample size.  I was just at a conference where the idea for a sad p-value bear meme came up (in the spirit of Biostatistics Ryan Gosling). This should not be considered an endorsement of p-values or p-value hacking.
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/24/did-faulty-software-shut-down-the-nasdaq/">Did Faulty Software Shut Down the NASDAQ?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  This past Thursday, the NASDAQ stock exchange shut down for just over 3 hours due to some technical problems. It&rsquo;s still not clear what the problem was because NASDAQ officials are being tight-lipped. NASDAQ has had a bad run of problems recently, the most visible was the botching of the Facebook initial public offering.
+Stock trading these days is a highly technical business involving complex algorithms and multiple exchanges spread across the country.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/08/24/did-faulty-software-shut-down-the-nasdaq/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/23/stratifying-pisa-scores-by-poverty-rates-suggests-imitating-finland-is-not-necessarily-the-way-to-go-for-us-schools/">Stratifying PISA scores by poverty rates suggests imitating Finland is not necessarily the way to go for US schools</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  For the past several years a steady stream of news articles and opinion pieces have been praising the virtues of Finish schools and exalting the US to imitate this system. One data point supporting this view comes from the most recent PISA scores (2009) in which Finland outscored the US 536 to 500. Several people have pointed out that this is an apples (huge and diverse) to oranges (small and homogeneous) comparison.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/08/23/stratifying-pisa-scores-by-poverty-rates-suggests-imitating-finland-is-not-necessarily-the-way-to-go-for-us-schools/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/23/if-you-are-near-dcbaltimore-come-see-jeff-talk-about-coursera/">If you are near DC/Baltimore, come see Jeff talk about Coursera</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I&rsquo;ll be speaking at the Data Science Maryland meetup. The title of my presentation is &ldquo;Teaching Data Science to the Masses&rdquo;. The talk is at 6pm on Thursday, Sept. 19th. More info here.
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/22/chris-lane-u-s-tourism-boycotts-and-large-relative-risks-on-small-probabilities/">Chris Lane, U.S. tourism boycotts, and large relative risks on small probabilities</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Chris Lane was tragically killed (link via Leah J.) in a shooting in Duncan, Oklahoma. According to the reports, it sounds like it was apparently a random and completely senseless act of violence. It is horrifying to think that those kids were just looking around for someone to kill because they were bored.
+Gun violence in the U.S. is way too common and I&rsquo;m happy about efforts to reduce the chance of this type of event.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/08/22/chris-lane-u-s-tourism-boycotts-and-large-relative-risks-on-small-probabilities/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/44/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;45 / 104&nbsp;</span>
+  
+  <a href="/page/46/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Encode on Tristan Berchoux</title>
+    <link>/tags/encode/</link>
+    <description>Recent content in Encode on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 09 Sep 2012 13:32:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/encode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (9/9/12)</title>
+      <link>/2012/09/09/sunday-data-statistics-link-roundup-9-9-12/</link>
+      <pubDate>Sun, 09 Sep 2012 13:32:00 +0000</pubDate>
+      
+      <guid>/2012/09/09/sunday-data-statistics-link-roundup-9-9-12/</guid>
+      <description>Not necessarily statistics related, but pretty appropriate now that the school year is starting. Here is a little introduction to &amp;#8220;how to google&amp;#8221; (via Andrew J.). Being able to &amp;#8220;just google it&amp;#8221; and find answers for oneself without having to resort to asking folks is maybe the #1 most useful skill as a statistician.  A really nice presentation on interactive graphics with the googleVis package. I think one of the most interesting things about the presentation is that it was built with markdown/knitr/slidy (see slide 53).</description>
+    </item>
+    
+    <item>
+      <title>Top-down versus bottom-up science: data analysis edition</title>
+      <link>/2012/09/07/top-down-versus-bottom-up-science-data-analysis/</link>
+      <pubDate>Fri, 07 Sep 2012 18:56:00 +0000</pubDate>
+      
+      <guid>/2012/09/07/top-down-versus-bottom-up-science-data-analysis/</guid>
+      <description>In our most recent video, Steven Salzberg discusses the ENCODE project. Some of the advantages and disadvantages of top-down science are described. Here, top-down refers to big coordinated projects like the Human Genome Project (HGP). In contrast, the approach of funding many small independent projects, via the R01 mechanism, is referred to as bottom-up. Note that for the cost of HGP we could have funded thousands of R01s. However it is not clear that without the HGP we would have had public sequence data as early as we did.</description>
+    </item>
+    
+  </channel>
+</rss>

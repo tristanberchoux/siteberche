@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>On research parasites and internet mobs - let&#39;s try to solve the real problem. &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>On research parasites and internet mobs - let&#39;s try to solve the real problem.</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/01/25</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>A couple of days ago one of the editors of the New England Journal of Medicine <a href="http://www.nejm.org/doi/full/10.1056/NEJMe1516564">posted an editorial</a> showing some moderate level of support for data sharing but also introducing the term &ldquo;research parasite&rdquo;:</p>
+
+<blockquote>
+<p>A second concern held by some is that a new class of research person will emerge — people who had nothing to do with the design and execution of the study but use another group’s data for their own ends, possibly stealing from the research productivity planned by the data gatherers, or even use the data to try to disprove what the original investigators had posited. There is concern among some front-line researchers that the system will be taken over by what some researchers have characterized as “research parasites.”</p>
+</blockquote>
+
+<p>While this is obviously the most inflammatory statement in the article, I think that there are several more important and overlooked misconceptions. The biggest problems are:</p>
+
+<ol>
+<li><strong>&ldquo;</strong><strong>The first concern is that someone not involved in the generation and collection of the data may not understand the choices made in defining the parameters.</strong><strong>&ldquo; </strong>This almost certainly would be the fault of the investigators who published the data. If the authors adhere to good [A couple of days ago one of the editors of the New England Journal of Medicine <a href="http://www.nejm.org/doi/full/10.1056/NEJMe1516564">posted an editorial</a> showing some moderate level of support for data sharing but also introducing the term &ldquo;research parasite&rdquo;:</li>
+</ol>
+
+<blockquote>
+<p>A second concern held by some is that a new class of research person will emerge — people who had nothing to do with the design and execution of the study but use another group’s data for their own ends, possibly stealing from the research productivity planned by the data gatherers, or even use the data to try to disprove what the original investigators had posited. There is concern among some front-line researchers that the system will be taken over by what some researchers have characterized as “research parasites.”</p>
+</blockquote>
+
+<p>While this is obviously the most inflammatory statement in the article, I think that there are several more important and overlooked misconceptions. The biggest problems are:</p>
+
+<ol>
+<li><strong>&ldquo;</strong><strong>The first concern is that someone not involved in the generation and collection of the data may not understand the choices made in defining the parameters.</strong><strong>&ldquo; </strong>This almost certainly would be the fault of the investigators who published the data. If the authors adhere to good](<a href="https://github.com/jtleek/datasharing">https://github.com/jtleek/datasharing</a>) policies and respond to queries from people using their data promptly then this should not be a problem at all.</li>
+<li><strong>&rdquo;&hellip; but use another group’s data for their own ends, possibly stealing from the research productivity planned by the data gatherers, or even use the data to try to disprove what the original investigators had posited.&ldquo; </strong>The idea that no one should be able to try to disprove ideas with the authors data has been covered in other blogs/on Twitter. One thing I do think is worth considering here is the concern about credit. I think that the traditional way credit has accrued to authors has been citations. But if you get a major study funded, say for 50 million dollars, run that study carefully, sit on a million conference calls, and end up with a single major paper, that could be frustrating. Which is why I think that a better policy would be to have the people who run massive studies get credit in a way that <em>is not papers</em>. They should get some kind of formal administrative credit. But then the data should be immediately and publicly available to anyone to publish on. That allows people who run massive studies to get credit and science to proceed normally.</li>
+<li><strong>&ldquo;</strong><strong>The new investigators arrived on the scene with their own ideas and worked symbiotically, rather than parasitically, with the investigators holding the data, moving the field forward in a way that neither group could have done on its own.&ldquo; </strong> The story that follows about a group of researchers who collaborated with the NSABP to validate their gene expression signature is very encouraging. But it isn&rsquo;t the only way science should work. Researchers shouldn&rsquo;t be constrained to one model or another. Sometimes collaboration is necessary, sometimes it isn&rsquo;t, but in neither case should we label the researchers &ldquo;symbiotic&rdquo; or &ldquo;parasitic&rdquo;, terms that have extreme connotations.</li>
+<li><strong>&ldquo;How would data sharing work best? We think it should happen symbiotically, not parasitically.&rdquo;</strong> I think that it should happen <em>automatically</em>. If you generate a data set with public funds, you should be required to immediately make it available to researchers in the community. But you should <em>get credit for generating the data set and the hypothesis that led to the data set</em>. The problem is that people who generate data will almost never be as fast at analyzing it as people who know how to analyze data. But both deserve credit, whether they are working together or not.</li>
+<li><strong>&ldquo;Start with a novel idea, one that is not an obvious extension of the reported work. Second, identify potential collaborators whose collected data may be useful in assessing the hypothesis and propose a collaboration. Third, work together to test the new hypothesis. Fourth, report the new findings with relevant coauthorship to acknowledge both the group that proposed the new idea and the investigative group that accrued the data that allowed it to be tested.&rdquo;</strong> The trouble with this framework is that it preferentially accrues credit to data generators and doesn&rsquo;t accurately describe the role of either party. To flip this argument around,  you could just as easily say that anyone who uses <a href="http://salzberg-lab.org/">Steven Salzberg</a>&rsquo;s software for aligning or assembling short reads should make him a co-author. I think Dr. Drazen would agree that not everyone who aligned reads should add Steven as co-author, despite his contribution being critical for the completion of their work.</li>
+</ol>
+
+<p>After the piece was posted there was predictable internet rage from <a href="https://twitter.com/dataparasite">data parasites</a>, a <a href="https://twitter.com/hashtag/researchparasite?src=hash">dedicated hashtag</a>, and half a dozen angry blog posts written about the piece. These inspired a <a href="http://www.nejm.org/doi/full/10.1056/NEJMe1601087">follow up piece</a> from Drazen. I recognize why these folks were upset - the &ldquo;research parasites&rdquo; thing was unnecessarily inflammatory. But <a href="http://simplystatistics.org/2014/03/05/plos-one-i-have-an-idea-for-what-to-do-with-all-your-profits-buy-hard-drives/">I also sympathize with data creators</a> who are also subject to a tough environment - particularly when they are junior scientists.</p>
+
+<p>I think the response to the internet outrage also misses the mark and comes off as a defense of people with angry perspectives on data sharing. I would have much rather seen a more pro-active approach from a leading journal of medicine. I&rsquo;d like to see something that acknowledges different contributions appropriately and doesn&rsquo;t slow down science. Something like:</p>
+
+<ol>
+<li>We will require all data, including data from clinical trials, to be made public immediately on publication as long as it poses minimal risk to the patients involved or the patients have been consented to broad sharing.</li>
+<li>When data are not made publicly available they are still required to be deposited with a third party such as the NIH or Figshare to be held available for request from qualified/approved researchers.</li>
+<li>We will require that all people who use data give appropriate credit to the original data generators in terms of data citations.</li>
+<li>We will require that all people who use software/statistical analysis tools give credit to the original tool developers in terms of software citations.</li>
+<li>We will include a new designation for leaders of major data collection or software generation projects that can be included to demonstrate credit for major projects undertaken and completed.</li>
+<li>When reviewing papers written by experimentalists with no statistical/computational co-authors we will require no fewer than 2 statistical/computational referees to ensure there has not been a mistake made by inexperienced researchers.</li>
+<li>When reviewing papers written by statistical/computational authors with no experimental co-authors we will require no fewer than 2 experimental referees to ensure there has not been a mistake made by inexperienced researchers.</li>
+</ol>
+
+<p>&nbsp;</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2016/01/24/not-so-standard-deviations-episode-8-snow-day/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2016/01/24/not-so-standard-deviations-episode-8-snow-day/">Not So Standard Deviations Episode 8 - Snow Day</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2016/01/26/exactly-how-risky-is-breathing/">Exactly how risky is breathing?</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2016/01/26/exactly-how-risky-is-breathing/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

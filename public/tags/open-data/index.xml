@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Data on Tristan Berchoux</title>
+    <link>/tags/open-data/</link>
+    <description>Recent content in Open Data on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 02 Jan 2013 20:16:26 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/open-data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fitbit, why can&#39;t I have my data?</title>
+      <link>/2013/01/02/fitbit-why-cant-i-have-my-data/</link>
+      <pubDate>Wed, 02 Jan 2013 20:16:26 +0000</pubDate>
+      
+      <guid>/2013/01/02/fitbit-why-cant-i-have-my-data/</guid>
+      <description>I have a Fitbit. I got it because I wanted to collect some data about myself and I liked the simplicity of the set-up. I also asked around and Fitbit seemed like the most &amp;ldquo;open&amp;rdquo; platform for collecting one&amp;rsquo;s own data. You have to pay $50 for a premium account, but after that, they allow you to download your data.
+Or do they?
+I looked into the details, asked a buddy or two, and found out that you actually can&amp;rsquo;t get the really interesting minute-by-minute data even with a premium account.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup 12/23/12</title>
+      <link>/2012/12/23/sunday-datastatistics-link-roundup-122312/</link>
+      <pubDate>Sun, 23 Dec 2012 09:44:38 +0000</pubDate>
+      
+      <guid>/2012/12/23/sunday-datastatistics-link-roundup-122312/</guid>
+      <description>A cool data visualization for blood glucose levels for diabetic individuals. This kind of interactive visualization can help people see where/when major health issues arise for chronic diseases. This was a class project by Jeff Heer&amp;rsquo;s Stanford CS448B students Ben Rudolph and Reno Bowen (twitter @RenoBowen). Speaking of interactive visualizations, I also got this link from Patrick M. It looks like a way to build interactive graphics and my understanding is it is compatible with R data frames, worth checking out (plus, Dex is a good name).</description>
+    </item>
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (11/4/12)</title>
+      <link>/2012/11/04/sunday-data-statistics-link-roundup-11-4-12/</link>
+      <pubDate>Sun, 04 Nov 2012 14:24:48 +0000</pubDate>
+      
+      <guid>/2012/11/04/sunday-data-statistics-link-roundup-11-4-12/</guid>
+      <description>Brian Caffo headlines the WaPo article about massive online open courses. He is the driving force behind our department&amp;#8217;s involvement in offering these massive courses. I think this sums it up: `“I can’t use another word than unbelievable,” Caffo said. Then he found some more: “Crazy . . . surreal . . . heartwarming.”&amp;#8217; A really interesting discussion of why &amp;#8220;A Bet is a Tax on B.S.&amp;#8221;. It nicely describes why intelligent betters must be disinterested in the outcome, otherwise they will end up losing money.</description>
+    </item>
+    
+    <item>
+      <title>Interview with Lauren Talbot - Quantitative analyst for the NYC Financial Crime Task Force</title>
+      <link>/2012/07/20/interview-with-lauren-talbot-quantitative-analyst-for/</link>
+      <pubDate>Fri, 20 Jul 2012 13:24:49 +0000</pubDate>
+      
+      <guid>/2012/07/20/interview-with-lauren-talbot-quantitative-analyst-for/</guid>
+      <description>Lauren Talbot   
+Lauren Talbot is a quantitative analyst for the New York City Financial Crime Task Force. Before working for NYC she was an analyst at Acumen LLC and got her degree in economics from Stanford University. She is a key player turning spatial data in NYC into new tools for government management. We talked to Lauren about her work, how she is using open data to do things like predict where fires might occur, and how she got started in the Financial Crime Task Force.</description>
+    </item>
+    
+  </channel>
+</rss>

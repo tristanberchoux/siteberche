@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>An economic model for peer review &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>An economic model for peer review</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/06</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>I saw this tweet the other day:</p>
+
+<blockquote class="twitter-tweet" width="550">
+  <p>
+    Has anyone applied game theory to the issue of anonymous peer review in academia?
+  </p>
+  
+  <p>
+    &mdash; Mick Watson (@BioMickWatson) <a href="https://twitter.com/BioMickWatson/status/517715981104590848">October 2, 2014</a>
+  </p>
+</blockquote>
+
+<p>It reminded me that a few years ago <a href="http://simplystatistics.org/2012/07/11/my-worst-recent-experience-with-peer-review/">I had a paper that went through the peer review wringer</a>. It drove me completely bananas. One thing that drove me so crazy about the process was how long the referees waited before reviewing and how terrible the reviews were after that long wait. So I started thinking about the &ldquo;economics of peer review&rdquo;. Basically, what is the incentive for scientists to contribute to the system.</p>
+
+<p>To get a handle on this idea, I designed a &ldquo;peer review game&rdquo; where there are a fixed number of players N. The players play the game for a fixed period of time. During that time, they can submit papers or they can review papers. For each person, their final score at the end of the time is <span class='MathJax_Preview'><img src='http://simplystatistics.org/wp-content/plugins/latex/cache/tex_499ac624b20f322a6a85792cf12b0c13.gif' style='vertical-align: middle; border: none; ' class='tex' alt="S_i = \sum {\rm Submitted \; Papers \; Accepted}" /></span>.</p>
+
+<p>Based on this model, under closed peer review, there is one Nash equilibrium under the strategy that <strong>no one reviews any papers</strong>. Basically, no one can hope to improve their score by reviewing, they can only hope to improve their score by submitting more papers (sound familiar?). Under open peer review, there are more potential equilibria, based on the relative amount of goodwill you earn from your fellow reviewers by submitting good reviews.</p>
+
+<p>We then built a model system for testing out our theory. The system involved having groups of students play a &ldquo;peer review game&rdquo; where they submitted solutions to SAT problems like:</p>
+
+<p><img class="aligncenter" src="http://www.plosone.org/article/fetchObject.action?uri=info:doi/10.1371/journal.pone.0026895.g005&representation=PNG_M" alt="" width="390" height="335" /></p>
+
+<p>Each solution was then randomly assigned to another player to review. Those players could (a) review it and reject it, (b) review it and accept it, or &copy; not review it. The person with the most points at the end of the time (one hour) won.</p>
+
+<p>We found some cool things:</p>
+
+<ol>
+<li>In closed review, reviewing gave no benefit.</li>
+<li>In open review, reviewing gave a small positive benefit.</li>
+<li>Both systems gave comparable accuracy</li>
+<li>All peer review increased the overall accuracy of responses</li>
+</ol>
+
+<p><a href="http://www.plosone.org/article/info:doi/10.1371/journal.pone.0026895">The paper is here</a> and all of the <a href="http://www.biostat.jhsph.edu/~jleek/peerreview/">data and code are here</a>.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2014/10/02/the-drake-index-for-academics/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2014/10/02/the-drake-index-for-academics/">The Drake index for academics</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2014/10/08/the-leek-group-guide-to-genomics-papers/">The Leek group guide to genomics papers</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2014/10/08/the-leek-group-guide-to-genomics-papers/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

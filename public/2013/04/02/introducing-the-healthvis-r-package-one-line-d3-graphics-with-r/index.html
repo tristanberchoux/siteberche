@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Introducing the healthvis R package  - one line D3 graphics with R &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Introducing the healthvis R package  - one line D3 graphics with R</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/04/02</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/healthvis">healthvis</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/interactive-visualization">interactive visualization</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/shiny">shiny</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/visualization">visualization</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <p dir="ltr">
+  We have been a little slow on the posting for the last couple of months here at Simply Stats. That’s bad news for the blog, but good news for our research programs!
+</p>
+
+<p>Today I’m announcing the new <a style="font-size: 16px" href="http://healthvis.org/">healthvis</a> R package that is being developed by my student <a style="font-size: 16px" href="http://www.biostat.jhsph.edu/~prpatil/">Prasad Patil </a>(who needs a website like yesterday), <a style="font-size: 16px" href="http://www.cbcb.umd.edu/~hcorrada/">Hector Corrada Bravo</a>, and myself*. The basic idea is that I have loved <a style="font-size: 16px" href="http://d3js.org/">D3 interactive graphics</a> for a while. But they are hard to create from scratch, since they require knowledge of both Javascript and the D3 library.</p>
+
+<p>Even with those skills, it can take a while to develop a new graphic. On the other hand, I know a lot about R and am often analyzing biomedical data where interactive graphics could be hugely useful. There are a couple of really useful tools for creating interactive graphics in R, most notably <a style="font-size: 16px" href="http://www.rstudio.com/shiny/">Shiny</a>, which is awesome. But these tools still require a bit of development to get right and are designed for “stand alone” tools.</p>
+
+<p>So we created an R package that builds specific graphs that come up commonly in the analysis of health data like survival curves, heatmaps, and <a style="font-size: 16px" href="http://library.mpib-berlin.mpg.de/ft/mg/MG_Using_2009.pdf">icon arrays</a>. For example, here is how you make an interactive survival plot comparing treated to untreated individuals with healthvis:</p>
+
+<pre class="brush: r; title: ; notranslate" title=""># Load libraries
+
+library(healthvis)
+library(survival)
+
+# Run a cox proportional hazards regression
+
+cobj &lt;- coxph(Surv(time, status)~trt+age+celltype+prior, data=veteran)
+
+# Plot using healthvis - one line!
+
+survivalVis(cobj, data=veteran, plot.title=&quot;Veteran Survival Data&quot;, group=&quot;trt&quot;, group.names=c(&quot;Treatment&quot;, &quot;No Treatment&quot;), line.col=c(&quot;#E495A5&quot;,&quot;#39BEB1&quot;))
+
+</pre>
+
+<p>The “survivalVis” command above  produces an interactive graphic <a style="font-size: 16px" href="http://healthviz.appspot.com/display/hs_20001">like this</a>. Here it is embedded (you may have to scroll to see the dropdowns on the right - we are working on resizing)</p>
+
+<p>`<p dir="ltr">
+  We have been a little slow on the posting for the last couple of months here at Simply Stats. That’s bad news for the blog, but good news for our research programs!
+</p></p>
+
+<p>Today I’m announcing the new <a style="font-size: 16px" href="http://healthvis.org/">healthvis</a> R package that is being developed by my student <a style="font-size: 16px" href="http://www.biostat.jhsph.edu/~prpatil/">Prasad Patil </a>(who needs a website like yesterday), <a style="font-size: 16px" href="http://www.cbcb.umd.edu/~hcorrada/">Hector Corrada Bravo</a>, and myself*. The basic idea is that I have loved <a style="font-size: 16px" href="http://d3js.org/">D3 interactive graphics</a> for a while. But they are hard to create from scratch, since they require knowledge of both Javascript and the D3 library.</p>
+
+<p>Even with those skills, it can take a while to develop a new graphic. On the other hand, I know a lot about R and am often analyzing biomedical data where interactive graphics could be hugely useful. There are a couple of really useful tools for creating interactive graphics in R, most notably <a style="font-size: 16px" href="http://www.rstudio.com/shiny/">Shiny</a>, which is awesome. But these tools still require a bit of development to get right and are designed for “stand alone” tools.</p>
+
+<p>So we created an R package that builds specific graphs that come up commonly in the analysis of health data like survival curves, heatmaps, and <a style="font-size: 16px" href="http://library.mpib-berlin.mpg.de/ft/mg/MG_Using_2009.pdf">icon arrays</a>. For example, here is how you make an interactive survival plot comparing treated to untreated individuals with healthvis:</p>
+
+<pre class="brush: r; title: ; notranslate" title=""># Load libraries
+
+library(healthvis)
+library(survival)
+
+# Run a cox proportional hazards regression
+
+cobj &lt;- coxph(Surv(time, status)~trt+age+celltype+prior, data=veteran)
+
+# Plot using healthvis - one line!
+
+survivalVis(cobj, data=veteran, plot.title=&quot;Veteran Survival Data&quot;, group=&quot;trt&quot;, group.names=c(&quot;Treatment&quot;, &quot;No Treatment&quot;), line.col=c(&quot;#E495A5&quot;,&quot;#39BEB1&quot;))
+
+</pre>
+
+<p>The “survivalVis” command above  produces an interactive graphic <a style="font-size: 16px" href="http://healthviz.appspot.com/display/hs_20001">like this</a>. Here it is embedded (you may have to scroll to see the dropdowns on the right - we are working on resizing)</p>
+
+<p>`</p>
+
+<p>The advantage of this approach is that you can make common graphics interactive without a lot of development time. Here are some other unique features:</p>
+
+<ul>
+<li><p dir="ltr">
+  The graphics are hosted on Google App Engine. With one click you can get a permanent link and share it with collaborators.
+</p></li>
+
+<li><p dir="ltr">
+  With another click you can get the code to embed the graphics in your website.
+</p></li>
+
+<li><p dir="ltr">
+  If you have already created D3 graphics it only takes a few minutes to <a href="http://healthvis.wordpress.com/develop/">develop a healthvis version</a> to let R users create their own - email us and we will make it part of the healthvis package!
+</p></li>
+
+<li><p dir="ltr">
+  healthvis is totally general - you can develop graphics that don’t have anything to do with health with our framework. Just email to get in touch if you want to be a developer at <a href="mailto:healthvis@gmail.com">healthvis@gmail.com</a>
+</p></li>
+</ul>
+
+<p>We have started a blog over at <a style="font-size: 16px" href="http://healthvis.org/">healthvis.org</a> where we will be talking about the tricks we learn while developing D3 graphics, updates to the healthvis package, and generally talking about visualization for new technologies like those developed by the CCNE and individualized health. If you are interested in getting involved as a developer, user or tester, drop us a line and let us know. In the meantime, happy visualizing!</p>
+
+<p><em>* This project is supported by the <a href="http://ccne.inbt.jhu.edu/">JHU CCNE</a> (U54CA151838) and the Johns Hopkins <a href="http://web.jhu.edu/administration/provost/initiatives/ihi/">inHealth initiative</a>.</em></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2013/03/26/an-instructors-thoughts-on-peer-review-for-data-analysis-in-coursera/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2013/03/26/an-instructors-thoughts-on-peer-review-for-data-analysis-in-coursera/">An instructor&#39;s thoughts on peer-review for data analysis in Coursera</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2013/04/08/nih-is-looking-for-an-associate-director-for-data-science-statisticians-should-consider-applying/">NIH is looking for an Associate Director for Data Science: Statisticians should consider applying</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2013/04/08/nih-is-looking-for-an-associate-director-for-data-science-statisticians-should-consider-applying/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

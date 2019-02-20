@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adhd 200 on Tristan Berchoux</title>
+    <link>/tags/adhd-200/</link>
+    <description>Recent content in Adhd 200 on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 02 Nov 2011 15:37:42 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/adhd-200/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Guest Post: SMART thoughts on the ADHD 200 Data Analysis Competition</title>
+      <link>/2011/11/02/guest-post-smart-thoughts-on-the-adhd-200-data/</link>
+      <pubDate>Wed, 02 Nov 2011 15:37:42 +0000</pubDate>
+      
+      <guid>/2011/11/02/guest-post-smart-thoughts-on-the-adhd-200-data/</guid>
+      <description>Note: _This is a guest post by our colleagues Brian Caffo, Ani Eloyan, Fang Han, Han Liu,John Muschelli, Mary Beth Nebel, Tuo Zhao and Ciprian Crainiceanu. They won the ADHD 200 imaging data analysis competition. There has been some controversy around the results because one team obtained a higher score without using any of the imaging data. Our colleagues have put together a very clear discussion of the issues raised by the competition so we are publishing it here to contribute to the discussion.</description>
+    </item>
+    
+  </channel>
+</rss>

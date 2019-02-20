@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2012/09/27/simply-statistics-logo-contest/">Simply statistics logo contest</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/27</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/logo">logo</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Simply Statistics has had the same logo since Roger grabbed the first picture in his results folder that looked &#8220;statistics related&#8221;. While we do have some affection for the logo, we would like something a little more catchy.
+So we would like to announce a contest to create our new logo. Here are the rules:
+ All submissions must be sent to Roger with the email subject, &#8220;Simply Statistics Logo Contest&#8221; The logo must be generated with reproducible R code.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/09/27/simply-statistics-logo-contest/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/09/26/pro-tips-for-graduate-students-part-3/">Pro-tips for graduate students (Part 3)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/26</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/advice">advice</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/peer-review">peer review</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/pro-tips">pro tips</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/publication">publication</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/writing">writing</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  This is part of the ongoing series of pro tips for graduate students, check out parts one and two for the original installments.  Learn how to write papers in a very clear and simple style. Whenever you can write in plain English, skip jargon as much as possible, and make the approach you are using understandable and clear. This can (sometimes) make it harder to get your papers into journals.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/09/26/pro-tips-for-graduate-students-part-3/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/09/26/nbc-unpacks-trove-of-data-from-olympics/">NBC Unpacks Trove of Data From Olympics</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  NBC Unpacks Trove of Data From Olympics
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/09/24/computing-for-data-analysis-starts-today/">Computing for Data Analysis starts today!</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Today marks the first Simply Statistics course offering happening over at Coursera. I&#8217;ll be teaching Computing for Data Analysis over the next four weeks. There&#8217;s still plenty of time to register if you are interested in learning about R and the activity on the discussion forums is already quite vibrant.
+Also starting today is my colleague Brian Caffo&#8217;s Mathematical Biostatistics Bootcamp, which I hear also has had an energetic start. With any luck, the students in that class may get to see Brian dressed in military fatigues.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/09/24/computing-for-data-analysis-starts-today/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/09/23/sunday-data-statistics-link-roundup-9-23-12/">Sunday Data/Statistics Link Roundup (9/23/12)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/23</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/caffo">caffo</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/data-scientist">data scientist</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/latex">latex</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/mooc">MOOC</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/sex">sex</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/tools">tools</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Harvard Business school is getting in on the fun, calling the data scientist the sexy profession for the 21st century. Although I am a little worried that by the time it gets into a Harvard Business document, the hype may be outstripping the real promise of the discipline. Still, good news for statisticians! (via Rafa via Francesca D.&#8217;s Facebook feed).  The counterpoint is this article which suggests that data scientists might be able to be replaced by tools/software.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/09/23/sunday-data-statistics-link-roundup-9-23-12/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/09/21/prediction-contest/">Prediction contest</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/21</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/bad-statistics">bad statistics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/prediction">prediction</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I have been seeing this paper all over Twitter/the blogosphere. It&#8217;s a sexy idea: can you predict how &#8220;high-impact&#8221; a scientist will be in the future. It is also a pretty flawed data analysis&#8230;so this weeks prediction contest is to identify why the statistics in this paper are so flawed. In my first pass read I noticed about 5 major flaws.
+_Editor&#8217;s note: I posted the criticisms and the authors respond here: http://disq.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/09/21/prediction-contest/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/09/20/in-data-science-its-the-problem-stupid/">In data science - it&#39;s the problem, stupid!</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/20</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/biotech">biotech</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/statistics-projects">statistics projects</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/type-b-problems">type b problems</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I just saw this article talking about how in the biotech world, you can&#8217;t get caught chasing the latest technology. You have to start with a problem you are solving for people and then work your way back. This reminds me a lot of Type B problems in data science/statistics. We have a pile of data, so we don&#8217;t need to have a problem to solve, it will come to us later.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/09/20/in-data-science-its-the-problem-stupid/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/09/20/every-professor-is-a-startup/">Every professor is a startup</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/20</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/academia">academia</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/academics">academics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/startups">startups</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  There has been a lot of discussion lately about whether to be in academia or industry. Some of it I think is a bit unfair to academia. Then I saw this post on Quora asking what Hilary Mason&#8217;s contributions were to machine learning, like she hadn&#8217;t done anything. It struck me as a bit of academia hating on industry*. I don&#8217;t see why one has to be better/worse than the other, as Roger points out, there is no perfect job and it just depends on what you want to do.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/09/20/every-professor-is-a-startup/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/09/18/online-mentors-to-guide-women-into-the-sciences/">Online Mentors to Guide Women Into the Sciences</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Online Mentors to Guide Women Into the Sciences
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/09/18/chinese-company-to-acquire-dna-sequencing-firm/">Chinese Company to Acquire DNA Sequencing Firm</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Chinese Company to Acquire DNA Sequencing Firm
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/62/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;63 / 104&nbsp;</span>
+  
+  <a href="/page/64/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

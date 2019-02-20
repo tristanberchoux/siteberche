@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Reproducible Research: With Us or Against Us? &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Reproducible Research: With Us or Against Us?</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/11/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>Last night this <a href="http://cogprints.org/8675/" target="_blank">article by Chris Drummond</a> of the Canadian National Research Council (Conseil national de recherches Canada) popped up in my Google Scholar alert. The title of the article, “Reproducible Research: a Dissenting Opinion” would seem to indicate that he disagrees with much that has been circulating out there about reproducible research.</p>
+
+<p>Drummond singles out the <a href="http://www.stanford.edu/~vcs/papers/RoundtableDeclaration2010.pdf" target="_blank">Declaration published by a Yale Law School Roundtable on Data and Code Sharing</a> (I was not part of the roundtable) as an example of the main arguments in favor of reproducibility and has four main objections. What I found interesting about his piece is that I think I more or less agree with all his objections and yet draw the exact opposite conclusion from him. In his abstract, he concludes that “I would also contend that the effort necessary to meet the [reproducible research] movement’s aims, and the general attitude it engenders, would not serve any of the research disciplines well.”</p>
+
+<div>
+  <span>Let’s take his objections one by one:</span>
+</div>
+
+<div>
+  <ol>
+    <li>
+      <strong>Reproducibility, at least in the form proposed, is not now, nor has it ever been, an essential part of science</strong>. I would say that with the exception of mathematics, this is true. In math, usually you state a theorem and provide the proof. The proof shows you how to obtain the result, so it is a form of reproducibility. But beyond that I would argue that the need for reproducibility is a more recent phenomenon arising from the great complexity and cost of modern data analyses and the lack of funding for full replication. The rise of “consortium science” (think ENCODE project) diminishes our ability to fully replicate (what he calls “Scientific Replication”) an experiment in any reasonable amount of time.
+    </li>
+    <li>
+      <strong>The idea of a single well defined scientific method resulting in an incremental, and cumulative, scientific process is highly debatable</strong>. He argues that the idea of a forward moving process by which science builds on top of previous results in an orderly and incremental fashion is a fiction. In particular, there is no single “scientific method” into which you can drop in reproducibility as a key component. I think most scientists would agree with this. Science not some orderly process—it’s messy and can seem haphazard and discoveries come at unpredictable times. But that doesn’t mean that people shouldn’t provide the details of what they’ve done so that others don’t have to essentially reverse engineer the process. I don’t see how the disorderly reality of science is an argument against reproducibility.
+    </li>
+    <li>
+      <strong>Requiring the submission of data and code will encourage a level of distrust among researchers and promote the acceptance of papers based on narrow technical criteria</strong>. I don’t agree with this statement at all. First, I don’t think it will happen. If a journal required code/data, it would be burdensome for some, but it would just be one of the many requirements that journals have. Second, I don’t think good science is about “trust”. Sure, it’s important to be civilized but if you claim a finding, I’m not going to just trust it because we’re both scientists. Finally, he says “<span>Submitting code — in whatever language, for whatever system — will simply result in an accumulation of questionable software. There may be a some cases where people would be able to use it but I would doubt that they would be frequent.” I think this is true, but it’s not necessarily an argument against submitting code. Think of the all the open source/free software packages out there. I would bet that most of that code has only been looked at by one person—the developer. But does that mean open source software as a whole is not valuable?</span>
+    </li>
+    <li>
+      <strong>Misconduct has always been part of science with surprisingly little consequence. The public’s distrust is likely more to with the apparent variability of scientific conclusions</strong>. I agree with the first part and am not sure about the second. I’ve tried to argue previously that <a href="http://simplystatistics.org/post/12421558195/reproducible-research-notes-from-the-field" target="_blank">reproducible research is not just about preventing fraud/misconduct</a>. If someone wants to commit fraud, it’s easy to make the fraud reproducible.
+    </li>
+  </ol>
+  
+  <p>
+    In the end, I see reproducibility as not necessarily a new concept, but really an adaptation of an old concept, that is describing materials and methods. The problem is that the standard format for publication—journal articles—has simply not caught up with the growing complexity of data analysis. And so we need to update the standards a bit.
+  </p>
+  
+  <p>
+    I think the benefit of reproducibility is that if someone wants to question or challenge the findings of a study, they have the materials with which to do so. Providing people with the means to ask questions is how science moves forward.
+  </p>
+</div>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2012/11/09/interview-with-tom-louis-new-chief-scientist-at-the/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2012/11/09/interview-with-tom-louis-new-chief-scientist-at-the/">Interview with Tom Louis - New Chief Scientist at the Census Bureau</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2012/11/16/logo-contest-winner/">Logo Contest Winner</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2012/11/16/logo-contest-winner/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Top 10 on Tristan Berchoux</title>
+    <link>/tags/top-10/</link>
+    <description>Recent content in Top 10 on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Mon, 09 Apr 2012 01:42:10 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/top-10/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday data/statistics link roundup (4/8)</title>
+      <link>/2012/04/09/sunday-data-statistics-link-roundup-4-8/</link>
+      <pubDate>Mon, 09 Apr 2012 01:42:10 +0000</pubDate>
+      
+      <guid>/2012/04/09/sunday-data-statistics-link-roundup-4-8/</guid>
+      <description>This is a great article about the illusion of progress in machine learning. In part, I think it explains why the Leekasso (just using the top 10) isn&amp;#8217;t a totally silly idea. I also love how he talks about sources of uncertainty in real prediction problems that aren&amp;#8217;t part of the classical models when developing prediction algorithms. I think that this is a hugely underrated component of building an accurate classifier - just finding the quirks particular to a type of data.</description>
+    </item>
+    
+  </channel>
+</rss>

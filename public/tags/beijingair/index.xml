@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beijingair on Tristan Berchoux</title>
+    <link>/tags/beijingair/</link>
+    <description>Recent content in Beijingair on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Thu, 08 Dec 2011 01:05:44 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/beijingair/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Plotting BeijingAir Data</title>
+      <link>/2011/12/08/plotting-beijingair-data/</link>
+      <pubDate>Thu, 08 Dec 2011 01:05:44 +0000</pubDate>
+      
+      <guid>/2011/12/08/plotting-beijingair-data/</guid>
+      <description>Here&amp;#8217;s a bit of R code for scraping the BejingAir Twitter feed and plotting the hourly PM2.5 values for the past 24 hours. The script defaults to the past 24 hours but you can modify that by simply changing the value for the variable &amp;#8216;n&amp;#8217;. You can just grab the code from this R script. Note that you need to use the latest version of the &amp;#8216;twitteR&amp;#8217; package because the data structure has changed from previous versions.</description>
+    </item>
+    
+  </channel>
+</rss>

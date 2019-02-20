@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Applied Statistics on Tristan Berchoux</title>
+    <link>/tags/applied-statistics/</link>
+    <description>Recent content in Applied Statistics on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 15 May 2013 10:00:33 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/applied-statistics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The bright future of applied statistics</title>
+      <link>/2013/05/15/the-bright-future-of-applied-statistics/</link>
+      <pubDate>Wed, 15 May 2013 10:00:33 +0000</pubDate>
+      
+      <guid>/2013/05/15/the-bright-future-of-applied-statistics/</guid>
+      <description>In 2013, the Committee of Presidents of Statistical Societies (COPSS) celebrates its 50th Anniversary. As part of its celebration, COPSS will publish a book, with contributions from past recipients of its awards, titled “Past, Present and Future of Statistical Science&amp;rdquo;. Below is my contribution titled The bright future of applied statistics.
+When I was asked to contribute to this issue, titled Past, Present, and Future of Statistical Science, I contemplated my career while deciding what to write about.</description>
+    </item>
+    
+    <item>
+      <title>Schlep blindness in statistics</title>
+      <link>/2012/05/28/schlep-blindness-in-statistics/</link>
+      <pubDate>Mon, 28 May 2012 14:19:24 +0000</pubDate>
+      
+      <guid>/2012/05/28/schlep-blindness-in-statistics/</guid>
+      <description>This is yet another outstanding post by Paul Graham, this time on &amp;#8220;Schlep Blindness&amp;#8221;. He talks about how there are great startup ideas that no one considers because they are too much of a &amp;#8220;schlep&amp;#8221; (a tedious unpleasant task). He talks about how most founders of startups want to put up a clever bit of code they wrote and just watch the money flow in. But of course it doesn&amp;#8217;t work like that, you need to advertise, interact with customers, raise money, go out and promote your work, fix bugs at 3am, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

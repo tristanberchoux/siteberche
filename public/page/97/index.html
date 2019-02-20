@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2011/10/20/finding-good-collaborators/">Finding good collaborators</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/10/20</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/academia">academia</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/advice">advice</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The job of the statistician is almost entirely about collaboration. Sure, there&#8217;s theoretical work that we can do by ourselves, but most of the impact that we have on science comes from our work with scientists in other fields. Collaboration is also what makes the field of statistics so much fun.
+So one question I get a lot from people is &#8220;how do you find good collaborations&#8221;? Or, put another way, how do you find good collaborators?
+  </p>
+
+  
+  <footer>
+    <a href="/2011/10/20/finding-good-collaborators/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/10/20/caffos-theorem/">Caffo&#39;s Theorem</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/10/20</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/caffo">caffo</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/fromthecomments">FromTheComments</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/ics">Ics</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Brian Caffo from the comments:
+ Personal theorem: the application of statistics in any new field will be labeled &#8220;Technical sounding word&#8221; + ics. Examples: Sabermetrics, analytics, econometrics, neuroinformatics, bioinformatics, informatics, chemeometrics.
+It&#8217;s like how adding mayonnaise to anything turns it in to salad (eg: egg salad, tuna salad, ham salad, pasta salad, &#8230;)
+I&#8217;d like to be the first to propose the statistical study of turning things in salad. So called mayonaisics.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/10/20/caffos-theorem/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/10/19/do-we-really-need-applied-statistics-journals/">Do we really need applied statistics journals?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/10/19</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/academics">academics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/peer-review">peer review</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/statistics">statistics</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  All statisticians in academia are constantly confronted with the question of where to publish their papers. Sometimes it&#8217;s obvious: A theoretical paper might go to the Annals of Statistics orJASA Theory &amp; Methods or Biometrika. A more &#8220;methods-y&#8221; paper might go to JASA or JRSS-B orBiometrics or maybe even Biostatistics (where all three of us are or have been associate editors).
+But where should the applied papers go? I think this is an increasingly large category of papers being produced by statisticians.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/10/19/do-we-really-need-applied-statistics-journals/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/10/18/spectacular-plots-made-entirely-in-r/">Spectacular Plots Made Entirely in R</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/10/18</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/visualization">visualization</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  When doing data analysis, I often create a set of plots quickly just to explore the data and see what the general trends are. Later I go back and fiddle with the plots to make them look pretty for publication. But some people have taken this to the next level. Here are two plots made entirely in R:
+The descriptions of how they were created are here and here.
+Related: Check out Roger&#8217;s post on R colors and my post on APIs
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/10/18/caffo-ninjas-awesome/">Caffo &#43; Ninjas = Awesome</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/10/18</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/ninjas">ninjas</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Our colleague Brian Caffo and his team of statistics ninjas won the &#8220;Imaging-Based Diagnostic Classification Contest&#8221; as part of the ADHD 200 Global Competition. From the prize citation:
+ The method developed by the team from Johns Hopkins University excelled in its specificity, or its ability to identify typically developing children (TDC) without falsely classifying them as ADHD-positive. They correctly classified 94% of TDC, showing that a diagnostic imaging methodology can be developed with a very low risk of false positives, a fantastic result.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/10/18/caffo-ninjas-awesome/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/10/17/colors-in-r/">Colors in R</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/10/17</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  One of my favorite R packages that I use all the time is the RColorBrewer package. The package has been around for a while now and is written/maintained by Erich Neuwirth. The guts of the package are based on Cynthia Brewer&#8217;s very cool work on the use of color in cartography (check out the colorbrewer web site).
+As a side note, I think the ability to manipulate colors in plots/graphs/maps is one of R&#8217;s many great strengths.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/10/17/colors-in-r/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/10/17/competing-through-data-three-experts-offer-their-game/">Competing through data: Three experts offer their game plan</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/10/17</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/link">Link</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Competing through data: Three experts offer their game plan
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/10/16/where-would-we-be-without-dennis-ritchie/">Where would we be without Dennis Ritchie?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/10/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Most have probably seen this already since it happend a few days ago, but Dennis Ritchie died. It just blows my mind how influential his work was — developing the C language, Unix — and how so many pieces of technology bear his fingerprints. My first encounter with K&amp;R was in college when I learned C programming in the “Data Structures and Programming Techniques” class at Yale (taught by Stan &#8220;the man&#8221; Eisenstadt).
+  </p>
+
+  
+  <footer>
+    <a href="/2011/10/16/where-would-we-be-without-dennis-ritchie/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/10/14/interview-with-daniela-witten/">Interview With Daniela Witten</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/10/14</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/interview">interview</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Note: This is the first in a series of posts where we will be interviewing junior, up-and-coming statisticians/data scientists. Our goal is to build visibility for people who are at the early stages of their careers.
+Daniela Witten
+Daniela is an assistant professor of Biostatistics at the University of Washington in Seattle. She moved to Seattle after getting her Ph.D. at Stanford. Daniela has been developing exciting new statistical methods for analyzing high dimensional data and is a recipient of the NIH Director’s Early Independence Award.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/10/14/interview-with-daniela-witten/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/10/13/moneyball-for-academic-institutes/">Moneyball for Academic Institutes</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/10/13</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/literaturewatch">LiteratureWatch</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A way that universities grow in research fields for which they have no department is by creating institutes. Millions of dollars are invested to promote collaboration between existing faculty interested in the new field. But do they work? Does the university get their investment back? Through the years I have noticed that many institutes are nothing more than a webpage and others are so successful they practically become self-sustained entities. This paper (published in STM) led by John Hogenesch, uses data from papers and grants to evaluate an institute at Penn.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/10/13/moneyball-for-academic-institutes/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/96/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;97 / 104&nbsp;</span>
+  
+  <a href="/page/98/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

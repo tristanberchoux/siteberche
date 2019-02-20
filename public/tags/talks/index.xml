@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on Tristan Berchoux</title>
+    <link>/tags/talks/</link>
+    <description>Recent content in Talks on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Thu, 19 Jul 2012 13:43:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/talks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Help me find the good JSM talks</title>
+      <link>/2012/07/19/help-me-find-the-good-jsm-talks/</link>
+      <pubDate>Thu, 19 Jul 2012 13:43:00 +0000</pubDate>
+      
+      <guid>/2012/07/19/help-me-find-the-good-jsm-talks/</guid>
+      <description>I&amp;#8217;m about to head out for JSM in a couple of weeks. The sheer magnitude of the conference means it is pretty hard to figure out what talks I should attend. One approach I&amp;#8217;ve used in the past is to identify people who I know give good talks and go to their talks. But that isn&amp;#8217;t a very good talk-discovery mechanism. So this year I&amp;#8217;m trying a crowd-sourcing experiment. First, some background on what kind of talks I like.</description>
+    </item>
+    
+    <item>
+      <title>Characteristics of my favorite statistics talks</title>
+      <link>/2012/03/05/characteristics-of-my-favorite-statistics-talks/</link>
+      <pubDate>Mon, 05 Mar 2012 16:02:05 +0000</pubDate>
+      
+      <guid>/2012/03/05/characteristics-of-my-favorite-statistics-talks/</guid>
+      <description>I&amp;#8217;ve been going to/giving statistics talks for a few years now. I think everyone in our field has an opinion on the best structure/content/delivery of a talk. I am one of those people that has a pretty specific idea of what makes an amazing talk. Here are a few of the things I think are key, I try to do them and have learned many of these things from other people who I&amp;#8217;ve seen speak.</description>
+    </item>
+    
+  </channel>
+</rss>

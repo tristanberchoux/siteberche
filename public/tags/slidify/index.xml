@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slidify on Tristan Berchoux</title>
+    <link>/tags/slidify/</link>
+    <description>Recent content in Slidify on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 18 Nov 2012 14:54:20 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/slidify/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (11/18/12)</title>
+      <link>/2012/11/18/sunday-data-statistics-link-roundup-11-18-12/</link>
+      <pubDate>Sun, 18 Nov 2012 14:54:20 +0000</pubDate>
+      
+      <guid>/2012/11/18/sunday-data-statistics-link-roundup-11-18-12/</guid>
+      <description>An interview with Brad Efron about scientific writing. I haven&amp;#8217;t watched the whole interview, but I do know that Efron is one of my favorite writers among statisticians. Slidify, another approach for making HTML5 slides directly from R. I love the idea of making HTML slides, I would definitely do this regularly. But there are a couple of issues I feel still aren&amp;#8217;t resolved: (1) It is still just a little too hard to change the theme/feel of the slides in my opinion.</description>
+    </item>
+    
+  </channel>
+</rss>

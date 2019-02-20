@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Papr on Tristan Berchoux</title>
+    <link>/tags/papr/</link>
+    <description>Recent content in Papr on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Tue, 06 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/papr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>papr - rate papers on biorxiv in a single swipe and help science!</title>
+      <link>/2017/06/06/papr-rate-papers-on-biorxiv-in-a-single-swipe-and-help-science/</link>
+      <pubDate>Tue, 06 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/06/06/papr-rate-papers-on-biorxiv-in-a-single-swipe-and-help-science/</guid>
+      <description>Like a lot of modern scientists I now find papers to read to a large extent based on what I see on social media. It is a great way to find out what my colleagues are reading and keep up with the newest cool research.
+A few weeks ago I released a really simple prototype for an app that would improve on this experience called papr, its like Tinder but for papers :).</description>
+    </item>
+    
+  </channel>
+</rss>

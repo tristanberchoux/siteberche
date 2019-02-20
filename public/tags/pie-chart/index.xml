@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pie Chart on Tristan Berchoux</title>
+    <link>/tags/pie-chart/</link>
+    <description>Recent content in Pie Chart on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 25 Apr 2012 17:01:36 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/pie-chart/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How do I know if my figure is too complicated?</title>
+      <link>/2012/04/25/how-do-i-know-if-my-figure-is-too-complicated/</link>
+      <pubDate>Wed, 25 Apr 2012 17:01:36 +0000</pubDate>
+      
+      <guid>/2012/04/25/how-do-i-know-if-my-figure-is-too-complicated/</guid>
+      <description>One of the key things every statistician needs to learn is how to create informative figures and graphs. Sometimes, it is easy to use off-the-shelf plots like barplots, histograms, or if one is truly desperate a pie-chart. But sometimes the information you are trying to communicate requires the development of a new graphic. I am currently working on a project with a graduate student where the standard illustration are Venn Diagrams - including complicated Venn Diagrams with 5 or 10 circles.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (4/22)</title>
+      <link>/2012/04/22/sunday-data-statistics-link-roundup-4-22/</link>
+      <pubDate>Sun, 22 Apr 2012 23:54:12 +0000</pubDate>
+      
+      <guid>/2012/04/22/sunday-data-statistics-link-roundup-4-22/</guid>
+      <description>Now we know who is to blame for the pie chart. I had no idea it had been around, straining our ability to compare relative areas, since 1801. However, the same guy (William Playfair) apparently also invented the bar chart. So he wouldn&amp;#8217;t be totally shunned by statisticians. (via Leonid K.) A nice article in the Guardian about the current group of scientists that are boycotting Elsevier. I have to agree with the quote that leads the article, &amp;#8220;All professions are conspiracies against the laity.</description>
+    </item>
+    
+  </channel>
+</rss>

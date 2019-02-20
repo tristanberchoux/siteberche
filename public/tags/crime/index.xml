@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Crime on Tristan Berchoux</title>
+    <link>/tags/crime/</link>
+    <description>Recent content in Crime on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 07 Sep 2011 13:11:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/crime/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pre-cog and stats</title>
+      <link>/2011/09/07/pre-cog-and-stats/</link>
+      <pubDate>Wed, 07 Sep 2011 13:11:00 +0000</pubDate>
+      
+      <guid>/2011/09/07/pre-cog-and-stats/</guid>
+      <description>A cool article here on a group predicting the place/time when crime is going to happen. It looks like they are using a Poisson process. They liken it to predicting the after shocks of an earthquake. More details on the math behind the pre-cog software can be found here. I wonder what their prediction accuracy is? Thanks to Rafa for pointing the link out. </description>
+    </item>
+    
+  </channel>
+</rss>

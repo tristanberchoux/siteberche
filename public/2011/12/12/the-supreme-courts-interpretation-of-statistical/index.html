@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>The Supreme Court&#39;s interpretation of statistical correlation may determine the future of personalized medicine &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>The Supreme Court&#39;s interpretation of statistical correlation may determine the future of personalized medicine</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/12/12</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/editorial">Editorial</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/personalized-medicine">personalized medicine</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/statistical-literacy">statistical literacy</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/supreme-court">supreme court</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <p><strong>Summary/Background</strong></p>
+
+<p>The Supreme Court heard <a href="http://www.supremecourt.gov/oral_arguments/argument_transcripts/10-1150.pdf" target="_blank">oral arguments</a> last week in the case Mayo Collaborative Services vs. Prometheus Laboratories (<a href="http://www.supremecourt.gov/Search.aspx?FileName=/docketfiles/10-1150.htm" target="_blank">No 10-1150</a>). At issue is a patent Prometheus Laboratories holds for making decisions about the treatment of disease on the basis of a measurement of a specific, naturally occurring molecule and a corresponding calculation. The specific language at issue is a little technical, but the key claim from the patent under dispute is:</p>
+
+<blockquote>
+<ol>
+<li>A method of optimizing therapeutic efficacy for treatment of an immune-mediated gastrointestinal disorder, comprising:</li>
+</ol>
+
+<p>(a) administering a drug providing 6-thioguanine to a subject having saidimmune-mediated gastrointestinal disorder; and</p>
+
+<p>(b) determining the level of 6-thioguanine in said subject having said immune-mediated gastrointestinal disorder,</p>
+
+<p>wherein the level of 6-thioguanine less than about 230&#160;pmol per 8x10^8 red blood cells indicates a need to increase the amount of said drug subsequently administered to said subject and</p>
+
+<p>wherein the level of 6-thioguanine greater than about 400&#160;pmol per 8x10^8 red blood cells indicates a need to decrease the amount of said drug subsequently administered to said subject.</p>
+</blockquote>
+
+<p>So basically the patent is on a decision made about treatment on the basis of a statistical correlation. When the levels of a specific molecule (6-thioguanine) are too high, then the dose of a drug (thiopurine) should be decreased, if they are too low then the dose of the drug should be increased. Here (and throughout the post) correlation is interpreted more loosely as a relationship between two variables; rather than the strict definition as the linear relationship between two quantitative variables.</p>
+
+<p>This correlation between levels of 6-thioguanine and patient response was first reported by a group of academics in a <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1383347/" target="_blank">paper</a> in 1996. Prometheus developed a diagnostic test based on this correlation. Doctors (including those at the Mayo clinic) would draw blood, send it to Prometheus, who would calculate the levels of 6-thioguanine and report them back.</p>
+
+<p>According to Mayo&#8217;s <a href="http://www.patents4life.com/wp-content/uploads/2011/11/10-1150_petitioner.authcheckdam.pdf" target="_blank">brief</a>, some Doctors at the Mayo, who used this test, decided it was possible to improve on the test. So they developed their own diagnostic test, based on a different measurement of 6-thioguanine (6-TGN) and reported different information including:</p>
+
+<blockquote>
+<ul>
+<li>A blood reading greater than 235 picomoles of 6-TGN is a “target therapeutic range,” and a reading greater than 250 picomoles of 6-TGN is associated with remission in adult patients; and</li>
+<li>A blood reading greater than 450 picomoles of 6-TGN indicates possible adverse health effects, but in some instances levels over 700 are associated with remission without significant toxicity, while a “clearly defined toxic level” has not been established; and</li>
+<li>A blood reading greater than 5700 picomoles of 6-MMP is possibly toxic to the liver.</li>
+</ul>
+</blockquote>
+
+<p>They subsequently created their own proprietary test and started to market that test. At which point Prometheus sued the Mayo Clinic for infringement. The most recent decision on the case was made by a federal circuit court who upheld Prometheus&#8217; claim. A useful summary is <a href="http://www.scotusblog.com/2011/12/argument-preview-patients-reaction-patents-scope/" target="_blank">here</a>.</p>
+
+<p>The arguments for the two sides are summarized in the briefs for each side; for <a href="http://www.patents4life.com/wp-content/uploads/2011/11/10-1150_petitioner.authcheckdam.pdf" target="_blank">Mayo</a>:</p>
+
+<blockquote>
+<p>Whether 35 U.S.C. § 101 is satisfied by a patent claim that covers observed correlations between blood test results and patient health, so that the patent effectively preempts use of the naturally occurring correlations, simply because well-known methods used to administer prescription drugs and test blood may involve &#8220;transformations&#8221; of body chemistry.</p>
+</blockquote>
+
+<p>and for <a href="http://www.patentlyo.com/files/2011-10-31_prometheus-merits-brief.pdf" target="_blank">Prometheus</a>:</p>
+
+<blockquote>
+<p>Whether the Federal Circuit correctly held that concrete methods for improving the treatment of patients suffering from autoimmune diseases by using individualized metabolite measurements to inform the calibration of the patient’s dosages of synthetic thiopurines are patentable processes under 35 U.S.C. §101.</p>
+</blockquote>
+
+<p>Basically, Prometheus claims that the patent covers cases where doctors observe a specific data point and make a decision about a specific drug on the basis of that data point and a known correlation with patient outcomes. Mayo, on the other hand, says that since the correlation between the data and the outcome are naturally occurring processes, they can not be patented.</p>
+
+<p>In the oral arguments, the attorney for Mayo makes the claim that the test is only patentable if Prometheus specifies a specific level for 6-thioguanine and a specific treatment associated with that level (see page 21-24 of the <a href="http://www.supremecourt.gov/oral_arguments/argument_transcripts/10-1150.pdf" target="_blank">transcript</a>). He then goes on to suggest that the Mayo would then be free to pick another level and another treatment option for their diagnostic test. Justice Breyer disagrees even with this specific option (see page 38 of the transcript and his fertilizer example). He has made this view known before in his <a href="http://www.supremecourt.gov/opinions/05pdf/04-607.pdf" target="_blank">dissent</a> to the dismissal of the Labcorp writ of certori (a very similar case focusing on whether a correlation can be patented).</p>
+
+<p><strong>Brief summary:</strong> <em>Prometheus is trying to patent a correlation between a molecule&#8217;s level and treatment decisions. Mayo is claiming this is a natural process and can&#8217;t be patented.</em></p>
+
+<p><strong>Implications for Personalized Medicine (a statistician&#8217;s perspective)</strong></p>
+
+<p>I believe this case has major potential consequences for the entire field of personalized medicine. The fundamental idea of personalized medicine is that treatment decisions for individual patients will be tailored on the basis of data collected about them and statistical calculations made on the basis of that data (i.e. correlations, or more complicated statistical functions).</p>
+
+<p>According to my interpretation, if the Supreme Court rules in favor of Mayo in a broad sense, then this suggests that decisions about treatment made on the basis of data and correlation are not broadly patentable. In both the Labcorp dissent and the oral arguments for the Prometheus case, Justice Breyer argues that the process described by the patents:</p>
+
+<blockquote>
+<p>&#8230;instructs the user to (1) obtain test results and (2) think about them.</p>
+</blockquote>
+
+<p>He suggests that these are natural correlations and hence can not be patented, just the way a formula like E = mc^2 can not be patented. The distinction seems to be subtle, where E=mc^2 is a formula that exactly describes a property of nature, the observed correlation is an empirical estimate of a parameter calculated on the basis of noisy data.</p>
+
+<p>From a statistical perspective, there is little difference between calculating a correlation and calculating something more complicated, like the Oncotype DX<a href="http://www.oncotypedx.com/" target="_blank">signature</a>. Both return a score that can be used to determine treatment or other health care decisions. In some sense, they are both &#8220;natural phenomena&#8221; - one is just more complicated to calculate than the other. So it is not surprising that Genomic Health, the developers of Oncotype, have filed an <a href="http://www.americanbar.org/content/dam/aba/publications/supreme_court_preview/briefs/10-1150_respondentamcu6personalizedmedicalgrps.authcheckdam.pdf" target="_blank">amicus</a> in favor of Prometheus.</p>
+
+<p>Once a score is calculated, regardless of the level of complication in calculating that score, the personalized decision still comes down to a decision made by a doctor on the basis of a number.So if the court broadly decides in favor of Mayo, from a statistical perspective, this would seemingly pre-empt patenting any personalized medicine decision made on the basis of observing data and making a calculation.</p>
+
+<p>Unlike traditional medical procedures like surgery, or treatment with a drug, these procedures are based on data and statistics. But in the same way, a very specific set of operations and decisions is taken with the goal of improving patient health. If these procedures are broadly ruled as simply &#8220;natural phenomena&#8221;, it suggests that the development of personalized decision making strategies is not, itself, patentable. This decision would also have implications for other companies that use data and statistics to make money, like software giant SAP, which has also filed an<a href="http://www.americanbar.org/content/dam/aba/publications/supreme_court_preview/briefs/10-1150_amcusapamerica.authcheckdam.pdf" target="_blank">amicus brief</a> in support of the federal circuit court opinion (and hence Prometheus).</p>
+
+<p>A large component of medical treatment in the future will likely be made on the basis of data and statistical calculations on those data - that is the goal of personalized medicine. So the Supreme Court&#8217;s decision about the patentability of correlation has seemingly huge implications for any decision made on the basis of data and statistical calculations.Regardless of the outcome, this case lends even further weight to the idea that statistical literacy is critical, including for Supreme Court justices.</p>
+
+<p>Simply Statistics will be following this case closely; look for more in depth analysis in future blog posts.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2011/12/09/interview-w-mario-marazzi-puerto-rico-institute-of/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2011/12/09/interview-w-mario-marazzi-puerto-rico-institute-of/">Interview w/ Mario Marazzi, Puerto Rico Institute of Statistics Director, on the importance of Government Statisticians</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2011/12/14/smoking-is-a-choice-breathing-is-not/">Smoking is a choice, breathing is not.</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2011/12/14/smoking-is-a-choice-breathing-is-not/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smoking on Tristan Berchoux</title>
+    <link>/tags/smoking/</link>
+    <description>Recent content in Smoking on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 14 Dec 2011 13:58:52 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/smoking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Smoking is a choice, breathing is not.</title>
+      <link>/2011/12/14/smoking-is-a-choice-breathing-is-not/</link>
+      <pubDate>Wed, 14 Dec 2011 13:58:52 +0000</pubDate>
+      
+      <guid>/2011/12/14/smoking-is-a-choice-breathing-is-not/</guid>
+      <description>Over the last week or so I&amp;#8217;ve been posting about the air pollution levels in Beijing, China. The twitter feed from the US Embassy there makes it easy to track the hourly levels of fine particulate matter (PM2.5) and you can use this R code to make a graph of the data.
+One problem with talking about particulate matter levels is that the units are a bit abstract. We usually talk in terms of micrograms per cubic meter (mcg/m^3), which is a certain mass of particles per volume of air.</description>
+    </item>
+    
+  </channel>
+</rss>

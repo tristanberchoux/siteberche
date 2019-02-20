@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/20/minnesota-clarifies-free-online-ed-is-ok/">Minnesota clarifies: Free online ed is OK</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Minnesota clarifies: Free online ed is OK
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/20/free-online-education-is-now-illegal-in-minnesota/">Free Online Education Is Now Illegal in Minnesota</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Free Online Education Is Now Illegal in Minnesota
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/19/interview-with-rebecca-nugent-of-carnegie-mellon/">Simply Statistics Podcast #4: Interview with Rebecca Nugent</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Interview with Rebecca Nugent of Carnegie Mellon University.
+In this episode Jeff and I talk with Rebecca Nugent, Associate Teaching Professor in the Department of Statistics at Carnegie Mellon University. We talk with her about her work with the Census and the growing interest in statistics among undergraduates.
+(Source: http://www.youtube.com/)  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/18/statistics-isnt-math-but-statistics-can-produce-math/">Statistics isn&#39;t math but statistics can produce math</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Mathgen, the web site that can produce randomly generated mathematics papers has apparently gotten a paper accepted in a peer-reviewed journal (although perhaps not the most reputable one). I am not at all surprised this happened, but it&#8217;s fun to read both the paper and the reviewer&#8217;s comments. (Thanks to Kasper H. for the pointer.)
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/17/there-was-a-story-a-few-weeks-ago-on-npr-about-how/">Comparing Hospitals</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  There was a story a few weeks ago on NPR about how Medicare will begin fining hospitals that have 30-day readmission rates that are too high. This process was introduced in the Affordable Care Act and
+ Under the health care law, the penalties gradually will rise until 3 percent of Medicare payments to hospitals are at risk. Medicare is considering holding hospitals accountable on four more measures: joint replacements, stenting, heart bypass and treatment of stroke.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/10/17/there-was-a-story-a-few-weeks-ago-on-npr-about-how/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/17/johns-hopkins-grad-anthony-damico-shows-how-to/"></a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  [vimeo 43305640 w=500 h=281]
+Johns Hopkins grad Anthony Damico shows how to make coffee with R (except not really). The BLS mug is what makes it for me.
+(Source: http://player.vimeo.com/)  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/15/a-statistician-loves-the-insurancepoll-now-how-do-we/">A statistician loves the #insurancepoll...now how do we analyze it?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/15</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/data">data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/diy">diy</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/project-ideas">project ideas</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Amanda Palmer broke Twitter yesterday with her insurance poll. She started off just talking about how hard it is for musicians who rarely have health insurance, but then wandered into polling territory. She sent out a request for people to respond with the following information:
+ quick twitter poll. 1) COUNTRY?! 2) profession? 3) insured? 4) if not, why not, if so, at what cost per month (or covered by job)?
+  </p>
+
+  
+  <footer>
+    <a href="/2012/10/15/a-statistician-loves-the-insurancepoll-now-how-do-we/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/14/sunday-data-statistics-link-roundup-10-14-12/">Sunday Data/Statistics Link Roundup (10/14/12)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/14</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/expected-earnings">expected earnings</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/horrible-statistics">horrible statistics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/links">links</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/prediction">prediction</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/public-policy">public policy</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/statisteracy">statisteracy</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/statistical-literacy">statistical literacy</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/sunday-links">sunday links</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A fascinating article about the debate on whether to regulate sugary beverages. One of the protagonists is David Allison, a statistical geneticist, among other things. It is fascinating to see the interplay of statistical analysis and public policy. Yet another example of how statistics/data will drive some of the most important policy decisions going forward.  A related article is this one on the way risk is reported in the media.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/10/14/sunday-data-statistics-link-roundup-10-14-12/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/10/whats-wrong-with-the-predicting-h-index-paper/">What&#39;s wrong with the predicting h-index paper.</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/10</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/h-index">h-index</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/nature">nature</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/review">review</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/statistcs">statistcs</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  _Editor&#8217;s Note: I recently posted about a paper in Nature that purported to predict the H-index. The authors contacted me to get my criticisms, then responded to those criticisms. They have requested the opportunity to respond publicly, and I think it is a totally reasonable request. Until there is a better comment generating mechanism at the journal level, this seems like as good a forum as any to discuss statistical papers.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/10/10/whats-wrong-with-the-predicting-h-index-paper/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/08/why-we-should-continue-publishing-peer-reviewed-papers/">Why we should continue publishing peer-reviewed papers</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Several bloggers are calling for the end of peer-reviewed journals as we know them. Jeff suggestthat we replace them with a system in which everyone posts their papers on their blog, pubmed aggregates the feeds, and peer-review happens post publication via, for example, counting up like and dislike votes. In my view, many of these critiques seem to conflate problems from different aspects of the process. Here I try to break down the current system into its key components and defend the one aspect I think we should preserve (at least for now): pre-publication peer-review.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/10/08/why-we-should-continue-publishing-peer-reviewed-papers/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/60/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;61 / 104&nbsp;</span>
+  
+  <a href="/page/62/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2016/03/14/nssd-episode-11/">Not So Standard Deviations Episode 11 - Start and Stop</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/03/14</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  We’ve started a Patreon page! Now you can support the podcast directly by going to our page and making a pledge. This will help Hilary and me build the podcast, add new features, and get some better equipment.
+Episode 11 is an all craft episode of Not So Standard Deviations, where Hilary and Roger discuss starting and ending a data analysis. What do you do at the very beginning of an analysis?
+  </p>
+
+  
+  <footer>
+    <a href="/2016/03/14/nssd-episode-11/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/03/02/nssd-episode-10/">Not So Standard Deviations Episode 10 - It&#39;s All Counterexamples</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/03/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In the latest episode of Not So Standard Deviations Hilary and I talk about the motivation behind the explainr package and the general usefulness of automated reporting and interpretation of statistical tests. Also, Roger struggles to come up with a quick and easy way to explain why statistics is useful when it sometimes doesn&rsquo;t produce any different results.
+Subscribe to the podcast on iTunes.
+Please leave us a review on iTunes!
+  </p>
+
+  
+  <footer>
+    <a href="/2016/03/02/nssd-episode-10/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/02/26/preprints-and-pppr/">Preprints are great, but post publication peer review isn&#39;t ready for prime time</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/02/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The current publication system works something like this:
+Coupled review and publication  You write a paper You submit it to a journal It is peer reviewed privately The paper is accepted or rejected a. If rejected go back to step 2 and start over b. If accepted it will be published If published then people can read it  This system has several major disadvantages that bother scientists. It means all research appears on a lag (whatever the time in peer review is).
+  </p>
+
+  
+  <footer>
+    <a href="/2016/02/26/preprints-and-pppr/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/02/23/spreadsheets-the-original-analytics-dashboard/">Spreadsheets: The Original Analytics Dashboard</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/02/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Soon after my discussion with Hilary Parker and Jenny Bryan about spreadsheets on Not So Standard Deviations, Brooke Anderson forwarded me this article written by Steven Levy about the original granddaddy of spreadsheets, VisiCalc. Actually, the real article was written back in 1984 as so-called microcomputers were just getting their start. VisiCalc was originally written for the Apple II computer and notable competitors at the time included Lotus 1-2-3 and Microsoft Multiplan, all since defunct.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/02/23/spreadsheets-the-original-analytics-dashboard/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/02/17/non-tidy-data/">Non-tidy data</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/02/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  During the discussion that followed the ggplot2 posts from David and I last week we started talking about tidy data and the man himself noted that matrices are often useful instead of &ldquo;tidy data&rdquo; and I mentioned there might be other data that are usefully &ldquo;non tidy&rdquo;. Here I will be using tidy/non-tidy according to Hadley&rsquo;s definition. So tidy data have:
+ One variable per column One observation per row Each type of observational unit forms a table  I push this approach in my guide to data sharing and in a lot of my personal work.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/02/17/non-tidy-data/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/02/16/when-it-comes-to-science-its-the-economy-stupid/">When it comes to science - its the economy stupid.</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/02/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I read a lot of articles about what is going wrong with science:
+ The reproducibility/replicability crisis Lack of jobs for PhDs The pressure on the families (or potential families) of scientists Hype around specific papers and a more general abundance of BS Consortia and their potential evils Peer review not working well Research parasites Not enough room for applications/public good Press releases that do evil Scientists don&rsquo;t release enough data  These articles always point to the &ldquo;incentives&rdquo; in science and how they don&rsquo;t align with how we&rsquo;d like scientists to work.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/02/16/when-it-comes-to-science-its-the-economy-stupid/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/02/12/not-so-standard-deviations-episode-9-spreadsheet-drama/">Not So Standard Deviations Episode 9 - Spreadsheet Drama</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/02/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  For this episode, special guest Jenny Bryan (@jennybryan) joins us from the University of British Columbia! Jenny, Hilary, and I talk about spreadsheets and why some people love them and some people despise them. We also discuss blogging as part of scientific discourse.
+Subscribe to the podcast on iTunes.
+Show notes:
+ Jenny&rsquo;s Stat 545 Coding is not the new literacy Goldman Sachs spreadsheet error Jingmai O&rsquo;Connor episode De-weaponizing reproducibility Vintage Space Tabby Cats  Download the audio for this episode.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/02/12/not-so-standard-deviations-episode-9-spreadsheet-drama/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/02/11/why-i-dont-use-ggplot2/">Why I don&#39;t use ggplot2</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/02/11</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Some of my colleagues think of me as super data-sciencey compared to other academic statisticians. But one place I lose tons of street cred in the data science community is when I talk about ggplot2. For the 3 data type people on the planet who still don&rsquo;t know what that is, ggplot2 is an R package/phenomenon for data visualization. It was created by Hadley Wickham, who is (in my opinion) perhaps the most important statistician/data scientist on the planet.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/02/11/why-i-dont-use-ggplot2/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/02/10/data-handcuffs/">Data handcuffs</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/02/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A few years ago, if you asked me what the top skills I got asked about for students going into industry, I&rsquo;d definitely have said things like data cleaning, data transformation, database pulls, and other non-traditional statistical tasks. But as companies have progressed from the point of storing data to actually wanting to do something with it, I would say one of the hottest skills is understanding and dealing with data from randomized trials.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/02/10/data-handcuffs/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/02/09/leek-group-guide-to-reading-scientific-papers/">Leek group guide to reading scientific papers</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/02/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The other day on Twitter Amelia requested a guide for reading papers
+I love @jtleek’s github guides to reviewing papers, writing R packages, giving talks, etc. Would love one on reading papers, for students.  &mdash; Amelia McNamara (@AmeliaMN) February 5, 2016  &nbsp;
+So I came up with a guide which you can find here: Leek group guide to reading papers. I actually found this to be one that I had the hardest time with.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/02/09/leek-group-guide-to-reading-scientific-papers/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/16/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;17 / 104&nbsp;</span>
+  
+  <a href="/page/18/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

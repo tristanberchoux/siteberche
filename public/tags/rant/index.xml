@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rant on Tristan Berchoux</title>
+    <link>/tags/rant/</link>
+    <description>Recent content in Rant on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Fri, 30 Nov 2012 13:09:01 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/rant/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Statistical illiteracy may lead to parents panicking about Autism.</title>
+      <link>/2012/11/30/statistical-illiteracy-may-lead-to-parents-panicking-about-autism/</link>
+      <pubDate>Fri, 30 Nov 2012 13:09:01 +0000</pubDate>
+      
+      <guid>/2012/11/30/statistical-illiteracy-may-lead-to-parents-panicking-about-autism/</guid>
+      <description>I just was doing my morning reading of a few news sources and stumbled across this Huffington Post article talking about research correlating babies cries to autism. It suggests that the sound of a babies cries may predict their future risk for autism. As the parent of a young son, this obviously caught my attention in a very lizard-brain, caveman sort of way. I couldn&amp;rsquo;t find a link to the research paper in the article so I did some searching and found out this result is also being covered by Time, Science Daily, Medical Daily, and a bunch of other news outlets.</description>
+    </item>
+    
+    <item>
+      <title>The pebbles of academia</title>
+      <link>/2012/09/10/the-pebbles-of-academia/</link>
+      <pubDate>Mon, 10 Sep 2012 19:02:00 +0000</pubDate>
+      
+      <guid>/2012/09/10/the-pebbles-of-academia/</guid>
+      <description>I have just been awarded a certificate for successful completion of the Conflict of Interest Commitment training (I barely passed). Lately, I have been totally swamped by administrative duties and have had little time for actual research. The experience reminded me of something I read in this NYTimes article by Tyler Cowen
+ Michael Mandel, an economist with the Progressive Policy Institute, compares government regulation of innovation to the accumulation of pebbles in a stream.</description>
+    </item>
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (7/22/12)</title>
+      <link>/2012/07/22/sunday-data-statistics-link-roundup-7-22-12/</link>
+      <pubDate>Sun, 22 Jul 2012 14:24:00 +0000</pubDate>
+      
+      <guid>/2012/07/22/sunday-data-statistics-link-roundup-7-22-12/</guid>
+      <description>This paper is the paper describing how Uri Simonsohn identified academic misconduct using statistical analyses. This approach has received a huge amount of press in the scientific literature. The basic approach is that he calculates the standard deviations of mean/standard deviation estimates across groups being compared. Then he simulates from a Normal distribution and shows that under the Normal model, it is unlikely that the means/standard deviations are so similar.</description>
+    </item>
+    
+    <item>
+      <title>My worst (recent) experience with peer review</title>
+      <link>/2012/07/11/my-worst-recent-experience-with-peer-review/</link>
+      <pubDate>Wed, 11 Jul 2012 14:10:00 +0000</pubDate>
+      
+      <guid>/2012/07/11/my-worst-recent-experience-with-peer-review/</guid>
+      <description>My colleagues and I just published a paper on validation of genomic results in BMC Bioinformatics. It is &amp;#8220;highly accessed&amp;#8221; and we are really happy with how it turned out. But it was brutal getting it published. Here is the line-up of places I sent the paper.  Science: Submitted 10/6/10, rejected 10/18/10 without review. I know this seems like a long shot, but this paper on validation was published in Science not too long after.</description>
+    </item>
+    
+    <item>
+      <title>What is a major revision?</title>
+      <link>/2012/04/09/what-is-a-major-revision/</link>
+      <pubDate>Mon, 09 Apr 2012 15:01:34 +0000</pubDate>
+      
+      <guid>/2012/04/09/what-is-a-major-revision/</guid>
+      <description>I posted a little while ago on a proposal for a fast statistics journal. It generated a bunch of comments and even a really nice follow up post with some great ideas. Since then I&amp;#8217;ve gotten reviews back on a couple of papers and I think I realized one of the key issues that is driving me nuts about the current publishing model. It boils down to one simple question: What is a major revision?</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (3/18)</title>
+      <link>/2012/03/18/sunday-data-statistics-link-roundup-3-18/</link>
+      <pubDate>Sun, 18 Mar 2012 14:58:00 +0000</pubDate>
+      
+      <guid>/2012/03/18/sunday-data-statistics-link-roundup-3-18/</guid>
+      <description>A really interesting proposal by Rafa (in Spanish - we&amp;#8217;ll get on him to write a translation) for the University of Puerto Rico. The post concerns changing the focus from simply teaching to creating knowledge and the potential benefits to both the university and to Puerto Rico. It also has a really nice summary of the benefits that the university system in the United States has produced. Definitely worth a read.</description>
+    </item>
+    
+    <item>
+      <title>An example of how sending a paper to a statistics journal can get you scooped</title>
+      <link>/2012/02/09/an-example-of-how-sending-a-paper-to-a-statistics/</link>
+      <pubDate>Thu, 09 Feb 2012 14:02:00 +0000</pubDate>
+      
+      <guid>/2012/02/09/an-example-of-how-sending-a-paper-to-a-statistics/</guid>
+      <description>In a previous post I complained about statistics journals taking way too long rejecting papers. Today I am complaining because even when everything goes right &amp;#8212;better than above average review time (for statistics), useful and insightful comments from reviewers&amp;#8212; we can come out losing.
+In May 2011 we submitted a paper on removing GC bias from RNAseq data to Biostatistics. It was published on December 27. However, we were scooped by this BMC Bioinformatics paper published ten days earlier despite being submitted three months later and accepted 11 days after ours.</description>
+    </item>
+    
+    <item>
+      <title>Where do you get your data?</title>
+      <link>/2012/01/08/where-do-you-get-your-data/</link>
+      <pubDate>Sun, 08 Jan 2012 16:30:18 +0000</pubDate>
+      
+      <guid>/2012/01/08/where-do-you-get-your-data/</guid>
+      <description>Here&amp;#8217;s a question I get fairly frequently from various types of people: Where do you get your data? This is sometimes followed up quickly with &amp;#8220;Can we use some of your data?&amp;#8221;
+My contention is that if someone asks you these questions, start looking for the exits.
+There are of course legitimate reasons why someone might ask you this question. For example, they might be interested in the source of the data to verify its quality.</description>
+    </item>
+    
+    <item>
+      <title>P-values and hypothesis testing get a bad rap - but we sometimes find them useful.</title>
+      <link>/2012/01/06/p-values-and-hypothesis-testing-get-a-bad-rap-but-we/</link>
+      <pubDate>Fri, 06 Jan 2012 16:54:52 +0000</pubDate>
+      
+      <guid>/2012/01/06/p-values-and-hypothesis-testing-get-a-bad-rap-but-we/</guid>
+      <description>This post written by Jeff Leek and Rafa Irizarry.
+The p-value is the most widely-known statistic. P-values are reported in a large majority of scientific publications that measure and report data. R.A. Fisher is widely credited with inventing the p-value. If he was cited every time a p-value was reported his paper would have, at the very least, 3&amp;#160;million citations* - making it the most highly cited paper of all time.</description>
+    </item>
+    
+    <item>
+      <title>Dear editors/associate editors/referees, Please reject my papers quickly</title>
+      <link>/2011/12/14/dear-editors-associate-editors-referees-please-reject/</link>
+      <pubDate>Wed, 14 Dec 2011 16:36:41 +0000</pubDate>
+      
+      <guid>/2011/12/14/dear-editors-associate-editors-referees-please-reject/</guid>
+      <description>The review times for most journals in our field are ridiculous. Check out Figure 1&amp;#160;here. A careful review takes time, but not six months. Let&amp;#8217;s be honest, those papers are sitting on desks for the great majority of those six months. But here is what really kills me: waiting six months for a review basically saying the paper is not of sufficient interest to the readership of the journal. That decision you can come to in half a day.</description>
+    </item>
+    
+    <item>
+      <title>Reverse scooping</title>
+      <link>/2011/12/03/reverse-scooping/</link>
+      <pubDate>Sat, 03 Dec 2011 15:46:53 +0000</pubDate>
+      
+      <guid>/2011/12/03/reverse-scooping/</guid>
+      <description>I would like to define a new term: reverse scooping is when someone publishes your idea after you, and doesn&amp;#8217;t cite you. It has happened to me a few times. What does one do? I usually send a polite message to the authors with a link to my related paper(s). These emails are usually ignored, but not always. Most times I don&amp;#8217;t think it is malicious though. In fact, I almost reverse scooped a colleague recently.</description>
+    </item>
+    
+    <item>
+      <title>Submitting scientific papers is too time consuming</title>
+      <link>/2011/10/05/submitting-scientific-papers-is-too-time-consuming/</link>
+      <pubDate>Wed, 05 Oct 2011 13:46:00 +0000</pubDate>
+      
+      <guid>/2011/10/05/submitting-scientific-papers-is-too-time-consuming/</guid>
+      <description>As an academic who does a lot of research for a living, I spend a lot of my time writing and submitting papers. Before my time, this process involved sending multiple physical copies of a paper by snail mail to the editorial office. New technology has changed this process. Now to submit a paper you generally have to: (1) find a Microsoft Word or Latex template for the journal and use it for your paper and (2) upload the manuscript and figures (usually separately).</description>
+    </item>
+    
+    <item>
+      <title>25 minute seminars</title>
+      <link>/2011/09/26/25-minute-seminars/</link>
+      <pubDate>Mon, 26 Sep 2011 13:32:00 +0000</pubDate>
+      
+      <guid>/2011/09/26/25-minute-seminars/</guid>
+      <description>Most Statistics and Biostatistics departments have weekly seminars. We usually invite outside speakers to share their knowledge via a 50 minute powerpoint (or beamer) presentation. This gives us the opportunity to meet colleagues from other Universities and pick their brains in small group meetings. This is all great. But, giving a good one hour seminar is hard. Really hard. Few people can pull it off. I propose to the statistical community that we cut the seminars to 25 minutes with 35 minutes for questions and further discussion.</description>
+    </item>
+    
+    <item>
+      <title>Meetings</title>
+      <link>/2011/09/19/meetings/</link>
+      <pubDate>Mon, 19 Sep 2011 13:50:00 +0000</pubDate>
+      
+      <guid>/2011/09/19/meetings/</guid>
+      <description>In this TED talk Jason Fried explains why work doesn&amp;#8217;t happen at work. He describes the evils of meetings. Meetings are particularly disruptive for applied statisticians, especially for those of us that hack data files, explore data for systematic errors, get inspiration from visual inspection, and thoroughly test our code. Why? Before I become productive I go through a ramp-up/boot-up stage. Scripts need to be found, data loaded into memory, and most importantly, my brains needs to re-familiarize itself with the data and the essence of the problem at hand.</description>
+    </item>
+    
+    <item>
+      <title>Where are the Case Studies?</title>
+      <link>/2011/09/07/where-are-the-case-studies/</link>
+      <pubDate>Wed, 07 Sep 2011 12:48:00 +0000</pubDate>
+      
+      <guid>/2011/09/07/where-are-the-case-studies/</guid>
+      <description>Many case studies I find interesting don&amp;#8217;t appear in JASA Applications and Case Studies or other applied statistics journals for that matter. Some because the technical skill needed to satisfy reviewers is not sufficiently impressive, others because they lack mathematical rigor. But perhaps the main reason for this disconnect is that many interesting case studies are developed by people outside our field or outside academia.
+In this blog we will try to introduce readers to some of these case studies.</description>
+    </item>
+    
+  </channel>
+</rss>

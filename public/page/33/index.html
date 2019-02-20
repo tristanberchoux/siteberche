@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2014/07/29/introducing-people-to-r-14-years-and-counting/">Introducing people to R: 14 years and counting</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/07/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I&rsquo;ve been introducing people to R for quite a long time now and I&rsquo;ve been doing some reflecting today on how that process has changed quite a bit over time. I first started using R around 1998&ndash;1999 I think I first started talking about R informally to my fellow classmates (and some faculty) back when I was in graduate school at UCLA. There, the department was officially using Lisp-Stat (which I loved) and only later converted its courses over to R.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/07/29/introducing-people-to-r-14-years-and-counting/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/07/25/academic-statisticians-there-is-no-shame-in-developing-statistical-solutions-that-solve-just-one-problem/">Academic statisticians: there is no shame in developing statistical solutions that solve just one problem</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/07/25</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I think that the main distinction between academic statisticians and those calling themselves data scientists is that the latter are very much willing to invest most of their time and energy into solving specific problems by analyzing specific data sets. In contrast, most academic statisticians strive to develop methods that can be very generally applied across problems and data types. There is a reason for this of course: historically statisticians have had enormous influence by developing general theory/methods/concepts such as the p-value, maximum likelihood estimation, and linear regression.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/07/25/academic-statisticians-there-is-no-shame-in-developing-statistical-solutions-that-solve-just-one-problem/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/07/16/jan-de-leeuw-owns-the-internet/">Jan de Leeuw owns the Internet</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/07/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  One of the best things to happen on the Internet recently is that Jan de Leeuw has decided to own the Twitter/Facebook universe. If you do not already, you should be following him. Among his many accomplishments, he founded the Department of Statistics at UCLA (my alma mater), which is currently thriving. On the occasion of the Department&rsquo;s 10th birthday, there was a small celebration, and I recall Don Ylvisaker mentioning that the reason they invited Jan to UCLA way back when was because he &ldquo;knew everyone and knew everything&rdquo;.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/07/16/jan-de-leeuw-owns-the-internet/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/06/30/piketty-in-r-markdown-we-need-some-help-from-the-crowd/">Piketty in R markdown - we need some help from the crowd</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/06/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Thomas Piketty&rsquo;s book Capital in the 21st Century was a surprise best seller and the subject of intense scrutiny. A few weeks ago the Financial Times claimed that the analysis was riddled with errors, leading to a firestorm of discussion. A few days ago the London School of economics posted a similar call to make the data open and machine readable saying.
+ None of this data is explicitly open for everyone to reuse, clearly licenced and in machine-readable formats.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/06/30/piketty-in-r-markdown-we-need-some-help-from-the-crowd/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/06/25/privacy-as-a-function-of-sample-size/">Privacy as a function of sample size</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/06/25</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The U.S. Supreme Court just made a unanimous ruling in Riley v. California making it clear that police officers must get a warrant before searching through the contents of a cell phone obtained incident to an arrest. The message was put pretty clearly in the decision:
+  Our answer to the question of what police must do before searching a cell phone seized incident to an arrest is accordingly simple — get a warrant.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/06/25/privacy-as-a-function-of-sample-size/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/06/24/new-book-on-implementing-reproducible-research/">New book on implementing reproducible research</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/06/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I have mentioned this in a few places but my book edited with Victoria Stodden and Fritz Leisch, Implementing Reproducible Research, has just been published by CRC Press. Although it is technically in their &ldquo;R Series&rdquo;, the chapters contain information on a wide variety of useful tools, not just R-related tools. I have mentioned this in a few places but my book edited with Victoria Stodden and Fritz Leisch, Implementing Reproducible Research, has just been published by CRC Press.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/06/24/new-book-on-implementing-reproducible-research/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/06/23/the-difference-between-data-hype-and-data-hope/">The difference between data hype and data hope</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/06/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I was reading one of my favorite stats blogs, StatsChat, where Thomas points to this article in the Atlantic and highlights this quote:
+ Dassault Systèmes is focusing on that level of granularity now, trying to simulate propagation of cholesterol in human cells and building oncological cell models. &ldquo;It&rsquo;s data science and modeling,&rdquo; Charlès told me. &ldquo;Coupling the two creates a new environment in medicine.&rdquo;
+ I think that is a perfect example of data hype.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/06/23/the-difference-between-data-hype-and-data-hope/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/06/18/heads-up-if-you-are-going-to-submit-to-the-journal-of-the-national-cancer-institute/">Heads up if you are going to submit to the Journal of the National Cancer Institute</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/06/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Update (6/19/14): The folks at JNCI and OUP have kindly confirmed that they will consider manuscripts that have been posted to preprint servers. 
+I just got this email about a paper we submitted to JNCI
+ Dear Dr. Leek:
+I am sorry that we will not be able to use the above-titled manuscript. Unfortunately, the paper was published online on a site called bioRXiv, The Preprint Server for Biology, hosted by Cold Spring Harbor Lab.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/06/18/heads-up-if-you-are-going-to-submit-to-the-journal-of-the-national-cancer-institute/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/06/16/the-future-of-academic-publishing-is-here-it-just-isnt-evenly-distributed/">The future of academic publishing is here, it just isn&#39;t evenly distributed</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/06/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Academic publishing has always been a slow process. Typically you would submit a paper for publication and then wait a few months to more than a year (statistics journals can be slow!) for a review. Then you&rsquo;d revise the paper in a process that would take another couple of months, resubmit it and potentially wait another few months while this second set of reviews came back.
+Lately statistics and statistical genomics have been doing more of what math does and posting papers to the arxiv or to biorxiv.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/06/16/the-future-of-academic-publishing-is-here-it-just-isnt-evenly-distributed/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/06/13/what-i-do-when-i-get-a-new-data-set-as-told-through-tweets/">What I do when I get a new data set as told through tweets</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/06/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Hilary Mason asked a really interesting question yesterday:
+ Data people: What is the very first thing you do when you get your hands on a new data set?  — Hilary Mason (@hmason) June 12, 2014  You should really consider reading the whole discussion here it is amazing. But it also inspired me to write a post about what I do, as told by other people on Twitter. I apologize in advance if I missed your tweet, there was way too much good stuff to get them all.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/06/13/what-i-do-when-i-get-a-new-data-set-as-told-through-tweets/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/32/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;33 / 104&nbsp;</span>
+  
+  <a href="/page/34/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

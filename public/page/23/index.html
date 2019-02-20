@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2015/07/28/announcing-the-jhu-data-science-hackathon-2015/">Announcing the JHU Data Science Hackathon 2015</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/07/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  We are pleased to announce that the Department of Biostatistics at the Johns Hopkins Bloomberg School of Public Health will be hosting the first ever JHU Data Science Hackathon (DaSH) on September 21-23, 2015 at the Baltimore Marriott Waterfront.
+This event will be an opportunity for data scientists and data scientists-in-training to get together and hack on real-world problems collaboratively and to learn from each other. The DaSH will feature data scientists from government, academia, and industry presenting problems and describing challenges in their respective areas.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/07/28/announcing-the-jhu-data-science-hackathon-2015/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/07/24/stringsasfactors-an-unauthorized-biography/">stringsAsFactors: An unauthorized biography</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/07/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Recently, I was listening in on the conversation of some colleagues who were discussing a bug in their R code. The bug was ultimately traced back to the well-known phenomenon that functions like &lsquo;read.table()&rsquo; and &lsquo;read.csv()&rsquo; in R convert columns that are detected to be character/strings to be factor variables. This lead to the spontaneous outcry from one colleague of
+ Why does stringsAsFactors not default to FALSE????
+ The argument &lsquo;stringsAsFactors&rsquo; is an argument to the &lsquo;data.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/07/24/stringsasfactors-an-unauthorized-biography/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/07/17/the-statistics-department-moneyball-opportunity/">The statistics department Moneyball opportunity</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/07/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Moneyball is a book and a movie about Billy Bean.It makes statisticians look awesome and I loved the movie. I loved it so much I&rsquo;m putting the movie trailer right here:
+The basic idea behind Moneyball was that the Oakland Athletics were able to build a very successful baseball team on a tight budget by valuing skills that many other teams undervalued. In baseball those skills were things like on-base percentage and slugging percentage.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/07/17/the-statistics-department-moneyball-opportunity/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/07/10/the-mozilla-fellowship-for-science/">The Mozilla Fellowship for Science</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/07/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  This looks like an interesting opportunity for grad students, postdocs, and early career researchers:
+ We&rsquo;re looking for researchers with a passion for open source and data sharing, already working to shift research practice to be more collaborative, iterative and open. Fellows will spend 10 months starting September 2015 as community catalysts at their institutions, mentoring the next generation of open data practitioners and researchers and building lasting change in the global open science community.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/07/10/the-mozilla-fellowship-for-science/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/07/08/jhu-umd-researchers-are-getting-a-really-big-big-data-center/">JHU, UMD researchers are getting a really big Big Data center</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/07/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  From Technical.ly Baltimore:
+ A nondescript, 3,700-square-foot building on Johns Hopkins’ Bayview campus will house a new data storage and computing center for university researchers. The $30 million Maryland Advanced Research Computing Center (MARCC) will be available to faculty from JHU and the University of Maryland, College Park.
+ The web site has a pretty cool time-lapse video of the construction of the computing center. There&rsquo;s also a bit more detail at the JHU Hub site.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/07/08/jhu-umd-researchers-are-getting-a-really-big-big-data-center/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/07/03/the-massive-future-of-statistics-education/">The Massive Future of Statistics Education</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/07/03</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  NOTE: This post was written as a chapter for the not-yet-released Handbook on Statistics Education. 
+Data are eating the world, but our collective ability to analyze data is going on a starvation diet.
+ Everywhere you turn, data are being generated somehow. By the time you read this piece, you’ll probably have collected some data. (For example this piece has 2,072 words). You can’t avoid data—it’s coming from all directions.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/07/03/the-massive-future-of-statistics-education/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/07/02/looks-like-this-r-thing-might-be-for-real/">Looks like this R thing might be for real</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/07/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Not sure how I missed this, but the Linux Foundation just announced the R Consortium for supporting the &ldquo;world’s most popular language for analytics and data science and support the rapid growth of the R user community&rdquo;. From the Linux Foundation:
+ The R language is used by statisticians, analysts and data scientists to unlock value from data. It is a free and open source programming language for statistical computing and provides an interactive environment for data analysis, modeling and visualization.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/07/02/looks-like-this-r-thing-might-be-for-real/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/07/01/how-airbnb-built-a-data-science-team/">How Airbnb built a data science team</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/07/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  From Venturebeat:
+ Back then we knew so little about the business that any insight was groundbreaking; data infrastructure was fast, stable, and real-time (I was querying our production MySQL database); the company was so small that everyone was in the loop about every decision; and the data team (me) was aligned around a singular set of metrics and methodologies.
+But five years and 43,000 percent growth later, things have gotten a bit more complicated.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/07/01/how-airbnb-built-a-data-science-team/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/06/24/how-public-relations-and-the-media-are-distorting-science/">How public relations and the media are distorting science</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/06/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Throughout history, engineers, medical doctors and other applied scientists have helped convert basic science discoveries into products, public goods and policy that have greatly improved our quality of life. With rare exceptions, it has taken years if not decades to establish these discoveries. And even the exceptions stand on the shoulders of incremental contributions. The researchers that produce this knowledge go through a slow and painstaking process to reach these achievements.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/06/24/how-public-relations-and-the-media-are-distorting-science/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/06/16/interview-at-leanpub/">Interview at Leanpub</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/06/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A few weeks ago I sat down with Len Epp over at Leanpub to talk about my recently published book R Programming for Data Science. So far, I&rsquo;ve only published one book through Leanpub but I&rsquo;m a huge fan. They&rsquo;ve developed a system that is, in my opinion, perfect for academic publishing. The book&rsquo;s written in Markdown and they compile it into PDF, ePub, and mobi formats automatically.
+The full interview transcript is over at the Leanpub blog.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/06/16/interview-at-leanpub/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/22/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;23 / 104&nbsp;</span>
+  
+  <a href="/page/24/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

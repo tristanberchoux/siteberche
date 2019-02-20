@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistics Is Awesome on Tristan Berchoux</title>
+    <link>/tags/statistics-is-awesome/</link>
+    <description>Recent content in Statistics Is Awesome on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 11 Apr 2012 13:52:42 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/statistics-is-awesome/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Statistics is not math...</title>
+      <link>/2012/04/11/statistics-is-not-math/</link>
+      <pubDate>Wed, 11 Apr 2012 13:52:42 +0000</pubDate>
+      
+      <guid>/2012/04/11/statistics-is-not-math/</guid>
+      <description>Statistics depends on math, like a lot of other disciplines (physics, engineering, chemistry, computer science). But just like those other disciplines, statistics is not math; math is just a tool used to solve statistical problems. Unlike those other disciplines, statistics gets lumped in with math in headlines. Whenever people use statistical analysis to solve an interesting problem, the headline reads:
+&amp;#8220;Math can be used to solve amazing problem X&amp;#8221;
+or</description>
+    </item>
+    
+    <item>
+      <title>Is Statistics too darn hard?</title>
+      <link>/2011/11/07/is-statistics-too-darn-hard/</link>
+      <pubDate>Mon, 07 Nov 2011 15:33:00 +0000</pubDate>
+      
+      <guid>/2011/11/07/is-statistics-too-darn-hard/</guid>
+      <description>In this NY Times article, Christopher Drew points out that many students planning engineering and science majors end up switching to other subjects or fail to get any degree. He argues that this is partly due todo the difficulty of classes. In a previous post we lamented the anemic growth in math and statistics majors in comparison to other majors. I do not think we should make our classes easier just to keep these students.</description>
+    </item>
+    
+  </channel>
+</rss>

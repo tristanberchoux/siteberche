@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tennis on Tristan Berchoux</title>
+    <link>/tags/tennis/</link>
+    <description>Recent content in Tennis on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 30 Nov 2011 14:12:06 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/tennis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Selling the Power of Statistics</title>
+      <link>/2011/11/30/selling-the-power-of-statistics/</link>
+      <pubDate>Wed, 30 Nov 2011 14:12:06 +0000</pubDate>
+      
+      <guid>/2011/11/30/selling-the-power-of-statistics/</guid>
+      <description>A few weeks ago we learned that Warren Buffett is a big IBM fan (a $10 billion fan, that is). Having heard that I went over to the IBM web site to see what they&amp;#8217;re doing these days. For starters, they&amp;#8217;re not selling computers anymore! At least not the kind that I would use. One of the big things they do now is &amp;#8220;Business Analytics and Optimization&amp;#8221; (i.e. statistics), which is one of the reasons they bought SPSS and then later Algorithmics.</description>
+    </item>
+    
+  </channel>
+</rss>

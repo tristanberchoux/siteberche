@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>P &gt; 0.05? I can make any p-value statistically significant with adaptive FDR procedures &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>P &gt; 0.05? I can make any p-value statistically significant with adaptive FDR procedures</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/08/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>Everyone knows now that you have to correct for multiple testing when you calculate many p-values otherwise this can happen:</p>
+
+<div style="width: 550px" class="wp-caption aligncenter">
+  <a href="http://xkcd.com/882/"><img class="" src=" http://imgs.xkcd.com/comics/significant.png" alt="" width="540" height="1498" /></a>
+  
+  <p class="wp-caption-text">
+    http://xkcd.com/882/
+  </p>
+</div>
+
+<p>&nbsp;</p>
+
+<p>One of the most popular ways to correct for multiple testing is to estimate or control the <a href="https://en.wikipedia.org/wiki/False_discovery_rate">false discovery rate</a>. The false discovery rate attempts to quantify the fraction of made discoveries that are false. If we call all p-values less than some threshold <em>t</em> significant, then borrowing notation from this <a href="http://www.ncbi.nlm.nih.gov/pubmed/12883005">great introduction to false discovery rates </a></p>
+
+<p><a href="http://simplystatistics.org/wp-content/uploads/2015/08/fdr3.gif"><img class="aligncenter size-full wp-image-4246" src="http://simplystatistics.org/wp-content/uploads/2015/08/fdr3.gif" alt="fdr3" width="285" height="40" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>So <em>F(t)</em> is the (unknown) total number of null hypotheses called significant and <em>S(t)</em> is the total number of hypotheses called significant. The FDR is the expected ratio of these two quantities, which, under certain assumptions can be approximated by the ratio of the expectations.</p>
+
+<p>&nbsp;</p>
+
+<p><a href="http://simplystatistics.org/wp-content/uploads/2015/08/fdr4.gif"><img class="aligncenter size-full wp-image-4247" src="http://simplystatistics.org/wp-content/uploads/2015/08/fdr4.gif" alt="fdr4" width="246" height="44" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>To get an estimate of the FDR we just need an estimate for  _E[_F(t)]<em> </em> and _E[S(t)]. _The latter is pretty easy to estimate as just the total number of rejections (the number of <em>p &lt; t</em>). If you assume that the p-values follow the expected distribution then _E[_F(t)]_  _can be approximated by multiplying the fraction of null hypotheses, multiplied by the total number of hypotheses and multiplied by _t_ since the p-values are uniform. To do this, we need an estimate for <span class='MathJax_Preview'><img src='http://simplystatistics.org/wp-content/plugins/latex/cache/tex_d4c98d75e25f5d28461f1da221eb7a95.gif' style='vertical-align: middle; border: none; padding-bottom:1px;' class='tex' alt="\pi_0" /></span>, the proportion of null hypotheses. There are a large number of ways to estimate this quantity but it is almost always estimated using the full distribution of computed p-values in an experiment. The most popular estimator compares the fraction of p-values greater than some cutoff to the number you would expect if every single hypothesis were null. This fraction is about the fraction of null hypotheses.</p>
+
+<p>Combining the above equation with our estimates for _E[_F(t)]<em> </em> and _E[S(t)] _we get:</p>
+
+<p>&nbsp;</p>
+
+<p><a href="http://simplystatistics.org/wp-content/uploads/2015/08/fdr5.gif"><img class="aligncenter size-full wp-image-4250" src="http://simplystatistics.org/wp-content/uploads/2015/08/fdr5.gif" alt="fdr5" width="238" height="42" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>The q-value is a multiple testing analog of the p-value and is defined as:</p>
+
+<p><a href="http://simplystatistics.org/wp-content/uploads/2015/08/fdr61.gif"><img class="aligncenter size-full wp-image-4258" src="http://simplystatistics.org/wp-content/uploads/2015/08/fdr61.gif" alt="fdr6" width="163" height="26" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>This is of course a very loose version of this and you can get a more technical description <a href="http://www.genomine.org/papers/directfdr.pdf">here</a>. But the main thing to notice is that the q-value depends on the estimated proportion of null hypotheses, which depends on the distribution of the observed p-values. The smaller the estimated fraction of null hypotheses, the smaller the FDR estimate and the smaller the q-value. This suggests a way to make any p-value significant by altering its &ldquo;testing partners&rdquo;. Here is a quick example. Suppose that we have done a test and have a p-value of 0.8. Not super significant. Suppose we perform this test in conjunction with a number of hypotheses that are null generating a p-value distribution like this.</p>
+
+<p><a href="http://simplystatistics.org/wp-content/uploads/2015/08/uniform-pvals.png"><img class="aligncenter size-medium wp-image-4260" src="http://simplystatistics.org/wp-content/uploads/2015/08/uniform-pvals-300x300.png" alt="uniform-pvals" width="300" height="300" srcset="http://simplystatistics.org/wp-content/uploads/2015/08/uniform-pvals-300x300.png 300w, http://simplystatistics.org/wp-content/uploads/2015/08/uniform-pvals-200x200.png 200w, http://simplystatistics.org/wp-content/uploads/2015/08/uniform-pvals.png 480w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+
+<p>Then you get a q-value greater than 0.99 as you would expect. But if you test that exact same p-value with a ton of other non-null hypotheses that generate tiny p-values in a distribution that looks like this:</p>
+
+<p><a href="http://simplystatistics.org/wp-content/uploads/2015/08/significant-pvals.png"><img class="aligncenter size-medium wp-image-4261" src="http://simplystatistics.org/wp-content/uploads/2015/08/significant-pvals-300x300.png" alt="significant-pvals" width="300" height="300" srcset="http://simplystatistics.org/wp-content/uploads/2015/08/significant-pvals-300x300.png 300w, http://simplystatistics.org/wp-content/uploads/2015/08/significant-pvals-200x200.png 200w, http://simplystatistics.org/wp-content/uploads/2015/08/significant-pvals.png 480w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>Then you get a q-value of 0.0001 for that same p-value of 0.8. The reason is that the estimate of the fraction of null hypotheses goes essentially to zero, which drives down the q-value. You can do this with any p-value, if you make its testing partners have sufficiently low p-values then the q-value will also be as small as you like.</p>
+
+<p>A couple of things to note:</p>
+
+<ul>
+<li>Obviously doing this on purpose to change the significance of a calculated p-value is cheating and shouldn&rsquo;t be done.</li>
+<li>For correctly calculated p-values on a related set of hypotheses this is actually a sensible property to have - if you have almost all very small p-values and one very large p-value, you are doing a set of tests where almost everything appears to be alternative and you should weight that in some sensible way.</li>
+<li>This is the reason that sometimes a &ldquo;multiple testing adjusted&rdquo; p-value (or q-value) is smaller than the p-value itself.</li>
+<li>This doesn&rsquo;t affect non-adaptive FDR procedures - but those procedures still depend on the &ldquo;testing partners&rdquo; of any p-value through the total number of tests performed. This is why people talk about the so-called &ldquo;multiple testing burden&rdquo;. But that is a subject for a future post. It is also the reason non-adaptive procedures can be severely underpowered compared to adaptive procedures when the p-values are correct.</li>
+<li>I&rsquo;ve appended the code to generate the histograms and calculate the q-values in this post in the following gist.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2015/08/12/ucla-statistics-2015-commencement-address/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2015/08/12/ucla-statistics-2015-commencement-address/">UCLA Statistics 2015 Commencement Address</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2015/08/20/if-you-ask-different-quetions-you-get-different-asnwers-one-more-way-science-isnt-broken-it-is-just-really-hard/">If you ask different questions you get different answers - one more way science isn&#39;t broken it is just really hard</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2015/08/20/if-you-ask-different-quetions-you-get-different-asnwers-one-more-way-science-isnt-broken-it-is-just-really-hard/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

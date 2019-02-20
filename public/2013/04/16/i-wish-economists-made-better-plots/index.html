@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>I wish economists made better plots &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>I wish economists made better plots</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/04/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>I&rsquo;m seeing lots of traffic on a big-time economics article by that failed to reproduce and here are my quick thoughts. You can read a pretty good summary here by <a href="http://www.nextnewdeal.net/rortybomb/researchers-finally-replicated-reinhart-rogoff-and-there-are-serious-problems">Mike Konczal</a>.</p>
+
+<p>Quick background: Carmen Reinhart and Kenneth Rogoff wrote an <a href="http://www.nber.org/papers/w15639.pdf">influential paper</a> that was used by many to justify the need for austerity measures taken by governments to reduce debts relative to GDP. Yesterday, Thomas Herndon, Michael Ash, and Robert Pollin (HAP) <a href="http://www.peri.umass.edu/236/hash/31e2ff374b6377b2ddec04deaa6388b1/publication/566/">released a paper</a> where they reproduced the Reinhart-Rogoff (RR) analysis and noted a few irregularities or errors. In their abstract, HAP claim that they &ldquo;find that coding errors, selective exclusion of available data, and unconventional weighting of summary statistics [in the RR analysis] lead to serious errors that inaccurately represent the relationship between public debt and GDP growth among 20 advanced economies in the post-war period.</p>
+
+<p>It appears there were three points made by HAP: (1) RR excluded some important data from their final analysis; (2) RR weighted countries in a manner that was <em>not</em> proportional to the number of years they contributed to the dataset (RR used equal weighting of countries); and (3) there was an error in RR&rsquo;s Excel formula which resulted in them inadvertently leaving out five countries from their final analysis.</p>
+
+<p>The bottom line is shown in HAP&rsquo;s Figure 1, which I reproduce below (on the basis of fair use):</p>
+
+<p><a href="http://simplystatistics.org/wp-content/uploads/2013/04/Screen-Shot-2013-04-16-at-5.48.06-PM.png"><img class="alignright size-full wp-image-1173" alt="HAP Analysis" src="http://simplystatistics.org/wp-content/uploads/2013/04/Screen-Shot-2013-04-16-at-5.48.06-PM.png" width="768" height="992" srcset="http://simplystatistics.org/wp-content/uploads/2013/04/Screen-Shot-2013-04-16-at-5.48.06-PM-232x300.png 232w, http://simplystatistics.org/wp-content/uploads/2013/04/Screen-Shot-2013-04-16-at-5.48.06-PM.png 768w" sizes="(max-width: 768px) 100vw, 768px" /></a></p>
+
+<p>From the plot you can see that the HAP&rsquo;s adjusted analysis (circles) more or less coincides with RR&rsquo;s analysis (diamonds) except for the last categories of countries with debt/GDP ratios over 90%. In that category RR&rsquo;s analysis shows a large drop in growth whereas HAP&rsquo;s analysis shows a more or less smooth decline (but still positive growth).</p>
+
+<p>To me, it seems that the incorrect Excel formula is a real error, but easily fixed. It also seemed to have the least impact on the final analysis. The other two problems, which had far bigger impacts, might have some explanation that I&rsquo;m not aware of. I am not an economist so I await others to weigh in. RR apparently do not comment on the exclusion of certain data points or on the weighting scheme so it&rsquo;s difficult to say what the thinking was, whether it was inadvertent or purposeful.</p>
+
+<p>In summary, so what? Here&rsquo;s what I think:</p>
+
+<ol>
+<li><strong>Is there some fishiness?</strong> Sure, but this is not the Potti-Nevins scandal a la economics. I suppose it&rsquo;s possible RR manipulated the analysis to get the answer austerity hawks were looking for, but we don&rsquo;t have the evidence yet and this just doesn&rsquo;t feel like that kind of thing.</li>
+<li><strong>What&rsquo;s the counterfactual?</strong> Or, what would have happened if the analysis had been done the way HAP propose? Would the world have embraced pro-growth policies by taking on a greater debt burden? My guess is no. Austerity hawks would have found some other study that supported their claims (and in fact there was at least one other).</li>
+<li>RR&rsquo;s original analysis did not contain a plot like Figure 1 in HAP&rsquo;s analysis, which I personally find very illuminating. From HAP&rsquo;s figure, you can see that there&rsquo;s quite a bit of variation across countries and perhaps an overall downward trend. I&rsquo;m not sure I would have dramatically changed my conclusion if I had done the HAP analysis instead of the RR analysis. My point is that <strong>plots like this, which <em>show the variability</em>, are very important</strong>._
+<br /></li>
+</ol>
+
+<p>_
+  4. <strong>People see what they want to see</strong>. I would not be surprised to see some claim that HAP&rsquo;s analysis supports the austerity conclusion because growth under high debt loads is much lower (almost 50%!) than under low debt loads.
+  5. <strong>If RR&rsquo;s analysis had been correct, should they have even made the conclusions they made?</strong> RR indicated that there was a &ldquo;threshold&rdquo; at 90% debt/GDP. My experience is that statements about thresholds, are generally very hard to make, even with good data. I wonder what other more knowledgable people think of the original conclusions.
+  6. <strong>If the data had been made available sooner, this problem would have been fixed sooner</strong>. But in my opinion, that&rsquo;s all that would have happened.</p>
+
+<p>The vibe on the Internets seems to be that if only this problem had been identified sooner, the world would be a better place. But my cynical mind says, uh, no. You can toss this incident in the very large bucket of papers with some technical errors that are easily fixed. Thankfully, someone found these errors and fixed them, and that&rsquo;s a good thing. Science moves on.</p>
+
+<p>UPDATE: Reinhart-Rogoff <a href="http://www.slate.com/blogs/moneybox/2013/04/16/reinhart_and_rogoff_respond_researchers_say_high_debt_is_associated_with.html">respond</a>.</p>
+
+<p>UPDATE 2: Reinhart-Rogoff more <a href="http://blogs.wsj.com/economics/2013/04/17/reinhart-rogoff-admit-excel-mistake-rebut-other-critiques/">detailed response</a>.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2013/04/15/data-science-only-poses-a-threat-to-biostatistics-if-we-dont-adapt/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2013/04/15/data-science-only-poses-a-threat-to-biostatistics-if-we-dont-adapt/">Data science only poses a threat to (bio)statistics if we don&#39;t adapt</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2013/04/19/podcast-7-reinhart-rogoff-reproducibility/">Podcast #7: Reinhart, Rogoff, Reproducibility</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2013/04/19/podcast-7-reinhart-rogoff-reproducibility/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reproducible Research on Tristan Berchoux</title>
+    <link>/tags/reproducible-research/</link>
+    <description>Recent content in Reproducible Research on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Tue, 18 Dec 2012 11:58:28 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/reproducible-research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The value of re-analysis</title>
+      <link>/2012/12/18/the-value-of-re-analysis/</link>
+      <pubDate>Tue, 18 Dec 2012 11:58:28 +0000</pubDate>
+      
+      <guid>/2012/12/18/the-value-of-re-analysis/</guid>
+      <description>I just saw this really nice post over on John Cook&amp;rsquo;s blog. He talks about how it is a valuable exercise to re-type code for examples you find in a book or on a blog. I completely agree that this is a good way to learn through osmosis, learn about debugging, and often pick up the reasons for particular coding tricks (this is how I learned about vectorized calculations in Matlab, by re-typing and running my advisors code back in my youth).</description>
+    </item>
+    
+    <item>
+      <title>Pro Tips for Grad Students in Statistics/Biostatistics (Part 1)</title>
+      <link>/2012/06/18/pro-tips-for-grad-students-in-statistics-biostatistics-2/</link>
+      <pubDate>Mon, 18 Jun 2012 16:21:00 +0000</pubDate>
+      
+      <guid>/2012/06/18/pro-tips-for-grad-students-in-statistics-biostatistics-2/</guid>
+      <description>I just finished teaching a Ph.D. level applied statistical methods course here at Hopkins. As part of the course, I gave one &amp;#8220;pro-tip&amp;#8221; a day; something I wish I had learned in graduate school that has helped me in becoming a practicing applied statistician. Here are the first three, more to come soon.   A major component of being a researcher is knowing what&amp;#8217;s going on in the research community.</description>
+    </item>
+    
+    <item>
+      <title>figshare and don&#39;t trust celebrities stating facts</title>
+      <link>/2012/01/17/figshare-and-dont-trust-celebrities-stating-facts/</link>
+      <pubDate>Tue, 17 Jan 2012 17:48:58 +0000</pubDate>
+      
+      <guid>/2012/01/17/figshare-and-dont-trust-celebrities-stating-facts/</guid>
+      <description>A couple of links:
+ figshare is a site where scientists can share data sets/figures/code. One of the goals is to encourage researchers to share negative results as well. I think this is a great idea - I often find negative results and this could be a place to put them. It also uses a tagging system, like Flickr. I think this is a great idea for scientific research discovery. They give you unlimited public space and 1GB of private space.</description>
+    </item>
+    
+    <item>
+      <title>Where do you get your data?</title>
+      <link>/2012/01/08/where-do-you-get-your-data/</link>
+      <pubDate>Sun, 08 Jan 2012 16:30:18 +0000</pubDate>
+      
+      <guid>/2012/01/08/where-do-you-get-your-data/</guid>
+      <description>Here&amp;#8217;s a question I get fairly frequently from various types of people: Where do you get your data? This is sometimes followed up quickly with &amp;#8220;Can we use some of your data?&amp;#8221;
+My contention is that if someone asks you these questions, start looking for the exits.
+There are of course legitimate reasons why someone might ask you this question. For example, they might be interested in the source of the data to verify its quality.</description>
+    </item>
+    
+    <item>
+      <title>Reproducible Research in Computational Science</title>
+      <link>/2011/12/02/reproducible-research-in-computational-science/</link>
+      <pubDate>Fri, 02 Dec 2011 14:12:59 +0000</pubDate>
+      
+      <guid>/2011/12/02/reproducible-research-in-computational-science/</guid>
+      <description>First of all, thanks to Rafa for scooping me with my own article. Not sure if that&amp;#8217;s reverse scooping or recursive scooping or&amp;#8230;.
+The latest issue of _Science_ has a special section on Data Replication and Reproducibility. As part of the section I wrote a brief commentary on the need for reproducible research in computational science. _Science_ has a pretty tight word limit for it&amp;#8217;s commentaries and so it was unfortunately necessary to omit a number of relevant topics.</description>
+    </item>
+    
+    <item>
+      <title>Reproducible Research and Turkey</title>
+      <link>/2011/11/28/reproducible-research-and-turkey/</link>
+      <pubDate>Mon, 28 Nov 2011 14:50:41 +0000</pubDate>
+      
+      <guid>/2011/11/28/reproducible-research-and-turkey/</guid>
+      <description>Over the Thanksgiving recent break I naturally started thinking about reproducible research in between salting the turkey and making the turkey stock. Clearly, these things are all related. I sometimes get the sense that many people see reproducibility as essentially binary. A published paper is either reproducible, as in you can compute every single last numerical result to within epsilon precision, or it&amp;#8217;s not. My feeling is that there is a spectrum of reproducibility when it comes to published scientific findings.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Scraping on Tristan Berchoux</title>
+    <link>/tags/web-scraping/</link>
+    <description>Recent content in Web Scraping on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 23 Nov 2011 14:07:53 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/web-scraping/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An R function to analyze your Google Scholar Citations page</title>
+      <link>/2011/11/23/an-r-function-to-analyze-your-google-scholar-citations/</link>
+      <pubDate>Wed, 23 Nov 2011 14:07:53 +0000</pubDate>
+      
+      <guid>/2011/11/23/an-r-function-to-analyze-your-google-scholar-citations/</guid>
+      <description>Google scholar has now made Google Scholar Citations profiles available to anyone. You can read about these profiles and set one up for yourself here.
+I asked John Muschelli and Andrew Jaffeto write me a function that would download my Google Scholar Citations data so I could play with it. Then they got all crazy on it and wrote a couple of really neat functions. All cool/interesting components of these functions are their ideas and any bugs were introduced by me when I was trying to fiddle with the code at the end.</description>
+    </item>
+    
+    <item>
+      <title>Web-scraping</title>
+      <link>/2011/10/24/web-scraping/</link>
+      <pubDate>Mon, 24 Oct 2011 16:05:05 +0000</pubDate>
+      
+      <guid>/2011/10/24/web-scraping/</guid>
+      <description>The internet is the greatest source of publicly available data. One of the key skills to being able to obtain data from the web is &amp;#8220;web-scraping&amp;#8221;, where you use a piece of software to run through a website and collect information. This technique can be used for collecting data from databases or to collect data that is scattered across a website. Here is a very cool little exercise in web-scraping that can be used as an example of the things that are possible.</description>
+    </item>
+    
+  </channel>
+</rss>

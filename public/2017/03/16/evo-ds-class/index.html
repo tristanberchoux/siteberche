@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>The levels of data science class &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>The levels of data science class</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/03/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>In a recent post, Nathan Yau <a href="http://flowingdata.com/2013/03/12/data-hackathon-challenges-and-why-questions-are-important/">points to a comment</a> by Jake Porway about data science hackathons. They both say that for data science/visualization projects to be successful you have to start with an important question, not with a pile of data. This is the <a href="http://simplystatistics.org/2013/05/29/what-statistics-should-do-about-big-data-problem-forward-not-solution-backward/">problem forward not solution backward</a> approach to data science and big data. This is the approach also advocated in the really nice piece on teaching data science by <a href="https://arxiv.org/abs/1612.07140">Stephanie and Rafa</a></p>
+
+<p>I have adopted a similar approach in the data science class here at Hopkins, largely inspired by Dan Meyer&rsquo;s <a href="https://www.ted.com/talks/dan_meyer_math_curriculum_makeover/transcript">patient problem solving for middle school math class</a>. So instead of giving students a full problem description I give them project suggestions like:</p>
+
+<ul>
+<li><strong>Option 1</strong>: Develop a prediction algorithm for identifying and classifying users that are trolling or being mean on Twitter. If you want an idea of what I’m talking about just look at the responses to any famous person’s tweets.</li>
+<li><strong>Option 2</strong>:  Analyze the traffic fatality data to identify any geographic, time varying, or other characteristics that are associated with traffic fatalities: <a href="https://www.transportation.gov/fastlane/2015-traffic-fatalities-data-has-just-been-released-call-action-download-and-analyze">https://www.transportation.gov/fastlane/2015-traffic-fatalities-data-has-just-been-released-call-action-download-and-analyze</a>.</li>
+<li><strong>Option 3</strong>: Develop a model for predicting life expectancy in Baltimore down to single block resolution with estimates of uncertainty. You may need to develop an approach for “downsampling” since the outcome data you’ll be able to find is likely aggregated at the neighborhood level (<a href="http://health.baltimorecity.gov/node/231">http://health.baltimorecity.gov/node/231</a>).</li>
+<li><strong>Option 4</strong>: Develop a statistical model for inferring the variables you need to calculate the Gail score (<a href="http://www.cancer.gov/bcrisktool/">http://www.cancer.gov/bcrisktool/</a>) for a woman based on her Facebook profile. Develop a model for the Gail score prediction from Facebook and its uncertainty. You should include estimates of uncertainty in the predicted score due to your inferred variables.</li>
+<li><strong>Option 5</strong>: Potentially fun but super hard project. develop an algorithm for self-driving car using the training data: <a href="http://research.comma.ai/">http://research.comma.ai/</a>. Build a model for predicting at every moment what direction the car should be going, whether it should be signalling, and what speed it should be going. You might consider starting with a small subsample of the (big) training set.</li>
+</ul>
+
+<p>Each of these projects shares the characteristic that there is an interesting question - but the data may or may not be available. If it is available it may or may not have to be processed/cleaned/organized. Moreover, with the data in hand you may need to think about how it was collected or go out and collect some more data. This kind of problem is inspired by this quote from Dan&rsquo;s talk - he was talking about math but it could easily have been data science:</p>
+
+<blockquote>
+<p>Ask yourselves, what problem have you solved, ever, that was worth solving, where you knew knew all of the given information in advance? Where you didn’t have a surplus of information and have to filter it out, or you didn’t have insufficient information and have to go
+find some?</p>
+</blockquote>
+
+<p>I realize though that this is advanced data science. So I was thinking about the levels of data science course and how you would build up a curriculum. I came up with the following courses/levels and would be interested in what others thought.</p>
+
+<ul>
+<li><strong>Level 0: Background</strong>: Basic computing, some calculus with a focus on optimization, basic linear algebra.</li>
+<li><strong>Level 1: Data science thinking</strong>: How to define a question, how to turn a question into a statement about data, how to identify data sets that may be applicable, experimental design, critical thinking about data sets.</li>
+<li><strong>Level 2: Data science communication</strong>: Teaching students how to write about data science, how to express models qualitatively and in mathematical notation, explaining how to interpret results of algorithms/models. Explaining how to make figures.</li>
+<li><strong>Level 3: Data science tools</strong>: Learning the basic tools of R, loading data of various types, reading data, plotting data.</li>
+<li><strong>Level 4: Real data</strong>: Manipulating different file formats, working with &ldquo;messy&rdquo; data, trying to organize multiple data sets into one data set.</li>
+<li><strong>Level 5: Worked examples</strong>: Use real data examples, but work them through from start to finish as case studies, don&rsquo;t make them easy clean data sets, but have a clear path from the beginning of the problem to the end.</li>
+<li><strong>Level 6: Just the question</strong>: Give students a question where you have done a little research to know that it is posisble to get at least some data, but aren&rsquo;t 100% sure it is the right data or that the problem can be perfectly solved. Part of the learning process here is knowing how to define success or failure and when to keep going or when to quit.</li>
+<li><strong>Level 7: The student is the scientist</strong>: Have the students come up with their own questions and answer them using data.</li>
+</ul>
+
+<p>I think that a lot of the thought right now in biostatistics has been on level 3 and 4 courses. These are courses where we have students work with real data sets and learn about tools. To be self-sufficient as a data scientist it is clear you need to be able to work with real world data.
+But what Jake/Nathan are referring to is level 5 or level 6 - cases where you have a question but the data needs a ton of work and may not even be good enough without collecting new information. Jake and Nathan have perfectly identified the ability to translate murkey questions into data answers as the most valuable data skill. If I had to predict the future of data courses I would see them trending in that direction.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2017/03/08/when-do-we-need-interpretability/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2017/03/08/when-do-we-need-interpretability/">When do we need interpretability?</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2017/04/03/interactive-data-analysis/">The Importance of Interactive Data Analysis for Data-Driven Discovery</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2017/04/03/interactive-data-analysis/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

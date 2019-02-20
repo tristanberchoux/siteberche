@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coding on Tristan Berchoux</title>
+    <link>/tags/coding/</link>
+    <description>Recent content in Coding on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 03 Oct 2012 15:24:46 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>This is an awesome paper all students in statistics should read</title>
+      <link>/2012/10/03/this-is-an-awesome-paper-all-students-in-statistics/</link>
+      <pubDate>Wed, 03 Oct 2012 15:24:46 +0000</pubDate>
+      
+      <guid>/2012/10/03/this-is-an-awesome-paper-all-students-in-statistics/</guid>
+      <description>The paper is a review of how to do software development for academics. I saw it via C. Titus Brown (who we have interviewed), he is also a co-author. How to write software (particularly for other people) is something that is under emphasized in many curricula. But it turns out this is also one of the more important components of disseminating your work in modern applied statistics. My only wish is that there was an accompanying website with resources/links for people to chase down.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apis on Tristan Berchoux</title>
+    <link>/tags/apis/</link>
+    <description>Recent content in Apis on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 12 Feb 2012 14:28:21 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/apis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (2/12)</title>
+      <link>/2012/02/12/sunday-data-statistics-link-roundup-2-12/</link>
+      <pubDate>Sun, 12 Feb 2012 14:28:21 +0000</pubDate>
+      
+      <guid>/2012/02/12/sunday-data-statistics-link-roundup-2-12/</guid>
+      <description>An awesome alternative to D3.js - R&amp;#8217;s svgAnnotation package. Here&amp;#8217;s the paper in JSS. I feel like this is one step away from gaining broad use in the statistics community - it still feels a little complicated building the graphics, but there is plenty of flexibility there. I feel like a great project for a student at any level would be writing some easy wrapper functions for these functions.  How to run R on your Android device.</description>
+    </item>
+    
+    <item>
+      <title>List of cities/states with open data - help me find more!</title>
+      <link>/2012/01/02/list-of-cities-states-with-open-data-help-me-find/</link>
+      <pubDate>Mon, 02 Jan 2012 14:30:00 +0000</pubDate>
+      
+      <guid>/2012/01/02/list-of-cities-states-with-open-data-help-me-find/</guid>
+      <description>It&amp;#8217;s the beginning of 2012 and statistics/data science has never been hotter. Some of the most important data is data collected about civic organizations. If you haven&amp;#8217;t seen Bill Gate&amp;#8217;s TED Talk about the importance of state budgets, you should watch it now. A major key to solving a lot of our economic problems lies in understanding and using data collected about cites and states. U.S. cities and states are jumping on this idea and our own Baltimore was one of the earliest adopters.</description>
+    </item>
+    
+    <item>
+      <title>Web-scraping</title>
+      <link>/2011/10/24/web-scraping/</link>
+      <pubDate>Mon, 24 Oct 2011 16:05:05 +0000</pubDate>
+      
+      <guid>/2011/10/24/web-scraping/</guid>
+      <description>The internet is the greatest source of publicly available data. One of the key skills to being able to obtain data from the web is &amp;#8220;web-scraping&amp;#8221;, where you use a piece of software to run through a website and collect information. This technique can be used for collecting data from databases or to collect data that is scattered across a website. Here is a very cool little exercise in web-scraping that can be used as an example of the things that are possible.</description>
+    </item>
+    
+  </channel>
+</rss>

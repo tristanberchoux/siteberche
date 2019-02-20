@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Latex App on Tristan Berchoux</title>
+    <link>/tags/latex-app/</link>
+    <description>Recent content in Latex App on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Mon, 06 Feb 2012 00:06:54 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/latex-app/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (2/5)</title>
+      <link>/2012/02/06/sunday-data-statistics-link-roundup-2-5/</link>
+      <pubDate>Mon, 06 Feb 2012 00:06:54 +0000</pubDate>
+      
+      <guid>/2012/02/06/sunday-data-statistics-link-roundup-2-5/</guid>
+      <description>Cool app, you can write out an equation on the screen and it translates the equation to latex. Via Andrew G. Yet another D3 tutorial. Stay tuned for some cool stuff on this front here at Simply Stats in the near future. Via Vishal. Our favorite Greek statistician in the news again.  How measurement of academic output harms science. Related: is submitting scientific papers too time consuming? Stay tuned for more on this topic this week.</description>
+    </item>
+    
+  </channel>
+</rss>

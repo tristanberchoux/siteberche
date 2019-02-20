@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Spreadsheets: The Original Analytics Dashboard &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Spreadsheets: The Original Analytics Dashboard</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/02/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>Soon after my discussion with Hilary Parker and Jenny Bryan about spreadsheets on <em><a href="https://soundcloud.com/nssd-podcast">Not So Standard Deviations</a></em>, Brooke Anderson forwarded me <a href="https://backchannel.com/a-spreadsheet-way-of-knowledge-8de60af7146e#.gj4f2bod4">this article</a> written by Steven Levy about the original granddaddy of spreadsheets, <a href="https://en.wikipedia.org/wiki/VisiCalc">VisiCalc</a>. Actually, the real article was written back in 1984 as so-called microcomputers were just getting their start. VisiCalc was originally written for the Apple II computer and notable competitors at the time included <a href="https://en.wikipedia.org/wiki/Lotus_1-2-3">Lotus 1-2-3</a> and Microsoft <a href="https://en.wikipedia.org/wiki/Multiplan">Multiplan</a>, all since defunct.</p>
+
+<p>It&rsquo;s interesting to see Levy&rsquo;s perspective on spreadsheets back then and to compare it to the current thinking about data, data science, and reproducibility in science. The problem back then was &ldquo;ledger sheets&rdquo; (what we might now call a spreadsheet), which contained numbers and calculations related to businesses, were tedious to make and keep up to date.</p>
+
+<blockquote>
+<p>Making spreadsheets, however necessary, was a dull chore best left to accountants, junior analysts, or secretaries. As for sophisticated “modeling” tasks – which, among other things, enable executives to project costs for their companies – these tasks could be done only on big mainframe computers by the data-processing people who worked for the companies Harvard MBAs managed.</p>
+</blockquote>
+
+<p>You can see one issue here: Spreadsheets/Ledgers were a &ldquo;dull chore&rdquo;, and best left to junior people. However, the &ldquo;real&rdquo; computation was done by the people the &ldquo;data processing&rdquo; center on big mainframes. So what exactly does that leave for the business executive to do?</p>
+
+<p>Note that the way of doing things back then was effectively reproducible, because the presentation (ledger sheets printed on paper) and the computation (data processing on mainframes) was separated.</p>
+
+<p>The impact of the microcomputer-based spreadsheet program appears profound.</p>
+
+<blockquote>
+<p id="9424" class="graf--p graf-after--p">
+  Already, the spreadsheet has redefined the nature of some jobs; to be an accountant in the age of spreadsheet program is — well, almost sexy. And the spreadsheet has begun to be a forceful agent of decentralization, breaking down hierarchies in large companies and diminishing the power of data processing.
+</p>
+
+<p class="graf--p graf-after--p">
+  There has been much talk in recent years about an “entrepreneurial renaissance” and a new breed of risk-taker who creates businesses where none previously existed. Entrepreneurs and their venture-capitalist backers are emerging as new culture heroes, settlers of another American frontier. Less well known is that most of these new entrepreneurs depend on their economic spreadsheets as much as movie cowboys depend on their horses.
+</p>
+</blockquote>
+
+<p class="graf--p graf-after--p">
+   If you replace "accountant" with "statistician" and "spreadsheet" with "big data" and you are magically teleported into 2016.
+</p>
+
+<p class="graf--p graf-after--p">
+  The way I see it, in the early 80's, spreadsheets satisfied the never-ending desire that people have to interact with data. Now, with things like tablets and touch-screen phones, you can literally "touch" your data. But it took microcomputers to get to a certain point before interactive data analysis could really be done in a way that we recognize today. Spreadsheets tightened the loop between question and answer by cutting out the Data Processing department and replacing it with an Apple II (or an IBM PC, if you must) right on your desk.
+</p>
+
+<p class="graf--p graf-after--p">
+  Of course, the combining of presentation with computation comes at a cost of reproducibility and perhaps quality control. Seeing the description of how spreadsheets were originally used, it seems totally natural to me. It is not unlike today's analytic dashboards that give you a window into your business and allow you to "model" various scenarios by tweaking a few numbers of formulas. Over time, people took spreadsheets to all sorts of extremes, using them for purposes for which they were not originally designed, and problems naturally arose.
+</p>
+
+<p class="graf--p graf-after--p">
+  So now, we are trying to separate out the computation and presentation bits a little. Tools like knitr and R and shiny allow us to do this and to bring them together with a proper toolchain. The loss in interactivity is only slight because of the power of the toolchain and the speed of computers nowadays. Essentially, we've brought back the Data Processing department, but have staffed it with robots and high speed multi-core computers.
+</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2016/02/17/non-tidy-data/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2016/02/17/non-tidy-data/">Non-tidy data</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2016/02/26/preprints-and-pppr/">Preprints are great, but post publication peer review isn&#39;t ready for prime time</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2016/02/26/preprints-and-pppr/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

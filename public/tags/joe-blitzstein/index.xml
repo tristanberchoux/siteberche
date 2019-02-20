@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joe Blitzstein on Tristan Berchoux</title>
+    <link>/tags/joe-blitzstein/</link>
+    <description>Recent content in Joe Blitzstein on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Fri, 20 Jan 2012 14:00:06 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/joe-blitzstein/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Interview With Joe Blitzstein</title>
+      <link>/2012/01/20/interview-with-joe-blitzstein/</link>
+      <pubDate>Fri, 20 Jan 2012 14:00:06 +0000</pubDate>
+      
+      <guid>/2012/01/20/interview-with-joe-blitzstein/</guid>
+      <description>Joe Blitzstein     Joe Blitzstein is Professor of the Practice in Statistics at Harvard University and co-director of the graduate program. He moved to Harvard after obtaining his Ph.D. with Persi Diaconis at Stanford University. Since joining the faculty at Harvard, he has been immortalized in Youtube prank videos, been awarded a &amp;#8220;favorite professor&amp;#8221; distinction four times, and performed interesting research on the statistical analysis of social networks.</description>
+    </item>
+    
+  </channel>
+</rss>

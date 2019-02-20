@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2012/12/04/advice-for-students-on-the-academic-job-market-2013-edition/">Advice for students on the academic job market (2013 edition)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/12/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Job hunting season is upon us. Those on the job market should be sending in applications already. Here I provide links to some of the related posts we published last year.
+ Advice for stats students on the academic job market Another academic job market option: liberal arts colleges Preparing for tenure track job interviews On hard and soft money  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/12/03/data-analysis-acquisition-worst-deal-ever/">Data analysis acquisition &#34;worst deal ever&#34;?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/12/03</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A little over a year ago I mentioned that data analysis companies were getting gobbled up by larger technology companies. In particular, HP bought Autonomy, a British data analysis company, for about $11 billion. (By the way, can anyone tell me if it&rsquo;s still called Hewlett-Packard, or is it just &ldquo;HP&rdquo;, like &ldquo;AT&amp;T&rdquo;?) From an article a year ago
+ Autonomy, with headquarters in Cambridge, England, helps companies and governments store, process, search and analyze large electronic data sets.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/12/03/data-analysis-acquisition-worst-deal-ever/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/12/02/sunday-datastatistics-link-roundup-12212/">Sunday data/statistics link roundup (12/2/12)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/12/02</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/art">Art</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/cnn">cnn</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/crowd-funding">crowd funding</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/humor">humor</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/kaggle">Kaggle</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/roger">roger</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/sunday-links">sunday links</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  An interview with Anthony Goldbloom, CEO of Kaggle. I&rsquo;m not sure I&rsquo;d agree with the characterization that all data scientists are: creative, curious, and competitive and certainly those characteristics aren&rsquo;t unique to data scientists. And I didn&rsquo;t know this: &ldquo;We have 65,000 data scientists signed up to Kaggle, and just like with golf tournaments, we have them all ranked from 1 to 65,000.&ldquo;  Check it out, art with R!
+  </p>
+
+  
+  <footer>
+    <a href="/2012/12/02/sunday-datastatistics-link-roundup-12212/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/11/30/statistical-illiteracy-may-lead-to-parents-panicking-about-autism/">Statistical illiteracy may lead to parents panicking about Autism.</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/11/30</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/p-values">p-values</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rant">Rant</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/statistical-literacy">statistical literacy</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I just was doing my morning reading of a few news sources and stumbled across this Huffington Post article talking about research correlating babies cries to autism. It suggests that the sound of a babies cries may predict their future risk for autism. As the parent of a young son, this obviously caught my attention in a very lizard-brain, caveman sort of way. I couldn&rsquo;t find a link to the research paper in the article so I did some searching and found out this result is also being covered by Time, Science Daily, Medical Daily, and a bunch of other news outlets.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/11/30/statistical-illiteracy-may-lead-to-parents-panicking-about-autism/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/11/27/i-give-up-i-am-embracing-pie-charts/">I give up, I am embracing pie charts</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/11/27</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/humor">humor</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Most statisticians know that pie charts are a terrible way to plot percentages. You can find explanations here, here, and here as well as the R help file for the pie function which states:
+ Pie charts are a very bad way of displaying information. The eye is good at judging linear measures and bad at judging relative areas. A bar chart or dot chart is a preferable way of displaying this type of data.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/11/27/i-give-up-i-am-embracing-pie-charts/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/11/26/the-statisticians-at-fox-news-use-classic-and-novel-graphical-techniques-to-lead-with-data/">The statisticians at Fox News use classic and novel graphical techniques to lead with data</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/11/26</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/data-visualization">data visualization</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/fox-news">fox news</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/graphs">graphs</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Depending on where you land in the political spectrum you may either love or despise Fox News. But regardless of your political affiliation, you have to recognize that their statisticians are well-trained in the art of using graphics to persuade folks of a particular viewpoint. I&rsquo;m not the first to recognize that the graphics department uses some clever tricks to make certain points. But when flipping through the graphs I thought it was interesting to highlight some of the techniques they use to persuade.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/11/26/the-statisticians-at-fox-news-use-classic-and-novel-graphical-techniques-to-lead-with-data/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/11/25/sunday-datastatistics-link-roundup-11252012/">Sunday data/statistics link roundup (11/25/2012)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/11/25</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/computer-science">computer science</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/data-science">data science</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/graph">graph</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/grinnell">grinnell</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/sports">sports</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  My wife used to teach at Grinnell College, so we were psyched to see that a Grinnell player set the NCAA record for most points in a game. We used to go to the games, which were amazing to watch, when we lived in Iowa. The system the coach has in place there is a ton of fun to watch and is based on statistics! Someone has to vet the science writers at the Huffpo.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/11/25/sunday-datastatistics-link-roundup-11252012/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/11/24/computer-scientists-discover-statistics-and-find-it-useful/">Computer scientists discover statistics and find it useful</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/11/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  This article in the New York Times today describes some of the advances that computer scientists have made in recent years.
+ The technology, called deep learning, has already been put to use in services like Apple’s Siri virtual personal assistant, which is based on Nuance Communications’ speech recognition service, and in Google’s Street View, which uses machine vision to identify specific addresses.
+But what is new in recent months is the growing speed and accuracy of deep-learning programs, often called artificial neural networks or just “neural nets” for their resemblance to the neural connections in the brain.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/11/24/computer-scientists-discover-statistics-and-find-it-useful/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/11/21/developing-the-new-york-times-visual-election-outcome-explorer/">Developing the New York Times Visual Election Outcome Explorer</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/11/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Mike Bostock talks about the design and construction of the &ldquo;512 Paths to the White House&rdquo; visualization for the New York Times. I found this visualization extremely useful on election night as it helped me understand the implications of each of the swing state calls as the night rolled on.
+Regarding the use of outside information to annotate the graphic:
+ Applying background knowledge to give the data greater context—such as the influence of the auto-industry bailout on Ohio’s economy—makes the visualization that much richer.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/11/21/developing-the-new-york-times-visual-election-outcome-explorer/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/11/20/a-grand-experiment-in-science-funding/">A grand experiment in science funding</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/11/20</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/citizen-science">citizen science</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/funding">Funding</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/science">science</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Among all the young scientists I know, I think Ethan Perlstein is one of the most innovative in the way he has adapted to the internet era. His website is incredibly unique among academic websites, he is all over the social media and his latest experiment in crowd-funding his research is something I&rsquo;m definitely keeping an eye on.
+The basic idea is that he has identified a project (giving meth to yeast mouse brains -see the comment by Ethan below-, I think) and put it up on Rockethub, which is a crowd funding platform.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/11/20/a-grand-experiment-in-science-funding/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/57/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;58 / 104&nbsp;</span>
+  
+  <a href="/page/59/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

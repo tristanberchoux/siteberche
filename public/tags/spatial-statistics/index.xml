@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spatial Statistics on Tristan Berchoux</title>
+    <link>/tags/spatial-statistics/</link>
+    <description>Recent content in Spatial Statistics on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Tue, 08 Nov 2011 17:05:05 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/spatial-statistics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coarse PM and measurement error paper</title>
+      <link>/2011/11/08/coarse-pm-and-measurement-error-paper/</link>
+      <pubDate>Tue, 08 Nov 2011 17:05:05 +0000</pubDate>
+      
+      <guid>/2011/11/08/coarse-pm-and-measurement-error-paper/</guid>
+      <description>Howard Chang, a former PhD student of mine now at Emory, just published a paper on a measurement error model for estimating the health effects of coarse particulate matter (PM). This is a cool paper that deals with the problem that coarse PM tends to be very spatially heterogeneous. Coarse PM is a bit of a hot topic now because there is currently no national ambient air quality standard for coarse PM specifically.</description>
+    </item>
+    
+  </channel>
+</rss>

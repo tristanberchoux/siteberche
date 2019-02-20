@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Question on Tristan Berchoux</title>
+    <link>/tags/open-question/</link>
+    <description>Recent content in Open Question on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Fri, 27 Jul 2012 13:57:01 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/open-question/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How important is abstract thinking for graduate students in statistics?</title>
+      <link>/2012/07/27/how-important-is-abstract-thinking-for-graduate/</link>
+      <pubDate>Fri, 27 Jul 2012 13:57:01 +0000</pubDate>
+      
+      <guid>/2012/07/27/how-important-is-abstract-thinking-for-graduate/</guid>
+      <description>A recent lunchtime discussion here at Hopkins brought up the somewhat-controversial topic of abstract thinking in our graduate program. We, like a lot of other biostatistics/statistics programs, require our students to take measure theoretic probability as part of the curriculum. The discussion started as a conversation about whether we should require measure theoretic probability for our students. It evolved into a discussion of the value of abstract thinking (and whether measure theoretic probability was a good tool to measure abstract thinking).</description>
+    </item>
+    
+  </channel>
+</rss>

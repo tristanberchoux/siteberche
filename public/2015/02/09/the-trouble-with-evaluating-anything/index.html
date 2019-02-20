@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>The trouble with evaluating anything &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>The trouble with evaluating anything</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/02/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>It is very hard to evaluate people&rsquo;s productivity or work in any meaningful way. This problem is the source of:</p>
+
+<ol>
+<li><a href="http://simplystatistics.org/2013/09/26/how-could-code-review-discourage-code-disclosure-reviewers-with-motivation/">Consternation about peer review</a></li>
+<li><a href="http://simplystatistics.org/2014/02/21/heres-why-the-scientific-publishing-system-can-never-be-fixed/">The reason why post publication peer review doesn&rsquo;t work</a></li>
+<li><a href="http://simplystatistics.org/2012/05/24/how-do-we-evaluate-statisticians-working-in-genomics/">Consternation about faculty evaluation</a></li>
+<li>Major problems at companies like <a href="http://www.bloomberg.com/bw/articles/2013-11-12/yahoos-latest-hr-disaster-ranking-workers-on-a-curve">Yahoo</a> and <a href="http://www.bloomberg.com/bw/articles/2013-11-13/microsoft-kills-its-hated-stack-rankings-dot-does-anyone-do-employee-reviews-right">Microsoft</a>.</li>
+</ol>
+
+<p>Roger and I were just talking about this problem in the context of evaluating the impact of software as a faculty member and Roger suggested the problem is that:</p>
+
+<blockquote>
+<p>Evaluating people requires real work and so people are always looking for shortcuts</p>
+</blockquote>
+
+<p>To evaluate a person&rsquo;s work or their productivity requires three things:</p>
+
+<ol>
+<li>To be an expert in what they do</li>
+<li>To have absolutely no reason to care whether they succeed or not</li>
+<li>To have time available to evaluate them</li>
+</ol>
+
+<p>These three fundamental things are at the heart of why it is so hard to get good evaluations of people and why peer review and other systems are under such fire. The main source of the problem is the conflict between 1 and 2. The group of people in any organization or on any scale that is truly world class at any given topic from software engineering to history is small. It has to be by definition. This group of people inevitably has some reason to care about the success of the other people in that same group. Either they work with the other world class people and want them to succeed or they  either intentionally or unintentionally are competing with them.</p>
+
+<p>The conflict between being and expert and having no say wouldn&rsquo;t be such a problem if it wasn&rsquo;t for issue number 3: the time to evaluate people. To truly get good evaluations what you need is for someone who <em>isn&rsquo;t an expert in a field and so has no stake</em> to take the time to become an expert and then evaluate the person/software. But this requires a huge amount of effort on the part of a reviewer who has to become expert in a new field. Given that reviewing is often considered the least important task in people&rsquo;s workflow, evidenced by the value we put on people acting as peer reviewers for journals, or the value people get for doing a good job in people&rsquo;s evaluation for promotion in companies, it is no wonder people don&rsquo;t take the time to become experts.</p>
+
+<p>I actually think that tenure review committees at forward thinking places may be the best at this (<a href="http://simplystatistics.org/2012/12/20/the-nih-peer-review-system-is-still-the-best-at-identifying-innovative-biomedical-investigators/">Rafa said the same thing about NIH study section</a>). They at least attempt to get outside reviews from people who are unbiased about the work that a faculty member is doing before they are promoted. This system, of course, has large and well-document problems, but I think it is better than having a person&rsquo;s direct supervisor - who clearly has a stake - being the only person evaluating them.It is also better than only using the quantifiable metrics like number of papers and impact factor of the corresponding journals. I also think that most senior faculty who evaluate people take the job very seriously despite the only incentive being good citizenship.</p>
+
+<p>Since real evaluation requires hard work and expertise, most of the time people are looking for a short cut. These short cuts typically take the form of quantifiable metrics. In the academic world these shortcuts are things like:</p>
+
+<ol>
+<li>Number of papers</li>
+<li>Citations to academic papers</li>
+<li>The impact factor of a journal</li>
+<li>Downloads to a person&rsquo;s software</li>
+</ol>
+
+<p>I think all of these things are associated with quality but none define quality. You could try to model the relationship, but it is very hard to come up with a universal definition for the outcome you are trying to model. In academics, some people have suggested that <a href="http://www.michaeleisen.org/blog/?p=694">open review or post-publication review</a> solves the problem. But this is only true for a very small subset of cases that violate rule number 2. The only papers that get serious post-publication review are where people have an incentive for the paper to go one way or the other. This means that papers in Science will be post-pub reviewed much much more often than equally important papers in discipline specific journals - just because people care more about Science. This will leave the vast majority of papers unreviewed - as evidenced by the relatively modest number of papers reviewed by <a href="https://pubpeer.com/">PubPeer</a> or <a href="http://www.ncbi.nlm.nih.gov/pubmedcommons/">Pubmed Commons.</a></p>
+
+<p>I&rsquo;m beginning to think that the only way to do evaluation well is to hire people whose <em>only job is to evaluate something well</em>. In other words, peer reviewers who are paid to review papers full time and are only measured by how often those papers are retracted or proved false. Or tenure reviewers who are paid exclusively to evaluate tenure cases and are measured by how well the post-tenure process goes for the people they evaluate and whether there is any measurable bias in their reviews.</p>
+
+<p>The trouble with evaluating anything is that it is hard work and right now we aren&rsquo;t paying anyone to do it.</p>
+
+<p>&nbsp;</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2015/02/05/johns-hopkins-data-science-specialization-top-performers/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2015/02/05/johns-hopkins-data-science-specialization-top-performers/">Johns Hopkins Data Science Specialization Top Performers</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2015/02/12/is-reproducibility-as-effective-as-disclosure-lets-hope-not/">Is Reproducibility as Effective as Disclosure? Let&#39;s Hope Not.</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2015/02/12/is-reproducibility-as-effective-as-disclosure-lets-hope-not/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

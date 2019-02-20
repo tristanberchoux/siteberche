@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Air Pollution on Tristan Berchoux</title>
+    <link>/tags/air-pollution/</link>
+    <description>Recent content in Air Pollution on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Thu, 08 Dec 2011 01:05:44 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/air-pollution/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Plotting BeijingAir Data</title>
+      <link>/2011/12/08/plotting-beijingair-data/</link>
+      <pubDate>Thu, 08 Dec 2011 01:05:44 +0000</pubDate>
+      
+      <guid>/2011/12/08/plotting-beijingair-data/</guid>
+      <description>Here&amp;#8217;s a bit of R code for scraping the BejingAir Twitter feed and plotting the hourly PM2.5 values for the past 24 hours. The script defaults to the past 24 hours but you can modify that by simply changing the value for the variable &amp;#8216;n&amp;#8217;. You can just grab the code from this R script. Note that you need to use the latest version of the &amp;#8216;twitteR&amp;#8217; package because the data structure has changed from previous versions.</description>
+    </item>
+    
+    <item>
+      <title>Ozone rules</title>
+      <link>/2011/11/20/ozone-rules/</link>
+      <pubDate>Sun, 20 Nov 2011 18:35:00 +0000</pubDate>
+      
+      <guid>/2011/11/20/ozone-rules/</guid>
+      <description>A recent article in the New York Times describes the backstory behind the decision to not revise the ozone national ambient air quality standard. This article highlights the reality of balancing the need to set air pollution regulation to protect public health and the desire to get re-elected. Not having ever served in politics (does being elected to the faculty senate count?) I can&amp;#8217;t comment on the political aspect. But I wanted to highlight some of the scientific evidence that goes into developing these standards.</description>
+    </item>
+    
+  </channel>
+</rss>

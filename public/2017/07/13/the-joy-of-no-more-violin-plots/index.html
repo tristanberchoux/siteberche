@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>The joy of no more violin plots &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>The joy of no more violin plots</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/07/13</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/pet-peeve-joy-plots">pet peeve, joy plots</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  
+
+
+<p>I dislike violin plots because they look like Christmas ornaments.</p>
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/_images/xmas-ornaments.jpeg" style="display: block; margin: auto;" /></p>
+<p>It’s a pet peeve but there is somewhat of a practical reason as well. To demonstrate I created a dataset called <code>dat</code> that contains an outcome <code>value</code> from 25 different groups.</p>
+<p>One of the first steps I take when analyzing data is to look at the distribution of my data. If there are groups, I like to stratify and look at the distributions. Histograms and smooth density estimates are my favorite tools for visualizing distributions. I have 25 groups in this data so I would start by quickly looking at a random subset:</p>
+<pre class="r"><code>dat %&gt;% filter(group %in% c(&quot;A&quot;,&quot;H&quot;,&quot;I&quot;,&quot;P&quot;)) %&gt;% 
+  ggplot(aes(value)) + 
+  geom_histogram(binwidth = 0.5, color=&quot;black&quot;) +
+  facet_grid(.~group)</code></pre>
+<p><img src="/post/2017-07-13-the-joy-of-no-more-violin-plots_files/figure-html/histograms-1.png" width="672" /></p>
+<p>This plot shows me that the data looks normally distributed. To see how the groups compare to each other, a first step is to look at boxplots with groups reordered by their median value.</p>
+<pre class="r"><code>dat %&gt;% mutate(group = reorder(group, value, median)) %&gt;% 
+  ggplot(aes(group, value)) + geom_boxplot()</code></pre>
+<p><img src="/post/2017-07-13-the-joy-of-no-more-violin-plots_files/figure-html/boxplots-1.png" width="672" /></p>
+<p>If you look close enough you note that group G looks a bit different: larger variance. But by summarizing into only five numbers, the boxplot misses an important characteristic of the data. Violin plots let you see the distributions rather than these five points:</p>
+<pre class="r"><code>dat %&gt;% mutate(group = reorder(group, value, median)) %&gt;% 
+  ggplot(aes(group, value)) + geom_violin(fill = &quot;blue&quot;)</code></pre>
+<p><img src="/post/2017-07-13-the-joy-of-no-more-violin-plots_files/figure-html/violin-1.png" width="672" /></p>
+<p>Do you see it? If you look closely, group G appears to be bimodal. But why is it hard for me to see?</p>
+<ol style="list-style-type: decimal">
+<li>Adding a mirror image of the density to make them resemble boxplots in some manner makes them look like Christmas ornaments and distracts me.</li>
+<li>I am used to looking at histograms and densities with the variable in the x-axis not the y-axis.</li>
+</ol>
+<p>I therefore prefer to stack histograms or density estimators vertically. So I was happy to learn about the <a href="https://github.com/clauswilke/ggjoy">ggjoy</a> package that let’s you make such a plot in one line of code and produces a much more aesthetically pleasing plot than stacking histograms using, for example, facets.</p>
+<pre class="r"><code>library(ggjoy)
+dat %&gt;% mutate(group = reorder(group, value, median)) %&gt;%
+  ggplot(aes(x=value, y=group, height=..density..)) +
+  geom_joy(scale=0.85)</code></pre>
+<p><img src="/post/2017-07-13-the-joy-of-no-more-violin-plots_files/figure-html/joy-1.png" width="384" style="display: block; margin: auto;" /></p>
+<p>Note how quickly we notice the bimodal group. I am hoping people start using joy plots instead of violin plots. To install and try out the package use this:</p>
+<pre class="r"><code>library(devtools)
+install_github(&quot;clauswilke/ggjoy&quot;)</code></pre>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2017/07/10/the-machines-learn-but-we-don-t/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2017/07/10/the-machines-learn-but-we-don-t/">The Machines Learn But We Don&#39;t</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2017/07/14/optimizing-for-user-experience/">Optimizing for User Experience</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2017/07/14/optimizing-for-user-experience/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

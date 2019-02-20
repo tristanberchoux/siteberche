@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Biostatistics: It&#39;s not what you think it is &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Biostatistics: It&#39;s not what you think it is</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/11/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p><a href="http://www.hsph.harvard.edu/biostatistics">My department</a> recently sent me on a recruitment trip for our graduate program. I had the opportunity to chat with undergrads interested in pursuing a career related to data analysis. I found that several did not know about the existence of Departments of _Biostatistics_ and most of the rest thought _Biostatistics_ was the study of clinical trials. We <a href="http://simplystatistics.org/2012/08/14/statistics-statisticians-need-better-marketing/">have</a> <a href="http://simplystatistics.org/2011/11/02/we-need-better-marketing/">posted</a> on the need for better marketing for Statistics, but Biostatistics needs it even more. So this post is for students considering a career as applied statisticians or data science and are considering PhD programs.</p>
+
+<p>There are dozens of Biostatistics departments and most run PhD programs. As an undergraduate, you may have never heard of it because they are usually in schools that undergrads don&rsquo;t regularly frequent: Public Health and Medicine.  However, they are very active in research and teaching graduate students. In fact, the 2014 US News &amp; World Report <a href="http://US News and R">ranking of Statistics Departments</a> includes three Biostat departments in the top five spots. Although clinical trials are a popular area of interest in these departments, there are now many other areas of research. With so many fields of science shifting to data intensive research, Biostatistics has adapted to work in these areas. Today pretty much any Biostat department will have people working on projects related to genetics, genomics, computational biology, electronic medical records, neuroscience, environmental sciences, and epidemiology, health-risk analysis, and clinical decision making. Through collaborations, academic biostatisticians have early access to the cutting edge datasets produced by public health scientists and biomedical researchers. Our research usually revolves in either developing statistical methods that are used by researchers working in these fields or working directly with a collaborator in data-driven discovery.</p>
+
+<p><strong>How is it different from Statistics? </strong>In the grand scheme of things, they are not very different. As implied by the name, Biostatisticians focus on data related to biology while statisticians tend to be more general. However, the underlying theory and skills we learn are similar. In my view, the major difference is that Biostatisticians, in general, tend to be more interested in data and the subject matter, while in Statistics Departments more emphasis is given to the mathematical theory.</p>
+
+<p><strong>What type of job can I get with a Phd In Biostatistics? </strong><a href="http://fortune.com/2015/04/27/best-worst-graduate-degrees-jobs/">A well paying one</a>. And you will have many options to chose from. Our graduates tend to go to academia, industry or government. Also, the <strong>Bio </strong>in the name does not keep our graduates for landing non-bio related jobs, such as in high tech. The reason for this is that the training our students receive and the what they learn from research experiences can be widely applied to data analysis challenges.</p>
+
+<p><strong>How should I prepare if I want to apply to a PhD program?</strong> First you need to decide if you are going to like it. One way to do this is to participate in one of the <a href="http://www.nhlbi.nih.gov/research/training/summer-institute-biostatistics-t15">summer programs</a> where you get a glimpse of what we do. My department runs <a href="http://www.hsph.harvard.edu/biostatistics/diversity/summer-program/">one of these as well</a>.  However, as an undergrad I would mainly focus on courses. Undergraduate research experiences are a good way to get an idea of what it&rsquo;s like, but it is difficult to do real research unless you can set aside several hours a week for several consecutive months. This is difficult as an undergrad because you have to make sure to do well in your courses, prepare for the GRE, and get a solid mathematical and computing foundation in order to conduct research later. This is why these programs are usually in the summer. If you decide to apply to a PhD program, I recommend you take advanced math courses such as Real Analysis and Matrix Algebra. If you plan to develop software for complex datasets, I  recommend CS courses that cover algorithms and optimization. Note that programming skills are not the same thing as the theory taught in these CS courses. Programming skills in R will serve you well if you plan to analyze data regardless of what academic route you follow. Python and a low-level language such as C++ are more powerful languages that many biostatisticians use these days.</p>
+
+<p>I think the demand for well-trained researchers that can make sense of data will continue to be on the rise. If you want a fulfilling job where you analyze data for a living, you should consider a PhD in Biostatistics.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2015/11/07/not-so-standard-deviations-episode-4-a-gajillion-time-series/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2015/11/07/not-so-standard-deviations-episode-4-a-gajillion-time-series/">Not So Standard Deviations: Episode 4 - A Gajillion Time Series</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2015/11/10/prediction-markets-for-science-what-problem-do-they-solve/">Prediction Markets for Science: What Problem Do They Solve?</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2015/11/10/prediction-markets-for-science-what-problem-do-they-solve/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

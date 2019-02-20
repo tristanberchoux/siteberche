@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Baseball on Tristan Berchoux</title>
+    <link>/tags/baseball/</link>
+    <description>Recent content in Baseball on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 07 Oct 2012 13:53:30 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/baseball/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (10/7/12)</title>
+      <link>/2012/10/07/sunday-data-statistics-link-roundup-10-7-12/</link>
+      <pubDate>Sun, 07 Oct 2012 13:53:30 +0000</pubDate>
+      
+      <guid>/2012/10/07/sunday-data-statistics-link-roundup-10-7-12/</guid>
+      <description>Jack Welch got a little conspiracy-theory crazy with the job numbers. Thomas Lumley over at StatsChat makes a pretty good case for debunking the theory. I think the real take home message of Thomas&amp;#8217; post and one worth celebrating/highlighting is that agencies that produce the jobs report do so based on a fixed and well-defined study design. Careful efforts by government statistics agencies make it hard to fudge/change the numbers.</description>
+    </item>
+    
+    <item>
+      <title>Once in a lifetime collapse</title>
+      <link>/2011/09/29/once-in-a-lifetime-collapse/</link>
+      <pubDate>Thu, 29 Sep 2011 13:28:00 +0000</pubDate>
+      
+      <guid>/2011/09/29/once-in-a-lifetime-collapse/</guid>
+      <description>Baseball Prospectus uses Monte Carlo simulation to predict which teams will make the postseason. According to this page, on Sept 1st, the probability of the Red Sox making the playoffs was 99.5%. They were ahead of the Tampa Bay Rays by 9 games. Before last night&amp;#8217;s game, in September, the Red Sox had lost 19 of 26 games and were tied with the Rays for the wild card (the last spot for the playoffs).</description>
+    </item>
+    
+    <item>
+      <title>Small ball is a bad strategy</title>
+      <link>/2011/09/21/small-ball-is-a-bad-strategy/</link>
+      <pubDate>Wed, 21 Sep 2011 11:55:00 +0000</pubDate>
+      
+      <guid>/2011/09/21/small-ball-is-a-bad-strategy/</guid>
+      <description>Bill James pointed this out a long time ago. If you don&amp;#8217;t know Bill James, you should look him up. I consider him to be one of the most influential statisticians of all times. This post relates to one of his first conjectures: sacrificing outs for runs, referred to as small ball, is a bad strategy. ESPN&amp;#8217;s Gamecast, a webtool that gives you pitch-by-pitch updates of baseball games, also gives you a pitch-by-pitch &amp;#8220;probability&amp;#8221; of wining.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/2011/09/08/any-other-team-wins-the-world-series-good-for/</link>
+      <pubDate>Thu, 08 Sep 2011 23:12:00 +0000</pubDate>
+      
+      <guid>/2011/09/08/any-other-team-wins-the-world-series-good-for/</guid>
+      <description>[youtube http://www.youtube.com/watch?v=_tvh5edD22c?wmode=transparent&amp;amp;autohide=1&amp;amp;egm=0&amp;amp;hd=1&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;rel=0&amp;amp;showinfo=0&amp;amp;showsearch=0&amp;amp;w=500&amp;amp;h=375]
+&amp;#8220;Any other team wins the World Series, good for them&amp;#8230;if we win, with this team &amp;#8230; we&amp;#8217;ll have changed the game.&amp;#8221;
+Moneyball! Maybe the start of the era of data. Plus it is a feel good baseball movie where a statistician is the hero. I haven&amp;#8217;t been this stoked for a movie in a long time.
+(Source: http://www.youtube.com/)  </description>
+    </item>
+    
+  </channel>
+</rss>

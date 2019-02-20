@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>π day special: How to use Bioconductor to find empirical evidence in support of π being a normal number &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>π day special: How to use Bioconductor to find empirical evidence in support of π being a normal number</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/03/14</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p><em>Editor&rsquo;s note: Today 3/14/15 at some point between 9:26:53 and 9:26:54 it was the most π day of them all. Below is a repost from last year.</em></p>
+
+<p>Happy π day everybody!</p>
+
+<p>I wanted to write some simple code (included below) to the test parallelization capabilities of my new cluster. So, in honor of π day, I decided to check for <a href="http://www.davidhbailey.com/dhbpapers/normality.pdf">evidence that π is a normal number</a>. A <a href="http://en.wikipedia.org/wiki/Normal_number">normal number</a> is a real number whose infinite sequence of digits has the property that picking any given random m digit pattern is 10<sup>−m</sup>. For example, using the Poisson approximation, we can predict that the pattern &ldquo;123456789&rdquo; should show up between 0 and 3 times in the <a href="http://stuff.mit.edu/afs/sipb/contrib/pi/">first billion digits of π</a> (it actually shows up twice, starting at the 523,551,502-th and 773,349,079-th decimal places).</p>
+
+<p>To test our hypothesis, let Y<sub>1</sub>, &hellip;, Y<sub>100</sub> be the number of &ldquo;00&rdquo;, &ldquo;01&rdquo;, &hellip;,&ldquo;99&rdquo; in the first billion digits of π. If π is in fact normal then the Ys should be approximately IID binomials with N=1 billon and p=0.01. In the qq-plot below I show Z-scores (Y - 10,000,000) / √9,900,000) which appear to follow a normal distribution as predicted by our hypothesis. Further evidence for π being normal is provided by repeating this experiment for 3,4,5,6, and 7 digit patterns (for 5,6 and 7 I sampled 10,000 patterns). Note that we can perform a chi-square test for the uniform distribution as well. For patterns of size 1,2,3 the p-values were 0.84, <del>0.89,</del> 0.92, and 0.99.</p>
+
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2014/03/pi2.png" alt="" /></p>
+
+<p>Another test we can perform is to divide the 1 billion digits into 100,000 non-overlapping segments of length 10,000. The vector of counts for any given pattern should also be binomial. Below I also include these qq-plots.</p>
+
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2014/03/pi21.png" alt="" /></p>
+
+<p>These observed counts should also be independent, and to explore this we can look at autocorrelation plots:</p>
+
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2014/03/piacf1.png" alt="" /></p>
+
+<p>To do this in about an hour and with just a few lines of code (included below), I used the <a href="http://www.bioconductor.org/">Bioconductor</a> <a href="http://www.bioconductor.org/packages/release/bioc/html/Biostrings.html">Biostrings</a> package to match strings and the <em>foreach</em> function to parallelize.</p>
+
+<pre><code class="language-r">library(Biostrings)
+library(doParallel)
+
+registerDoParallel(cores = 48)
+
+x &lt;- scan(&quot;pi-billion.txt&quot;, what=&quot;c&quot;)
+x &lt;- substr(x, 3, nchar(x)) ##remove 3.
+
+x &lt;- BString(x)
+n &lt;- length(x)
+p &lt;- 1/(10^d)
+
+par(mfrow=c(2,3))
+for(d in 2:4){
+  if(d&lt;5){
+    patterns &lt;- sprintf(paste0(&quot;%0&quot;, d, &quot;d&quot;), seq(0, 10^d - 1))
+    } 
+  else{
+    patterns &lt;- sprintf(paste0(&quot;%0&quot;, d, &quot;d&quot;), sample(10^d, 10^4) - 1)
+  }
+  
+  res &lt;- foreach(pat=patterns, .combine=c) %dopar% countPattern(pat, x)
+  
+  z &lt;- (res - n*p) / sqrt(n*p*(1-p))
+  
+  qqnorm(z, xlab=&quot;Theoretical quantiles&quot;, ylab=&quot;Observed z-scores&quot;,
+         main=paste(d, &quot;digits&quot;))
+  abline(0,1)
+  if(d&lt;5) print(1-pchisq(sum((res - n*p)^2 / (n*p)), length(res) - 1))
+}
+
+## Now count in segments
+d &lt;- 1
+m &lt;- 10^5
+patterns &lt;-sprintf(paste0(&quot;%0&quot;, d, &quot;d&quot;), seq(0, 10^d - 1))
+
+res &lt;- foreach(pat=patterns, .combine=cbind) %dopar% { 
+  tmp &lt;- start(matchPattern(pat, x))
+  tmp2 &lt;- floor((tmp-1)/m)
+  return(tabulate(tmp2+1, nbins=n/m))
+}
+
+## qq-plots
+par(mfrow=c(2,5))
+p &lt;- 1/(10^d)
+
+for(i in 1:ncol(res)){
+  z &lt;- (res[,i] - m*p) / sqrt(m*p*(1-p))
+  qqnorm(z, xlab=&quot;Theoretical quantiles&quot;, ylab=&quot;Observed z-scores&quot;, main=paste(i-1))
+  abline(0,1)
+}
+
+## ACF plots
+par(mfrow=c(2,5))
+for(i in 1:ncol(res)) 
+  acf(res[,i])
+</code></pre>
+
+<p>NB: A normal number has the above stated property in any base. The examples above a for base 10.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2015/03/13/de-weaponizing-reproducibility/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2015/03/13/de-weaponizing-reproducibility/">De-weaponizing reproducibility</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2015/03/17/data-science-done-well-looks-easy-and-that-is-a-big-problem-for-data-scientists/">Data science done well looks easy - and that is a big problem for data scientists</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2015/03/17/data-science-done-well-looks-easy-and-that-is-a-big-problem-for-data-scientists/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

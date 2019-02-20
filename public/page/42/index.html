@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2013/10/23/the-leek-group-guide-to-reviewing-scientific-papers/">The Leek group guide to reviewing scientific papers</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/10/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  There has been a lot of discussion of peer review on this blog and elsewhere. One thing I realized is that no one ever formally taught me the point of peer review or how to write a review.
+Like a lot of other people, I have been frustrated by the peer review process. I also now frequently turn to my students to perform supervised peer review of papers, both for their education and because I can&rsquo;t handle the large number of peer review requests I get on my own.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/10/23/the-leek-group-guide-to-reviewing-scientific-papers/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/10/22/blog-posts-that-impact-real-science-software-review-and-gtex/">Blog posts that impact real science - software review and GTEX</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/10/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  There was a flurry of activity on social media yesterday surrounding a blog post by Lior Pachter. He was speaking about the GTEX project - a large NIH funded project that has the goal of understanding expression variation within and among human beings. The project has measured gene expression in multiple tissues of over 900 individuals.
+In the post, the author claims that the GTEX project is &ldquo;throwing away&rdquo; 90% of its data.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/10/22/blog-posts-that-impact-real-science-software-review-and-gtex/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/10/22/pubmed-commons-is-launching/">PubMed commons is launching</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/10/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  PubMed, the main database of life sciences and biomedical literature, is now allowing comments and upvotes. Here is more information and the twitter handle is @PubMedCommons.
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/10/21/why-are-the-best-relievers-not-used-when-they-are-most-needed/">Why are the best relievers not used when they are most needed?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/10/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  During Saturday&rsquo;s ALCS game 6 the Red Sox&rsquo;s manager John Farrell took out his starter in the 6th inning. They were leading by 1, but had runners on first and second with no outs. This is a hard situation to get out of without giving up a run. The chances of scoring with an average pitcher are about 64%. I am sure that with a top of the line pitcher, like Koji Uehara, this number goes down substantially.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/10/21/why-are-the-best-relievers-not-used-when-they-are-most-needed/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/10/18/platforms-and-integration-in-statistical-research-part-22/">Platforms and Integration in Statistical Research (Part 2/2)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/10/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In my last post, I talked about two general approaches to conducting statistical research: platforms and integration. In this followup I thought I&rsquo;d describe the characteristics of certain fields that suggesting taking one approach over another.
+I think in practice, most statisticians will dedicate some time to both the platform and integrative approaches to doing statistical research because different approaches work better in different situations. The question then is not &ldquo;Which approach is better?
+  </p>
+
+  
+  <footer>
+    <a href="/2013/10/18/platforms-and-integration-in-statistical-research-part-22/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/10/17/the-fivethirtyeight-effect-watching-walthickey-gain-twitter-followers-in-real-time/">The @fivethirtyeight effect - watching @walthickey gain Twitter followers in real time</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/10/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Last night Nate Silver announced that he had hired Walt Hickey away from Business Insider to be an editor for the new http://www.fivethirtyeight.com/ website with a couple of tweets:
+ Super excited to announce that 538 is hiring @WaltHickey, the talented young writer/journalist/data geek from Business Insider.  &mdash; Nate Silver (@NateSilver538) October 16, 2013   .@WaltHickey will have a similarly broad range for 538, bringing a data-driven view toward all types of things.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/10/17/the-fivethirtyeight-effect-watching-walthickey-gain-twitter-followers-in-real-time/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/10/15/platforms-and-integration-in-statistical-research-part-12/">Platforms and Integration in Statistical Research (Part 1/2)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/10/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In the technology world today, one of the common topics of interest is the so-called &ldquo;war&rdquo; between Apple and Google (or Android). This war is ostensibly over dominance of the mobile phone industry, where Apple sells the most popular phone but Google/Android (as an operating system) controls over half the market. (Android phones themselves are manufactured by a variety of companies and no one of those companies sells more phones than Apple.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/10/15/platforms-and-integration-in-statistical-research-part-12/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/10/15/teaching-least-squares-to-a-5th-grader-by-calibrating-a-programmable-robot/">Teaching least squares to a 5th grader by calibrating a programmable robot</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/10/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The Lego Mindstorm kit provides software and hardware to create programmable robots. A very simple first task is figuring out how to make the robot move any given distance. You get to program the number of wheel rotations. The video below shows how one can use this to motivate and teach least squares. We assumed the formula was distance = K × rotations, collected data for 1,2&hellip;, 10 rotations, then used R to motivate (via plots) and calculate the least squares estimate of K.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/10/15/teaching-least-squares-to-a-5th-grader-by-calibrating-a-programmable-robot/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/10/14/why-did-lars-peter-hansen-win-the-nobel-prize-generalized-method-of-moments-explained/">A general audience friendly explanation for why Lars Peter Hansen won the Nobel Prize</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/10/14</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  _Lars Peter Hansen won the Nobel Prize in economics for creating the generalized method of moments. A rather technical explanation of the idea appears on Wikipedia. These are a good set of lecture notes on gmms if you like math. I went over to Marginal Revolution to see what was being written about the Nobel Prize winners. Clearly a bunch of other people were doing the same thing as the site was pretty slow to load.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/10/14/why-did-lars-peter-hansen-win-the-nobel-prize-generalized-method-of-moments-explained/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/10/13/sunday-datastatistics-link-roundup-101313/">Sunday data/statistics link roundup (10/13/13)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/10/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A really interesting comparison between educational and TV menus (via Rafa). On a related note, it will be interesting to see how/whether the traditional educational system will be disrupted. I&rsquo;m as into the MOOC thing as the next guy, but I&rsquo;m not sure I buy a series of pictures from your computer as &ldquo;validation&rdquo; you took/know the material for a course. Also I&rsquo;m not 100% sure about what this is, but it has the potential to be kind of awesome - the Moocdemic.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/10/13/sunday-datastatistics-link-roundup-101313/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/41/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;42 / 104&nbsp;</span>
+  
+  <a href="/page/43/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

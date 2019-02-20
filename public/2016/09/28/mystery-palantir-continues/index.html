@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>The Mystery of Palantir Continues &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>The Mystery of Palantir Continues</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/09/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>Palantir, the secretive data science/consulting/software company, continues to be a mystery to most people, but recent reports have not been great. <a href="http://www.nytimes.com/reuters/2016/09/26/business/26reuters-palantir-tech-discrimination-lawsuit.html?smprod=nytcore-iphone&amp;smid=nytcore-iphone-share&amp;_r=0">Reuters reports</a> that the U.S. Department of Labor is suing it for employment discrimination:</p>
+
+<blockquote>
+<p>The lawsuit alleges Palantir routinely eliminated Asian applicants in the resume screening and telephone interview phases, even when they were as qualified as white applicants.</p>
+</blockquote>
+
+<p>Interestingly, the report indicates a statistical argument:</p>
+
+<blockquote>
+<p>In one example cited by the Labor Department, Palantir reviewed a pool of more than 130 qualified applicants for the role of engineering intern. About 73 percent of applicants were Asian. The lawsuit, which covers Palantir&rsquo;s conduct between January 2010 and the present, said the company hired 17 non-Asian applicants and four Asians. &ldquo;The likelihood that this result occurred according to chance is approximately one in a billion,&rdquo; said the lawsuit, which was filed with the department&rsquo;s Office of Administrative Law Judges.</p>
+</blockquote>
+
+<p><em>Update: Thanks to David Robinson for point out that (a) I read the numbers incorrectly and (b) I should have used the hypergeometric distribution to account for the sampling without replacement. The paragraph below is corrected accordingly.</em></p>
+
+<p>Note the use of the phrase &ldquo;qualified applicants&rdquo; in reference to the
+130. Presumably, there was a screening process that removed
+&ldquo;unqualified applicants&rdquo; and that led us to 130. Of the 130, 73% were
+Asian. Presumably, there was a follow up selection process (interview,
+exam) that led to 4 Asians being hired out of 21 (about 19%). Clearly
+there&rsquo;s a difference between 19% and 73% but the reasons may not be
+nefarious. If you assume the number of Asians hired is proportional to
+the number in the qualified pool, then the p-value for the observed
+data is about 10^-8, which is not quite &ldquo;1 in a billion&rdquo; as the
+report claims but it&rsquo;s indeed small. But my guess is the Labor
+Department has more than this test of binomial proportions in terms of
+evidence if they were to go through with a suit.</p>
+
+<p>Alfred Lee from <a href="http://go.theinformation.com/r958P12lLdw">The Information</a> reports that a mutual fund run by Valic sold their shares of Palantir for below the recent valuation:</p>
+
+<blockquote>
+<p>The Valic fund sold its stake at $4.50 per share, filings show, down from the $11.38 per share at which the company raised money in December. The value of the stake at the sale price was $621,000. Despite the price drop, Valic made money on the deal, as it had acquired stock in preferred fundraisings in 2012 and 2013 at between $3.06 and $3.51 per share.</p>
+</blockquote>
+
+<p>The valuation suggested in the article by the recent sale is $8 billion. In my <a href="http://simplystatistics.org/2016/05/11/palantir-struggles/">previous post on Palantir</a>, I noted that while other large-scale consulting companies certainly make a lot of money, none have the sky-high valuation that Palantir commands. However, a more &ldquo;down-to-Earth&rdquo; valuation of $8 billion might be more or less in line with these other companies. It may be bad news for Palantir, but should the company ever have an IPO, it would be good for the public for market participants to realize the intrinsic value of the company.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2016/09/27/thinking-like-statistician-election-2016/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2016/09/27/thinking-like-statistician-election-2016/">Thinking like a statistician: this is not the election for progressives to vote third party</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2016/09/29/statistical-vitriol/">Statistical vitriol</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2016/09/29/statistical-vitriol/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

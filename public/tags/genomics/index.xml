@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Genomics on Tristan Berchoux</title>
+    <link>/tags/genomics/</link>
+    <description>Recent content in Genomics on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Fri, 26 Apr 2013 10:49:08 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/genomics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mindlessly normalizing genomics data is bad - but ignoring unwanted variability can be worse</title>
+      <link>/2013/04/26/mindlessly-normalizing-genomics-data-is-bad-but-ignoring-unwanted-variability-can-be-worse/</link>
+      <pubDate>Fri, 26 Apr 2013 10:49:08 +0000</pubDate>
+      
+      <guid>/2013/04/26/mindlessly-normalizing-genomics-data-is-bad-but-ignoring-unwanted-variability-can-be-worse/</guid>
+      <description>&lt;p&gt;Yesterday, and bleeding over into today, &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/12538238&#34;&gt;quantile normalization&lt;/a&gt; (QN) was being discussed on Twitter. This is the &lt;a href=&#34;https://twitter.com/mbeisen/status/327563522185764864&#34;&gt;Yesterday, and bleeding over into today, &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/12538238&#34;&gt;quantile normalization&lt;/a&gt; (QN) was being discussed on Twitter. This is the&lt;/a&gt; that started the whole thing off. The conversation went a bunch of different directions and then this happened:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;well, this happens all over bio-statistics - ie, naive use in seemingly undirected ways until you get a &amp;ldquo;good&amp;rdquo; pvalue. And then end&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So Jeff and I felt it was important to respond - since we are biostatisticians that work in genomics. We felt a couple of points were worth making:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Most statisticians we know, including us, know QN&amp;rsquo;s limitations and are always nervous about using QN&lt;/strong&gt;. But with most datasets we see, unwanted variability is overwhelming  and we are left with no choice but to normalize in orde to extract anything useful from the data.  In fact, many times QN is not enough and we have to apply further transformations, e.g., to remove &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/20838408&#34;&gt;batch effects&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;2. &lt;strong&gt;We would be curious to know which biostatisticians were being referred to. &lt;/strong&gt;We would like some examples, because most of the genomic statisticians we know work very closely with biologists to aid them in cleaning dirty data to help them find real sources of signal. Furthermore, we encourage biologists to validate their results. In many cases, quantile normalization (or other transforms) are critical to finding results that validate and there is a long literature (both biological and statistical) supporting the importance of appropriate normalization.&lt;/p&gt;
+
+&lt;p&gt;3. &lt;strong&gt;Assuming the data that you get (sequences, probe intensities, etc.) from high-throughput tech = direct measurement of abundance is incorrect.&lt;/strong&gt; Before worrying about QN (or other normalization) being an arbitrary transformation that distorts the data, keep in mind that what you want to measure has already been distorted by PCR, the imperfections of the microarray, scanner measurement error, image bleeding, cross hybridization or alignment artifacts, ozone effects, etc&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;To go into a little more detail about the reasons that normalization may be important in many cases, so I have written a little more detail below with data if you are interested.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Please save the unsolicited R01s</title>
+      <link>/2013/02/27/please-save-the-unsolicited-r01s/</link>
+      <pubDate>Wed, 27 Feb 2013 10:21:21 +0000</pubDate>
+      
+      <guid>/2013/02/27/please-save-the-unsolicited-r01s/</guid>
+      <description>Editor&amp;rsquo;s note: With the sequestration deadline hours away, the career of many young US scientists is on the line. In this guest post, our colleague Steven Salzberg , an avid _Editor&amp;rsquo;s note: With the sequestration deadline hours away, the career of many young US scientists is on the line. In this guest post, our colleague Steven Salzberg , an avid  and its peer review process, tells us why now more than ever the NIH should prioritize funding R01s over other project grants .</description>
+    </item>
+    
+    <item>
+      <title>The scientific reasons it is not helpful to study the Newtown shooter&#39;s DNA</title>
+      <link>/2013/01/03/the-scientific-reasons-it-is-not-helpful-to-study-the-newtown-shooters-dna/</link>
+      <pubDate>Thu, 03 Jan 2013 10:10:46 +0000</pubDate>
+      
+      <guid>/2013/01/03/the-scientific-reasons-it-is-not-helpful-to-study-the-newtown-shooters-dna/</guid>
+      <description>The Connecticut Medical Examiner has asked to sequence and study the DNA of the recent Newtown shooter. I&amp;rsquo;ve been seeing this pop up over the last few days on a lot of popular media sites, where they mention some objections scientists (or geneticists) may have to this &amp;ldquo;scientific&amp;rdquo; study. But I haven&amp;rsquo;t seen the objections explicitly laid out anywhere. So here are mine.
+Ignoring the fundamentals of the genetics of complex disease: If the violent behavior of the shooter has any genetic underpinning, it is complex.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup 12/23/12</title>
+      <link>/2012/12/23/sunday-datastatistics-link-roundup-122312/</link>
+      <pubDate>Sun, 23 Dec 2012 09:44:38 +0000</pubDate>
+      
+      <guid>/2012/12/23/sunday-datastatistics-link-roundup-122312/</guid>
+      <description>A cool data visualization for blood glucose levels for diabetic individuals. This kind of interactive visualization can help people see where/when major health issues arise for chronic diseases. This was a class project by Jeff Heer&amp;rsquo;s Stanford CS448B students Ben Rudolph and Reno Bowen (twitter @RenoBowen). Speaking of interactive visualizations, I also got this link from Patrick M. It looks like a way to build interactive graphics and my understanding is it is compatible with R data frames, worth checking out (plus, Dex is a good name).</description>
+    </item>
+    
+    <item>
+      <title>Top-down versus bottom-up science: data analysis edition</title>
+      <link>/2012/09/07/top-down-versus-bottom-up-science-data-analysis/</link>
+      <pubDate>Fri, 07 Sep 2012 18:56:00 +0000</pubDate>
+      
+      <guid>/2012/09/07/top-down-versus-bottom-up-science-data-analysis/</guid>
+      <description>In our most recent video, Steven Salzberg discusses the ENCODE project. Some of the advantages and disadvantages of top-down science are described. Here, top-down refers to big coordinated projects like the Human Genome Project (HGP). In contrast, the approach of funding many small independent projects, via the R01 mechanism, is referred to as bottom-up. Note that for the cost of HGP we could have funded thousands of R01s. However it is not clear that without the HGP we would have had public sequence data as early as we did.</description>
+    </item>
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (9/2/2012)</title>
+      <link>/2012/09/02/sunday-data-statistics-link-roundup-9-2-2012/</link>
+      <pubDate>Sun, 02 Sep 2012 13:55:03 +0000</pubDate>
+      
+      <guid>/2012/09/02/sunday-data-statistics-link-roundup-9-2-2012/</guid>
+      <description>Just got back from IBC 2012 in Kobe Japan. I was in an awesome session (organized by the inimitable Lieven Clement) with great talks by Matt McCall, Djork-Arne Clevert, Adetayo Kasim, and Willem Talloen. Willem&amp;#8217;s talk nicely tied in our work and how it plays into the pharmaceutical development process and the bigger theme of big data. On the way home through SFO I saw this hanging in the airport.</description>
+    </item>
+    
+    <item>
+      <title>Replication and validation in -omics studies - just as important as reproducibility</title>
+      <link>/2012/07/03/replication-and-validation-in-omics-studies-just-as/</link>
+      <pubDate>Tue, 03 Jul 2012 12:57:29 +0000</pubDate>
+      
+      <guid>/2012/07/03/replication-and-validation-in-omics-studies-just-as/</guid>
+      <description>The psychology/social psychology community has made replication a huge focus over the last year. One reason is the recent, public blow-up over a famous study that did not replicate. There are also concerns about the experimental and conceptual design of these studies that go beyond simple lack of replication. In genomics, a similar scandal occurred due to what amounted to &amp;#8220;data fudging&amp;#8221;. Although, in the genomics case, much of the blame and focus has been on lack of reproducibility or data availability.</description>
+    </item>
+    
+    <item>
+      <title>Follow up on &#34;Statistics and the Science Club&#34;</title>
+      <link>/2012/06/27/follow-up-on-statistics-and-the-science-club/</link>
+      <pubDate>Wed, 27 Jun 2012 12:58:40 +0000</pubDate>
+      
+      <guid>/2012/06/27/follow-up-on-statistics-and-the-science-club/</guid>
+      <description>I agree with Roger&amp;#8217;s latest post: &amp;#8220;we need to expand the tent of statistics and include people who are using their statistical training to lead the new science&amp;#8221;. I am perhaps a bit more worried than Roger. Specifically, I worry that talented go-getters interested in leading science via data analysis will achieve this without engaging our research community. A quantitatively trained person (engineers , computer scientists, physicists, etc..) with strong computing skills (knows python, C, and shell scripting), that reads, for example, &amp;#8220;Elements of Statistical Learning&amp;#8221; and learns R, is well on their way.</description>
+    </item>
+    
+    <item>
+      <title>&#34;How do we evaluate statisticians working in genomics? Why don&#39;t they publish in stats journals?&#34; Here is my answer
+</title>
+      <link>/2012/05/24/how-do-we-evaluate-statisticians-working-in-genomics/</link>
+      <pubDate>Thu, 24 May 2012 15:57:37 +0000</pubDate>
+      
+      <guid>/2012/05/24/how-do-we-evaluate-statisticians-working-in-genomics/</guid>
+      <description>During the past couple of years I have been asked these questions by several department chairs and other senior statisticians interested in hiring or promoting faculty working in genomics. The main difficulty stems from the fact that we (statisticians working in genomics) publish in journals outside the mainstream statistical journals. This can be a problem during evaluation because a quick-and-dirty approach to evaluating an academic statistician is to count papers in the Annals of Statistics, JASA, JRSS and Biometrics.</description>
+    </item>
+    
+    <item>
+      <title>Sample mix-ups in datasets from large studies are more common than you think</title>
+      <link>/2012/05/01/sample-mix-ups-in-datasets-from-large-studies-are-more/</link>
+      <pubDate>Tue, 01 May 2012 15:01:13 +0000</pubDate>
+      
+      <guid>/2012/05/01/sample-mix-ups-in-datasets-from-large-studies-are-more/</guid>
+      <description>If you have analyzed enough high throughput data you have seen it before: a male sample that is really a female, a liver that is a kidney, etc&amp;#8230; As the datasets I analyze get bigger I see more and more sample mix-ups. When I find a couple of samples for which sex is incorrectly annotated (one can easily see this from examining data from X and Y chromosomes) I can&amp;#8217;t help but wonder if there are more that are undetectable (e.</description>
+    </item>
+    
+    <item>
+      <title>People in positions of power that don&#39;t understand statistics are a big problem for genomics</title>
+      <link>/2012/04/27/people-in-positions-of-power-that-dont-understand/</link>
+      <pubDate>Fri, 27 Apr 2012 15:16:29 +0000</pubDate>
+      
+      <guid>/2012/04/27/people-in-positions-of-power-that-dont-understand/</guid>
+      <description>I finally got around to reading the IOM report on translational omics and it is very good. The report lays out problems with current practices and how these led to undesired results such as the now infamous Duke trials and the growth in retractions in the scientific literature. Specific recommendations are provided related to reproducibility and validation. I expect the report will improve things. Although I think bigger improvements will come as a result of retirements.</description>
+    </item>
+    
+  </channel>
+</rss>

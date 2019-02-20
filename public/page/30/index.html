@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2014/11/04/538-election-forecasts-made-simple/">538 election forecasts made simple</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/11/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Nate Silver does a great job of explaining his forecast model to laypeople. However, as a statistician I&rsquo;ve always wanted to know more details. After preparing a &ldquo;predict the midterm elections&ldquo; homework for my data science class I have a better idea of what is going on.
+Here is my best attempt at explaining the ideas of 538 using formulas and data. And here is the R markdown.
+&nbsp;
+&nbsp;
+  </p>
+
+  
+  <footer>
+    <a href="/2014/11/04/538-election-forecasts-made-simple/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/11/02/sunday-datastatistics-link-roundup-11214/">Sunday data/statistics link roundup (11/2/14)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/11/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Better late than never! If you have something cool to share, please continue to email it to me with subject line &ldquo;Sunday links&rdquo;.
+ A DrivenData is a Kaggle-like site but for social good. I like the principle of using data for societal benefit, since there are so many ways it seems to be used for nefarious purposes (via Rafa). This article claiming academic science isn&rsquo;t sexist has been widely panned Emily Willingham pretty much destroys it here (via Sherri R.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/11/02/sunday-datastatistics-link-roundup-11214/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/10/28/why-i-support-statisticians-and-their-resistance-to-hype/">Why I support statisticians and their resistance to hype</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Despite Statistics being the most mature data related discipline, statisticians have not fared well in terms of being selected for funding or leadership positions in the new initiatives brought about by the increasing interest in data. Just to give one example (Jeff and Terry Speed give many more) the White House Big Data Partners Workshop had 19 members of which 0 were statisticians. The statistical community is clearly worried about this predicament and there is widespread consensus that we need to be better at marketing.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/10/28/why-i-support-statisticians-and-their-resistance-to-hype/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/10/26/return-of-the-sunday-links-102614/">Return of the sunday links! (10/26/14)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  New look for the blog and bringing back the links. If you have something that you&rsquo;d like included in the Sunday links, email me and let me know. If you use the title of the message &ldquo;Sunday Links&rdquo; you&rsquo;ll be more likely for me to find it when I search my gmail.
+ Thomas L. does a more technical post on semi-parametric efficiency, normally I&rsquo;m a data n&rsquo; applications guy, but I love these in depth posts, especially when the papers remind me of all the things I studied at my alma mater.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/10/26/return-of-the-sunday-links-102614/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/10/24/an-interactive-visualization-to-teach-about-the-curse-of-dimensionality/">An interactive visualization to teach about the curse of dimensionality</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I recently was contacted for an interview about the curse of dimensionality. During the course of the conversation, I realized how hard it is to explain the curse to a general audience. One of the best descriptions I could come up with was trying to describe sampling from a unit line, square, cube, etc. and taking samples with side length fixed. You would capture fewer and fewer points. As I was saying this, I realized it is a pretty bad way to explain the curse of dimensionality in words.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/10/24/an-interactive-visualization-to-teach-about-the-curse-of-dimensionality/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/10/22/vote-on-simply-statistics-new-logo-design/">Vote on simply statistics new logo design</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  As you can tell, we have given the Simply Stats blog a little style update. It should be more readable on phones or tablets now. We are also about to get a new logo. We are down to the last couple of choices and can&rsquo;t decide. Since we are statisticians, we thought we&rsquo;d collect some data. Here is the link to the poll. Let us know
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/10/20/thinking-like-a-statistician-dont-judge-a-society-by-its-internet-comments/">Thinking like a statistician: don&#39;t judge a society by its internet comments</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In a previous post I explained how thinking like a statistician can help you avoid feeling sad after using Facebook. The basic point was that missing not at random (MNAR) data on your friends&rsquo; profiles (showing only the best parts of their life) can result in the biased view that your life is boring and uninspiring in comparison. A similar argument can be made to avoid losing faith in humanity after reading internet comments or anonymous tweets, one of the most depressing activities that I have voluntarily engaged in.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/10/20/thinking-like-a-statistician-dont-judge-a-society-by-its-internet-comments/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/10/17/bayes-rule-in-a-gif/">Bayes Rule in an animated gif</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Say Pr(A)=5% is the prevalence of a disease (% of red dots on top fig). Each individual is given a test with accuracy Pr(B|A)=Pr(no B| no A) = 90% . The O in the middle turns into an X when the test fails. The rate of Xs is 1-Pr(B|A). We want to know the probability of having the disease if you tested positive: Pr(A|B). Many find it counterintuitive that this probability is much lower than 90%; this animated gif is meant to help.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/10/17/bayes-rule-in-a-gif/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/10/16/creating-the-field-of-evidence-based-data-analysis-do-people-know-what-a-p-value-looks-like/">Creating the field of evidence based data analysis - do people know what a p-value looks like?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In the medical sciences, there is a discipline called &ldquo;evidence based medicine&rdquo;. The basic idea is to study the actual practice of medicine using experimental techniques. The reason is that while we may have good experimental evidence about specific medicines or practices, the global behavior and execution of medical practice may also matter. There have been some success stories from this approach and also backlash from physicians who don&rsquo;t like to be told how to practice medicine.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/10/16/creating-the-field-of-evidence-based-data-analysis-do-people-know-what-a-p-value-looks-like/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/10/15/dear-laboratory-scientists-welcome-to-my-world/">Dear Laboratory Scientists: Welcome to My World</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Consider the following question: Is there a reproducibility/replication crisis in epidemiology?
+I think there are only two possible ways to answer that question:
+ No, there is no replication crisis in epidemiology because no one ever believes the result of an epidemiological study unless it has been replicated a minimum of 1,000 times in every possible population. Yes, there is a replication crisis in epidemiology, and it started in 1854 when John Snow inferred, from observational data, that cholera was spread via contaminated water obtained from public pumps.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/10/15/dear-laboratory-scientists-welcome-to-my-world/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/29/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;30 / 104&nbsp;</span>
+  
+  <a href="/page/31/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

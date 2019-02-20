@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2016/07/05/nssd-episode-18/">Not So Standard Deviations Episode 18 - Back on Planet Earth</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/07/05</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  With Hilary fresh from Use R! 2016, Hilary and I discuss some of the highlights from the conference. Also, some followup about a previous Free Advertising and the NSSD drinking game.
+If you have questions you’d like us to answer, you can send them to nssdeviations @ gmail.com or tweet us at @NSSDeviations.
+Subscribe to the podcast on iTunes.
+Subscribe to the podcast on Google Play.
+Please leave us a review on iTunes!
+  </p>
+
+  
+  <footer>
+    <a href="/2016/07/05/nssd-episode-18/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/06/28/stack-overflow-drob/">A Year at Stack Overflow</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/06/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  David Robinson (@drob) has a great post on his blog about his first year as a data scientist at Stack Overflow. This section in particular stood out for me:
+ I like using R to learn interesting things about our data, but my longer term goal is to make it easy for any of our engineers to do so&hellip;.Towards this goal, I’ve been focusing on building reliable tools and frameworks that people can apply to a variety of problems, rather than “one-off” analysis scripts.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/06/28/stack-overflow-drob/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/06/28/tuesday-update/">Tuesday Update</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/06/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  If you weren&rsquo;t sick of Theranos yet&hellip;. Looks like there will be a movie version of the Theranos saga which, as far as I can tell, isn&rsquo;t over yet, but no matter. It will be done by Adam McKay, the writer-director of The Big Short (excellent film), and will star Jennifer Lawrence as Elizabeth Holmes. From Vanity Fair:
+ Legendary Pictures snapped up rights to the hot-button biopic for a reported $3 million Thursday evening, after outbidding and outlasting a swarm of competition from Warner Bros.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/06/28/tuesday-update/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/06/14/ultimate-ai-battle/">Ultimate AI battle - Apple vs. Google</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/06/14</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Yesterday, Apple launched its Worldwide Developer&rsquo;s Conference (WWDC) and had its public keynote address. While many new things were announced, the one thing that caught my eye was the dramatic expansion of Apple&rsquo;s use of artificial intelligence (AI) tools. I talked a bit about AI with Hilary Parker on the latest Not So Standard Deviations, particularly in the context of Amazon&rsquo;s Echo/Alexa, and I think it&rsquo;s definitely going to be an area of intense competition between the major tech companies.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/06/14/ultimate-ai-battle/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/06/13/good-books/">Good list of good books</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/06/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The MultiThreaded blog over at Stitch Fix (hat tip to Hilary Parker) has posted a really nice list of data science books (disclosure: one of my books is on the list).
+ We’ve queried our data science team for some of their favorite data science books. This list is by no means exhaustive, but should keep any data scientist/engineer new or old learning and entertained for many an evening.
+ Enjoy!
+  </p>
+
+  
+  <footer>
+    <a href="/2016/06/13/good-books/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/06/09/nssd-episode-17/">Not So Standard Deviations Episode 17 - Diurnal High Variance</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/06/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Hilary and I talk about Amazon Echo and Alexa as AI as a service, the COMPAS algorithm, criminal justice forecasts, and whether algorithms can introduce or remove bias (or both).
+If you have questions you’d like us to answer, you can send them to nssdeviations @ gmail.com or tweet us at @NSSDeviations.
+Subscribe to the podcast on iTunes.
+Subscribe to the podcast on Google Play.
+Please leave us a review on iTunes!
+  </p>
+
+  
+  <footer>
+    <a href="/2016/06/09/nssd-episode-17/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/06/03/defining-success/">Defining success - Four secrets of a successful data science experiment</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/06/03</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Editor&rsquo;s note: This post is excerpted from the book Executive Data Science: A Guide to Training and Managing the Best Data Scientists, written by myself, Brian Caffo, and Jeff Leek. This particular section was written by Brian Caffo.
+Defining success is a crucial part of managing a data science experiment. Of course, success is often context specific. However, some aspects of success are general enough to merit discussion. A list of hallmarks of success includes:
+  </p>
+
+  
+  <footer>
+    <a href="/2016/06/03/defining-success/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/05/31/barrier-to-medication/">Sometimes the biggest challenge is applying what we already know</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/05/31</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  There&rsquo;s definitely a need to innovate and develop new treatments in the area of asthma, but it&rsquo;s easy to underestimate the barriers to just doing what we already know, such as making sure that people are following existing, well-established guidelines on how to treat asthma. My colleague, Elizabeth Matsui, has written about the challenges in a study that we are collaborating on:
+ Our group is currently conducting a study that includes implementation of national guidelines-based medical care for asthma, so that one process that we’ve had to get right is to prescribe an appropriate dose of medication and get it into the family’s hands.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/05/31/barrier-to-medication/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/05/24/somtimes-theres-friction-for-a-reason/">Sometimes there&#39;s friction for a reason</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/05/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Thinking about my post on Theranos yesterday it occurred to me that one thing that&rsquo;s great about all of the innovation and technology coming out of places like Silicon Valley is the tremendous reduction of friction in our lives. With Uber it&rsquo;s much easier to get a ride because of improvement in communication and an increase in the supply of cars. With Amazon, I can get that jug of vegetable oil that I always wanted without having to leave the house, because Amazon.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/05/24/somtimes-theres-friction-for-a-reason/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/05/23/update-on-theranos/"></a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/05/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I think it&rsquo;s fair to say that things for Theranos, the Silicon Valley blood testing company, are not looking up. From the Wall Street Journal (via The Verge):
+ Theranos has voided two years of results from its Edison blood-testing machines, issuing tens of thousands of corrected reports to patients and doctors and raising the possibility that many health care decisions may have been made based on inaccurate data. The Wall Street Journal first reported the news, saying that many of the corrected tests have been run using traditional machinery.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/05/23/update-on-theranos/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/13/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;14 / 104&nbsp;</span>
+  
+  <a href="/page/15/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

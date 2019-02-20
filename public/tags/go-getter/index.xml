@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go Getter on Tristan Berchoux</title>
+    <link>/tags/go-getter/</link>
+    <description>Recent content in Go Getter on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 20 Jun 2012 15:44:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/go-getter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pro Tips for Grad Students in Statistics/Biostatistics (Part 2)</title>
+      <link>/2012/06/20/pro-tips-for-grad-students-in-statistics-biostatistics/</link>
+      <pubDate>Wed, 20 Jun 2012 15:44:00 +0000</pubDate>
+      
+      <guid>/2012/06/20/pro-tips-for-grad-students-in-statistics-biostatistics/</guid>
+      <description>This is the second in my series on pro tips for graduate students in statistics/biostatistics. For more tips, see part 1.  Meet with seminar speakers. When you go on the job market face recognition is priceless. I met Scott Zeger at UW when I was a student. When I came for an interview I already knew him (and Ingo, and Rafa, and &amp;#8230;.). An even better idea&amp;#8230;ask a question during the seminar.</description>
+    </item>
+    
+  </channel>
+</rss>

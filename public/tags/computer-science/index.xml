@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Science on Tristan Berchoux</title>
+    <link>/tags/computer-science/</link>
+    <description>Recent content in Computer Science on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 25 Nov 2012 09:11:03 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday data/statistics link roundup (11/25/2012)</title>
+      <link>/2012/11/25/sunday-datastatistics-link-roundup-11252012/</link>
+      <pubDate>Sun, 25 Nov 2012 09:11:03 +0000</pubDate>
+      
+      <guid>/2012/11/25/sunday-datastatistics-link-roundup-11252012/</guid>
+      <description>My wife used to teach at Grinnell College, so we were psyched to see that a Grinnell player set the NCAA record for most points in a game. We used to go to the games, which were amazing to watch, when we lived in Iowa. The system the coach has in place there is a ton of fun to watch and is based on statistics! Someone has to vet the science writers at the Huffpo.</description>
+    </item>
+    
+    <item>
+      <title>Computational biologist blogger saves computer science department</title>
+      <link>/2012/05/14/computational-biologist-blogger-saves-computer-science/</link>
+      <pubDate>Mon, 14 May 2012 15:01:00 +0000</pubDate>
+      
+      <guid>/2012/05/14/computational-biologist-blogger-saves-computer-science/</guid>
+      <description>People who read the news should be aware by now that we are in the midst of a big data era. The New York Times, for example, has been writing about this frequently. One of their most recent articles describes how UC Berkeley is getting $60 million dollars for a new computer science center. Meanwhile, at University of Florida the administration seems to be oblivious to all this and about a month ago announced it was dropping its computer science department to save $.</description>
+    </item>
+    
+    <item>
+      <title>An essay on why programmers need to learn statistics</title>
+      <link>/2012/03/02/an-essay-on-why-programmers-need-to-learn-statistics/</link>
+      <pubDate>Fri, 02 Mar 2012 13:24:55 +0000</pubDate>
+      
+      <guid>/2012/03/02/an-essay-on-why-programmers-need-to-learn-statistics/</guid>
+      <description>This is awesome. There are a few places with some strong language, but overall I think the message is pretty powerful. Via Tariq K. I agree with Tariq, one of the gems is:
+ If you want to measure something, then don&amp;#8217;t measure other sh**. 
+ </description>
+    </item>
+    
+    <item>
+      <title>Interview with Héctor Corrada Bravo</title>
+      <link>/2011/11/18/interview-with-h-ctor-corrada-bravo/</link>
+      <pubDate>Fri, 18 Nov 2011 17:52:01 +0000</pubDate>
+      
+      <guid>/2011/11/18/interview-with-h-ctor-corrada-bravo/</guid>
+      <description>Héctor Corrada Bravo
+
+Héctor Corrada Bravo is an assistant professor in the Department of Computer Science and the Center for Bioinformatics and Computational Biology at the University of Maryland, College Park. He moved to College Park after finishing his Ph.D. in computer science at the University of Wisconsin and a postdoc in biostatistics at the Johns Hopkins Bloomberg School of Public Health. He has done outstanding work at the intersection of molecular biology, computer science, and statistics.</description>
+    </item>
+    
+  </channel>
+</rss>

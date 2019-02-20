@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2013/12/13/simply-statistics-interview-with-michael-eisen-co-founder-of-the-public-library-of-science-part-22/">Simply Statistics Interview with Michael Eisen, Co-Founder of the Public Library of Science (Part 2/2)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/12/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Here is Part 2 of our Jeff&rsquo;s and my interview with Michael Eisen, Co-Founder of the Public Library of Science.
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/12/12/the-key-word-in-data-science-is-not-data-it-is-science/">The key word in &#34;Data Science&#34; is not Data, it is Science</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/12/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  One of my colleagues was just at a conference where they saw a presentation about using data to solve a problem where data had previously not been abundant. The speaker claimed the data were &ldquo;big data&rdquo; and a question from the audience was: &ldquo;Well, that isn&rsquo;t really big data is it, it is only X Gigabytes&rdquo;.
+While that exact question would elicit groans from most people who work with data, I think it highlights one of the key problems with the thinking around data science.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/12/12/the-key-word-in-data-science-is-not-data-it-is-science/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/12/12/simply-statistics-interview-with-michael-eisen-co-founder-of-the-public-library-of-science/">Simply Statistics Interview with Michael Eisen, Co-Founder of the Public Library of Science (Part 1/2)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/12/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Jeff and I had a chance to interview Michael Eisen, a co-founder of the Public Library of Science, HHMI Investigator, and a Professor at UC Berkeley. We talked with him about publishing in open access and how young investigators might publish in open access journals under the current system. Watch part 1 of the interview above.
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/12/11/are-moocs-fundamentally-flawed-or-is-it-a-problem-with-statistical-literacy/">Are MOOC&#39;s fundamentally flawed? Or is it a problem with statistical literacy?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/12/11</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  People know I have taught a MOOC on Data Analysis, so I frequently get emails about updates on the &ldquo;state of MOOCs&rdquo;. It definitely feels like the wild west of education is happening right now. If you make an analogy to air travel, I would say we are about here:
+ So of course I feel like it is a bit premature for quotes like this:  Two years after a Stanford professor drew 160,000 students from around the globe to a free online course on artificial intelligence, starting what was widely viewed as a revolution in higher education, early results for such large-scale courses are disappointing, forcing a rethinking of how college instruction can best use the Internet.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/12/11/are-moocs-fundamentally-flawed-or-is-it-a-problem-with-statistical-literacy/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/12/05/nyc-crime-rates-by-yearcommissioner/">NYC crime rates by year/commissioner</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/12/05</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  NYC mayor-elect Bill de Blasio is expected to name William J. Bratton to lead the NYPD. Bratton has been commissioner before (1994-1996) so I was curious to see the crime rates during his tenure, which was within the period that saw an impressive drop (1990-2010). Here is the graph of violent crimes per 100,000 inhabitants for NYC NY state for year 1965-2012 (divided by commissioner). Will Bratton be able to continue the trend?
+  </p>
+
+  
+  <footer>
+    <a href="/2013/12/05/nyc-crime-rates-by-yearcommissioner/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/12/04/advice-for-stats-students-on-the-academic-job-market-2/">Advice for students on the academic job market</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/12/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Editor&rsquo;s note: This is a slightly modified version of a previous post.
+Job hunting season is upon us. Openings are already being posted here, here, and here. So you should have your CV, research statement, and web page ready. I highly recommend having a web page. It doesn’t have to be fancy. Here, here, and here are some good ones ranging from simple to a bit over the top. Minimum requirements are a list of publications and a link to a CV.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/12/04/advice-for-stats-students-on-the-academic-job-market-2/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/12/03/on-the-future-of-the-textbook/">On the future of the textbook</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/12/03</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The latest issue of Technological Innovations in Statistics Education is focused on the future of the textbook. Editor Rob Gould has put together an interesting list of contributions as well as discussions from the leaders in the field of statistics education. Articles include
+ The Course as Textbook: A Symbiotic Relationship in the Introductory Statistics Class by Zieffler, Isaak, and Garfield
+ OpenIntro Statistics: an Open-source Textbook by Cetinkaya-Rundel, Diez, and Barr Textbooks 2.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/12/03/on-the-future-of-the-textbook/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/12/02/academics-should-not-feel-guilty-for-maximizing-their-potential-by-leaving-their-homeland/">Academics should not feel guilty for maximizing their potential by leaving their homeland</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/12/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In a New York Times op-ed titled Migration Hurts the Homeland, Paul Collier tells us that
+ What’s good for migrants from poor places is not always good for the countries they’re leaving behind.  He makes the argument that those that favor open immigration don't realize that they are actually hurting "the poor" more than they are helping. This post is not about the issue of whether migration is bad for the homeland (I know of others that make the opposite claim) but rather about the opinions I have formed by leaving my homeland to become an academic in a US research university.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/12/02/academics-should-not-feel-guilty-for-maximizing-their-potential-by-leaving-their-homeland/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/12/01/sunday-datastatistics-link-roundup-12213/">Sunday data/statistics link roundup (12/2/13)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/12/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I&rsquo;m in Australia for Bioinfo Summer 2013! First time in Australia and excited about the great lineup of speakers and to meet a bunch of people at the University of Adelaide.  An interesting post about how CS has become the de facto language of our times. They specifically talk about CS50 at Harvard. I think in terms of being an informed citizen CS and Statistics are quickly being added to Reading, Writing, and Arithmetic as the required baseline knowledge (link via Alex N.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/12/01/sunday-datastatistics-link-roundup-12213/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/11/26/statistical-zealots/">Statistical zealots</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/11/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Yesterday my data sharing policy went a little bit viral. It hit the front page of Hacker News and was a trending repo on Github. I was reading the comments on Hacker News and came across this gem:
+ So, while I can imagine there are good Frequentists Statisticians out there, I insist that frequentism itself is bogus.
+ This is the extension of a long standing debate about the relative merits of frequentist and Bayesian statistical methods.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/11/26/statistical-zealots/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/38/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;39 / 104&nbsp;</span>
+  
+  <a href="/page/40/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

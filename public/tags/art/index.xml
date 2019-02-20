@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Art on Tristan Berchoux</title>
+    <link>/tags/art/</link>
+    <description>Recent content in Art on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 02 Dec 2012 10:18:06 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/art/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday data/statistics link roundup (12/2/12)</title>
+      <link>/2012/12/02/sunday-datastatistics-link-roundup-12212/</link>
+      <pubDate>Sun, 02 Dec 2012 10:18:06 +0000</pubDate>
+      
+      <guid>/2012/12/02/sunday-datastatistics-link-roundup-12212/</guid>
+      <description>An interview with Anthony Goldbloom, CEO of Kaggle. I&amp;rsquo;m not sure I&amp;rsquo;d agree with the characterization that all data scientists are: creative, curious, and competitive and certainly those characteristics aren&amp;rsquo;t unique to data scientists. And I didn&amp;rsquo;t know this: &amp;ldquo;We have 65,000 data scientists signed up to Kaggle, and just like with golf tournaments, we have them all ranked from 1 to 65,000.&amp;ldquo;  Check it out, art with R!</description>
+    </item>
+    
+    <item>
+      <title>Data visualization and art</title>
+      <link>/2011/09/09/data-visualization-and-art/</link>
+      <pubDate>Fri, 09 Sep 2011 23:58:00 +0000</pubDate>
+      
+      <guid>/2011/09/09/data-visualization-and-art/</guid>
+      <description>Mark Hansen is easily one of my favorite statisticians today. He is a Professor of Statistics at UCLA and his collaborations with artists have brought data visualization to a whole new place, one that is both informative and moving. Here is a video of his project with Ben Rubin called Listening Post. The installation grabs conversations from unrestricted chat rooms and processes them in real-time to create interesting &amp;#8220;themes&amp;#8221; or &amp;#8220;movements&amp;#8221;.</description>
+    </item>
+    
+  </channel>
+</rss>

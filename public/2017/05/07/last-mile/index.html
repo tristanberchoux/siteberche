@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Will Machine Learning and AI Ever Solve the Last Mile? &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Will Machine Learning and AI Ever Solve the Last Mile?</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/05/07</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>Facebook just recently announced that they were hiring 3,000 people (on top of an existing 4,500) people to review images, videos, and posts for inappropriate content. From <a href="http://www.popsci.com/Facebook-hiring-3000-content-monitors">Popular Science</a>:</p>
+
+<blockquote>
+<p>The scale of this labor is vast: Facebook is hiring more people than work in the combined newsrooms of the New York Times, the Wall Street Journal, and the Washington Post. Facebook isn’t saying at this time if the jobs will be employees or contractors, and if they’ll be based in the United States or abroad.</p>
+</blockquote>
+
+<p>Similar stories have recently popped up. YouTube had a problem when advertisers pulled their ads when it was discovered that some ads were being placed in highly objectionable videos. From <a href="https://www.recode.net/2017/4/3/15157654/google-youtube-advertising-controversy-interview-philipp-schindler">Recode</a>:</p>
+
+<blockquote>
+<p>Google has been scrambling to react over the past few weeks, as newspapers like the Times of London, the Guardian and the Wall Street Journal pointed out ads running next to videos from hate groups and other extremists. Those reports prompted big brands like AT&amp;T and Verizon to pull their ads from YouTube.</p>
+</blockquote>
+
+<p>Interestingly, in both cases, the companies (Facebook and Google) claim, I believe accurately, that the problem is very small. Again, from Recode:</p>
+
+<blockquote>
+<p>A top Google executive says the company’s YouTube ad controversy — where big brands have discovered that some of their ads have run next to videos promoting hate and terror — is overblown.</p>
+
+<p>But he says Google is making progress at fixing it anyway.</p>
+
+<p>“It has always been a small problem,” with “very very very small numbers” of ads running against videos that aren’t “brand safe,” said Google’s chief business officer, Philipp Schindler. “And over the last few weeks, someone has decided to put a bit more of a spotlight on the problem.”</p>
+</blockquote>
+
+<p>It&rsquo;s interesting that Google&rsquo;s attitude was that this was a problem that they didn&rsquo;t really have to fix, but they&rsquo;re going to fix it anyway, seemingly out of the goodness of their own hearts.</p>
+
+<p>I think the reality is quite different. Machine learning and AI are increasingly being placed in situations where the times where the models don&rsquo;t work, however infrequent, nevertheless have a huge impact. Think self-driving cars, for example. The common denominator is that even though each of the problems happened at a comically small scale, <strong>somehow the entire world ended up knowing about it</strong>. So, if the entire world knows about it, how can this be a small problem for the company? No matter, how good Google&rsquo;s or Facebook&rsquo;s algorithms get, if even one person sees it, they can post a screenshot for the entire world to see.</p>
+
+<p>Let&rsquo;s be clear, this problem for Google, Facebook, and others is ultimately a problem of their own making.</p>
+
+<ol>
+<li>The value proposition for these kinds of companies is that they have huge scale and reach millions, if not billions of people around the world</li>
+<li>However, because of their huge scale, even the smallest mistake in their algorithm will be detected by <em>someone</em>. If even one of their billions of users sees the problem, they can broadcast it to the entire world.</li>
+<li>In order to improve their algorithms, companies like Google/Facebook need to collect more data, in part by recruiting new people into their user base.</li>
+<li>However, as their user base grows, the accuracy requirements for their algorithms will also grow because of the likelihood of one user spotting an error or mistake.</li>
+</ol>
+
+<p>Right now, it&rsquo;s humans who take over when the machines fail. I suppose the goal will be to optimize the algorithms to the point where the need for humans to take over is relatively contained and the frequency with which these failures occur is acceptably low. But I don&rsquo;t know if this is possible.</p>
+
+<p>It will be interesting to see how this plays out over the next few years as machine learning and AI get put into more and more situations. I&rsquo;m not confident that machine learning, or more importantly the data that is fed into the algorithms, will ever get to the point where they can detect inappropriate videos or other objectionable content at an acceptable rate. My guess is the solution will be changes to policies to ultimately disincentivize the posting of such content (as was YouTube&rsquo;s solution).</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2017/05/04/debt-haircuts/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2017/05/04/debt-haircuts/">Some default and debt restructuring data</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2017/05/09/data-on-the-comey-effect/">Data on the Comey Effect</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2017/05/09/data-on-the-comey-effect/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

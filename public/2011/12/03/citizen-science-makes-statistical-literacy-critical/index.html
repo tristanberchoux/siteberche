@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Citizen science makes statistical literacy critical &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Citizen science makes statistical literacy critical</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/12/03</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/citizen-science">citizen science</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/diy">diy</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/education">education</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/statistical-literacy">statistical literacy</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/wsj">WSJ</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <p>In today&#8217;s Wall Street Journal, Amy Marcus has a <a href="http://online.wsj.com/article/SB10001424052970204621904577014330551132036.html" target="_blank">piece</a> on the <a href="http://en.wikipedia.org/wiki/Citizen_science" target="_blank">Citizen Science</a> movement, focusing on citizen science in health in particular. I am fully in support of this enthusiasm and a big fan of citizen science - if done properly. There have already been some pretty big <a href="http://www.wired.com/wiredscience/2010/08/citizen-scientist-pulsars/" target="_blank">success</a> <a href="http://depts.washington.edu/bakerpg/drupal/system/files/jiang08A.pdf" target="_blank">stories</a>. As more companies like <a href="http://www.fitbit.com/" target="_blank">Fitbit</a> and <a href="https://www.23andme.com/" target="_blank">23andMe</a> spring up, it is really easy to collect data about yourself (<a href="http://myyearofdata.wordpress.com/" target="_blank">right Chris?</a>). At the same time organizations like <a href="http://www.patientslikeme.com/" target="_blank">Patients Like Me</a> make it possible for people with specific diseases or experiences to self-organize. </p>
+
+<p>But the thing that struck me the most in reading the article is the importance of statistical literacy for citizen scientists, reporters, and anyone reading these articles. For example the article says:</p>
+
+<blockquote>
+<p><span>The questions that most people have about their DNA—such as what health risks they face and how to prevent them—aren&#8217;t always in sync with the approach taken by pharmaceutical and academic researchers, who don&#8217;t usually share any potentially life-saving findings with the patients.</span></p>
+</blockquote>
+
+<p>I think its pretty unlikely that any organization would hide life-saving findings from the public. My impression from reading the article is that this statement refers to keeping results blinded from patients/doctors <em>during an experiment or clinical trial. </em><a href="http://en.wikipedia.org/wiki/Blind_experiment" target="_blank">Blinding</a> is a critical component of clinical trials, which reduces many potential sources of bias in the results of a study. Obviously, once the trial/study has ended (or been stopped early because a treatment is effective) then the results are quickly disseminated.</p>
+
+<p>Several key statistical issues are then raised in bullet-point form without discussion: </p>
+
+<blockquote>
+<p><span>Amateurs may not collect data rigorously, they say, and may draw conclusions from sample sizes that are too small to yield statistically reliable results. </span></p>
+
+<p>Having individuals collect their own data poses other issues. Patients may enter data only when they are motivated, or feeling well, rendering the data useless. In traditional studies, both doctors and patients are typically kept blind as to who is getting a drug and who is taking a placebo, so as not to skew how either group perceives the patients&#8217; progress.</p>
+</blockquote>
+
+<p>The article goes on to describe an anecdotal example of citizen science - which suffers from a key statistical problem (small sample size):</p>
+
+<blockquote>
+<p>Last year, Ms. Swan helped to run a small trial to test what type of vitamin B people with a certain gene should take to lower their levels of homocysteine, an amino acid connected to heart-disease risk. (The gene affects the body&#8217;s ability to metabolize B vitamins.)</p>
+
+<p>Seven people—one in Japan and six, including herself, in her local area—paid around $300 each to buy two forms of vitamin B and Centrum, which they took in two-week periods followed by two-week &#8220;wash-out&#8221; periods with no vitamins at all.</p>
+</blockquote>
+
+<p>The article points out the issue:</p>
+
+<blockquote>
+<p><span>The scientists clapped politely at the end of Ms. Swan&#8217;s presentation, but during the question-and-answer session, one stood up and said that the data was not statistically significant—and it could be harmful if patients built their own regimens based on the results.</span></p>
+</blockquote>
+
+<p><span>But doesn&#8217;t carefully explain the importance of sample size, suggesting instead that the only reason why you need more people is &#8220;insure better accuracy&#8221;. </span></p>
+
+<p>It strikes me that statistical literacy is critical if the citizen science movement is going to go forward. Ideas like experimental design, randomization, blinding, placebos, and sample size need to be in the toolbox of any practicing citizen scientist. </p>
+
+<p>One major drawback is that there are very few places where the general public can learn about statistics. Mostly statistics is taught in university courses. Resources like the <a href="http://www.khanacademy.org/" target="_blank">Kahn Academy</a> and the <a href="http://www.amazon.com/Cartoon-Guide-Statistics-Larry-Gonick/dp/0062731025" target="_blank">Cartoon Guide to Statistics</a> exist, but are only really useful if you are self motivated and have some idea of math/statistics to begin with. </p>
+
+<p>Since <span>knowledge of basic statistical concepts is quickly becoming indispensable for citizen science or even basic life choices like deciding on healthcare options, do we need &#8220;adult statistical literacy courses&#8221;? These courses could focus on the basics of experimental design and how to understand results in stories about science in the popular press. It feels like it might be time to add a basic understanding of statistics and data to reading/writing/arithmetic as critical life skills. <a href="http://simplystatistics.tumblr.com/post/13684145814/the-worlds-has-changed-from-analogue-to-digital-and" target="_blank">I&#8217;m not the only one who thinks so.</a></span></p>
+
+<p><span><br /></span></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2011/12/03/the-worlds-has-changed-from-analogue-to-digital-and/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2011/12/03/the-worlds-has-changed-from-analogue-to-digital-and/">The worlds has changed from analogue to digital and it&#39;s time mathematical education makes the change too.</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2011/12/05/online-learning-personalized/">Online Learning, Personalized</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2011/12/05/online-learning-personalized/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

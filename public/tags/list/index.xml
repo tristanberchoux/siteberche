@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>List on Tristan Berchoux</title>
+    <link>/tags/list/</link>
+    <description>Recent content in List on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Mon, 02 Jan 2012 14:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/list/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>List of cities/states with open data - help me find more!</title>
+      <link>/2012/01/02/list-of-cities-states-with-open-data-help-me-find/</link>
+      <pubDate>Mon, 02 Jan 2012 14:30:00 +0000</pubDate>
+      
+      <guid>/2012/01/02/list-of-cities-states-with-open-data-help-me-find/</guid>
+      <description>It&amp;#8217;s the beginning of 2012 and statistics/data science has never been hotter. Some of the most important data is data collected about civic organizations. If you haven&amp;#8217;t seen Bill Gate&amp;#8217;s TED Talk about the importance of state budgets, you should watch it now. A major key to solving a lot of our economic problems lies in understanding and using data collected about cites and states. U.S. cities and states are jumping on this idea and our own Baltimore was one of the earliest adopters.</description>
+    </item>
+    
+    <item>
+      <title>Statisticians on Twitter...help me find more!</title>
+      <link>/2011/11/09/statisticians-on-twitter-help-me-find-more/</link>
+      <pubDate>Wed, 09 Nov 2011 17:10:06 +0000</pubDate>
+      
+      <guid>/2011/11/09/statisticians-on-twitter-help-me-find-more/</guid>
+      <description>In honor of our blog finally dragging itself into the 21st century and jumping onto Twitter/Facebook, I have been compiling a list of statistical people on Twitter. I couldn&amp;#8217;t figure out an easy way to find statisticians in one go (which could be because I don&amp;#8217;t have Twitter skills). So here is my very informal list of statisticians I found in a half hour of searching. I know I missed a ton of people; let me know who I missed so I can update!</description>
+    </item>
+    
+    <item>
+      <title>The 5 Most Critical Statistical Concepts</title>
+      <link>/2011/10/29/the-5-most-critical-statistical-concepts/</link>
+      <pubDate>Sat, 29 Oct 2011 16:05:05 +0000</pubDate>
+      
+      <guid>/2011/10/29/the-5-most-critical-statistical-concepts/</guid>
+      <description>It seems like everywhere we look, data is being generated - from politics, to biology, to publishing, to social networks. There are also diverse new computational tools, like GPGPU and cloud computing, that expand the statistical toolbox. Statistical theory is more advanced than its ever been, with exciting work in a range of areas. With all the excitement going on around statistics, there is also increasing diversity. It is increasingly hard to define &amp;#8220;statistician&amp;#8221; since the definition ranges from very mathematical to very applied.</description>
+    </item>
+    
+  </channel>
+</rss>

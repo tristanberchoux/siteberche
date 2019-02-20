@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/21/treading-a-new-path-for-reproducible-research-part-1/">Treading a New Path for Reproducible Research: Part 1</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Discussions about reproducibility in scientific research have been on the rise lately, including on this blog. There are many underlying trends that have produced this increased interest in reproducibility: larger and larger studies being harder to replicate independently, cheaper data collection technologies/methods producing larger datasets, cheaper computing power allowing for more sophisticated analyses (even for small datasets), and the rise of general computational science (for every “X” we now have “Computational X”).
+  </p>
+
+  
+  <footer>
+    <a href="/2013/08/21/treading-a-new-path-for-reproducible-research-part-1/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/20/a-couple-of-requests-for-the-statistics2013-future-of-statistics-workshop/">A couple of requests for the @Statistics2013 future of statistics workshop</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Statistics 2013 is hosting a workshop on the future of statistics. Given the timing and the increasing popularity of our discipline I think its a great idea to showcase the future of our field.
+I just have two requests:
+  Please invite more junior people to speak who are doing cutting edge work that will define the future of our field.   Please focus the discussion on some of the real and very urgent issues facing our field.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/08/20/a-couple-of-requests-for-the-statistics2013-future-of-statistics-workshop/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/13/wanted-neuro-quants/">WANTED: Neuro-quants</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Our good colleagues Brian Caffo, Martin Lindquist, and Ciprian Crainiceanu have written a nice editorial for the HuffPo on the need for statisticians in neuroimaging.
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/09/embarrassing-typos-reveal-the-dangers-of-the-lonely-data-analyst/">Embarrassing typos reveal the dangers of the lonely data analyst</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A silly, but actually very serious, error in the supplementary material of a recent paper in Organometallics is causing a stir on the internets (I saw it on Andrew G.&rsquo;s blog). The error in question is a comment in the supplementary material of the paper:
+ Emma, please insert NMR data here! where are they? and for this compound, just make up an elemental analysis &hellip;
+ As has been pointed out on the chemistry blogs, this is actually potentially a pretty serious problem.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/08/09/embarrassing-typos-reveal-the-dangers-of-the-lonely-data-analyst/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/08/data-scientist-is-just-a-sexed-up-word-for-statistician/">Data scientist is just a sexed up word for statistician</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A couple of cool things happened at this years JSM.
+ Twitter adoption went way up and it was much easier for people (like me) who weren&rsquo;t there to keep track of all the action by monitoring the #JSM2013 hashtag. Nate Silver gave the keynote and [A couple of cool things happened at this years JSM.
+ Twitter adoption went way up and it was much easier for people (like me) who weren&rsquo;t there to keep track of all the action by monitoring the #JSM2013 hashtag.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/08/08/data-scientist-is-just-a-sexed-up-word-for-statistician/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/07/simply-statistics-jsm2013-picks-for-wednesday/">Simply Statistics #JSM2013 Picks for Wednesday</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/07</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Sorry for the delay with my session picks for Wednesday. Here&rsquo;s what I&rsquo;m thinking of:
+ 8:30-10:20am: Bayesian Methods for Causal Inference in Complex Settings (CC-520a) or Developments in Statistical Methods for Functional and Imaging Data (CC-522bc) 10:30am-12:20pm: Spatial Statistics for Environmental Health Studies (CC-510c) or Big Data Exploration with Amazon (CC-516c) 2-3:50pm: There are some future stars in the session Environmental Impacts on Public and Ecological Health (CC-512h) and Statistical Challenges in Cancer Genomics with Next-Generation Sequencing and Microarrays (CC-514a) 4-5:50pm: Find out who won the COPSS award!
+  </p>
+
+  
+  <footer>
+    <a href="/2013/08/07/simply-statistics-jsm2013-picks-for-wednesday/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/06/simply-statistics-jsm2013-picks-for-tuesday/">Simply Statistics #JSM2013 Picks for Tuesday</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/06</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  It seems like Monday was a big hit at JSM with Nate Silver&rsquo;s talk and all. Rafa estimates that there were about 1 million people there (+/- 1 million). Ramnath Vaidyanathan has a nice summary of the talk and the Q&amp;A afterwards. Among other things, Silver encouraged people to start a blog and communicate directly with the public. Couldn&rsquo;t agree more! Thanks to all who live-tweeted at #JSM2013. I felt like I was there.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/08/06/simply-statistics-jsm2013-picks-for-tuesday/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/05/simply-statistics-jsm2013-picks-for-monday/">Simply Statistics #JSM2013 Picks for Monday</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/05</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I&rsquo;m sadly not able to attend the Joint Statistical Meetings this year (where Nate Silver is the keynote speaker!) in the great city of Montreal. I&rsquo;m looking forward to checking out the chatter on #JSM2013 but in the meantime, here are the sessions I would have attended if I&rsquo;d been there. If I pick more than one session for a given time slot, I assume you can run back and forth between the two.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/08/05/simply-statistics-jsm2013-picks-for-monday/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/04/sunday-datastatistics-link-roundup-8413/">Sunday data/statistics link roundup (8/4/13)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The $4 million teacher. I love the idea that teaching is becoming a competitive industry where the best will get the kind of pay they really really deserve. I can&rsquo;t think of another profession where the ratio of (if you are good at how much influence you have on the world)/(salary) is so incredibly large. MOOC&rsquo;s may contribute to this, that is if they aren&rsquo;t felled by the ecological fallacy (via Alex N.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/08/04/sunday-datastatistics-link-roundup-8413/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/08/02/that-causal-inference-came-out-of-nowhere/">That causal inference came out of nowhere</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  This is a study of breastfeeding and its impact on IQ that has been making the rounds on a number of different media outlets. I first saw it on the Wall Street Journal where I was immediately drawn to this quote:
+ They then subtracted those factors using a statistical model. Dr. Belfort said she hopes that &ldquo;what we have left is the true connection&rdquo; with nursing and IQ.
+ As the father of a young child this was of course pretty interesting to me so I thought I&rsquo;d go and check out the paper itself.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/08/02/that-causal-inference-came-out-of-nowhere/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/45/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;46 / 104&nbsp;</span>
+  
+  <a href="/page/47/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>An R function to map your Twitter Followers &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>An R function to map your Twitter Followers</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/12/21</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/diy">diy</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/twitter">Twitter</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/visualization">visualization</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <p>I wrote a little function to make a personalized map of who follows you or who you follow on Twitter. The idea for this function was inspired by some plots I discussed in a <a href="http://simplystatistics.tumblr.com/post/11614784508/spectacular-plots-made-entirely-in-r" target="_blank">previous post</a>. I also found a lot of really useful code over at flowing data <a href="http://flowingdata.com/2011/05/11/how-to-map-connections-with-great-circles/" target="_blank">here</a>. </p>
+
+<p>The function uses the packages twitteR, maps, geosphere, and RColorBrewer. If you don&#8217;t have the packages installed, when you source the twitterMap code, it will try to install them for you. The code also requires you to have a working internet connection. </p>
+
+<p><em>One word of warning is that if you have a large number of followers or people you follow, you may be rate limited by Twitter and unable to make the plot.</em></p>
+
+<p>To make your personalized twitter map, first source the <a href="http://biostat.jhsph.edu/~jleek/code/twitterMap.R" target="_blank">function</a>:</p>
+
+<blockquote>
+<p>source(&#8220;<a href="http://biostat.jhsph.edu/~jleek/code/twitterMap.R&amp;#8221;">http://biostat.jhsph.edu/~jleek/code/twitterMap.R&amp;#8221;</a>)</p>
+</blockquote>
+
+<p>The function has the following form: </p>
+
+<p>twitterMap &lt;- function(userName,userLocation=NULL,fileName=&#8221;twitterMap.pdf&#8221;,nMax = 1000,plotType=c(&#8220;followers&#8221;,&#8221;both&#8221;,&#8221;following&#8221;))</p>
+
+<p>with arguments:</p>
+
+<ul>
+<li>userName - the twitter username you want to plot</li>
+<li>userLocation - an optional argument giving the location of the user, necessary when the location information you have provided Twitter isn&#8217;t sufficient for us to find latitude/longitude data</li>
+<li>fileName - the file where you want the plot to appear</li>
+<li>nMax - The maximum number of followers/following to get from Twitter, this is implemented to avoid rate limiting for people with large numbers of followers. </li>
+<li>plotType - if &#8220;both&#8221; both followers/following are plotted, etc. </li>
+</ul>
+
+<p>Then you can create a plot with both followers/following like so: </p>
+
+<blockquote>
+<p> twitterMap(&#8220;simplystats&#8221;)</p>
+</blockquote>
+
+<p>Here is what the resulting plot looks like for our Twitter Account:</p>
+
+<p><img height="550" src="http://biostat.jhsph.edu/~jleek/code/simplystats.png" width="500" /></p>
+
+<p>If your location can&#8217;t be found or latitude longitude can&#8217;t be calculated, you may have to chose a bigger city near you. The list of cities used by twitterMap can be found like so:</p>
+
+<blockquote>
+<p>library(maps)</p>
+
+<p>data(world.cities)</p>
+
+<p>grep(&#8220;Baltimore&#8221;, world.cities[,1])</p>
+</blockquote>
+
+<p>If your city is in the database, this will return the row number of the world.cities data frame corresponding to your city. </p>
+
+<div>
+  If you like this function you may also like our function to determine if you are a <a href="http://simplystatistics.tumblr.com/post/11271228367/datascientist" target="_blank">data scientist</a> or to analyze your <a href="http://simplystatistics.tumblr.com/post/13203811645/an-r-function-to-analyze-your-google-scholar-citations" target="_blank">Google Scholar citations page</a>.
+</div>
+
+<div>
+</div>
+
+<div>
+  <strong>Update</strong>: The bulk of the heavy lifting done by these functions is performed by Jeff Gentry&#8217;s very nice <a href="http://cran.r-project.org/web/packages/twitteR/" target="_blank">twitteR </a>package and <a href="http://flowingdata.com/2011/05/11/how-to-map-connections-with-great-circles/" target="_blank">code</a> put together by Nathan Yau over at FlowingData. This is really an example of standing on the shoulders of giants. 
+</div>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2011/12/19/on-hard-and-soft-money/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2011/12/19/on-hard-and-soft-money/">On Hard and Soft Money</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2011/12/28/grad-students-in-bio-statistics-do-a-postdoc/">Grad students in (bio)statistics - do a postdoc!</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2011/12/28/grad-students-in-bio-statistics-do-a-postdoc/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

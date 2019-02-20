@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Retyping on Tristan Berchoux</title>
+    <link>/tags/retyping/</link>
+    <description>Recent content in Retyping on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Tue, 18 Dec 2012 11:58:28 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/retyping/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The value of re-analysis</title>
+      <link>/2012/12/18/the-value-of-re-analysis/</link>
+      <pubDate>Tue, 18 Dec 2012 11:58:28 +0000</pubDate>
+      
+      <guid>/2012/12/18/the-value-of-re-analysis/</guid>
+      <description>I just saw this really nice post over on John Cook&amp;rsquo;s blog. He talks about how it is a valuable exercise to re-type code for examples you find in a book or on a blog. I completely agree that this is a good way to learn through osmosis, learn about debugging, and often pick up the reasons for particular coding tricks (this is how I learned about vectorized calculations in Matlab, by re-typing and running my advisors code back in my youth).</description>
+    </item>
+    
+  </channel>
+</rss>

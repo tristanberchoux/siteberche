@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>10 things statistics taught us about big data analysis &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>10 things statistics taught us about big data analysis</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/05/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>In <a href="http://simplystatistics.org/2014/05/07/why-big-data-is-in-trouble-they-forgot-about-applied-statistics/">my previous post</a> I pointed out a major problem with big data is that applied statistics have been left out. But many cool ideas in applied statistics are really relevant for big data analysis. So I thought I&rsquo;d try to answer the second question in my previous post: <em>&ldquo;When thinking about the big data era, what are some statistical ideas we&rsquo;ve already figured out?&rdquo;</em> Because the internet loves top 10 lists I came up with 10, but there are more if people find this interesting. Obviously mileage may vary with these recommendations, but I think they are generally not a bad idea.</p>
+
+<ol>
+<li><strong>If the goal is prediction accuracy, average many prediction models together</strong>. In general, the prediction algorithms that most frequently win Kaggle competitions or the Netflix prize <a href="http://en.wikipedia.org/wiki/Ensemble_learning">blend multiple models together</a>. The idea is that by averaging (or majority voting) multiple good prediction algorithms you can reduce variability without giving up bias. One of the earliest descriptions of this idea was of a much simplified version based on <a href="http://en.wikipedia.org/wiki/Bootstrapping_(statistics)">bootstrapping samples</a> and building multiple prediction functions - a <a href="http://statistics.berkeley.edu/sites/default/files/tech-reports/421.pdf">process called bagging</a> (short for bootstrap aggregating). <a href="http://en.wikipedia.org/wiki/Random_forest">Random forests</a>, another incredibly successful prediction algorithm, is based on a similar idea with classification trees.</li>
+<li><strong>When testing many hypotheses, correct for multiple testing</strong> <a href="http://xkcd.com/882/">This comic</a> points out the problem with standard hypothesis testing when many tests are performed. Classic hypothesis tests are designed to call a set of data significant 5% of the time, even when the null is true (e.g. nothing is going on). One really common choice for correcting for multiple testing is to use <a href="http://en.wikipedia.org/wiki/False_discovery_rate">the false discovery rate</a> to control the rate at which things you call significant are false discoveries. People like this measure because you can think of it as the rate of noise among the signals you have discovered. Benjamini and Hochber gave the f<a href="http://www.stat.purdue.edu/~doerge/BIOINFORM.D/FALL06/Benjamini%20and%20Y%20FDR.pdf">irst definition of the false discovery rate and provided a procedure to control the FDR</a>. There is also a really readable introduction to FDR by <a href="http://www.pnas.org/content/100/16/9440.full">Storey and Tibshirani</a>.</li>
+<li><strong>When you have data measured over space, distance, or time, you should smooth </strong>This is one of the oldest ideas in statistics (regression is a form of smoothing and Galton <a href="http://en.wikipedia.org/wiki/Regression_toward_the_mean">popularized that a while ago</a>). I personally like locally weighted scatterplot smoothing a lot.  <a href="http://www.people.fas.harvard.edu/~gov2000/Handouts/lowess.pdf">This paper</a>is a good one by Cleveland about loess. Here it is in a gif. <a href="http://simplystatistics.org/2014/02/13/loess-explained-in-a-gif/" rel="attachment wp-att-3069"><img class=" wp-image-3069 aligncenter" alt="loess" src="http://simplystatistics.org/wp-content/uploads/2014/05/loess.gif" width="202" height="202" /></a>But people also like <a href="http://en.wikipedia.org/wiki/Smoothing_spline">smoothing splines</a>, <a href="http://en.wikipedia.org/wiki/Hidden_Markov_model">Hidden Markov Models</a>, <a href="http://en.wikipedia.org/wiki/Moving_average">moving averages</a> and many other smoothing choices.</li>
+<li><strong>Before you analyze your data with computers, be sure to plot it</strong> A common mistake made by amateur analysts is to immediately jump to fitting models to big data sets with the fanciest computational tool. But you can miss pretty obvious things <a href="http://en.wikipedia.org/wiki/Anscombe's_quartet">like this </a>if you don&rsquo;t plot your data. <a href="http://en.wikipedia.org/wiki/File:Bland-altman_plot.png" rel="attachment wp-att-3068"><img class=" wp-image-3068 aligncenter" alt="ba" src="http://simplystatistics.org/wp-content/uploads/2014/05/ba.png" width="288" height="288" srcset="http://simplystatistics.org/wp-content/uploads/2014/05/ba-150x150.png 150w, http://simplystatistics.org/wp-content/uploads/2014/05/ba-300x300.png 300w, http://simplystatistics.org/wp-content/uploads/2014/05/ba.png 600w" sizes="(max-width: 288px) 100vw, 288px" /></a>There are too many plots to talk about individually, but one example of an incredibly important plot is the <a href="http://en.wikipedia.org/wiki/Bland%E2%80%93Altman_plot">Bland-Altman plot,</a> (called an MA-plot in genomics) when comparing measurements from multiple technologies. R provides tons of graphics for a reason and <a style="font-size: 16px;" href="http://ggplot2.org/">ggplot2</a> makes them pretty.</li>
+<li><strong>Interactive analysis is the best way to really figure out what is going on in a data set</strong> This is related to the previous point; if you want to understand a data set you have to be able to play around with it and explore it. You need to make tables, make plots, identify quirks, outliers, missing data patterns and problems with the data. To do this you need to interact with the data quickly. One way to do this is to analyze the whole data set at once using tools like Hive, Hadoop, or Pig. But an often easier, better, and more cost effective approach is to use random sampling . As Robert Gentleman put it &ldquo;<a href="https://twitter.com/EllieMcDonagh/status/469184554549248000">make big data as small as possible as quick as possible</a>&rdquo;.</li>
+<li><strong>Know what your real sample size is. </strong> It can be easy to be tricked by the size of a data set. Imagine you have an image of a simple black circle on a white background stored as pixels. As the resolution increases the size of the data increases, but the amount of information may not (hence <a href="http://en.wikipedia.org/wiki/Vector_graphics">vector graphics</a>). Similarly in genomics, the number of reads you measure (which is a main determinant of data size) is not the sample size, it is the number of individuals. In social networks, the number of people in the network may not be the sample size. If the network is very dense, the sample size <a href="http://arxiv.org/pdf/1112.0840.pdf">might be much less</a>. In general the bigger the sample size the better and sample size and data size aren&rsquo;t always tightly correlated.</li>
+<li><strong>Unless you ran a randomized trial, potential confounders should keep you up at night </strong>Confounding is maybe the most fundamental idea in statistical analysis. It is behind the <a href="http://www.tylervigen.com/">spurious correlations</a> like these and the reason why nutrition studies <a href="http://fivethirtyeight.com/features/eat-more-nuts-and-vegetables-and-dont-forget-to-exercise-and-quit-smoking/">are so hard</a>. It is very hard to hold people to a randomized diet and people who eat healthy diets might be different than people who don&rsquo;t in other important ways. In big data sets confounders might be <a href="http://www.cis.jhu.edu/publications/papers_in_database/GEMAN/Geman_NatureReviews_2010.pdf">technical variables</a> about how the data were measured or they could be <a href="http://gking.harvard.edu/files/gking/files/0314policyforumff.pdf">differences over time in Google search terms</a>. Any time you discover a cool new result, your first thought should be, &ldquo;what are the potential confounders?&rdquo;<a href="http://xkcd.com/552/" rel="attachment wp-att-3067"><img class=" wp-image-3067 aligncenter" alt="correlation" src="http://simplystatistics.org/wp-content/uploads/2014/05/correlation.png" width="275" height="111" /></a></li>
+<li><strong>Define a metric for success up front</strong> Maybe the simplest idea, but one that is critical in statistics and <a href="http://en.wikipedia.org/wiki/Decision_theory">decision theory</a>. Sometimes your goal is to discover new relationships and that is great if you define that up front. One thing that applied statistics has taught us is that changing the criteria you are going for after the fact is really dangerous. So when you find a correlation, don&rsquo;t assume you can predict a new result or that you have discovered which way a causal arrow goes.</li>
+<li><strong>Make your code and data available and have smart people check it</strong> As several people pointed out about my last post, the Reinhart and Rogoff problem did not involve big data. But even in this small data example, there was a bug in the code used to analyze them. With big data and complex models this is even more important. Mozilla Science is <a href="http://mozillascience.org/code-review-for-science-what-we-learned/">doing interesting work</a> on code review for data analysis in science. But in general if you just get a friend to look over your code it will catch a huge fraction of the problems you might have.</li>
+<li><strong><a href="http://simplystatistics.org/2013/05/29/what-statistics-should-do-about-big-data-problem-forward-not-solution-backward/">Problem first not solution backward </a></strong>One temptation in applied statistics is to take a tool you know well (regression) and use it to hit all the nails (epidemiology problems). <a href="http://simplystatistics.org/2014/05/22/10-things-statistics-taught-us-about-big-data-analysis/hitnails/" rel="attachment wp-att-3066"><img class=" wp-image-3066 aligncenter" alt="hitnails" src="http://simplystatistics.org/wp-content/uploads/2014/05/hitnails.png" width="288" height="216" srcset="http://simplystatistics.org/wp-content/uploads/2014/05/hitnails-300x225.png 300w, http://simplystatistics.org/wp-content/uploads/2014/05/hitnails.png 800w" sizes="(max-width: 288px) 100vw, 288px" /></a>There is a similar temptation in big data to get fixated on a tool (hadoop, pig, hive, nosql databases, distributed computing, gpgpu, etc.) and ignore the problem of can we infer x relates to y or that x predicts y.</li>
+</ol>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2014/05/07/why-big-data-is-in-trouble-they-forgot-about-applied-statistics/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2014/05/07/why-big-data-is-in-trouble-they-forgot-about-applied-statistics/">Why big data is in trouble: they forgot about applied statistics</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2014/05/28/the-big-in-big-data-relates-to-importance-not-size/">The Big in Big Data relates to importance not size</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2014/05/28/the-big-in-big-data-relates-to-importance-not-size/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

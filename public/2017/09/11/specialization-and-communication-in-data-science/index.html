@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Specialization and Communication in Data Science &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Specialization and Communication in Data Science</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/09/11</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<p>I have been interested for a while now in how data scientists can better communicate data analysis activities to each other and to people outside the field. I believe that our current methods are inadequate because they have mostly been borrowed from other areas (notably, computer science). Many of those tools are useful, but they were not developed to communicate data analysis concepts specifically and often fall short. I talked about this problem in my <a href="https://youtu.be/qFtJaq4TlqE">Dean&rsquo;s Lecture</a> earlier this year and how the field of data science could benefit from developing its own theories, to simplify communication as other fields have done.</p>
+
+<p>One thing that I have noticed is that in other fields, the development of those fields can be viewed in part as a trend towards increasing specialization. With people in a field who increasingly specialize in a certain sub-specialty, there is a parallel need for the specialists to communicate and coordinate with each other in order to produce a whole product. Over time, the separation of a field into an collection of specialists drives the development of communication tools that can serve as clearinghouses of mutually agreed upon information. Without adequate tools, the communications overhead involved with adding more people to a project will become too great and the entire enterprise can collapse. This phenomenon is famously described in Fred Brooks&rsquo;s <a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month"><em>The Mythical Man-Month</em></a> as it relates to software engineering projects.</p>
+
+<p>I thought it might be useful to talk about some of these other areas and how they have overcome increased specialization and the separattion of duties with communications tools. Tracing the history of other fields is instructive as it potentially provides a basis on which we can discuss data analysis. Listeners of <a href="http://nssdeviations.com">my podcast with Hilary Parker</a> know that we regularly have a segment that we refer to as &ldquo;analogy corner&rdquo; and this is the Simply Statistics version of that.</p>
+
+<h2 id="specialization-in-other-areas">Specialization in Other Areas</h2>
+
+<p>The first example comes from filmmaking and the development of the screenplay. The Script Lab describes <a href="https://thescriptlab.com/features/screenwriting-101/3147-the-history-of-the-screenplay/">The History of the Screenplay</a> and how filmmaking worked before the development of scripts:</p>
+
+<blockquote>
+<p>When contemplating the history of screenwriting, one cannot divorce the theories of screenwriting from the evolution of film production. The earliest films were often solo projects, from conception to completion. Referred to as the “cameraman system” this was the most primitive of filmmaking. Soon, directors became central to the process, but most movies were filmed with only a vague idea of what the director wanted to shoot. Often crews were kept waiting while the director planned what to film next.</p>
+</blockquote>
+
+<p>Films were one-person projects and were developed in a more or less linear fashion. It was an inefficient system&mdash;most films today are produced in a highly nonlinear fashion to accommodate actors&rsquo; schedules and various production processes.</p>
+
+<p>Today, the screenplay serves as a critical communications hub around which many filmmaking departments (costume, makeup, hair, props, sets) can organize their activity. Imagine if representatives of each of these departments had to individually consult with the screenwriter or director about every detail of their work. It would be a nightmare of exponentially growing complexity. With a written document, such as as screenplay, that everyone can agree on as the authority of &ldquo;what is happening in the film&rdquo;, people can get their jobs done without the need of constant back and forth communication.</p>
+
+<p>The second analogy comes from finance. In finance there was a similar development of specialization as it relates to <a href="https://en.wikipedia.org/wiki/Limited_liability">limited liability</a>. Here, the &ldquo;specialization&rdquo; refers to the separation of the owners of a company from its managers. As a result, there must be a way for managers of the company to communicate to the investors what exactly is going on with the operations of the company. Thus, the development of financial statements, accounting rules, and various publicly available documents that let investors analyze the health of a company. Graham and Dodd&rsquo;s seminal <a href="https://en.wikipedia.org/wiki/Security_Analysis_(book)">Security Analysis</a> is essentially a plea to investors to evaluate companies based on the publicly available data, rather than on common myths and legends about what makes for a good or safe investment. Today, with the separation of owners from managers and the creation of standardized communication formats between the two (e.g. S-1s, 10-Ks, 10-Qs, etc.), we have the basis of the global capital markets system.</p>
+
+<p>The last analogy comes from western classical music, where there is often a division between the composer of the music and the performer. In more complex symphonic music, you might say there are three roles: the composer, the performer, and the interpreter/conductor. However, in early classical music, such a division didn&rsquo;t exist and composers typically performed their own music, often by themselves. In this setup, there&rsquo;s not much need to write things down, as the music can be stored in and performed from the composer&rsquo;s head. This concept was well-captured in the movie <a href="https://youtu.be/Ejv2_CkZRHo">Amadeus</a> where Mozart describes his opera <em>The Magic Flute</em> as being &ldquo;up here in my noodle&rdquo; (the rest is just scribbling and bibbling).</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ejv2_CkZRHo" frameborder="0" allowfullscreen></iframe>
+
+<p>Of course, opera might be the ultimate example from classical music where some sort of communication tool is needed to coordinate between the musicians, singers, and set designers. Thus, for most classical music, we have the score, which specifies what every instrument and signer is doing at any given time. There is a standardized notation that allows others unfamiliar with the composer to quickly grasp what is going on and to assemble the time and resources needed to perform the work.</p>
+
+<h2 id="what-about-data-analysis">What About Data Analysis?</h2>
+
+<p>In data science today, or really in science, much of what goes on follows the &ldquo;vertically integrated&rdquo; model, where the same person, asks the question, collects the data, and analyzes the data. The need for communication methods doesn&rsquo;t really arise until that work needs to be disseminated to others (including yourself in the future). In large collaborations where communication over analyses needs to be done from the start, my experience has been that even in the best case scenarios, the methodology is ad hoc and difficult to re-create in another project involving different people.</p>
+
+<p>Most would agree that the software code that actually does the analysis is an important component of communicate what is being done. However, not everyone needs or wants all of the details provided by the code. Perhaps one concept we could steal from music is the distinction between the score and the parts. In a symphony, the conductor needs the full score because they need to know what everyone is doing at all times. But the first violinist only reads the first violin part&mdash;they don&rsquo;t need to read the entire score in order to play a vital part in creating the finished product.</p>
+
+<p>Developing appropriate communications tools for data science is critical to scaling data analysis so that more people can be involved and to reproducibility/replicability so that more people can understand what is going on in an analysis. Until then, I think we will continue to jam tools from other fields into the data science process, and that is fine. These tools are useful, but I think ultimately are not a perfect fit.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2017/09/07/moon-shots-cost-more-than-you-think/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2017/09/07/moon-shots-cost-more-than-you-think/">Moon Shots Cost More Than You Think</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2017/09/18/editing-podcasts-logic-pro-x/">Editing Podcasts with Logic Pro X</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2017/09/18/editing-podcasts-logic-pro-x/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

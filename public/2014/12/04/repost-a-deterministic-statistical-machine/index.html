@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Repost: A deterministic statistical machine &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Repost: A deterministic statistical machine</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/12/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>_Editor&rsquo;s note: This is a repost of our previous post about deterministic statistical machines. It is inspired by the <a href="https://gigaom.com/2014/12/02/google-is-funding-an-artificial-intelligence-for-data-science/">recent announcement</a> that the <a href="http://www.automaticstatistician.com/">Automatic Statistician </a>received funding from Google. In 2012 we also applied to Google for a small research award to study this same problem, but didn&rsquo;t get it. In the interest of extreme openness like Titus Brown or Ethan White, <a href="https://docs.google.com/document/d/1ERL40_LYt4U_vYx2rUxPvIhCrxnpld3dcrtEiCeWn8U/edit">here is our application</a> we submitted to Google. I showed this to a friend who told me the reason we didn&rsquo;t get it is because our proposal was missing two words: &ldquo;artificial&rdquo;, &ldquo;intelligence&rdquo;. _</p>
+
+<p>As Roger pointed out the most recent batch of Y Combinator startups included a bunch of <a href="http://simplystatistics.org/post/29964925728/data-startups-from-y-combinator-demo-day" target="_blank">data-focused</a> companies. One of these companies, <a href="https://www.statwing.com/" target="_blank">StatWing</a>, is a web-based tool for data analysis that looks like an improvement on SPSS with more plain text, more visualization, and a lot of the technical statistical details “under the hood”. I first read about StatWing on TechCrunch, where the title, <a href="http://techcrunch.com/2012/08/16/how-statwing-makes-it-easier-to-ask-questions-about-data-so-you-dont-have-to-hire-a-statistical-wizard/" target="_blank">“How Statwing Makes It Easier To Ask Questions About Data So You Don’t Have To Hire a Statistical Wizard”</a>.</p>
+
+<p>StatWing looks super user-friendly and the idea of democratizing statistical analysis so more people can access these ideas is something that appeals to me. But, as one of the aforementioned statistical wizards, this had me freaked out for a minute. Once I looked at the software though, I realized it suffers from the same problem that most “user-friendly” statistical software suffers from. It makes it really easy to screw up a data analysis. It will tell you when something is significant and if you don’t like that it isn’t, you can keep slicing and dicing the data until it is. The key issue behind getting insight from data is knowing when you are fooling yourself with confounders, or small effect sizes, or overfitting. StatWing looks like an improvement on the UI experience of data analysis, but it won’t prevent false positives that plague science and cost business big $$.</p>
+
+<p>So I started thinking about what kind of software would prevent these sort of problems while still being accessible to a big audience. My idea is a “deterministic statistical machine”. Here is how it works, you input a data set and then specify the question you are asking (is variable Y related to variable X? can i predict Z from W?) then, depending on your question, it uses a deterministic set of methods to analyze the data. Say regression for inference, linear discriminant analysis for prediction, etc. But the method is fixed and deterministic for each question. It also performs a pre-specified set of checks for outliers, confounders, missing data, <a href="http://www.nature.com/news/the-data-detective-1.10937" target="_blank">maybe even data fudging</a>. It generates a report with a markdown tool and then immediately publishes the result to <a href="http://figshare.com/" target="_blank">figshare</a>.</p>
+
+<p>The advantage is that people can get their data-related questions answered using a standard tool. It does a lot of the “heavy lifting” in checking for potential problems and produces nice reports. But it is a deterministic algorithm for analysis so overfitting, fudging the analysis, etc. are harder. By publishing all reports to figshare, it makes it even harder to fudge the data. If you fiddle with the data to try to get a result you want, there will be a “multiple testing paper trail” following you around.</p>
+
+<p>The DSM should be a web service that is easy to use. Anybody want to build it? Any suggestions for how to do it better?</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2014/12/02/thinking-like-a-statistician-social-media-and-the-spiral-of-silence/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2014/12/02/thinking-like-a-statistician-social-media-and-the-spiral-of-silence/">Thinking Like a Statistician: Social Media and the ‘Spiral of Silence’</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2014/12/05/interview-with-cole-trapnell-of-uw-genome-sciences/">Interview with Cole Trapnell of UW Genome Sciences</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2014/12/05/interview-with-cole-trapnell-of-uw-genome-sciences/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

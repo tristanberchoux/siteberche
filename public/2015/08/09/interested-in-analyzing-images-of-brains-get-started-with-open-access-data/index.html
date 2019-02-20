@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Interested in analyzing images of brains? Get started with open access data. &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Interested in analyzing images of brains? Get started with open access data.</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/08/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <div>
+  <i>Editor's note: This is a guest post by <a href="http://www.anieloyan.com/" target="_blank"><span class="lG">Ani</span> Eloyan</a>. She is an Assistant Professor of Biostatistics at Brown University. Dr. Eloyan’s work focuses on</i> <i>semi-parametric likelihood based methods for matrix decompositions, statistical analyses of brain images, and the integration of various types of complex data structures for analyzing health care data</i><i>. She received her PhD in statistics from North Carolina State University and subsequently completed a postdoctoral fellowship in the <a href="http://www.biostat.jhsph.edu/">Department of Biostatistics at Johns Hopkins University</a>. Dr. Eloyan and her team won the <a>ADHD200 Competition</a></i> <i>discussed in <a href="http://journal.frontiersin.org/article/10.3389/fnsys.2012.00061/abstract" target="_blank">this</a> article. She tweets <a href="https://twitter.com/eloyan_ani">@eloyan_ani</a>.</i>
+</div>
+
+<div>
+  <i> </i>
+</div>
+
+<div>
+  <div>
+    Neuroscience is one of the exciting new fields for biostatisticians interested in real world applications where they can contribute novel statistical approaches. Most research in brain imaging has historically included studies run for small numbers of patients. While justified by the costs of data collection, the claims based on analyzing data for such small numbers of subjects often do not hold for our populations of interest. As discussed in <a href="http://www.huffingtonpost.com/american-statistical-association/wanted-neuroquants_b_3749363.html" target="_blank">this</a> article, there is a huge demand for biostatisticians in the field of quantitative neuroscience; so called neuroquants or neurostatisticians. However, while more statisticians are interested in the field, we are far from competing with other substantive domains. For instance, a quick search of abstract keywords in the online program of the upcoming <a href="https://www.amstat.org/meetings/jsm/2015/" target="_blank">JSM2015</a> conference of “brain imaging” and “neuroscience” results in 15 records, while a search of the words “genomics” and “genetics” generates 76 <a>records</a>.
+  </div>
+  
+
+<p><div>
+  </div></p>
+
+<p><div>
+    Assuming you are trained in statistics and an aspiring neuroquant, how would you go about working with brain imaging data? As a graduate student in the <a href="http://www.stat.ncsu.edu/" target="_blank">Department of Statistics at NCSU</a> several years ago, I was very interested in working on statistical methods that would be directly applicable to solve problems in neuroscience. But I had this same question: “Where do I find the data?” I soon learned that to <i>really</i>approach substantial relevant problems I also needed to learn about the subject matter underlying these complex data structures.
+  </div></p>
+
+<p><div>
+  </div></p>
+
+<p><div>
+    In recent years, several leading groups have uploaded their lab data with the common goal of fostering the collection of high dimensional brain imaging data to build powerful models that can give generalizable results. <a href="http://www.nitrc.org/" target="_blank">Neuroimaging Informatics Tools and Resources Clearinghouse (NITRC)</a> founded in 2006 is a platform for public data sharing that facilitates streamlining data processing pipelines and compiling high dimensional imaging datasets for crowdsourcing the analyses. It includes data for people with neurological diseases and neurotypical children and adults. If you are interested in Alzheimer’s disease, you can check out <a href="http://adni.loni.usc.edu/" target="_blank">ADNI</a>. <a href="http://fcon_1000.projects.nitrc.org/indi/abide/" target="_blank">ABIDE</a> provides data for people with Autism Spectrum Disorder and neurotypical peers. <a href="http://fcon_1000.projects.nitrc.org/indi/adhd200/" target="_blank">ADHD200</a> was released in 2011 as a part of a competition to motivate building predictive methods for disease diagnoses using functional magnetic resonance imaging (MRI) in addition to demographic information to predict whether a child has attention deficit hyperactivity disorder (ADHD). While the competition ended in 2011, the dataset has been widely utilized afterwards in studies of ADHD.  According to Google Scholar, the <a href="http://www.nature.com/mp/journal/v19/n6/abs/mp201378a.html" target="_blank">paper</a> introducing the ABIDE set has been cited 129 times since 2013 while the <a href="http://journal.frontiersin.org/article/10.3389/fnsys.2012.00062/full" target="_blank">paper</a> discussing the ADHD200 has been cited 51 times since <span style="font-family: Arial;">2012. These are only a few examples from the list of open access datasets that could of utilized by statisticians. </span>
+  </div></p>
+
+<p><div>
+  </div></p>
+
+<p><div>
+    Anyone can download these datasets (you may need to register and complete some paperwork in some cases), however, there are several data processing and cleaning steps to perform before the final statistical analyses. These preprocessing steps can be daunting for a statistician new to the field, especially as the tools used for preprocessing may not be available in R. <a href="https://hopstat.wordpress.com/2014/08/27/statisticians-in-neuroimaging-need-to-learn-preprocessing/" target="_blank">This</a> discussion makes the case as to why statisticians need to be involved in every step of preprocessing the data, while <u><a href="https://hopstat.wordpress.com/2014/06/17/fslr-an-r-package-interfacing-with-fsl-for-neuroimaging-analysis/" target="_blank">this R package</a></u> contains new tools linking R to a commonly used platform <a href="http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/" target="_blank">FSL</a>. However, as a newcomer, it can be easier to start with data that are already processed. <a href="http://projecteuclid.org/euclid.ss/1242049389" target="_blank">This</a> excellent overview by Dr. Martin Lindquist provides an introduction to the different types of analyses for brain imaging data from a statisticians point of view, while our<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0089470" target="_blank">paper</a> provides tools in R and example datasets for implementing some of these methods. At least one course on Coursera can help you get started with <a href="https://www.coursera.org/course/fmri" target="_blank">functional MRI</a> data. Talking to and reading the papers of biostatisticians working in the field of quantitative neuroscience and scientists in the field of neuroscience is the key.
+  </div>
+</div></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2015/08/09/statistical-theory-is-our-write-once-run-anywhere/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2015/08/09/statistical-theory-is-our-write-once-run-anywhere/">Statistical Theory is our &#34;Write Once, Run Anywhere&#34;</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2015/08/10/rafalib-package-now-on-cran/">rafalib package now on CRAN</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2015/08/10/rafalib-package-now-on-cran/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

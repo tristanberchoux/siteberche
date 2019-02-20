@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Repost: Prediction: the Lasso vs. just using the top 10 predictors &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Repost: Prediction: the Lasso vs. just using the top 10 predictors</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/01/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p><em>Editor&rsquo;s note: This is a previously published post of mine from a couple of years ago (!). I always thought about turning it into a paper. The interesting idea (I think) is how the causal model matters for whether the lasso or the marginal regression approach works better. Also <a href="https://github.com/ecpolley/SuperLearner/blob/master/R/SL.leekasso.R">check it out</a>, the Leekasso is part of the SuperLearner package.</em></p>
+
+<p>One incredibly popular tool for the analysis of high-dimensional data is the <a href="http://www-stat.stanford.edu/~tibs/lasso.html" target="_blank">lasso</a>. The lasso is commonly used in cases when you have many more predictors than independent samples (the n « p) problem. It is also often used in the context of prediction.</p>
+
+<p>Suppose you have an outcome <strong>Y</strong> and several predictors <strong>X1</strong>,…,<strong>XM</strong>, the lasso fits a model:</p>
+
+<p><strong>Y = B0 + B1 X1 + B2 X2 + … + BM XM + E</strong></p>
+
+<p>subject to a constraint on the sum of the absolute value of the <strong>B</strong> coefficients. The result is that: (1) some of the coefficients get set to zero, and those variables drop out of the model, (2) other coefficients are “shrunk” toward zero. Dropping some variables is good because there are a lot of potentially unimportant variables. Shrinking coefficients may be good, since the big coefficients might be just the ones that were really big by random chance (this is related to Andrew Gelman’s <a href="http://andrewgelman.com/2011/09/the-statistical-significance-filter/" target="_blank">type M errors</a>).</p>
+
+<p>I work in genomics, where n«p problems come up all the time. Whenever I use the lasso or when I read papers where the lasso is used for prediction, I always think: “How does this compare to just using the top 10 most significant predictors?” I have asked this out loud enough that <a href="http://www.biostat.jhsph.edu/~rpeng/" target="_blank">some</a> <a href="http://www.biostat.jhsph.edu/~iruczins/" target="_blank">people</a> <a href="http://www.bcaffo.com/" target="_blank">around</a> <a href="http://rafalab.jhsph.edu/" target="_blank">here</a> <a href="http://people.csail.mit.edu/mrosenblum/" target="_blank">started</a> calling it the “Leekasso” to poke fun at me. So I’m going to call it that in a thinly veiled attempt to avoid <a href="http://en.wikipedia.org/wiki/Stigler's_law_of_eponymy" target="_blank">Stigler’s law of eponymy</a> (actually Rafa points out that using this name is a perfect example of this law, since this feature selection approach has been proposed before <a href="http://www.stat.berkeley.edu/tech-reports/576.pdf" target="_blank">at least once</a>).</p>
+
+<p>Here is how the Leekasso works. You fit each of the models:</p>
+
+<p><strong>Y = B0 + BkXk + E</strong></p>
+
+<p>take the 10 variables with the smallest p-values from testing the <strong>Bk</strong> coefficients, then fit a linear model with just those 10 coefficients. You never use 9 or 11, the Leekasso is always 10.</p>
+
+<p>For fun I did an experiment to compare the accuracy of the Leekasso and the Lasso.</p>
+
+<p>Here is the setup:</p>
+
+<ul>
+<li>I simulated 500 variables and 100 samples for each study, each N(0,1)</li>
+<li>I created an outcome that was 0 for the first 50 samples, 1 for the last 50</li>
+<li>I set a certain number of variables (between 5 and 50) to be associated with the outcome using the model <strong>Xi = b0i + b1iY + e </strong>(this is an important choice, more later in the post)</li>
+<li>I tried different levels of signal to the truly predictive features</li>
+<li>I generated two data sets (training and test) from the exact same model for each scenario</li>
+<li>I fit the Lasso using the <a href="http://cran.r-project.org/web/packages/lars/index.html" target="_blank">lars </a>package, choosing the shrinkage parameter as the value that minimized the cross-validation MSE in the training set</li>
+<li>I fit the Leekasso and the Lasso on the training sets and evaluated accuracy on the test sets.</li>
+</ul>
+
+<p>The R code for this analysis is available <a href="http://biostat.jhsph.edu/~jleek/code/leekasso.R" target="_blank">here</a> and the resulting data is <a href="http://biostat.jhsph.edu/~jleek/code/lassodata.rda" target="_blank">here</a>.</p>
+
+<p>The results show that for all configurations, using the top 10 has a higher out of sample prediction accuracy than the lasso. A larger version of the plot is <a href="http://biostat.jhsph.edu/~jleek/code/accuracy-plot.png" target="_blank">here</a>.</p>
+
+<p><img alt="" src="http://biostat.jhsph.edu/~jleek/code/accuracy-plot.png" width="480" height="240" /></p>
+
+<p>Interestingly, this is true even when there are fewer than 10 real features in the data or when there are many more than 10 real features ((remember the Leekasso always picks 10).</p>
+
+<p>Some thoughts on this analysis:</p>
+
+<ol>
+<li>This is only test-set prediction accuracy, it says nothing about selecting the “right” features for prediction.</li>
+<li>The Leekasso took about 0.03 seconds to fit and test per data set compared to about 5.61 seconds for the Lasso.</li>
+<li>The data generating model is the model underlying the top 10, so it isn’t surprising it has higher performance. Note that I simulated from the model: <strong>Xi = b0i + b1iY + e</strong>, this is the model commonly assumed in differential expression analysis (genomics) or voxel-wise analysis (fMRI). Alternatively I could have simulated from the model: <strong>Y = B0 + B1 X1 + B2 X2 + … + BM XM + E</strong>, where most of the coefficients are zero. In this case, the Lasso would outperform the top 10 (data not shown). This is a key, and possibly obvious, issue raised by this simulation. When doing prediction differences in the true “causal” model matter a lot. So if we believe the “top 10 model” holds in many high-dimensional settings, then it may be the case that regularization approaches don’t work well for prediction and vice versa.</li>
+<li>I think what may be happening is that the Lasso is overshrinking the parameter estimates, in other words, you give up too much bias for a gain in variance. Alan Dabney and John Storey have a really nice <a href="http://www.plosone.org/article/info:doi%2F10.1371%2Fjournal.pone.0001002" target="_blank">paper</a> discussing shrinkage in the context of genomic prediction that I think is related.
+5.</li>
+</ol>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2014/01/03/the-supreme-court-takes-on-pollution-source-apportionment-and-realizes-its-hard/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2014/01/03/the-supreme-court-takes-on-pollution-source-apportionment-and-realizes-its-hard/">The Supreme Court takes on Pollution Source Apportionment...and Realizes It&#39;s Hard</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2014/01/05/sunday-datastatistics-link-roundup-1514/">Sunday data/statistics link roundup (1/5/14)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2014/01/05/sunday-datastatistics-link-roundup-1514/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

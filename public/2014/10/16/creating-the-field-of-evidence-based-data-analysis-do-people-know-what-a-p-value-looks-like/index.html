@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Creating the field of evidence based data analysis - do people know what a p-value looks like? &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Creating the field of evidence based data analysis - do people know what a p-value looks like?</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>In the medical sciences, there is a discipline called &ldquo;<a href="http://en.wikipedia.org/wiki/Evidence-based_medicine">evidence based medicine</a>&rdquo;. The basic idea is to study the actual practice of medicine using experimental techniques. The reason is that while we may have good experimental evidence about specific medicines or practices, the global behavior and execution of medical practice may also matter. There have been some success stories from this approach and also backlash from physicians who <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1523-536X.1996.tb00491.x/abstract">don&rsquo;t like to be told how to practice medicine.</a> However, on the whole it is a valuable and interesting scientific exercise.</p>
+
+<p>Roger introduced the idea of <a href="http://simplystatistics.org/2013/08/28/evidence-based-data-analysis-treading-a-new-path-for-reproducible-research-part-2/">evidence based data analysis</a> in a previous post. The basic idea is to study the actual practice and behavior of data analysts to identify how analysts behave. There is a strong history of this type of research within the data visualization community <a href="http://www.stat.purdue.edu/~wsc/">starting with Bill Cleveland</a> and extending forward to work by <a href="http://dicook.github.io/cv.html">Diane Cook</a>, , <a href="http://vis.stanford.edu/papers/crowdsourcing-graphical-perception">Jeffrey Heer</a>, and others.</p>
+
+<p><a href="https://peerj.com/articles/589/">Today we published</a> a large-scale evidence based data analysis randomized trial. Two of the most common data analysis tasks (for better or worse) are exploratory analysis and the identification of statistically significant results. Di Cook&rsquo;s group calls this idea <a href="http://stat.wharton.upenn.edu/~buja/PAPERS/Wickham-Cook-Hofmann-Buja-IEEE-TransVizCompGraphics_2010-Graphical%20Inference%20for%20Infovis.pdf">&ldquo;graphical inference&rdquo; or &ldquo;visual significance&rdquo;</a> and they have studied human&rsquo;s ability to detect significance in the context of [In the medical sciences, there is a discipline called &ldquo;<a href="http://en.wikipedia.org/wiki/Evidence-based_medicine">evidence based medicine</a>&rdquo;. The basic idea is to study the actual practice of medicine using experimental techniques. The reason is that while we may have good experimental evidence about specific medicines or practices, the global behavior and execution of medical practice may also matter. There have been some success stories from this approach and also backlash from physicians who <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1523-536X.1996.tb00491.x/abstract">don&rsquo;t like to be told how to practice medicine.</a> However, on the whole it is a valuable and interesting scientific exercise.</p>
+
+<p>Roger introduced the idea of <a href="http://simplystatistics.org/2013/08/28/evidence-based-data-analysis-treading-a-new-path-for-reproducible-research-part-2/">evidence based data analysis</a> in a previous post. The basic idea is to study the actual practice and behavior of data analysts to identify how analysts behave. There is a strong history of this type of research within the data visualization community <a href="http://www.stat.purdue.edu/~wsc/">starting with Bill Cleveland</a> and extending forward to work by <a href="http://dicook.github.io/cv.html">Diane Cook</a>, , <a href="http://vis.stanford.edu/papers/crowdsourcing-graphical-perception">Jeffrey Heer</a>, and others.</p>
+
+<p><a href="https://peerj.com/articles/589/">Today we published</a> a large-scale evidence based data analysis randomized trial. Two of the most common data analysis tasks (for better or worse) are exploratory analysis and the identification of statistically significant results. Di Cook&rsquo;s group calls this idea <a href="http://stat.wharton.upenn.edu/~buja/PAPERS/Wickham-Cook-Hofmann-Buja-IEEE-TransVizCompGraphics_2010-Graphical%20Inference%20for%20Infovis.pdf">&ldquo;graphical inference&rdquo; or &ldquo;visual significance&rdquo;</a> and they have studied human&rsquo;s ability to detect significance in the context of](<a href="http://www.tandfonline.com/doi/abs/10.1080/01621459.2013.808157">http://www.tandfonline.com/doi/abs/10.1080/01621459.2013.808157</a>) and how it <a href="http://arxiv.org/abs/1408.1974">associates with demographics and visual characteristics of the plot.</a></p>
+
+<p>We performed a randomized study to determine if data analysts with basic training could identify statistically significant relationships. Or as the first author put it in a tweet:</p>
+
+<blockquote class="twitter-tweet" width="550">
+  <p>
+    First paper just dropped!&#10;Can you tell the difference between these two plots?&#10;<a href="https://t.co/Lng0FWI0XY">https://t.co/Lng0FWI0XY</a> <a href="http://t.co/zFCwwcxaAX">pic.twitter.com/zFCwwcxaAX</a>
+  </p>
+  
+  <p>
+    &mdash; Aaron Fisher (@PrfFarnsworth) <a href="https://twitter.com/PrfFarnsworth/status/522790724774141952">October 16, 2014</a>
+  </p>
+</blockquote>
+
+<p>What we found was that people were pretty bad at detecting statistically significant results, but that over multiple trials they could improve. This is a tentative first step toward understanding how the general practice of data analysis works. If you want to play around and see how good you are at seeing p-values we also built this interactive Shiny app. If you don&rsquo;t see the app you can also go to the <a href="http://glimmer.rstudio.com/afisher/EDA/">Shiny app page here.</a></p>
+
+<p>&nbsp;</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2014/10/15/dear-laboratory-scientists-welcome-to-my-world/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2014/10/15/dear-laboratory-scientists-welcome-to-my-world/">Dear Laboratory Scientists: Welcome to My World</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2014/10/17/bayes-rule-in-a-gif/">Bayes Rule in an animated gif</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2014/10/17/bayes-rule-in-a-gif/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

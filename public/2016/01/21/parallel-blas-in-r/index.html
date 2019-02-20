@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Parallel BLAS in R &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Parallel BLAS in R</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/01/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>I&rsquo;m working on a new chapter for my R Programming book and the topic is parallel computation. So, I was happy to see this tweet from David Robinson (@drob) yesterday:</p>
+
+<blockquote class="twitter-tweet" lang="en">
+  <p dir="ltr" lang="en">
+    How fast is this <a href="https://twitter.com/hashtag/rstats?src=hash">#rstats</a> code? x <- replicate(5e3, rnorm(5e3)) x %*% t(x) For me, w/Microsoft R Open, 2.5sec. Wow. <a href="https://t.co/0SbijNxxVa">https://t.co/0SbijNxxVa</a>
+  </p>
+  
+  <p>
+    — David Robinson (@drob) <a href="https://twitter.com/drob/status/689916280233562112">January 20, 2016</a>
+  </p>
+</blockquote>
+
+<p>What does this have to do with parallel computation? Briefly, the code generates 5,000 standard normal random variates, repeats this 5,000 times and stores them in a 5,000 x 5,000 matrix (`x&rsquo;). Then it computes x x&rsquo;. The second part is key, because it involves a matrix multiplication.</p>
+
+<p>Matrix multiplication in R is handled, at a very low level, by the library that implements the Basic Linear Algebra Subroutines, or BLAS. The stock R that you download from CRAN comes with what&rsquo;s known as a reference implementation of BLAS. It works, it produces what everyone agrees are the right answers, but it is in no way optimized. Here&rsquo;s what I get when I run this code on my Mac using Studio and the CRAN version of R for Mac OS X:</p>
+
+<pre>system.time({ x &lt;- replicate(5e3, rnorm(5e3)); tcrossprod(x) })
+   user  system elapsed 
+ 59.622   0.314  59.927 
+</pre>
+
+<p>Note that the &ldquo;user&rdquo; time and the &ldquo;elapsed&rdquo; time are roughly the same. Note also that I use the tcrossprod() function instead of the otherwise equivalent expression x %*% t(x). Both crossprod() and tcrossprod() are generally faster than using the %*% operator.</p>
+
+<p>Now, when I run the same code on my built-from-source version of R (version 3.2.3), here&rsquo;s what I get:</p>
+
+<pre>system.time({ x &lt;- replicate(5e3, rnorm(5e3)); tcrossprod(x) })
+   user  system elapsed 
+ 14.378   0.276   3.344 
+</pre>
+
+<p>Overall, it&rsquo;s faster when I don&rsquo;t run the code through RStudio (14s vs. 59s). Also on this version the elapsed time is about <sup>1</sup>&frasl;<sub>4</sub> the user time. Why is that?</p>
+
+<p>The build-from-source version of R is linked to Apple&rsquo;s Accelerate framework, which is a large library that includes an optimized BLAS library for Intel chips. This optimized BLAS, in addition to being optimized with respect to the code itself, is designed to be multi-threaded so that it can split work off into chunks and run them in parallel on multi-core machines. Here, the tcrossprod() function was run in parallel on my machine, and so the elapsed time was about a quarter of the time that was &ldquo;charged&rdquo; to the CPU(s).</p>
+
+<p>David&rsquo;s tweet indicated that when using Microsoft R Open, which is a custom built binary of R, that the (I assume?) elapsed time is 2.5 seconds. Looking at the attached link, it appears that Microsoft&rsquo;s R Open is linked against <a href="https://software.intel.com/en-us/intel-mkl">Intel&rsquo;s Math Kernel Library</a> (MKL) which contains, among other things, an optimized BLAS for Intel chips. I don&rsquo;t know what kind of computer David was running on, but assuming it was similarly high-powered as mine, it would suggest Intel&rsquo;s MKL sees slightly better performance. But either way, both Accelerate and MKL achieve that speed up through custom-coding of the BLAS routines and multi-threading on multi-core systems.</p>
+
+<p>If you&rsquo;re going to be doing any linear algebra in R (and you will), it&rsquo;s important to link to an optimized BLAS. Otherwise, you&rsquo;re just wasting time unnecessarily. Besides Accelerate (Mac) and Intel MKL, theres AMD&rsquo;s <a href="http://developer.amd.com/tools-and-sdks/archive/amd-core-math-library-acml/">ACML</a> library for AMD chips and the <a href="http://math-atlas.sourceforge.net">ATLAS</a> library which is a general purpose tunable library. Also <a href="https://www.tacc.utexas.edu/research-development/tacc-software/gotoblas2">Goto&rsquo;s BLAS</a> is optimized but is not under active development.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2016/01/14/profile-of-hilary-parker/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2016/01/14/profile-of-hilary-parker/">Profile of Hilary Parker</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2016/01/24/not-so-standard-deviations-episode-8-snow-day/">Not So Standard Deviations Episode 8 - Snow Day</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2016/01/24/not-so-standard-deviations-episode-8-snow-day/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

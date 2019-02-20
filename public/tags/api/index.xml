@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Api on Tristan Berchoux</title>
+    <link>/tags/api/</link>
+    <description>Recent content in Api on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Mon, 12 Mar 2012 19:40:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (3/11)</title>
+      <link>/2012/03/12/sunday-data-statistics-link-roundup-3-11/</link>
+      <pubDate>Mon, 12 Mar 2012 19:40:00 +0000</pubDate>
+      
+      <guid>/2012/03/12/sunday-data-statistics-link-roundup-3-11/</guid>
+      <description>This is the big one. ESPN has opened up access to their API! It looks like there may only be access to some of the data for the general public though, does anyone know more?  Looks like ESPN isn&amp;#8217;t the only sports-related organization in the API mood, Nike plans to open up an API too. It would be great if they had better access to individual, downloadable data.  Via Leonid K.</description>
+    </item>
+    
+    <item>
+      <title>APIs!</title>
+      <link>/2011/10/09/apis/</link>
+      <pubDate>Sun, 09 Oct 2011 19:05:05 +0000</pubDate>
+      
+      <guid>/2011/10/09/apis/</guid>
+      <description>Application programming interfaces (APIs) are tools that are built by companies/governments/organizations to allow software engineers to interact with their websites. One of the main uses of these APIs is to allow software engineers to build apps on top of Facebook/Twitter/etc. Many APIs are really helpful for statisticians/data scientists as well. Using APIs, it is generally very easy to collect large amounts of interesting data. Here are some examples of APIs (you may need to sign up for accounts to get access to some of these).</description>
+    </item>
+    
+  </channel>
+</rss>

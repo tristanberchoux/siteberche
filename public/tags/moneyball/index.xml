@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Moneyball on Tristan Berchoux</title>
+    <link>/tags/moneyball/</link>
+    <description>Recent content in Moneyball on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 16 Sep 2012 13:59:53 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/moneyball/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (9/16/12)</title>
+      <link>/2012/09/16/sunday-data-statistics-link-roundup-9-16-12/</link>
+      <pubDate>Sun, 16 Sep 2012 13:59:53 +0000</pubDate>
+      
+      <guid>/2012/09/16/sunday-data-statistics-link-roundup-9-16-12/</guid>
+      <description>There has been a lot of talk about the Michael Lewis (of Moneyball fame) profile of Obama in Vanity fair. One interesting quote I think deserves a lot more discussion is: &amp;#8220;On top of all of this, after you have made your decision, you need to feign total certainty about it. People being led do not want to think probabilistically.&amp;#8221; This is a key issue that is only going to get worse going forward.</description>
+    </item>
+    
+  </channel>
+</rss>

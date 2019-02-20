@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>A blessing of dimensionality often observed in high-dimensional data sets &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>A blessing of dimensionality often observed in high-dimensional data sets</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/04/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>[](<a href="http://www.jstatsoft.org/v59/i10/paper">http://www.jstatsoft.org/v59/i10/paper</a>) have one observation per row and one variable per column.  Using this definition, big data sets can be either:</p>
+
+<ol>
+<li><strong>Wide</strong> - a wide data set has a large number of measurements per observation, but fewer observations. This type of data set is typical in neuroimaging, genomics, and other biomedical applications.</li>
+<li><strong>Tall</strong> - a tall data set has a large number of observations, but fewer measurements. This is the typical setting in a large clinical trial or in a basic social network analysis.</li>
+</ol>
+
+<p>The <a href="http://en.wikipedia.org/wiki/Curse_of_dimensionality">curse of dimensionality</a> tells us that estimating some quantities gets harder as the number of dimensions of a data set increases - as the data gets taller or wider. An example of this was <a href="http://simplystatistics.org/2014/10/24/an-interactive-visualization-to-teach-about-the-curse-of-dimensionality/">nicely illustrated</a> by my student Prasad (although it looks like his quota may be up on Rstudio).</p>
+
+<p>For wide data sets there is also a blessing of dimensionality. The basic reason for the blessing of dimensionality is that:</p>
+
+<blockquote>
+<p>No matter how many new measurements you take on a small set of observations, the number of observations and all of their characteristics are fixed.</p>
+</blockquote>
+
+<p>As an example, suppose that we make measurements on 10 people. We start out by making one measurement (blood pressure), then another (height), then another (hair color) and we keep going and going until we have one million measurements on those same 10 people. The blessing occurs because the measurements on those 10 people will all be related to each other. If 5 of the people are women and 5 or men, then any measurement that has a relationship with sex will be highly correlated with any other measurement that has a relationship with sex. So by knowing one small bit of information, you can learn a lot about many of the different measurements.</p>
+
+<p>This blessing of dimensionality is the key idea behind many of the statistical approaches to wide data sets whether it is stated explicitly or not. I thought I&rsquo;d make a very short list of some of these ideas:</p>
+
+<p><strong>1. Idea: </strong><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3841439/">De-convolving mixed observations from high-dimensional data. </a></p>
+
+<p><strong>How the blessing plays a role: </strong>The measurements for each observation are assumed to be a mixture of values measured from different observation types. The proportion of each observation type is assumed to be fixed across measurements, so you can take advantage of the multiple measurements to estimate the mixing percentage and perform the deconvolution. (<a href="http://odin.mdacc.tmc.edu/~wwang7/">Wenyi Wang</a> came and gave an excellent seminar on this idea at JHU a couple of days ago, which inspired this post).</p>
+
+<p><strong>2. Idea:</strong> <a href="http://biostatistics.oxfordjournals.org/content/5/2/155.short">The two groups model for false discovery rates</a>.</p>
+
+<p><strong>How the blessing plays a role: </strong> The models assume that a hypothesis test is performed for each observation and that the probability any observation is drawn from the null, the null distribution, and the alternative distributions are common across observations. If the null is assumed known, then it is possible to use the known null distribution to estimate the common probability that an observation is drawn from the null.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>3. Idea: </strong><a href="http://www.degruyter.com/view/j/sagmb.2004.3.issue-1/sagmb.2004.3.1.1027/sagmb.2004.3.1.1027.xml">Empirical Bayes variance shrinkage for linear models</a></p>
+
+<p><strong>How the blessing plays a role: </strong> A linear model is fit for each observation and the means and variances of the log ratios calculated from the model are assumed to follow a common distribution across observations. The method estimates the hyper-parameters of these common distributions and uses them to adjust any individual measurement&rsquo;s estimates.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>4. Idea: </strong><a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0030161">Surrogate variable analysis</a></p>
+
+<p><strong>How the blessing plays a role: </strong> Each observation is assumed to be influenced by a single variable of interest (a primary variable) and multiple unmeasured confounders. Since the observations are fixed, the values of the unmeasured confounders are the same for each measurement and a supervised PCA can be used to estimate surrogates for the confounders. (<a href="http://www.slideshare.net/jtleek/jhu-feb2009">see my JHU job talk for more on the blessing</a>)</p>
+
+<p>&nbsp;</p>
+
+<p>The blessing of dimensionality I&rsquo;m describing here is related to the idea that <a href="http://andrewgelman.com/2004/10/27/the_blessing_of/">Andrew Gelman refers to in this 2004 post.</a>  Basically, since increasingly large number of measurements are made on the same observations there is an inherent structure to those observations. If you take advantage of that structure, then as the dimensionality of your problem increases you actually get <strong>better estimates</strong> of the structure in your high-dimensional data - a nice blessing!</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2015/04/09/how-to-get-ahead-in-academia/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2015/04/09/how-to-get-ahead-in-academia/">How to Get Ahead in Academia</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2015/04/13/genomics-case-studies-online-courses-start-in-two-weeks-427/">Genomics Case Studies Online Courses Start in Two Weeks (4/27)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2015/04/13/genomics-case-studies-online-courses-start-in-two-weeks-427/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

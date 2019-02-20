@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flowingdata on Tristan Berchoux</title>
+    <link>/tags/flowingdata/</link>
+    <description>Recent content in Flowingdata on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Fri, 16 Dec 2011 12:51:35 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/flowingdata/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Interview with Nathan Yau of FlowingData</title>
+      <link>/2011/12/16/interview-with-nathan-yau-of-flowingdata/</link>
+      <pubDate>Fri, 16 Dec 2011 12:51:35 +0000</pubDate>
+      
+      <guid>/2011/12/16/interview-with-nathan-yau-of-flowingdata/</guid>
+      <description>Nathan Yau  
+     Nathan Yau is a graduate student in statistics at UCLA and the author of the extremely popular data visualization blog flowingdata.com. He recently published a book Visualize This-a really nice guide to modern data visualization using R, Illustrator and Javascript - which should be on the bookshelf of any statistician working on data visualization.     Do you consider yourself a statistician/data scientist/or something else?</description>
+    </item>
+    
+  </channel>
+</rss>

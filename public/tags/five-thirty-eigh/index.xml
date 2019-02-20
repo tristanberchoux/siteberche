@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Five Thirty Eigh on Tristan Berchoux</title>
+    <link>/tags/five-thirty-eigh/</link>
+    <description>Recent content in Five Thirty Eigh on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Tue, 30 Oct 2012 14:00:35 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/five-thirty-eigh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>On weather forecasts, Nate Silver, and the politicization of statistical illiteracy</title>
+      <link>/2012/10/30/on-weather-forecasts-nate-silver-and-the/</link>
+      <pubDate>Tue, 30 Oct 2012 14:00:35 +0000</pubDate>
+      
+      <guid>/2012/10/30/on-weather-forecasts-nate-silver-and-the/</guid>
+      <description>As you know, we have a thing for statistical literacy here at Simply Stats. So of course this column over at Politico got our attention (via Chris V. and others). The column is an attack on Nate Silver, who has a blog where he tries to predict the outcome of elections in the U.S., you may have heard of it&amp;#8230;
+The argument that Dylan Byers makes in the Politico column is that Nate Silver is likely to be embarrassed by the outcome of the election if Romney wins.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Citizen Science on Tristan Berchoux</title>
+    <link>/tags/citizen-science/</link>
+    <description>Recent content in Citizen Science on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Tue, 20 Nov 2012 10:33:50 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/citizen-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A grand experiment in science funding</title>
+      <link>/2012/11/20/a-grand-experiment-in-science-funding/</link>
+      <pubDate>Tue, 20 Nov 2012 10:33:50 +0000</pubDate>
+      
+      <guid>/2012/11/20/a-grand-experiment-in-science-funding/</guid>
+      <description>Among all the young scientists I know, I think Ethan Perlstein is one of the most innovative in the way he has adapted to the internet era. His website is incredibly unique among academic websites, he is all over the social media and his latest experiment in crowd-funding his research is something I&amp;rsquo;m definitely keeping an eye on.
+The basic idea is that he has identified a project (giving meth to yeast mouse brains -see the comment by Ethan below-, I think) and put it up on Rockethub, which is a crowd funding platform.</description>
+    </item>
+    
+    <item>
+      <title>Citizen science makes statistical literacy critical</title>
+      <link>/2011/12/03/citizen-science-makes-statistical-literacy-critical/</link>
+      <pubDate>Sat, 03 Dec 2011 17:20:13 +0000</pubDate>
+      
+      <guid>/2011/12/03/citizen-science-makes-statistical-literacy-critical/</guid>
+      <description>In today&amp;#8217;s Wall Street Journal, Amy Marcus has a piece on the Citizen Science movement, focusing on citizen science in health in particular. I am fully in support of this enthusiasm and a big fan of citizen science - if done properly. There have already been some pretty big success stories. As more companies like Fitbit and 23andMe spring up, it is really easy to collect data about yourself (right Chris?</description>
+    </item>
+    
+  </channel>
+</rss>

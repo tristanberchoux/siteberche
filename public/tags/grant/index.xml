@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grant on Tristan Berchoux</title>
+    <link>/tags/grant/</link>
+    <description>Recent content in Grant on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 19 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/grant/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My unfunded HHMI teaching professors proposal</title>
+      <link>/2017/07/19/my-unfunded-hhmi-teaching-professors-proposal/</link>
+      <pubDate>Wed, 19 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/07/19/my-unfunded-hhmi-teaching-professors-proposal/</guid>
+      <description>A little over a year ago I saw a request from the Howard Hughes Medical Institute for proposals focused on undergraduate teaching. I decided to apply for this grant since it combines all of the things I&amp;rsquo;m interested in: teaching, education research, biology, and data science. So I put together a proposal, got a couple of colleagues to write me letters of support, and sent it off.
+I was optimistic about the proposal since we have a cool opportunity through our work in scalable education to hit a large student population and we have been spending a lot of time thinking about using this platform to create a &amp;ldquo;science of data science&amp;rdquo; platform (more about that soon!</description>
+    </item>
+    
+  </channel>
+</rss>

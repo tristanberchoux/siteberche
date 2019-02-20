@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Caffo on Tristan Berchoux</title>
+    <link>/tags/caffo/</link>
+    <description>Recent content in Caffo on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 04 Nov 2012 14:24:48 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/caffo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (11/4/12)</title>
+      <link>/2012/11/04/sunday-data-statistics-link-roundup-11-4-12/</link>
+      <pubDate>Sun, 04 Nov 2012 14:24:48 +0000</pubDate>
+      
+      <guid>/2012/11/04/sunday-data-statistics-link-roundup-11-4-12/</guid>
+      <description>Brian Caffo headlines the WaPo article about massive online open courses. He is the driving force behind our department&amp;#8217;s involvement in offering these massive courses. I think this sums it up: `“I can’t use another word than unbelievable,” Caffo said. Then he found some more: “Crazy . . . surreal . . . heartwarming.”&amp;#8217; A really interesting discussion of why &amp;#8220;A Bet is a Tax on B.S.&amp;#8221;. It nicely describes why intelligent betters must be disinterested in the outcome, otherwise they will end up losing money.</description>
+    </item>
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (9/23/12)</title>
+      <link>/2012/09/23/sunday-data-statistics-link-roundup-9-23-12/</link>
+      <pubDate>Sun, 23 Sep 2012 13:57:30 +0000</pubDate>
+      
+      <guid>/2012/09/23/sunday-data-statistics-link-roundup-9-23-12/</guid>
+      <description>Harvard Business school is getting in on the fun, calling the data scientist the sexy profession for the 21st century. Although I am a little worried that by the time it gets into a Harvard Business document, the hype may be outstripping the real promise of the discipline. Still, good news for statisticians! (via Rafa via Francesca D.&amp;#8217;s Facebook feed).  The counterpoint is this article which suggests that data scientists might be able to be replaced by tools/software.</description>
+    </item>
+    
+    <item>
+      <title>On the relative importance of mathematical abstraction in graduate statistical education</title>
+      <link>/2012/08/08/on-the-relative-importance-of-mathematical-abstraction/</link>
+      <pubDate>Wed, 08 Aug 2012 15:40:15 +0000</pubDate>
+      
+      <guid>/2012/08/08/on-the-relative-importance-of-mathematical-abstraction/</guid>
+      <description>_Editor’s Note: This is the counterpoint in our series of posts on the value of abstraction in graduate education. See Brian’s defense of abstraction on Monday and the comments on his post, as well as the comments on our original teaser post for more. See below for a full description of the T-bone inside joke*._**
+Brian did a good job at defining abstraction. In a cagey debater’s move, he provided an incredibly broad definition of abstraction that includes the reason we call a a smiley face, the reason why we can apply least squares to a variety of data types, and the reason we write functions when programming.</description>
+    </item>
+    
+    <item>
+      <title>In which Brian debates abstraction with T-Bone</title>
+      <link>/2012/08/06/in-which-brian-debates-abstraction-with-t-bone/</link>
+      <pubDate>Mon, 06 Aug 2012 16:09:00 +0000</pubDate>
+      
+      <guid>/2012/08/06/in-which-brian-debates-abstraction-with-t-bone/</guid>
+      <description>_Editor&amp;#8217;s Note: This is the first in a set of point-counterpoint posts related to the value of abstract thinking in graduate education that we teased a few days ago. Brian Caffo, recently installed Graduate Program Director at the best Biostat department in the country, has kindly agreed to lead off with the case for abstraction. We&amp;#8217;ll follow up later in the week with my counterpoint. In the meantime, there have already been a number of really interesting and insightful comments inspired by our teaser post that are well worth reading.</description>
+    </item>
+    
+    <item>
+      <title>Guest Post: SMART thoughts on the ADHD 200 Data Analysis Competition</title>
+      <link>/2011/11/02/guest-post-smart-thoughts-on-the-adhd-200-data/</link>
+      <pubDate>Wed, 02 Nov 2011 15:37:42 +0000</pubDate>
+      
+      <guid>/2011/11/02/guest-post-smart-thoughts-on-the-adhd-200-data/</guid>
+      <description>Note: _This is a guest post by our colleagues Brian Caffo, Ani Eloyan, Fang Han, Han Liu,John Muschelli, Mary Beth Nebel, Tuo Zhao and Ciprian Crainiceanu. They won the ADHD 200 imaging data analysis competition. There has been some controversy around the results because one team obtained a higher score without using any of the imaging data. Our colleagues have put together a very clear discussion of the issues raised by the competition so we are publishing it here to contribute to the discussion.</description>
+    </item>
+    
+    <item>
+      <title>Caffo&#39;s Theorem</title>
+      <link>/2011/10/20/caffos-theorem/</link>
+      <pubDate>Thu, 20 Oct 2011 02:35:03 +0000</pubDate>
+      
+      <guid>/2011/10/20/caffos-theorem/</guid>
+      <description>Brian Caffo from the comments:
+ Personal theorem: the application of statistics in any new field will be labeled &amp;#8220;Technical sounding word&amp;#8221; + ics. Examples: Sabermetrics, analytics, econometrics, neuroinformatics, bioinformatics, informatics, chemeometrics.
+It&amp;#8217;s like how adding mayonnaise to anything turns it in to salad (eg: egg salad, tuna salad, ham salad, pasta salad, &amp;#8230;)
+I&amp;#8217;d like to be the first to propose the statistical study of turning things in salad. So called mayonaisics.</description>
+    </item>
+    
+  </channel>
+</rss>

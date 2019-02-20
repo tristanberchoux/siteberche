@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2012/02/06/an-r-script-for-estimating-future-inflation-via-the/">An R script for estimating future inflation via the Treasury market</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/02/06</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/finance">finance</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  One factor that is critical for any financial planning is estimating what future inflation will be. For example, if you&#8217;re saving money in an instrument that gains 3% per year, and inflation is estimated to be 4% per year, well then you&#8217;re losing money in real terms.
+There are a variety of ways to estimate the rate of future inflation. You could, for example, use past rates as an estimate of future rates.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/02/06/an-r-script-for-estimating-future-inflation-via-the/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/02/06/sunday-data-statistics-link-roundup-2-5/">Sunday Data/Statistics Link Roundup (2/5)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/02/06</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/academics">academics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/d3.js">D3.js</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/greek-statistician">Greek statistician</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/latex-app">Latex app</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/sunday-links">sunday links</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Cool app, you can write out an equation on the screen and it translates the equation to latex. Via Andrew G. Yet another D3 tutorial. Stay tuned for some cool stuff on this front here at Simply Stats in the near future. Via Vishal. Our favorite Greek statistician in the news again.  How measurement of academic output harms science. Related: is submitting scientific papers too time consuming? Stay tuned for more on this topic this week.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/02/06/sunday-data-statistics-link-roundup-2-5/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/02/03/why-dont-we-hear-more-about-adrian-dantley-on-espn/">Why don&#39;t we hear more about Adrian Dantley on ESPN? This graph makes me think he was as good an offensive player as Michael Jordan.</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/02/03</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/basketball">Basketball</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In my last post I complained about efficiency not being discussed enough by NBA announcers and commentators. I pointed out that some of the best scorers have relatively low FG% or TS%. However, via the comments it was pointed out that top scorers need to take more difficult shots and thus are expected to have lower efficiency. The plot below (made with this R script) seems to confirm this (click image to enlarge) .
+  </p>
+
+  
+  <footer>
+    <a href="/2012/02/03/why-dont-we-hear-more-about-adrian-dantley-on-espn/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/02/02/clevelands-2001-plan-for-redefining-statistics-as/">Cleveland&#39;s (?) 2001 plan for redefining statistics as &#34;data science&#34;
+</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/02/02</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/cleveland">Cleveland</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/computing">Computing</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/data-science">data science</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/theory">Theory</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  This plan has been making the rounds on Twitter and is being attributed to William Cleveland in 2001 (thanks to Kasper for the link). I&#8217;m not sure of the provenance of the document but it has some really interesting ideas and is worth reading in its entirety. I actually think that many Biostatistics departments follow the proposed distribution of effort pretty closely. One of the most interesting sections is the discussion of computing (emphasis mine):  Data analysis projects today rely on databases, computer and network hardware, and computer and network software.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/02/02/clevelands-2001-plan-for-redefining-statistics-as/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/02/01/evidence-based-music/">Evidence-based Music</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/02/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  There was recently a fascinating article published in PNAS that compared the sound quality of different types of violins. In this study, researchers assembled a collection of six violins, three of which were made by Stradivari and Guarneri del Gesu and three made by modern luthiers (i.e. 20th century). The combined value of the &#8220;old&#8221; violins was $10 million, about 100 times greater than the combined value of the &#8220;new&#8221; violins.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/02/01/evidence-based-music/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/01/31/this-graph-makes-me-think-kobe-is-not-that-good-he/">This graph makes me think Kobe is not that good, he just shoots a lot</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/01/31</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/basketball">Basketball</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I find it surprising that NBA commentators rarely talk about field goal percentage. Everybody knows that the more you shoot the more you score. But players that score a lot are admired without consideration of their FG%. Of course having a high FG% is not necessarily admirable as many players only take easy shots, while top-scorers need to take difficult ones. Regardless, missing is undesirable and players that miss more than usual are not criticized enough.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/01/31/this-graph-makes-me-think-kobe-is-not-that-good-he/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/01/30/why-in-person-education-isnt-dead-yet-but-a/">Why in-person education isn&#39;t dead yet...but a statistician could finish it off</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/01/30</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/assessment">Assessment</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/diy">diy</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/education">education</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/online-lectures">Online Lectures</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/open-research-project">Open Research Project</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A growing tend in education is to put lectures online, for free. The Kahn Academy, Stanford&#8217;s recent AI course, and Gary King&#8217;s new quantitative government course at Harvard are three of the more prominent examples. This new pedagogical format is more democratic, free, and helps people learn at their own pace. It has led some, including us here at Simply Statistics, to suggest that the future of graduate education lies in online courses.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/01/30/why-in-person-education-isnt-dead-yet-but-a/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/01/29/sunday-data-statistics-link-roundup-1-29/">Sunday data/statistics link roundup (1/29)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/01/29</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/d3">D3</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/data">data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/dongle">Dongle</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/humor">humor</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/sunday-links">sunday links</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A really nice D3 tutorial. I&#8217;m 100% on board with D3, if they could figure out a way to export the graphics as pdfs, I think this would be the best visualization tool out there. A personalized calculator that tells you what number (of the 7 billion or so) that you are based on your birth day. I&#8217;m person 4,590,743,884. Makes me feel so special&#8230;. An old post of ours, on dongle communism.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/01/29/sunday-data-statistics-link-roundup-1-29/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/01/27/this-simple-bar-graph-clearly-demonstrates-that-the-us/">This simple bar graph clearly demonstrates that the US can easily increase research funding</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/01/27</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Some NIH R01 paylines are down to 10%. This means only 10% of grants are being funded. The plot below highlights that all we need is a tiny litte slice from Defense, Medicare, Medicaid or Social Security to bring that back up to 20%. The plot was taken from Alex Tarrabok&#8217;s great article in the Atlantic.Update: The y-axis unit is billions of US dollars.
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/01/26/when-should-statistics-papers-be-published-in-science/">When should statistics papers be published in Science and Nature?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/01/26</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/fdr">FDR</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/groundbreaking-versus-definitive">groundbreaking versus definitive</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/mic">MIC</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/mine">MINE</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/nature">nature</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/publishing">publishing</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/science">science</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Like many statisticians, I was amped to see a statistics paper appear in Science. Given the impact that statistics has on the scientific community, it is a shame that more statistics papers don&#8217;t appear in the glossy journals like Science or Nature. As I pointed out in the previous post, if the paper that introduced the p-value was cited every time this statistic was used, the paper would have over 3 million citations!
+  </p>
+
+  
+  <footer>
+    <a href="/2012/01/26/when-should-statistics-papers-be-published-in-science/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/86/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;87 / 104&nbsp;</span>
+  
+  <a href="/page/88/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

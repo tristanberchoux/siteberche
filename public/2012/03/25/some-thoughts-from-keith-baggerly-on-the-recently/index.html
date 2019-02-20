@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Some thoughts from Keith Baggerly on the recently released IOM report on translational omics &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Some thoughts from Keith Baggerly on the recently released IOM report on translational omics</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/03/25</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/baggerly">Baggerly</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/fda">FDA</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/iom">IOM</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/personalized-medicine">personalized medicine</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/reproducibility">reproducibility</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <p>Shortly after the Duke trial scandal broke, the <a href="http://www.iom.edu/" target="_blank">Institute of Medicine</a> convened a committee to write a report on translational omics. Several statisticians (including one of our <a href="http://simplystatistics.tumblr.com/post/11436138110/interview-with-daniela-witten" target="_blank">interviewees</a>) either served on the committee or provided key testimony. The <a href="http://www.iom.edu/Reports/2012/Evolution-of-Translational-Omics.aspx" target="_blank">report</a> came out yesterday.  <a href="http://www.nature.com/news/lapses-in-oversight-compromise-omics-results-1.10298" target="_blank">Nature</a>, <a href="http://blogs.nature.com/spoonful/2012/03/greater-oversight-needed-for-genomic-tests-experts-say.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+nm%2Frss%2Fspoonful_of_medicine+%28Spoonful+of+Medicine+-+Blog+Posts%29%20" target="_blank">Nature Medicine</a>, and <a href="http://news.sciencemag.org/scienceinsider/2012/03/panel-calls-for-closer-oversight.html?ref=hp%20" target="_blank">Science </a>had posts about the release. Keith Baggerly sent an email with his thoughts and he gave me permission to post it here. He starts by pointing out that the Science piece has a key new observation:</p>
+
+<blockquote>
+<p><span>The NCI&#8217;s Lisa McShane, who spent months herself trying to validate Duke results, says the IOM committee &#8220;did a really fine job&#8221; in laying out the issues. </span><span>NCI now plans to require that its cooperative groups who want to use omics tests follow a checklist similar to that in the IOM report.</span><span> NCI has not yet decided whether it should add new requirements for omics tests to its peer review process for investigator-initiated grants. But &#8220;our hope is that this report will heighten everyone&#8217;s awareness,&#8221; McShane says. </span><br />
+<span></span></p>
+</blockquote>
+
+<p><span>Some further thoughts from Keith:</span></p>
+
+<blockquote>
+<p><span>First, the report helps clarify the regulatory landscape: if omics-based tests (which the FDA views as medical devices) will direct patient therapy, FDA approval in the form of an Investigational Device Exemption (IDE) is required. This is in keeping with increased guidance FDA has been providing over the past year and a half dealing with companion diagnostics. It seems likely that several of the problems identified with the Duke trials would have been caught by an FDA review, particularly if the agency already had cause for concern, such as a letter to the editor identifying analytical shortcomings.</span><span> </span></p>
+
+<p><span> </span><span>Second, the report recommends the publication of the full data, code, and metadata used to construct the omics assays prior to their use to guide patient therapy. Had such data and code been available earlier, this would have greatly reduced the amount of effort required for others (including us) to check and potentially extend on the underlying results.</span></p>
+
+<p><span>Third, the report emphasizes, repeatedly, that the test must be fully specified (“locked down”) before it is validated, let alone used to guide patient therapy. Quite a bit of effort is given to providing an explicit definition of locked down, in part (we suspect) because both Lisa McShane (NCI) and Robert Becker (FDA) provided testimony that incomplete specification was a problem their agencies encountered frequently. Such specification would have prevented problems such as that identified by the NCI for the Lung Metagene Score (LMS) in 2010, which led the NCI to remove the LMS evaluation as a goal of the Phase III cooperative group trial CALGB-30506.</span></p>
+
+<p><span> </span><span>Finally, the very existence of the report is recognition that reproducibility is an important problem for the omics-test community. This is a necessary step towards fixing the problem.</span></p>
+</blockquote>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2012/03/23/this-graph-shows-that-president-obamas-proposed-budget/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2012/03/23/this-graph-shows-that-president-obamas-proposed-budget/">This graph shows that President Obama&#39;s proposed budget treats the NIH even worse than G.W. Bush - Sign the petition to increase NIH funding!</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2012/03/25/sunday-data-statistics-link-roundup-3-25/">Sunday data/statistics link roundup (3/25)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2012/03/25/sunday-data-statistics-link-roundup-3-25/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statisteracy on Tristan Berchoux</title>
+    <link>/tags/statisteracy/</link>
+    <description>Recent content in Statisteracy on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 14 Oct 2012 13:35:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/statisteracy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (10/14/12)</title>
+      <link>/2012/10/14/sunday-data-statistics-link-roundup-10-14-12/</link>
+      <pubDate>Sun, 14 Oct 2012 13:35:00 +0000</pubDate>
+      
+      <guid>/2012/10/14/sunday-data-statistics-link-roundup-10-14-12/</guid>
+      <description>A fascinating article about the debate on whether to regulate sugary beverages. One of the protagonists is David Allison, a statistical geneticist, among other things. It is fascinating to see the interplay of statistical analysis and public policy. Yet another example of how statistics/data will drive some of the most important policy decisions going forward.  A related article is this one on the way risk is reported in the media.</description>
+    </item>
+    
+    <item>
+      <title>Nature is hiring a data editor...how will they make sense of the data?</title>
+      <link>/2012/04/26/nature-is-hiring-a-data-editor-how-will-they-make/</link>
+      <pubDate>Thu, 26 Apr 2012 13:02:00 +0000</pubDate>
+      
+      <guid>/2012/04/26/nature-is-hiring-a-data-editor-how-will-they-make/</guid>
+      <description>It looks like the journal Nature is hiring a Chief Data Editor (link via Hilary M.). It looks like the primary purpose of this editor is to develop tools for collecting, curating, and distributing data with the goal of improving reproducible research.
+The main duties of the editor, as described by the ad are:  Nature Publishing Group is looking for a Chief Editor to develop a product aimed at making research data more available, discoverable and interpretable.</description>
+    </item>
+    
+    <item>
+      <title>An essay on why programmers need to learn statistics</title>
+      <link>/2012/03/02/an-essay-on-why-programmers-need-to-learn-statistics/</link>
+      <pubDate>Fri, 02 Mar 2012 13:24:55 +0000</pubDate>
+      
+      <guid>/2012/03/02/an-essay-on-why-programmers-need-to-learn-statistics/</guid>
+      <description>This is awesome. There are a few places with some strong language, but overall I think the message is pretty powerful. Via Tariq K. I agree with Tariq, one of the gems is:
+ If you want to measure something, then don&amp;#8217;t measure other sh**. 
+ </description>
+    </item>
+    
+    <item>
+      <title>Fundamentals of Engineering Review Question Oops</title>
+      <link>/2012/01/19/fundamentals-of-engineering-review-question-oops/</link>
+      <pubDate>Thu, 19 Jan 2012 02:13:25 +0000</pubDate>
+      
+      <guid>/2012/01/19/fundamentals-of-engineering-review-question-oops/</guid>
+      <description>The Fundamentals of Engineering Exam is the first licensing exam for engineers. You have to pass it on your way to becoming a professional engineer (PE). I was recently shown a problem from a review manual:  When it is operating properly, a chemical plant has a daily production rate that is normally distributed with a mean of 880 tons/day and a standard deviation of 21 tons/day. During an analysis period, the output is measured with random sampling on 50 consecutive days, and the mean output is found to be 871 tons/day.</description>
+    </item>
+    
+    <item>
+      <title>figshare and don&#39;t trust celebrities stating facts</title>
+      <link>/2012/01/17/figshare-and-dont-trust-celebrities-stating-facts/</link>
+      <pubDate>Tue, 17 Jan 2012 17:48:58 +0000</pubDate>
+      
+      <guid>/2012/01/17/figshare-and-dont-trust-celebrities-stating-facts/</guid>
+      <description>A couple of links:
+ figshare is a site where scientists can share data sets/figures/code. One of the goals is to encourage researchers to share negative results as well. I think this is a great idea - I often find negative results and this could be a place to put them. It also uses a tagging system, like Flickr. I think this is a great idea for scientific research discovery. They give you unlimited public space and 1GB of private space.</description>
+    </item>
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup</title>
+      <link>/2012/01/15/sunday-data-statistics-link-roundup/</link>
+      <pubDate>Sun, 15 Jan 2012 15:38:00 +0000</pubDate>
+      
+      <guid>/2012/01/15/sunday-data-statistics-link-roundup/</guid>
+      <description>Statistics help for journalists (don&amp;#8217;t forget to keep rating stories!) This is the kind of thing that could grow into a statisteracy page. The author also has a really nice plug for public schools.  An interactive graphic to determine if you are in the 1% from the New York Times (I&amp;#8217;m not&amp;#8230;). Mike Bostock&amp;#8217;s d3.js presentation, this is some really impressive visualization software. You have to change the slide numbers manually but it is totally worth it.</description>
+    </item>
+    
+    <item>
+      <title>In the era of data what is a fact?</title>
+      <link>/2012/01/13/in-the-era-of-data-what-is-a-fact/</link>
+      <pubDate>Fri, 13 Jan 2012 14:00:06 +0000</pubDate>
+      
+      <guid>/2012/01/13/in-the-era-of-data-what-is-a-fact/</guid>
+      <description>The Twitter universe is abuzz about this article in the New York Times. Arthur Brisbane, who responds to reader&amp;#8217;s comments, asks  I’m looking for reader input on whether and when New York Times news reporters should challenge “facts” that are asserted by newsmakers they write about.
+ He goes on to give a couple of examples of qualitative facts that reporters have used in stories without questioning the veracity of the claims.</description>
+    </item>
+    
+  </channel>
+</rss>

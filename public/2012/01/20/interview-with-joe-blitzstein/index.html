@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Interview With Joe Blitzstein &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Interview With Joe Blitzstein</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/01/20</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/harvard">Harvard</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/interview">interview</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/itunes">iTunes</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/joe-blitzstein">Joe Blitzstein</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/social-networks">Social Networks</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/stat-110">Stat 110</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <div class="im">
+  <strong>Joe Blitzstein</strong>
+</div>
+
+<div class="im">
+</div>
+
+<div class="im">
+  <img height="200" src="http://biostat.jhsph.edu/~jleek/Blitzstein3.jpg" width="300" />
+</div>
+
+<div class="im">
+</div>
+
+<div class="im">
+  Joe Blitzstein is <a href="http://news.harvard.edu/gazette/story/2011/11/the-lasting-lure-of-logic/" target="_blank">Professor of the Practice in Statistics</a> at Harvard University and co-director of the graduate program. He moved to Harvard after obtaining his Ph.D. with Persi Diaconis at Stanford University. Since joining the faculty at Harvard, he has been immortalized in Youtube prank videos, been awarded a &#8220;favorite professor&#8221; distinction four times, and performed interesting research on the statistical analysis of social networks. Joe was also the first person to discover our blog on Twitter. You can find more information about him on his <a href="http://www.people.fas.harvard.edu/~blitz/Site/Home.html" target="_blank">personal website</a>. Or check out his Stat 110 class, now available <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=495213607" target="_blank">from iTunes</a>!
+</div>
+
+<div class="im">
+</div>
+
+<div class="im">
+  <strong>Which term applies to you: data scientist/statistician/</strong><strong>analyst?</strong>
+</div>
+
+<p><span>Statistician, but that should and does include working with data! I</span><br />
+<span>think statistics at its best interweaves modeling, inference,</span><br />
+<span>prediction, computing, exploratory data analysis (including</span><br />
+<span>visualization), and mathematical and scientific thinking. I don&#8217;t</span><br />
+<span>think &#8220;data science&#8221; should be a separate field, and I&#8217;m concerned</span><br />
+<span>about people working with data without having studied much statistics</span><br />
+<span>and conversely, statisticians who don&#8217;t consider it important ever to</span><br />
+<span>look at real data. I enjoyed the discussions by Drew Conway and on</span><br />
+<span>your blog (at</span><a href="http://www.drewconway.com/zia/?p=2378" target="_blank"><a href="http://www.drewconway.com/zia/?p=2378" target="_blank"><a href="http://www.drewconway.com/zia/?p=2378">http://www.drewconway.com/zia/?p=2378</a></a></a><span>and</span><br />
+<a href="http://simplystatistics.tumblr.com/post/11271228367/datascientist" target="_blank"><a href="http://simplystatistics.tumblr.com/post/11271228367/datascientist" target="_blank"><a href="http://simplystatistics.tumblr.com/post/11271228367/datascientist">http://simplystatistics.tumblr.com/post/11271228367/datascientist</a></a></a><span>)</span><br />
+<span>and think the relationships between statistics, machine learning, data</span><br />
+<span>science, and analytics need to be clarified.</span></p>
+
+<div class="im">
+  <strong>How did you get into statistics/data science (e.g. your history)?</strong>
+</div>
+
+<p><span>I always enjoyed math and science, and became a math major as an</span><br />
+<span>undergrad Caltech partly because I love logic and probability and</span><br />
+<span>partly because I couldn&#8217;t decide which science to specialize in. One</span><br />
+<span>of my favorite things about being a math major was that it felt so</span><br />
+<span>connected to everything else: I could often help my friends who were</span><br />
+<span>doing astronomy, biology, economics, etc. with problems, once they had</span><br />
+<span>explained enough so that I could see the essential pattern/structure</span><br />
+<span>of the problem. At the graduate level, there is a tendency for math to</span><br />
+<span>become more and more disconnected from the rest of science, so I was</span><br />
+<span>very happy to discover that statistics let me regain this, and have</span><br />
+<span>the best of both worlds: you can apply statistical thinking and tools</span><br />
+<span>to almost anything, and there are so many opportunities to do things</span><br />
+<span>that are both beautiful and useful.</span></p>
+
+<div class="im">
+  <strong>Who were really good mentors to you? What were the qualities that really</strong><br /><strong>helped you?</strong>
+</div>
+
+<p><span>I&#8217;ve been extremely lucky that I have had so many inspiring</span><br />
+<span>colleagues, teachers, and students (far too numerous to list), so I</span><br />
+<span>will just mention three. My mother, Steffi, taught me at an early age</span><br />
+<span>to love reading and knowledge, and to ask a lot of &#8220;what if?&#8221;</span><br />
+<span>questions. My PhD advisor, Persi Diaconis, taught me many beautiful</span><br />
+<span>ideas in probability and combinatorics, about the importance of</span><br />
+<span>starting with a simple nontrivial example, and to ask a lot of &#8220;who</span><br />
+<span>cares?&#8221; questions. My colleague Carl Morris taught me a lot about how</span><br />
+<span>to think inferentially (Brad Efron called Carl a &#8220;natural&#8221;</span><br />
+<span>statistician in his interview at</span><br />
+<a href="http://www-stat.stanford.edu/~ckirby/brad/other/2010Significance.pdf" target="_blank"><a href="http://www-stat.stanford.edu/~ckirby/brad/other/2010Significance.pdf" target="_blank"><a href="http://www-stat.stanford.edu/~ckirby/brad/other/2010Significance.pdf">http://www-stat.stanford.edu/~ckirby/brad/other/2010Significance.pdf</a></a></a><span>,</span><br />
+<span>by which I think he meant that valid inferential thinking does not</span><br />
+<span>come naturally to most people), about parametric and hierarchical</span><br />
+<span>modeling, and to ask a lot of &#8220;does that assumption make sense in the</span><br />
+<span>real world?&#8221; questions.</span></p>
+
+<div class="im">
+  <strong>How do you get students fired up about statistics in your classes?</strong>
+</div>
+
+<p><span>Statisticians know that their field is both incredibly useful in the</span><br />
+<span>real world and exquisitely beautiful aesthetically. So why isn&#8217;t that</span><br />
+<span>always conveyed successfully in courses? Statistics is often</span><br />
+<span>misconstrued as a messy menagerie of formulas and tests, rather than a</span><br />
+<span>coherent approach to scientific reasoning based on a few fundamental</span><br />
+<span>principles. So I emphasize thinking and understanding rather than</span><br />
+<span>memorization, and try to make sure everything is well-motivated and</span><br />
+<span>makes sense both mathematically and intuitively. I talk a lot about</span><br />
+<span>paradoxes and results which at first seem counterintuitive, since</span><br />
+<span>they&#8217;re fun to think about and insightful once you figure out what&#8217;s</span><br />
+<span>going on.</span></p>
+
+<p><span>And I emphasize what I call &#8220;stories,&#8221; by which I mean an</span><br />
+<span>application/interpretation that does not lose generality. As a simple</span><br />
+<span>example, if X is Binomial(m,p) and Y is Binomial(n,p) independently,</span><br />
+<span>then X+Y is Binomial(m+n,p). A story proof would be to interpret X as</span><br />
+<span>the number of successes in m Bernoulli trials and Y as the number of</span><br />
+<span>successes in n different Bernoulli trials, so X+Y is the number of</span><br />
+<span>successes in the m+n trials. Once you&#8217;ve thought of it this way,</span><br />
+<span>you&#8217;ll always understand this result and never forget it. A</span><br />
+<span>misconception is that this kind of proof is somehow less rigorous than</span><br />
+<span>an algebraic proof; actually, rigor is determined by the logic of the</span><br />
+<span>argument, not by how many fancy symbols and equations one writes out.</span></p>
+
+<p><span>My undergraduate probability course, Stat 110, is now worldwide</span><br />
+<span>viewable for free on iTunes U at</span><br />
+<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=495213607" target="_blank"><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=495213607" target="_blank"><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=495213607">http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=495213607</a></a></a><br />
+<span>with 34 lecture videos and about 250 practice problems with solutions.</span><br />
+<span>I hope that will be a useful resource, but in any case looking through</span><br />
+<span>those materials says more about my teaching style than anything I can</span><br />
+<span>write here does.</span></p>
+
+<p><span><strong>What are your main research interests these days?</strong></span></p>
+
+<p><span>I&#8217;m especially interested in the statistics of networks, with</span><br />
+<span>applications to social network analysis and in public health. There is</span><br />
+<span>a tremendous amount of interest in networks these days, coming from so</span><br />
+<span>many different fields of study, which is wonderful but I think there</span><br />
+<span>needs to be much more attention devoted to the statistical issues.</span><br />
+<span>Computationally, most network models are difficult to work with since</span><br />
+<span>the space of all networks is so vast, and so techniques like Markov</span><br />
+<span>chain Monte Carlo and sequential importance sampling become crucial;</span><br />
+<span>but there remains much to do in making these algorithms more efficient</span><br />
+<span>and in figuring out whether one has run them long enough (usually the</span><br />
+<span>answer is &#8220;no&#8221; to the question of whether one has run them long</span><br />
+<span>enough). Inferentially, I am especially interested in how to make</span><br />
+<span>valid conclusions when, as is typically the case, it is not feasible</span><br />
+<span>to observe the full network. For example, respondent-driven sampling</span><br />
+<span>is a link-tracing scheme being used all over the world these days to</span><br />
+<span>study so-called &#8220;hard-to-reach&#8221; populations, but much remains to be</span><br />
+<span>done to know how best to analyze such data; I&#8217;m working on this with</span><br />
+<span>my student Sergiy Nesterko. With other students and collaborators I&#8217;m</span><br />
+<span>working on various other network-related problems. Meanwhile, I&#8217;m also</span><br />
+<span>finishing up a graduate probability book with Carl Morris,</span><br />
+<span>&#8220;Probability for Statistical Science,&#8221; which has quite a few new</span><br />
+<span>proofs and perspectives on the parts of probability theory that are</span><br />
+<span>most useful in statistics.</span></p>
+
+<div class="im">
+  <strong>You have been immortalized in several Youtube videos. Do you think this</strong><br /><strong>helped make your class more &#8220;approachable&#8221;?</strong>
+</div>
+
+<p><span>There were a couple strange and funny pranks that occurred in my first</span><br />
+<span>year at Harvard. I&#8217;m used to pranks since Caltech has a long history</span><br />
+<span>and culture of pranks, commemorated in several &#8220;Legends of Caltech&#8221;</span><br />
+<span>volumes (there&#8217;s even a movie in development about this), but pranks</span><br />
+<span>are quite rare at Harvard. I try to make the class approachable</span><br />
+<span>through the lectures and by making sure there is plenty of support,</span><br />
+<span>help, and encouragement is available from the teaching assistants and</span><br />
+<span>me, not through YouTube, but it&#8217;s fun having a few interesting</span><br />
+<span>occasions from the history of the class commemorated there.</span></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2012/01/19/data-journalism-awards/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2012/01/19/data-journalism-awards/">Data Journalism Awards</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2012/01/22/sunday-data-statistics-link-roundup-1-21/">Sunday Data/Statistics Link Roundup (1/21)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2012/01/22/sunday-data-statistics-link-roundup-1-21/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

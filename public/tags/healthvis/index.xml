@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Healthvis on Tristan Berchoux</title>
+    <link>/tags/healthvis/</link>
+    <description>Recent content in Healthvis on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Tue, 02 Apr 2013 10:00:39 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/healthvis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introducing the healthvis R package  - one line D3 graphics with R</title>
+      <link>/2013/04/02/introducing-the-healthvis-r-package-one-line-d3-graphics-with-r/</link>
+      <pubDate>Tue, 02 Apr 2013 10:00:39 +0000</pubDate>
+      
+      <guid>/2013/04/02/introducing-the-healthvis-r-package-one-line-d3-graphics-with-r/</guid>
+      <description>We have been a little slow on the posting for the last couple of months here at Simply Stats. That’s bad news for the blog, but good news for our research programs! Today I’m announcing the new healthvis R package that is being developed by my student Prasad Patil (who needs a website like yesterday), Hector Corrada Bravo, and myself*. The basic idea is that I have loved D3 interactive graphics for a while.</description>
+    </item>
+    
+  </channel>
+</rss>

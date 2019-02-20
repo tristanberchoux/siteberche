@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2014/10/13/as-an-applied-statistician-i-find-the-frequentists-versus-bayesians-debate-completely-inconsequential/">I declare the Bayesian vs. Frequentist debate over for data scientists</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In a recent New York Times article the &ldquo;Frequentists versus Bayesians&rdquo; debate was brought up once again. I agree with Roger:
+ NYT wants to create a battle b/w Bayesians and Frequentists but it's all crap. Statisticians develop techniques. http://t.co/736gbqZGuq  — Roger D. Peng (@rdpeng) September 30, 2014  Because the real story (or non-story) is way too boring to sell newspapers, the author resorted to a sensationalist narrative that went something like this: &rdquo;Evil and/or stupid frequentists were ready to let a fisherman die; the persecuted Bayesian heroes saved him.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/10/13/as-an-applied-statistician-i-find-the-frequentists-versus-bayesians-debate-completely-inconsequential/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/10/09/data-science-cant-be-point-and-click/">Data science can&#39;t be point and click</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  As data becomes cheaper and cheaper there are more people that want to be able to analyze and interpret that data. I see more and more that people are creating tools to accommodate folks who aren&rsquo;t trained but who still want to look at data _right now. _While I admire the principle of this approach - we need to democratize access to data - I think it is the most dangerous way to solve the problem.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/10/09/data-science-cant-be-point-and-click/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/10/08/the-leek-group-guide-to-genomics-papers/">The Leek group guide to genomics papers</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Leek group guide to genomics papers
+When I was a student, my advisor, John Storey, made a list of papers for me to read on nights and weekends. That list was incredibly helpful for a couple of reasons.
+ It got me caught up on the field of computational genomics   It was expertly curated, so it filtered a lot of papers I didn't need to read   It gave me my first set of ideas to try to pursue as I was reading the papers   I have often thought I should make a similar list for folks who may want to work wtih me (or who want to learn about statistial genomics).
+  </p>
+
+  
+  <footer>
+    <a href="/2014/10/08/the-leek-group-guide-to-genomics-papers/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/10/06/an-economic-model-for-peer-review/">An economic model for peer review</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/06</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I saw this tweet the other day:
+ Has anyone applied game theory to the issue of anonymous peer review in academia?  &mdash; Mick Watson (@BioMickWatson) October 2, 2014  It reminded me that a few years ago I had a paper that went through the peer review wringer. It drove me completely bananas. One thing that drove me so crazy about the process was how long the referees waited before reviewing and how terrible the reviews were after that long wait.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/10/06/an-economic-model-for-peer-review/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/10/02/the-drake-index-for-academics/">The Drake index for academics</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I think academic indices are pretty silly; maybe we should introduce so many academic indices that people can&rsquo;t even remember which one is which. There are pretty serious flaws with both citation indices and social media indices that I think render them pretty meaningless in a lot of ways.
+Regardless of these obvious flaws I want in the game. Instead of the K-index for academics I propose the Drake index. Drake has achieved both critical and popular success.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/10/02/the-drake-index-for-academics/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/09/30/you-think-p-values-are-bad-i-say-show-me-the-data/">You think P-values are bad? I say show me the data.</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/09/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Both the scientific community and the popular press are freaking out about reproducibility right now. I think they have good reason to, because even the US Congress is now investigating the transparency of science. It has been driven by the very public reproducibility disasters in genomics and economics.  There are three major components to a reproducible and replicable study from a computational perspective: (1) the raw data from the experiment must be available, (2) the statistical code and documentation to reproduce the analysis must be available and (3) a correct data analysis must be performed.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/09/30/you-think-p-values-are-bad-i-say-show-me-the-data/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/09/22/unbundling-the-educational-package/">Unbundling the educational package</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/09/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I just got back from the World Economic Forum&rsquo;s summer meeting in Tianjin, China and there was much talk of disruption and innovation there. Basically, if you weren&rsquo;t disrupting, you were furniture. Perhaps not surprisingly, one topic area that was universally considered ripe for disruption was Education.
+There are many ideas bandied about with respect to &ldquo;disrupting&rdquo; education and some are interesting to consider. MOOCs were the darlings of&hellip;last year&hellip;but they&rsquo;re old news now.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/09/22/unbundling-the-educational-package/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/">Applied Statisticians: people want to learn what we do. Let&#39;s teach them.</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/09/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In this recent opinion piece, Hadley Wickham explains how data science goes beyond Statistics and that data science is not promoted in academia. He defines data science as follows:
+ I think there are three main steps in a data science project: you collect data (and questions), analyze it (using visualization and models), then communicate the results.
+ and makes the important point that
+ Any real data analysis involves data manipulation (sometimes called wrangling or munging), visualization and modelling.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/09/15/applied-statisticians-people-want-to-learn-what-we-do-lets-teach-them/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/09/09/a-non-comprehensive-list-of-awesome-female-data-people-on-twitter/">A non-comprehensive list of awesome female data people on Twitter</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/09/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I was just talking to a student who mentioned she didn&rsquo;t know Jenny Bryan was on Twitter. She is and she is an awesome person to follow. I also realized that I hadn&rsquo;t seen a good list of women on Twitter who do stats/data. So I thought I&rsquo;d make one. This list is what I could make in 15 minutes based on my own feed and will, with 100% certainty, miss really people.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/09/09/a-non-comprehensive-list-of-awesome-female-data-people-on-twitter/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/09/04/why-the-three-biggest-positive-contributions-to-reproducible-research-are-the-ipython-notebook-knitr-and-galaxy/">Why the three biggest positive contributions to reproducible research are the iPython Notebook, knitr, and Galaxy</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/09/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  There is a huge amount of interest in reproducible research and replication of results. Part of this is driven by some of the pretty major mistakes in reproducibility we have seen in economics and genomics. This has spurred discussion at a variety of levels including at the level of the United States Congress.
+To solve this problem we need the appropriate infrastructure. I think developing infrastructure is a lot like playing the lottery, only if the lottery required a lot more work to buy a ticket.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/09/04/why-the-three-biggest-positive-contributions-to-reproducible-research-are-the-ipython-notebook-knitr-and-galaxy/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/30/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;31 / 104&nbsp;</span>
+  
+  <a href="/page/32/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

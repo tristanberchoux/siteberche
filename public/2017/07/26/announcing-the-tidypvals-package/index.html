@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Announcing the tidypvals package &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Announcing the tidypvals package</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/07/26</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/pvalues">pvalues</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rpackage">rpackage</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <p>A few years ago I helped write a paper where we proposed scraping p-values from the medical literature to try to estimate <a href="https://academic.oup.com/biostatistics/article/15/1/1/244509/An-estimate-of-the-science-wise-false-discovery">the science-wise false discovery rate</a>. The paper generated a ton of <a href="https://simplystatistics.org/2013/09/25/is-most-science-false-the-titans-weigh-in/">interesting discussion</a> and inspired other groups to start collecting p-values from the literature.</p>
+
+<p>As I&rsquo;ve mentioned before the p-value is the <a href="https://simplystatistics.org/2012/01/06/p-values-and-hypothesis-testing-get-a-bad-rap-but-we/">most popular statistic ever invented</a> so there are <em>a lot</em> of published p-values out there.</p>
+
+<p>The <a href="https://github.com/jtleek/tidypvals">tidypvals package</a> is an effort to find previous collections of published p-values, synthesize them, and tidy them into one analyzable data set. The currently available p-value data sets in this package are:</p>
+
+<ul>
+<li><code>jager2014</code> - This data set comes from the paper: <a href="https://academic.oup.com/biostatistics/article/15/1/1/244509/An-estimate-of-the-science-wise-false-discovery">An estimate of the science-wise false discovery rate and application to the top medical literature</a> that first proposed p-value scraping from the medical literature for re-analysis.</li>
+<li><code>brodeur2016</code> - This data set comes from the paper <a href="https://www.aeaweb.org/articles?id=10.1257/app.20150044">Star Wars: The empirics strike back</a> which collected p-values from the economics literature.</li>
+<li><code>head2015</code> - This data set comes from the paper <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002106">The Extent and Consequences of P-Hacking in Science</a> and is an extension of the <code>jager2014</code> idea to a much larger collection of biological papers.</li>
+<li><code>chavalarias2016</code> - This data set comes from the paper <a href="https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2016.1952">Evolution of Reporting P Values in the Biomedical Literature, 1990-2015</a> and is an extension of the <code>jager2014</code> idea to a much larger collection of medical papers.</li>
+<li><code>allp</code> - merges the <code>head2015</code>, <code>chavalarias2016</code>, and <code>brodeur2016</code> while removing duplicates. To see how it is created view the <code>merging</code> vignette.</li>
+</ul>
+
+<p>Each data set is &ldquo;tidy&rdquo; data frame and has the following columns:</p>
+
+<ul>
+<li><code>pvalue</code> - The reported p-value</li>
+<li><code>year</code> - The year of the publication where the p-value appeared</li>
+<li><code>journal</code> - The journal where the publication appeared</li>
+<li><code>field</code> - The field of the paper, using the categorization in Head et al. 2015.</li>
+<li><code>abstract</code> - Whether the p-value was in the abstract of the paper</li>
+<li><code>operator</code> - Whether the p-value was reported as &ldquo;lessthan&rdquo;, &ldquo;greaterthan&rdquo;, or &ldquo;equals&rdquo;.</li>
+<li><code>doi</code> - When available the digital object identifier.</li>
+<li><code>pmid</code> - The pubmed ID for the paper when available</li>
+</ul>
+
+<p>Currently the package is only available from Github, but when I figure out the <code>ExperimentHub</code> package from Bioconductor I hope to move the package there. For now you can install it with</p>
+
+<pre><code class="language-S">install.packages('devtools)
+library(devtools)
+devtools::install_github('jtleek/tidypvals')
+</code></pre>
+
+<p>Then you can load the library and then access each data set by name.</p>
+
+<pre><code class="language-S">library(tidypvals)
+jager2014
+</code></pre>
+
+<p>Data sets can be easily merged, but be careful to avoid duplicated p-values across different data sets. You can see how each data set was obtained and tidied by viewing the corresponding vignette.</p>
+
+<pre><code class="language-S">vignette(&quot;jager-2014&quot;,package=&quot;tidypvals&quot;)
+</code></pre>
+
+<p>One purpose of tidying these data is to be able to do cross-study analysis of p-values in the literature. As a teaser for things coming soon, this plot represents more than 2.5 million p-values across 25 different fields. Notice anything funny?</p>
+
+<p><img src="https://user-images.githubusercontent.com/1571674/28619649-6127b58a-71d7-11e7-82f0-3c911ce7d1f0.png" alt="All p-values" /></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2017/07/19/my-unfunded-hhmi-teaching-professors-proposal/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2017/07/19/my-unfunded-hhmi-teaching-professors-proposal/">My unfunded HHMI teaching professors proposal</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2017/08/08/code-for-my-educational-gifs/">Code for my educational gifs</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2017/08/08/code-for-my-educational-gifs/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

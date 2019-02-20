@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>A closer look at data suggests Johns Hopkins is still the #1 US hospital &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>A closer look at data suggests Johns Hopkins is still the #1 US hospital</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/07/18</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/johns-hopkins">Johns Hopkins</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rankings">Rankings</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <p>The <a href="http://health.usnews.com/health-news/best-hospitals/articles/2012/07/16/best-hospitals-2012-13-the-honor-roll" target="_blank">US News best hospital 2012-2013<strike>2</strike> rankings</a> are out. The big news is that Johns Hopkins has lost its throne. For 21 consecutive years Hopkins was ranked #1, but this year Mass General Hospital (MGH) took the top spot displacing Hopkins to #2. However, <a href="http://www.linkedin.com/pub/elisabet-pujadas/46/320/722" target="_blank">Elisabet Pujadas</a>, an MD-PhD student here at Hopkins, took a close look at the data used for the rankings and made <a href="http://rafalab.jhsph.edu/simplystats/pujadasversion.JPG" target="_blank">this plot</a> (by hand!). The plot shows histograms of the rankings by speciality and shows Hopkins outperforming MGH.</p>
+
+<p><a href="http://rafalab.jhsph.edu/simplystats/hospitalrankings.png" target="_blank"><img height="263" src="http://rafalab.jhsph.edu/simplystats/hospitalrankings.png" width="525" /></a></p>
+
+<p>I reproduced Elisabet&#8217;s figure using R (see plot on the left above&#8230; hers is way cooler). A quick look at the histograms shows that Hopkins has many more highly ranked specialities. For example, Hopkins has 5 specialities ranked as #1 while MGH has none. Hopkins has 2 specialities ranked #2 while MGH has none. The median rank for Hopkins is 3 while for MGH it&#8217;s 5. The plot on the right plots ranks, Hopkins&#8217; versus MGH&#8217;s, and shows that Hopkins has a better ranking for 13 out of 16 specialities considered.</p>
+
+<p>So how does MGH get ranked higher than Hopkins? Here U.S. News&#8217; explanation of how they rank: </p>
+
+<blockquote>
+<p><span>To make the Honor Roll, a hospital had to earn at least one point in each of six specialties. A hospital earned two points if it ranked among the top 10 hospitals in America in any of the 12 specialties in which the US News rankings are driven mostly by objective data, such as survival rates and patient safety. Being ranked in the next 10 in those specialties earned a hospital one point. In the other four specialties, where ranking is based on each hospital&#8217;s reputation among doctors who practice that specialty, the top five hospitals in the country received two Honor Roll points and the next five got one point.</span></p>
+</blockquote>
+
+<p>This actually results in a tie of 30 points, but according to the table <a href="http://health.usnews.com/health-news/best-hospitals/articles/2012/07/16/best-hospitals-2012-13-the-honor-roll" target="_blank">here</a>, Hopkins was ranked in 15 specialities to MGH&#8217;s 16. This was the tiebreaker. But, the <a href="http://health.usnews.com/best-hospitals/area/md/johns-hopkins-hospital-6320180" target="_blank">data they put up</a> shows Hopkins ranked in all 16 specialities. Did the specialty ranked 17th do Hopkins in? In any case, a closer look at the data does suggest Hopkins is still #1.</p>
+
+<p>Disclaimer: I am a professor at Johns Hopkins University _<strong>_</strong>_<strong>_</strong>_<strong>_</strong>_<strong>_</strong>_<strong>_</strong>_<strong>_</strong>_<strong>_</strong>_____</p>
+
+<p>The data for Hopkins is <a href="http://health.usnews.com/best-hospitals/area/md/johns-hopkins-hospital-6320180" target="_blank">here</a> and I cleaned it up and put it <a href="http://rafalab.jhsph.edu/simplystats/hopkins.txt" target="_blank">here</a>. For MGH it&#8217;s <a href="http://health.usnews.com/best-hospitals/area/ma/massachusetts-general-hospital-6140430" target="_blank">here</a> and <a href="http://rafalab.jhsph.edu/simplystats/mgh.txt" target="_blank">here</a>. The script used to make the plots is <a href="http://rafalab.jhsph.edu/simplystats/hospitalrankings.R" target="_blank">here</a>. Thanks to Elisabet for the pointer and data.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2012/07/18/johns-hopkins-coursera-statistics-courses/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2012/07/18/johns-hopkins-coursera-statistics-courses/">Johns Hopkins Coursera Statistics Courses</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2012/07/18/top-universities-test-the-online-appeal-of-free/">Top Universities Test the Online Appeal of Free</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2012/07/18/top-universities-test-the-online-appeal-of-free/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

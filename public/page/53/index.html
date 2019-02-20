@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2013/03/12/if-i-were-at-enar2013-today-heres-where-id-go/">If I were at #ENAR2013 today, here&#39;s where I&#39;d go</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/03/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  This week is the annual ENAR meeting, the big biostatistics conference, in Orlando, Florida. It actually started on Sunday but I haven&rsquo;t gotten around to looking at the program (obviously, I&rsquo;m not there right now). Flipping through the program now, here&rsquo;s what looks good to me for Tuesday:
+ 8:30-10:15am: Functional Neuroimaging Decompositions, Grand Ballroom 3  10:30am-12:15pm: Hmm&hellip;I guess you should go to the Presidential Invited Address, Grand Ballroom 7 1:45-3:30pm: JABES Showcase, Grand Ballroom 8A; Statistical Body Language: Analytical Methods for Wearable Computing, Grand Ballroom 4 3:45-5:30pm: Big Data: Wearable Computing, Crowdsourcing, Space Telescopes, and Brain Imaging, Grand Ballroom 8A; Sample Size Planning for Clinical Development, Grand Ballroom 6  That&rsquo;s right, you can pack in two sessions on wearable computing today if you want.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/03/12/if-i-were-at-enar2013-today-heres-where-id-go/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/03/10/sunday-datastatistics-link-roundup-31013/">Sunday data/statistics link roundup (3/10/13)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/03/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  This is an outstanding follow up analysis to our paper on the rate of false discoveries in the medical literature. I hope that the author of the blog post will consider submitting it for publication in a journal, I think it is worth having more methodology out there in this area.  If you are an academic in statistics and aren&rsquo;t following Karl and Thomas on Twitter, you should be.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/03/10/sunday-datastatistics-link-roundup-31013/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/03/08/send-me-studentpostdoc-blogs-in-statistics-and-computational-biology/">Send me student/postdoc blogs in statistics and computational biology</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/03/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I&rsquo;ve been writing a blog for a few years now, but it started after I was already comfortably settled in a tenure track job. There have been some huge benefits of writing a scientific blog. It has certainly raised my visibility and given me opportunities to talk about issues that are a little outside of my usual research agenda. It has also inspired more than one research project that has ended up in a full blown peer-reviewed publication.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/03/08/send-me-studentpostdoc-blogs-in-statistics-and-computational-biology/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/03/06/the-importance-of-simulating-the-extremes/">The importance of simulating the extremes</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/03/06</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/cook">cook</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/opinion">opinion</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/simulation">simulation</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Simulation is commonly used by statisticians/data analysts to: (1) estimate variability/improve predictors, (2) to evaluate the space of potential outcomes, and (3) to evaluate the properties of new algorithms or procedures. Over the last couple of days, discussions of simulation have popped up in a couple of different places.
+First, the reviewers of a paper that my student is working on had asked a question about the behavior of the method in different conditions.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/03/06/the-importance-of-simulating-the-extremes/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/03/04/big-data-context-bad/">Big Data - Context = Bad</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/03/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  There&rsquo;s a nice article by Nick Bilton in the New York Times Bits blog about the need for context when looking at Big Data. Actually, the article starts off by describing how Google&rsquo;s Flu Trends model overestimated the number of people infected with flue in the U.S. this season, but then veers off into a more general discussion about Big Data.
+My favorite quote comes from Mark Hansen:
+ “Data inherently has all of the foibles of being human,” said Mark Hansen, director of the David and Helen Gurley Brown Institute for Media Innovation at Columbia University.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/03/04/big-data-context-bad/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/03/03/sunday-datastatistics-link-roundup-332013/">Sunday data/statistics link roundup (3/3/2013)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/03/03</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A really nice example where epidemiological studies are later confirmed by a randomized trial. From a statistician&rsquo;s point of view, this is the idealized way that science would work. First, data that are relatively cheap (observational/retrospective studies) are used to identify potential associations of interest. After a number of these studies show a similar effect, a randomized study is performed to confirm what we suspected from the cheaper studies. Joe Blitzstein talking about the &ldquo;Soul of Statistics&rdquo;, we interviewed Joe a while ago.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/03/03/sunday-datastatistics-link-roundup-332013/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/02/27/please-save-the-unsolicited-r01s/">Please save the unsolicited R01s</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Steven Salzberg</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/02/27</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/bioinformatics">bioinformatics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/genomics">genomics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/grant-funding">grant funding</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/nhgri">NHGRI</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/niaid">NIAID</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/nih">NIH</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/r01">R01</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/research-funding">research funding</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/sequencing">sequencing</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/top-down-science">top-down science</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Editor&rsquo;s note: With the sequestration deadline hours away, the career of many young US scientists is on the line. In this guest post, our colleague Steven Salzberg , an avid _Editor&rsquo;s note: With the sequestration deadline hours away, the career of many young US scientists is on the line. In this guest post, our colleague Steven Salzberg , an avid  and its peer review process, tells us why now more than ever the NIH should prioritize funding R01s over other project grants .
+  </p>
+
+  
+  <footer>
+    <a href="/2013/02/27/please-save-the-unsolicited-r01s/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/02/25/big-data-giving-people-what-they-want/">Big data: Giving people what they want</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/02/25</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Netflix is using data to create original content for its subscribers, the first example of which was House of Cards. Three main data points for this show were that (1) People like David Fincher (because they watch The Social Network, like, all the time); (2) People like Kevin Spacey; and (3) People liked the British version of House of Cards. Netflix obviously has tons of other data, including when you stop, pause, rewind certain scenes in a movie or TV show.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/02/25/big-data-giving-people-what-they-want/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/02/24/sunday-datastatistics-link-roundup-2242013/">Sunday data/statistics link roundup (2/24/2013)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/02/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  An attempt to create a version of knitr for stata(via John M.). I like the direction that reproducible research is moving - toward easier use and wider spread adoption. The success of iPython notebookis another great sign for the whole research area. Email is always a problem for me. In the last week I&rsquo;ve been introduced to a couple of really nice apps that give me insight into my email habits (Gmail meter - via John M.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/02/24/sunday-datastatistics-link-roundup-2242013/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/02/18/tesla-vs-nyt-do-the-data-really-tell-all/">Tesla vs. NYT: Do the Data Really Tell All?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/02/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I&rsquo;ve enjoyed so far the back and forth between Tesla Motors and New York Times reporter John Broder. The short version is
+ Broder tested one of Tesla&rsquo;s new Model S all-electric sedans on a drive from Washington, D.C. to Groton, CT. Part of the reason for this specific trip was to make use of Tesla&rsquo;s new supercharger stations along the route (one in Delaware and one in Connecticut). Broder&rsquo;s trip appeared to have some bumps, including running out of electricity at one point and requiring a tow.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/02/18/tesla-vs-nyt-do-the-data-really-tell-all/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/52/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;53 / 104&nbsp;</span>
+  
+  <a href="/page/54/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

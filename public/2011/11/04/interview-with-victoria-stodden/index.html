@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Interview with Victoria Stodden &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Interview with Victoria Stodden</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/11/04</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/interview">interview</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/legal">Legal</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/reproducibility">reproducibility</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/victoria-stodden">Victoria Stodden</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <p><strong>Victoria Stodden</strong></p>
+
+<p><img height="300" width="250" src="http://biostat.jhsph.edu/~jleek/vcs.jpg" /></p>
+
+<p>Victoria Stodden is an assistant professor of statistics at Columbia University in New York City. She moved to Columbia after getting her Ph.D. at Stanford University. Victoria has made major contributions to the area of reproducible research and has been appointed to the NSF&#8217;s Advisory Committee for Infrastructure. She is the recent recipient of an NSF grant for &#8220;Policy Design for Reproducibility and Data Sharing in Computational Science&#8221;</p>
+
+<!-- more -->
+
+<p><strong>Which term applies to you: data scientist/statistician/analyst (or something else)?</strong></p>
+
+<p>Definitely statistician. My PhD is from the stats department at Stanford University.</p>
+
+<p><strong>How did you get into statistics/data science (e.g. your history)?</strong></p>
+
+<p>Since my undergrad days I’ve been motivated by problems in what’s called ‘social welfare economics.’ I interpret that as studying how people can best reach their potential, particularly how the policy environment affects outcomes. This includes the study of regulatory design, economic growth, access to knowledge, development, and empowerment. My undergraduate degree was in economics, and I thought I would carry on with a PhD in economics as well. I realized that folks with my interests were mostly doing empirical work so I thought I should prepare myself with the best training I could in statistics. Hence I chose to do a PhD in statistics to augment my data analysis capabilities as much as I could since I envisioned myself immersed in empirical research in the future.</p>
+
+<p><strong>What is the problem currently driving you?</strong></p>
+
+<p>Right now I’m working on the problem of reproducibility in our body of published computational science. This ties into my interests because of the critical role of knowledge and reasoning in advancing social welfare. Scientific research is becoming heavily computational and as a result the empirical work scientists do is becoming more complex and yet less tacit: the myriad decisions made in data filtering, analysis, and modeling are all recordable in code. In computational research there are so many details in the scientific process it is nearly impossible to communicate them effectively in the traditional scientific paper – rendering our published computational results unverifiable, if there isn’t access to the code and data that generated them.</p>
+
+<p>Access to the code and data permits readers to check whether the descriptions in the paper correspond to the published results, and allows people to understand why independent implementations of the methods in the paper might produce differing results. It also puts the tools of scientific reasoning into people’s hands – this is new. For much of scientific research today all you need is an internet connection to download the reasoning associated with a particular result. Wide availability of the data and code is still largely a dream, but one the scientific community is moving towards.</p>
+
+<p><strong>Who were really good mentors to you? What were the qualities that really helped you?</strong></p>
+
+<p>My advisor, David Donoho, is an enormous influence. He is the clearest scientific thinker I have ever been exposed to. I’ve been so very lucky with the people who have come into my life. Through his example, Dave is the one who has had the most impact on how I think about and prioritize problems and how I understand our role as statisticians and scientific thinkers. He’s given me an example of how to do this and it’s hard to underestimate his influence in my life.</p>
+
+<p><strong>What do you think are the barriers to reproducible research?</strong></p>
+
+<p>At this point, incentives. There are many concrete barriers, which I talk about in my papers and talks (available on my website <a href="http://stodden.net" target="_blank"><a href="http://stodden.net" target="_blank"><a href="http://stodden.net">http://stodden.net</a></a></a>), but they all stem from misaligned incentives. If you think about it, scientists do lots of things they don’t particularly like in the interest of research communication and scientific integrity. I don’t know any computational scientist who really loves writing up their findings into publishable articles for example, but they do. This is because the right incentives exist. A big part of the work I am doing concerns the scientific reward structure.  For example, my work on the Reproducible Research Standard is an effort to realign the intellectual property rules scientists are subject to, to be closer to our scientific norms. Scientific norms create the incentive structure for the production of scientific research, providing rewards for doing things people might not do otherwise. For example, scientists have a long established norm of giving up all intellectual property rights over their work in exchange for attribution, which is the currency of success. It’s the same for sharing the code and data that underlies published results – not part of the scientific incentive and reward structure today but becoming so, through adjusting a variety of other factors like finding agency policy, journal publication policy, and expectations at the institutional level.</p>
+
+<p><strong>What have been some success stories in reproducible research?</strong></p>
+
+<p>I can’t help but point to my advisor, David Donoho. An example he gives is his release of <a href="http://www-stat.stanford.edu/~wavelab" target="_blank"><a href="http://www-stat.stanford.edu/~wavelab" target="_blank"><a href="http://www-stat.stanford.edu/~wavelab">http://www-stat.stanford.edu/~wavelab</a></a></a> - the first implementation of wavelet routines in MATLAB, before MATLAB included their own wavelet toolbox.  The release of the Wavelab code was a factor that he believes made him one of the top 5 highly cited authors in Mathematics in 2000.</p>
+
+<p>Hiring and promotion committees seem to be starting to recognize the difference between candidates that recognize the importance of reproducibility and clear scientific communication, compared to others who seem to be wholly innocent of these issues.</p>
+
+<p>There is a nascent community of scientific software developers that is achieving remarkable success.  I co-organized a workshop this summer bringing some of these folks together, see <a href="http://www.stodden.net/AMP2011" target="_blank"><a href="http://www.stodden.net/AMP2011" target="_blank"><a href="http://www.stodden.net/AMP2011">http://www.stodden.net/AMP2011</a></a></a>. There are some wonderful projects underway to assist in reproducibility, from workflow tracking to project portability to unique identifiers for results reproducible in the cloud. Fascinating stuff.</p>
+
+<p><strong>Can you tell us a little about the legal ramifications of distributing code/data?</strong></p>
+
+<p>Sure. Many aspects of our current intellectual property laws are quite detrimental to the sharing of code and data. I’ll discuss the two most impactful ones. Copyright creates exclusive rights vested in the author for original expressions of ideas – and it’s a default. What this means is that your expression of your idea – your code, your writing, figures you create – are by default copyright to you. So for your lifetime and 70+ years after that, you (or your estate) need to give permission for the reproduction and re-use of the work – this is exactly counter to scientific norms or independent verification and building on others’ findings. The Reproducible Research Standard is a suite of licenses that permit scientists to set the terms of use of their code, data, and paper according to scientific norms: use freely but attribute. I have written more about this here: <a href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=4720221" target="_blank"><a href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=4720221" target="_blank"><a href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=4720221">http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=4720221</a></a></a></p>
+
+<p>In 1980 Congress passed the Bayh-Dole Act, which was designed to create incentives for access to federally funded scientific discoveries by securing ownership rights for universities with regard to inventions by their researchers. The idea was that these inventions could then by patented and licensed by the university, making the otherwise unavailable technology available for commercial development. Notice that Bayh-Dole was passed on the eve of the computer revolution and Congress could not have foreseen the future importance of code to scientific investigation and its subsequent susceptibility to patentability. The patentability of scientific code now creates incentives to keep the code hidden: to avoid creating prior art in order to maximize the chance of obtaining the patent, and to keep hidden from potential competitors any information that might be involved in commercialization. Bayh-Dole has created new incentives for computational scientists – that of startups and commercialization – that must be reconciled with traditional scientific norms of openness.</p>
+
+<p><strong>Related Posts:</strong> Jeff&#8217;s interviews with <a href="http://simplystatistics.tumblr.com/post/11436138110/interview-with-daniela-witten" target="_blank">Daniela Witten</a> and <a href="http://simplystatistics.tumblr.com/post/11729003971/interview-with-chris-barr" target="_blank">Chris Barr</a>. Roger&#8217;s <a href="http://simplystatistics.tumblr.com/post/12243614318/i-gave-a-talk-on-reproducible-research-back-in" target="_blank">talk on reproducibility</a> </p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2011/11/03/free-access-publishing-is-awesome-but-expensive-how/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2011/11/03/free-access-publishing-is-awesome-but-expensive-how/">Free access publishing is awesome...but expensive. How do we pay for it?</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2011/11/05/new-ways-to-follow-simply-statistics/">New ways to follow Simply Statistics</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2011/11/05/new-ways-to-follow-simply-statistics/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

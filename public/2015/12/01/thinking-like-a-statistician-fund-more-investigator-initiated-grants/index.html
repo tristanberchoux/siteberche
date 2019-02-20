@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Thinking like a statistician: the importance of investigator-initiated grants &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Thinking like a statistician: the importance of investigator-initiated grants</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/12/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>A substantial amount of scientific research is funded by investigator-initiated grants. A researcher has an idea, writes it up and sends a proposal to a funding agency. The agency then elicits help from a group of peers to evaluate competing proposals. Grants are awarded to the most highly ranked ideas. The percent awarded depends on how much funding gets allocated to these types of proposals. At the NIH, the largest funding agency of these types of grants, the success rate recently <a href="https://nihdirectorsblog.files.wordpress.com/2013/09/sequestration-success-rates1.jpg">fell below 20% from a high above 35%</a>. Part of the reason these percentages have fallen is to make room for large collaborative projects. Large projects seem to be increasing, and not just at the NIH. In Europe, for example, the <a href="https://www.humanbrainproject.eu/">Human Brain Project</a> has an estimated cost of over 1 billion US$ over 10 years. To put this in perspective, 1 billion dollars can fund over 500 <a href="http://grants.nih.gov/grants/funding/r01.htm">NIH R01s</a>. R01 is the NIH mechanism most appropriate for investigator initiated proposals.</p>
+
+<p>The merits of big science has been widely debated (for example <a href="http://www.michaeleisen.org/blog/?p=1179">here</a> and <a href="http://simplystatistics.org/2013/02/27/please-save-the-unsolicited-r01s/">here</a>). And most agree that some big projects have been successful. However, in this post I present a statistical argument highlighting the importance of investigator-initiated awards. The idea is summarized in the graph below.</p>
+
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2015/12/Rplot.png" alt="" /></p>
+
+<!-- <img class="alignnone size-full wp-image-4483" src="http://simplystatistics.org/wp-content/uploads/2015/12/Rplot.png" alt="Rplot" width="1112" height="551" srcset="http://simplystatistics.org/wp-content/uploads/2015/12/Rplot-300x149.png 300w, http://simplystatistics.org/wp-content/uploads/2015/12/Rplot-1024x507.png 1024w, http://simplystatistics.org/wp-content/uploads/2015/12/Rplot-260x129.png 260w, http://simplystatistics.org/wp-content/uploads/2015/12/Rplot.png 1112w" sizes="(max-width: 1112px) 100vw, 1112px" />](http://simplystatistics.org/wp-content/uploads/2015/12/Rplot.png)
+-->
+
+<p>The two panes above represent two different funding strategies: fund-many-R01s (left) or reduce R01s to fund several large projects (right). The grey crosses represent investigators and the gold dots represent potential paradigm-shifting geniuses. Location on the Cartesian plane represent research areas, with the blue circles denoting areas that are prime for an important scientific advance. The largest scientific contributions occur when a gold dot falls in a blue circle. Large contributions also result from the accumulation of incremental work produced by grey crosses in the blue circles.</p>
+
+<p>Although not perfect, the peer review approach implemented by most funding agencies appears to work quite well at weeding out unproductive researchers and unpromising ideas. They also seem to do well at spreading funds across general areas. For example NIH spreads funds across <a href="https://www.nih.gov/institutes-nih/list-nih-institutes-centers-offices">diseases and public health challenges</a> (for example cancer, mental health, heart, genomics, heart and lung disease.) as well as <a href="https://www.nigms.nih.gov/Pages/default.aspx">general medicine</a>, <a href="https://www.genome.gov/">genomics</a> and <a href="https://www.nlm.nih.gov/">information.</a> However, precisely predicting who will be a gold dot or what specific area will be a blue circle seems like an impossible endeavor. Increasing the number of tested ideas and researchers therefore increases our chance of success. When a funding agency decides to invest big in a specific area (green dollar signs) they are predicting the location of a blue circle. As funding flows into these areas, so do investigators (note the clusters). The total number of funded lead investigators also drops. The risk here is that if the dollar sign lands far from a blue dot, we pull researchers away from potentially fruitful areas. If after 10 years of funding, the <a href="https://www.humanbrainproject.eu/">Human Brain Project</a> doesn&rsquo;t <a href="https://www.humanbrainproject.eu/mission">&ldquo;achieve a multi-level, integrated understanding of brain structure and function&rdquo;</a> we will have missed out on trying out 500 ideas by hundreds of different investigators. With a sample size this large, we expect at least a  handful of these attempts to result in the type of impactful advance that justifies funding scientific research.</p>
+
+<p>The simulation presented (code below) here is clearly an over simplification, but it does depict the statistical reason why I favor investigator-initiated grants.  The simulation clearly depicts that the strategy of funding many investigator-initiated grants is key for the continued success of scientific research.</p>
+
+<pre><code class="language-r">set.seed(2)
+library(rafalib)
+thecol=&quot;gold3&quot;
+mypar(1,2,mar=c(0.5,0.5,2,0.5))
+## Start with the many R01s model
+###
+##generate location of 2,000 investigators
+N = 2000
+x = runif(N)
+y = runif(N)
+## 1% are geniuses
+Ng = N*0.01
+g = rep(4,N);g[1:Ng]=16
+## generate location of important areas of research
+M0 = 10
+x0 = runif(M0)
+y0 = runif(M0)
+r0 = rep(0.03,M0)
+##Make the plot
+nullplot(xaxt=&quot;n&quot;,yaxt=&quot;n&quot;,main=&quot;Many R01s&quot;)
+symbols(x0,y0,circles=r0,fg=&quot;black&quot;,bg=&quot;blue&quot;,lwd=3,add=TRUE,inches=FALSE)
+points(x,y,pch=g,col=ifelse(g==4,&quot;grey&quot;,thecol))
+points(x,y,pch=g,col=ifelse(g==4,NA,thecol))
+### Generate the location of 5 big projects
+M1 = 5
+x1 = runif(M1)
+y1 = runif(M1)
+##make initial plot
+nullplot(xaxt=&quot;n&quot;,yaxt=&quot;n&quot;,main=&quot;A Few Big Projects&quot;)
+symbols(x0,y0,circles=r0,fg=&quot;black&quot;,bg=&quot;blue&quot;,lwd=3,add=TRUE,inches=FALSE)
+### Generate location of investigators attracted
+### to location of big projects. There are 1000 total
+### investigators
+Sigma = diag(2)*0.005
+N1 = 200
+Ng1 = round(N1*0.01)
+g1 = rep(4,N);g1[1:Ng1]=16
+library(MASS)
+for(i in 1:M1){
+   xy = mvrnorm(N1,c(x1[i],y1[i]),Sigma)
+   points(xy[,1],xy[,2],pch=g1,col=ifelse(g1==4,&quot;grey&quot;,thecol))
+}
+### generate location of investigators that ignore big projects
+### note now 500 instead of 200. Note overall total
+## is also less because large projects result in less
+## lead investigators
+N = 500
+x = runif(N)
+y = runif(N)
+Ng = N*0.01
+g = rep(4,N);g[1:Ng]=16
+points(x,y,pch=g,col=ifelse(g==4,&quot;grey&quot;,thecol))
+points(x1,y1,pch=&quot;$&quot;,col=&quot;darkgreen&quot;,cex=2,lwd=2)
+</code></pre>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2015/11/25/a-thanksgiving-dplyr-rubiks-cube-puzzle-for-you/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2015/11/25/a-thanksgiving-dplyr-rubiks-cube-puzzle-for-you/">A thanksgiving dplyr Rubik&#39;s cube puzzle for you</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2015/12/03/not-so-standard-deviations-episode-5-irl-roger-is-totally-with-it/">Not So Standard Deviations: Episode 5 - IRL Roger is Totally With It</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2015/12/03/not-so-standard-deviations-episode-5-irl-roger-is-totally-with-it/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

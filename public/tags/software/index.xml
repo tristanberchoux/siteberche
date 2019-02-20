@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Tristan Berchoux</title>
+    <link>/tags/software/</link>
+    <description>Recent content in Software on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 23 Jan 2013 11:25:05 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Statisticians and computer scientists - if there is no code, there is no paper</title>
+      <link>/2013/01/23/statisticians-and-computer-scientists-if-there-is-no-code-there-is-no-paper/</link>
+      <pubDate>Wed, 23 Jan 2013 11:25:05 +0000</pubDate>
+      
+      <guid>/2013/01/23/statisticians-and-computer-scientists-if-there-is-no-code-there-is-no-paper/</guid>
+      <description>I think it has been beat to death that the incentives in academia lean heavily toward producing papers and less toward producing/maintaining software. There are people that are way, way more knowledgeable than me about building and maintaining software. For example, Titus Brown hit a lot of the key issues in his interview. The open source community is also filled with advocates and researchers who know way more about this than I do.</description>
+    </item>
+    
+    <item>
+      <title>Email is a to-do list made by other people - can someone make it more efficient?!</title>
+      <link>/2012/12/05/an-idea-for-killing-email/</link>
+      <pubDate>Wed, 05 Dec 2012 11:33:21 +0000</pubDate>
+      
+      <guid>/2012/12/05/an-idea-for-killing-email/</guid>
+      <description>This is a follow-up to one of our most popular posts: getting email responses from busy people. This post had been in the drafts for a few weeks, then this morning I saw this quote in our Twitter feed:
+ Your email inbox is a to-do list created by other people (via)
+ This is 100% true of my work email and I have to say, because of the way those emails are organized - as conversations rather than a prioritized, organized to-do list - I end up missing really important things or getting to them too late.</description>
+    </item>
+    
+    <item>
+      <title>This is an awesome paper all students in statistics should read</title>
+      <link>/2012/10/03/this-is-an-awesome-paper-all-students-in-statistics/</link>
+      <pubDate>Wed, 03 Oct 2012 15:24:46 +0000</pubDate>
+      
+      <guid>/2012/10/03/this-is-an-awesome-paper-all-students-in-statistics/</guid>
+      <description>The paper is a review of how to do software development for academics. I saw it via C. Titus Brown (who we have interviewed), he is also a co-author. How to write software (particularly for other people) is something that is under emphasized in many curricula. But it turns out this is also one of the more important components of disseminating your work in modern applied statistics. My only wish is that there was an accompanying website with resources/links for people to chase down.</description>
+    </item>
+    
+    <item>
+      <title>Interview with C. Titus Brown - Computational biologist and open access champion</title>
+      <link>/2012/08/17/interview-with-c-titus-brown-computational-biologist/</link>
+      <pubDate>Fri, 17 Aug 2012 13:45:57 +0000</pubDate>
+      
+      <guid>/2012/08/17/interview-with-c-titus-brown-computational-biologist/</guid>
+      <description>C. Titus Brown   
+  
+    C. Titus Brown is an assistant professor in the Department of Computer Science and Engineering at Michigan State University. He develops computational software for next generation sequencing and the author of the blog, &amp;#8220;Living in an Ivory Basement&amp;#8221;. We talked to Titus about open access (he publishes his unfunded grants online!), improving the reputation of PLoS One, his research in computational software development, and work-life balance in academics.</description>
+    </item>
+    
+  </channel>
+</rss>

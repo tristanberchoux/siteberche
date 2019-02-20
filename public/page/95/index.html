@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2011/11/08/coarse-pm-and-measurement-error-paper/">Coarse PM and measurement error paper</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/11/08</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/howard-chang">Howard Chang</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/literaturereview">LiteratureReview</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/pm">PM</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/spatial-statistics">Spatial statistics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/statistics">statistics</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Howard Chang, a former PhD student of mine now at Emory, just published a paper on a measurement error model for estimating the health effects of coarse particulate matter (PM). This is a cool paper that deals with the problem that coarse PM tends to be very spatially heterogeneous. Coarse PM is a bit of a hot topic now because there is currently no national ambient air quality standard for coarse PM specifically.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/11/08/coarse-pm-and-measurement-error-paper/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/11/07/is-statistics-too-darn-hard/">Is Statistics too darn hard?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/11/07</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/education">education</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/new-york-times">New York Times</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/statistics-is-awesome">statistics is awesome</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/stem">STEM</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In this NY Times article, Christopher Drew points out that many students planning engineering and science majors end up switching to other subjects or fail to get any degree. He argues that this is partly due todo the difficulty of classes. In a previous post we lamented the anemic growth in math and statistics majors in comparison to other majors. I do not think we should make our classes easier just to keep these students.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/11/07/is-statistics-too-darn-hard/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/11/06/reproducible-research-notes-from-the-field/">Reproducible research: Notes from the field</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/11/06</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/reproducibility">reproducibility</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Over the past year, I&#8217;ve been doing a lot of talking about reproducible research. Talking to people, talking on panel discussions, and talking about some of my own work. It seems to me that interest in the topic has exploded recently, in part due to some recent scandals, such as the Duke clinical trials fiasco.
+If you are unfamiliar with the term &#8220;reproducible research&#8221;, the basic idea is that authors of published research should make available the necessary materials so that others may reproduce to a very high degree of similarity the published findings.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/11/06/reproducible-research-notes-from-the-field/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/11/05/new-ways-to-follow-simply-statistics/">New ways to follow Simply Statistics</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/11/05</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In case you prefer to follow Simply Statistics using some other platforms, we&#8217;ve added two new features. First, we have an official Twitter feed that you can follow. We also have a new Facebook page that you can like. Please follow us and join the discussion!
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/11/04/interview-with-victoria-stodden/">Interview with Victoria Stodden</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/11/04</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/interview">interview</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/legal">Legal</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/reproducibility">reproducibility</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/victoria-stodden">Victoria Stodden</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Victoria Stodden
+Victoria Stodden is an assistant professor of statistics at Columbia University in New York City. She moved to Columbia after getting her Ph.D. at Stanford University. Victoria has made major contributions to the area of reproducible research and has been appointed to the NSF&#8217;s Advisory Committee for Infrastructure. She is the recent recipient of an NSF grant for &#8220;Policy Design for Reproducibility and Data Sharing in Computational Science&#8221;
+  </p>
+
+  
+  <footer>
+    <a href="/2011/11/04/interview-with-victoria-stodden/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/11/03/free-access-publishing-is-awesome-but-expensive-how/">Free access publishing is awesome...but expensive. How do we pay for it?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/11/03</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/free-access">Free Access</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/open-access">open access</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/peer-review">peer review</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/plos">PLoS</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/publishing">publishing</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I am a huge fan of open access journals. I think open access is good both for moral reasons (science should be freely available) and for more selfish ones (I want people to be able to read my work). If given the choice, I would publish all of my work in journals that distribute results freely.
+But it turns out that for most open/free access systems, the publishing charges are paid by the scientists publishing in the journals.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/11/03/free-access-publishing-is-awesome-but-expensive-how/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/11/02/i-gave-a-talk-on-reproducible-research-back-in/"></a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/11/02</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/reproducibility">reproducibility</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  [youtube http://www.youtube.com/watch?v=aH8dpcirW1U?wmode=transparent&amp;autohide=1&amp;egm=0&amp;hd=1&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;showsearch=0&amp;w=500&amp;h=375]
+I gave a talk on reproducible research back in July at the Applied Mathematics Perspectives workshop in Vancouver, BC.
+In addition to the YouTube version, there&#8217;s also a Silverlight version where you can actually see the slides while I&#8217;m talking.
+(Source: http://www.youtube.com/)  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/11/02/guest-post-smart-thoughts-on-the-adhd-200-data/">Guest Post: SMART thoughts on the ADHD 200 Data Analysis Competition</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/11/02</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/adhd">ADHD</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/adhd-200">adhd 200</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/caffo">caffo</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/competition">competition</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/neuroimaging">neuroimaging</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/smart">SMART</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Note: _This is a guest post by our colleagues Brian Caffo, Ani Eloyan, Fang Han, Han Liu,John Muschelli, Mary Beth Nebel, Tuo Zhao and Ciprian Crainiceanu. They won the ADHD 200 imaging data analysis competition. There has been some controversy around the results because one team obtained a higher score without using any of the imaging data. Our colleagues have put together a very clear discussion of the issues raised by the competition so we are publishing it here to contribute to the discussion.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/11/02/guest-post-smart-thoughts-on-the-adhd-200-data/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/11/02/we-need-better-marketing/">We need better marketing</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/11/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In this post Alex Tabarrok argues that not enough people are obtaining &#8220;degrees that pay&#8221; and that college has been oversold. It struck me that the number of students studying Visual and Performing Arts has more than doubled since 1985. Yet for Math and Statistics there has been no increase at all! We need to do a better job at marketing. The great majority (if not all) of the people I know with Statistics degrees have found a job related to Statistics.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/11/02/we-need-better-marketing/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/11/01/computing-on-the-language-followup/">Computing on the Language Followup</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/11/01</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  My article on computing on the language was unexpectedly popular and so I wanted to quickly follow up on my own solution. Many of you got the answer, and in fact many got solutions that were quite a bit shorter than mine. Here&#8217;s how I did it:
+makeList &lt;- function(...) { args &lt;- substitute(list(...)) nms &lt;- sapply(args[-1], deparse) vals &lt;- list(...) names(vals) &lt;- nms vals }  Baptiste pointed out that Frank Harrell has already implemented this function in his Hmisc package as the &#8216;llist&#8217; function (thanks for the pointer!
+  </p>
+
+  
+  <footer>
+    <a href="/2011/11/01/computing-on-the-language-followup/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/94/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;95 / 104&nbsp;</span>
+  
+  <a href="/page/96/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

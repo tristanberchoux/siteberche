@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Sharing on Tristan Berchoux</title>
+    <link>/tags/data-sharing/</link>
+    <description>Recent content in Data Sharing on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 08 Jan 2012 16:30:18 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/data-sharing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Where do you get your data?</title>
+      <link>/2012/01/08/where-do-you-get-your-data/</link>
+      <pubDate>Sun, 08 Jan 2012 16:30:18 +0000</pubDate>
+      
+      <guid>/2012/01/08/where-do-you-get-your-data/</guid>
+      <description>Here&amp;#8217;s a question I get fairly frequently from various types of people: Where do you get your data? This is sometimes followed up quickly with &amp;#8220;Can we use some of your data?&amp;#8221;
+My contention is that if someone asks you these questions, start looking for the exits.
+There are of course legitimate reasons why someone might ask you this question. For example, they might be interested in the source of the data to verify its quality.</description>
+    </item>
+    
+  </channel>
+</rss>

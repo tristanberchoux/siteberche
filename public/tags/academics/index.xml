@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Academics on Tristan Berchoux</title>
+    <link>/tags/academics/</link>
+    <description>Recent content in Academics on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Thu, 20 Sep 2012 13:55:58 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/academics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Every professor is a startup</title>
+      <link>/2012/09/20/every-professor-is-a-startup/</link>
+      <pubDate>Thu, 20 Sep 2012 13:55:58 +0000</pubDate>
+      
+      <guid>/2012/09/20/every-professor-is-a-startup/</guid>
+      <description>There has been a lot of discussion lately about whether to be in academia or industry. Some of it I think is a bit unfair to academia. Then I saw this post on Quora asking what Hilary Mason&amp;#8217;s contributions were to machine learning, like she hadn&amp;#8217;t done anything. It struck me as a bit of academia hating on industry*. I don&amp;#8217;t see why one has to be better/worse than the other, as Roger points out, there is no perfect job and it just depends on what you want to do.</description>
+    </item>
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (2/5)</title>
+      <link>/2012/02/06/sunday-data-statistics-link-roundup-2-5/</link>
+      <pubDate>Mon, 06 Feb 2012 00:06:54 +0000</pubDate>
+      
+      <guid>/2012/02/06/sunday-data-statistics-link-roundup-2-5/</guid>
+      <description>Cool app, you can write out an equation on the screen and it translates the equation to latex. Via Andrew G. Yet another D3 tutorial. Stay tuned for some cool stuff on this front here at Simply Stats in the near future. Via Vishal. Our favorite Greek statistician in the news again.  How measurement of academic output harms science. Related: is submitting scientific papers too time consuming? Stay tuned for more on this topic this week.</description>
+    </item>
+    
+    <item>
+      <title>Google Scholar Pages</title>
+      <link>/2011/11/17/google-scholar-pages/</link>
+      <pubDate>Thu, 17 Nov 2011 20:31:00 +0000</pubDate>
+      
+      <guid>/2011/11/17/google-scholar-pages/</guid>
+      <description>If you want to get to know more about what we&amp;#8217;re working on, you can check out our Google Scholar pages:
+ Jeff Leek Rafael Irizarry Roger Peng  I&amp;#8217;ve only been using it for a day but I&amp;#8217;m pretty impressed by how much it picked up. My only problem so far is having to merge different versions of the same paper.</description>
+    </item>
+    
+    <item>
+      <title>Do we really need applied statistics journals?</title>
+      <link>/2011/10/19/do-we-really-need-applied-statistics-journals/</link>
+      <pubDate>Wed, 19 Oct 2011 16:05:06 +0000</pubDate>
+      
+      <guid>/2011/10/19/do-we-really-need-applied-statistics-journals/</guid>
+      <description>All statisticians in academia are constantly confronted with the question of where to publish their papers. Sometimes it&amp;#8217;s obvious: A theoretical paper might go to the Annals of Statistics orJASA Theory &amp;amp; Methods or Biometrika. A more &amp;#8220;methods-y&amp;#8221; paper might go to JASA or JRSS-B orBiometrics or maybe even Biostatistics (where all three of us are or have been associate editors).
+But where should the applied papers go? I think this is an increasingly large category of papers being produced by statisticians.</description>
+    </item>
+    
+  </channel>
+</rss>

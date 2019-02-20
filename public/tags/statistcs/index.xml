@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistcs on Tristan Berchoux</title>
+    <link>/tags/statistcs/</link>
+    <description>Recent content in Statistcs on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 10 Oct 2012 13:47:04 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/statistcs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What&#39;s wrong with the predicting h-index paper.</title>
+      <link>/2012/10/10/whats-wrong-with-the-predicting-h-index-paper/</link>
+      <pubDate>Wed, 10 Oct 2012 13:47:04 +0000</pubDate>
+      
+      <guid>/2012/10/10/whats-wrong-with-the-predicting-h-index-paper/</guid>
+      <description>_Editor&amp;#8217;s Note: I recently posted about a paper in Nature that purported to predict the H-index. The authors contacted me to get my criticisms, then responded to those criticisms. They have requested the opportunity to respond publicly, and I think it is a totally reasonable request. Until there is a better comment generating mechanism at the journal level, this seems like as good a forum as any to discuss statistical papers.</description>
+    </item>
+    
+  </channel>
+</rss>

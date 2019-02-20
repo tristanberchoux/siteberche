@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2017/10/02/creating-an-expository-graph-for-a-talk/">Creating an expository graph for a talk</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/10/02</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I’m co-teaching a data science class at Johns Hopkins with John Muschelli. I gave the lectures on EDA and he just gave a lecture on how to create an “expository graph”. When we teach the class an exploratory graph is the kind of graph you make for yourself just to try to understand a data set. An expository graph is one where you are trying to communicate information to someone else.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/10/02/creating-an-expository-graph-for-a-talk/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/09/20/recording-podcasts-with-a-remote-cohost/">Recording Podcasts with a Remote Co-Host</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/09/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I previously wrote about my editing workflow for podcasts and I thought I&rsquo;d follow up with some details on how I record both Not So Standard Deviations and The Effort Report. This post is again going to be a bit Mac-specific because, well, that&rsquo;s what I do.
+Communication Both of my podcasts have a co-host who is not in the same physical location as me. Therefore, we need to use some sort of Internet-based communication software (Skype, Google Hangouts, FaceTime, etc.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/09/20/recording-podcasts-with-a-remote-cohost/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/09/18/editing-podcasts-logic-pro-x/">Editing Podcasts with Logic Pro X</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/09/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I thought I&rsquo;d write a brief description of how I edit podcasts using Logic Pro X because when I was first getting into podcasts, I didn&rsquo;t find a lot of useful stuff out there. A lot of it was YouTube videos of advanced editing or very basic stuff. I don&rsquo;t consider myself a sound expert in any way, but I wanted a good workflow that would produce decent quality stuff.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/09/18/editing-podcasts-logic-pro-x/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/09/11/specialization-and-communication-in-data-science/">Specialization and Communication in Data Science</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/09/11</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I have been interested for a while now in how data scientists can better communicate data analysis activities to each other and to people outside the field. I believe that our current methods are inadequate because they have mostly been borrowed from other areas (notably, computer science). Many of those tools are useful, but they were not developed to communicate data analysis concepts specifically and often fall short. I talked about this problem in my Dean&rsquo;s Lecture earlier this year and how the field of data science could benefit from developing its own theories, to simplify communication as other fields have done.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/09/11/specialization-and-communication-in-data-science/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/09/07/moon-shots-cost-more-than-you-think/">Moon Shots Cost More Than You Think</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/09/07</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In a deeply reported article, Casey Ross and Ike Swetlitz report that IBM&rsquo;s Watson isn&rsquo;t living up to its hype when it comes to cancer care:
+ The interviews suggest that IBM, in its rush to bolster flagging revenue, unleashed a product without fully assessing the challenges of deploying it in hospitals globally. While it has emphatically marketed Watson for cancer care, IBM hasn’t published any scientific papers demonstrating how the technology affects physicians and patients.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/09/07/moon-shots-cost-more-than-you-think/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/09/04/deep-dive-ogata/">Deep Dive - Y. Ogata&#39;s Residual Analysis for Point Processes</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/09/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  For a long time now&mdash;actually ever since we started the blog&mdash;I&rsquo;ve wanted to do a series of deep dives into specific papers that I thought were great. Clearly, it&rsquo;s taken a bit longer than I expected, but I figure better late than never. Actually, that&rsquo;s become a bit of a theme for my work these days!
+One problem I have with much academic writing on the Internet is that I feel like most of it is devoted to (1) promoting one&rsquo;s own work; or (2) identifying weaknesses in others&rsquo; work.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/09/04/deep-dive-ogata/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/08/29/data-science-on-a-chromebook/">Data Science on a Chromebook</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/08/29</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/chromebook">chromebook</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  About nine months ago I announced that I was attempting a Chromebook experiment for the 2nd time. At first I thought it was going to be a short term experiment just to see if it was possible to function with only a Chromebook. But in an interesting twist I got used to it and have been working exclusively on a Chromebook for the last few months since the experiment started.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/08/29/data-science-on-a-chromebook/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/08/28/simple-queue-package-for-r/">Simple Queue Package for R</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/08/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I recently coded up a simple package that implements a file-based queue abstract data type. This package was needed for a different package that I’m working on involving parallel processing (more on that in the near future). Actually, this othe package is a project that I started almost nine years ago but was never able to get off the ground. I tried to implement a queue interface in the filehash package but it never served the purpose that I needed.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/08/28/simple-queue-package-for-r/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/08/08/code-for-my-educational-gifs/">Code for my educational gifs</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/08/08</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  During preparation for class I sometimes think up of animations that will explain the concept I am teaching. I sometimes share the resulting animations on social media via @rafalab.
+John Storey recently asked if the source code is publicly available. Because I am not that organized, and these ideas come about during last minute preparations, the code was spread across several unrelated files. John’s request motivated me to include the code in one post.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/08/08/code-for-my-educational-gifs/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/07/26/announcing-the-tidypvals-package/">Announcing the tidypvals package</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/07/26</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/pvalues">pvalues</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rpackage">rpackage</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A few years ago I helped write a paper where we proposed scraping p-values from the medical literature to try to estimate the science-wise false discovery rate. The paper generated a ton of interesting discussion and inspired other groups to start collecting p-values from the literature.
+As I&rsquo;ve mentioned before the p-value is the most popular statistic ever invented so there are a lot of published p-values out there.
+The tidypvals package is an effort to find previous collections of published p-values, synthesize them, and tidy them into one analyzable data set.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/07/26/announcing-the-tidypvals-package/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/5/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;6 / 104&nbsp;</span>
+  
+  <a href="/page/7/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

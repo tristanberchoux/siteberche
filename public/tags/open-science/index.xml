@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Science on Tristan Berchoux</title>
+    <link>/tags/open-science/</link>
+    <description>Recent content in Open Science on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 14 Mar 2012 13:53:20 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/open-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A proposal for a really fast statistics journal</title>
+      <link>/2012/03/14/a-proposal-for-a-really-fast-statistics-journal/</link>
+      <pubDate>Wed, 14 Mar 2012 13:53:20 +0000</pubDate>
+      
+      <guid>/2012/03/14/a-proposal-for-a-really-fast-statistics-journal/</guid>
+      <description>I know we need a new journal like we need a good poke in the eye. But I got fired up by the recent discussion of open science (by Paul Krugman and others) and the seriously misguided Research Works Act- that aimed to make it illegal to deposit published papers funded by the government in Pubmed central or other open access databases.
+ I also realized that I spend a huge amount of time/effort on the following things: (1) waiting for reviews (typically months), (2) addressing reviewer comments that are unrelated to the accuracy of my work - just adding citations to referees papers or doing additional simulations, and (3) resubmitting rejected papers to new journals - this is a huge time suck since I have to reformat, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>We Used Data to Improve our HarvardX Courses: New Versions Start Oct 15 &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>We Used Data to Improve our HarvardX Courses: New Versions Start Oct 15</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/09/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>You can sign up following links <a href="http://genomicsclass.github.io/book/pages/classes.html">here</a></p>
+
+<p>Last semester we successfully [You can sign up following links <a href="http://genomicsclass.github.io/book/pages/classes.html">here</a></p>
+
+<p>Last semester we successfully](<a href="http://simplystatistics.org/2014/11/25/harvardx-biomedical-data-science-open-online-training-curriculum-launches-on-january-19/">http://simplystatistics.org/2014/11/25/harvardx-biomedical-data-science-open-online-training-curriculum-launches-on-january-19/</a>) of my <a href="http://simplystatistics.org/2014/03/31/data-analysis-for-genomic-edx-course/">Data Analysis course</a>. To create the second version, the first was split into eight courses. Over 2,000 students successfully completed the first of these, but, as expected, the numbers were lower for the more advanced courses. We wanted to remove any structural problems keeping students from maximizing what they get from our courses, so we studied the assessment questions data, which included completion rate and time, and used the findings to make improvements. We also used qualitative data from the discussion board. The major changes to version 3 are the following:</p>
+
+<ul>
+<li>We no longer use R packages that Microsoft Windows users had trouble installing in the first course.</li>
+<li>All courses are now designed to be completed in 4 weeks.</li>
+<li>We added new assessment questions.</li>
+<li>We improved the assessment questions determined to be problematic.</li>
+<li>We split the two courses that students took the longest to complete into smaller modules. Students now have twice as much time to complete these.</li>
+<li>We consolidated the case studies into one course.</li>
+<li>We combined the materials from the statistics courses into a <a href="http://simplystatistics.org/2015/09/23/data-analysis-for-the-life-sciences-a-book-completely-written-in-r-markdown/">book</a>, which you can download <a href="https://leanpub.com/dataanalysisforthelifesciences">here</a>. The material in the book match the materials taught in class so you can use it to follow along.</li>
+</ul>
+
+<p>You can enroll into any of the seven courses following the links below. We will be on the discussion boards starting October 15, and we hope to see you there.</p>
+
+<ol>
+<li><a href="https://www.edx.org/course/data-analysis-life-sciences-1-statistics-harvardx-ph525-1x">Statistics and R for the Life Sciences</a> starts October 15.</li>
+<li><a href="https://www.edx.org/course/data-analysis-life-sciences-2-harvardx-ph525-2x">Introduction to Linear Models and Matrix Algebra</a> starts November 15.</li>
+<li><a href="https://www.edx.org/course/data-analysis-life-sciences-3-harvardx-ph525-3x">Statistical Inference and Modeling for High-throughput Experiments</a> starts December 15.</li>
+<li><a href="https://www.edx.org/course/data-analysis-life-sciences-4-harvardx-ph525-4x">High-Dimensional Data Analysis</a> starts January 15.</li>
+<li><a href="https://www.edx.org/course/data-analysis-life-sciences-5-harvardx-ph525-5x">Introduction to Bioconductor: Annotation and Analysis of Genomes and Genomic Assays</a> starts February 15.</li>
+<li><a href="https://www.edx.org/course/data-analysis-life-sciences-6-high-harvardx-ph525-6x">High-performance Computing for Reproducible Genomics</a> starts March 15.</li>
+<li><a href="https://www.edx.org/course/data-analysis-life-sciences-7-case-harvardx-ph525-7x">Case Studies in Functional Genomics</a> start April 15.</li>
+</ol>
+
+<p>The landing page for the series continues to be <a href="http://genomicsclass.github.io/book/pages/classes.html">here</a>.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2015/09/23/data-analysis-for-the-life-sciences-a-book-completely-written-in-r-markdown/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2015/09/23/data-analysis-for-the-life-sciences-a-book-completely-written-in-r-markdown/">Data Analysis for the Life Sciences - a book completely written in R markdown</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2015/09/30/apple-musics-moment-of-truth/">Apple Music&#39;s Moment of Truth</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2015/09/30/apple-musics-moment-of-truth/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

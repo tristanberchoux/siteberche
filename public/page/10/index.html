@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2017/01/20/not-artificial-not-intelligent/">An example that isn&#39;t that artificial or intelligent</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/01/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Editor&rsquo;s note: This is the second chapter of a book I&rsquo;m working on called Demystifying Artificial Intelligence. The goal of the book is to demystify what modern AI is and does for a general audience. So something to smooth the transition between AI fiction and highly mathematical descriptions of deep learning. I&rsquo;m developing the book over time - so if you buy the book on Leanpub know that there are only two chapters in there so far, but I&rsquo;ll be adding more over the next few weeks and you get free updates.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/01/20/not-artificial-not-intelligent/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/01/19/what-is-artificial-intelligence/">What is artificial intelligence? A three part definition</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/01/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Editor&rsquo;s note: This is the first chapter of a book I&rsquo;m working on called Demystifying Artificial Intelligence. The goal of the book is to demystify what modern AI is and does for a general audience. So something to smooth the transition between AI fiction and highly mathematical descriptions of deep learning. I&rsquo;m developing the book over time - so if you buy the book on Leanpub know that there is only one chaper in there so far, but I&rsquo;ll be adding more over the next few weeks and you get free updates.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/01/19/what-is-artificial-intelligence/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/01/18/data-prototyping-class/">Got a data app idea? Apply to get it prototyped by the JHU DSL!</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/01/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Last fall we ran the first iteration of a class at the Johns Hopkins Data Science Lab where we teach students to build data web-apps using Shiny, R, GoogleSheets and a number of other technologies. Our goals were to teach students to build data products, to reduce friction for students who want to build things with data, and to help people solve important data problems with web and SMS apps.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/01/18/data-prototyping-class/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/01/17/effort-report-episode-23/">Interview with Al Sommer - Effort Report Episode 23</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/01/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  My colleage Elizabeth Matsui and I had a great opportunity to talk with Al Sommer on the latest episode of our podcast The Effort Report. Al is the former Dean of the Johns Hopkins Bloomberg School of Public Health and is Professor of Epidemiology and International Health at the School. He is (among other things) world reknown for his pioneering research in vitamin A deficiency and mortality in children.
+Al had some good bits of advice for academics and being successful in academia.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/01/17/effort-report-episode-23/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/01/09/nssd-episode-30/">Not So Standard Deviations Episode 30 - Philately and Numismatology</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/01/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Hilary and I follow up on open data and data sharing in government. They also discuss artificial intelligence, self-driving cars, and doing your taxes in R.
+If you have questions you’d like Hilary and me to answer, you can send them to nssdeviations @ gmail.com or tweet us at @NSSDeviations.
+Show notes:
+ Lucy D’Agostino McGowan (@LucyStats) made a great translation of Hill’s criteria using XKCD comics
+ Lucy’s web page
+  </p>
+
+  
+  <footer>
+    <a href="/2017/01/09/nssd-episode-30/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/12/29/some-stress-reducers/">Some things I&#39;ve found help reduce my stress around science</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/12/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Being a scientist can be pretty stressful for any number of reasons, from the peer review process, to getting funding, to getting blown up on the internet.
+Like a lot of academics I suffer from a lot of stress related to my own high standards and the imposter syndrome that comes from not meeting them on a regular basis. I was just reading through the excellent material in Lorena Barba&rsquo;s class on essential skills in reproducibility and came across this set of slides by Phillip Stark.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/12/29/some-stress-reducers/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/12/20/noncomprehensive-list-of-awesome/">A non-comprehensive list of awesome things other people did in 2016</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/12/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Editor&rsquo;s note: For the last few years I have made a list of awesome things that other people did (2015, 2014, 2013). Like in previous years I&rsquo;m making a list, again right off the top of my head. If you know of some, you should make your own list or add it to the comments! I have also avoided talking about stuff I worked on or that people here at Hopkins are doing because this post is supposed to be about other people’s awesome stuff.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/12/20/noncomprehensive-list-of-awesome/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/12/16/the-four-eras-of-data/">The four eras of data</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/12/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I&rsquo;m teaching a class in data science for our masters and PhD students here at Hopkins. I&rsquo;ve been teaching a variation on this class since 2011 and over time I&rsquo;ve introduced a number of new components to the class: high-dimensional data methods (2011), data manipulation and cleaning (2012), real, possibly not doable data analyses (2012,2013), peer reviews (2014), building swirl tutorials for data analysis techniques (2015), and this year building data analytic web apps/R packages.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/12/16/the-four-eras-of-data/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/12/15/nssd-episode-28/">Not So Standard Deviations Episode 28 - Writing is a lot Harder than Just Talking</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/12/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Hilary and I talk about building data science products that provide a good user experience while adhering to some kind of ground truth, whether it’s in medicine, education, news, or elsewhere. Also Gilmore Girls.
+If you have questions you’d like Hilary and me to answer, you can send them to nssdeviations @ gmail.com or tweet us at @NSSDeviations.
+Show notes:
+ Hill’s criteria for causation O’Reilly Bots Podcast NHTSA’s Federal Automated Vehicles Policy Subscribe to the podcast on iTunes or Google Play.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/12/15/nssd-episode-28/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2016/12/09/pisa-us-math/">What is going on with math education in the US?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/12/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  When colleagues with young children seeking information about schools ask me if I like the Massachusetts public school my children attend, my answer is always the same: &ldquo;it&rsquo;s great&hellip;except for math&rdquo;. The fact is that in our household we supplement our kids&rsquo; math education with significant extra curricular work in order to ensure that they receive a math education comparable to what we received as children in the public system.
+  </p>
+
+  
+  <footer>
+    <a href="/2016/12/09/pisa-us-math/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/9/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;10 / 104&nbsp;</span>
+  
+  <a href="/page/11/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

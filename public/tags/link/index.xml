@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Link on Tristan Berchoux</title>
+    <link>/tags/link/</link>
+    <description>Recent content in Link on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 08 Jan 2012 00:56:34 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/link/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Make us a part of your day - add Simply Statistics to your RSS feed</title>
+      <link>/2012/01/08/make-us-a-part-of-your-day-add-simply-statistics-to/</link>
+      <pubDate>Sun, 08 Jan 2012 00:56:34 +0000</pubDate>
+      
+      <guid>/2012/01/08/make-us-a-part-of-your-day-add-simply-statistics-to/</guid>
+      <description>You can add us to your RSS feed through feedburner.</description>
+    </item>
+    
+    <item>
+      <title>List of cities/states with open data - help me find more!</title>
+      <link>/2012/01/02/list-of-cities-states-with-open-data-help-me-find/</link>
+      <pubDate>Mon, 02 Jan 2012 14:30:00 +0000</pubDate>
+      
+      <guid>/2012/01/02/list-of-cities-states-with-open-data-help-me-find/</guid>
+      <description>It&amp;#8217;s the beginning of 2012 and statistics/data science has never been hotter. Some of the most important data is data collected about civic organizations. If you haven&amp;#8217;t seen Bill Gate&amp;#8217;s TED Talk about the importance of state budgets, you should watch it now. A major key to solving a lot of our economic problems lies in understanding and using data collected about cites and states. U.S. cities and states are jumping on this idea and our own Baltimore was one of the earliest adopters.</description>
+    </item>
+    
+    <item>
+      <title>Web-scraping</title>
+      <link>/2011/10/24/web-scraping/</link>
+      <pubDate>Mon, 24 Oct 2011 16:05:05 +0000</pubDate>
+      
+      <guid>/2011/10/24/web-scraping/</guid>
+      <description>The internet is the greatest source of publicly available data. One of the key skills to being able to obtain data from the web is &amp;#8220;web-scraping&amp;#8221;, where you use a piece of software to run through a website and collect information. This technique can be used for collecting data from databases or to collect data that is scattered across a website. Here is a very cool little exercise in web-scraping that can be used as an example of the things that are possible.</description>
+    </item>
+    
+    <item>
+      <title>Competing through data: Three experts offer their game plan</title>
+      <link>/2011/10/17/competing-through-data-three-experts-offer-their-game/</link>
+      <pubDate>Mon, 17 Oct 2011 01:53:00 +0000</pubDate>
+      
+      <guid>/2011/10/17/competing-through-data-three-experts-offer-their-game/</guid>
+      <description>Competing through data: Three experts offer their game plan</description>
+    </item>
+    
+    <item>
+      <title>Government data collection vortex</title>
+      <link>/2011/10/11/government-data-collection-vortex/</link>
+      <pubDate>Tue, 11 Oct 2011 11:50:00 +0000</pubDate>
+      
+      <guid>/2011/10/11/government-data-collection-vortex/</guid>
+      <description>Government data collection vortex</description>
+    </item>
+    
+    <item>
+      <title>Terence’s Stuff: Speaking, reading, writing</title>
+      <link>/2011/10/11/terences-stuff-speaking-reading-writing/</link>
+      <pubDate>Tue, 11 Oct 2011 04:19:00 +0000</pubDate>
+      
+      <guid>/2011/10/11/terences-stuff-speaking-reading-writing/</guid>
+      <description>Terence’s Stuff: Speaking, reading, writing</description>
+    </item>
+    
+    <item>
+      <title>Defining data science</title>
+      <link>/2011/10/04/defining-data-science/</link>
+      <pubDate>Tue, 04 Oct 2011 14:27:00 +0000</pubDate>
+      
+      <guid>/2011/10/04/defining-data-science/</guid>
+      <description>Rebranding of statistics as a field seems to be a popular topic these days and &amp;#8220;data science&amp;#8221; is one of the potential rebranding options. This article over at Revolutions is a nice summary of where the term comes from and what it means. This quote seems pretty accurate:
+ My own take is that Data Science is a valuable rebranding of computer science and applied statistics skills.
+ </description>
+    </item>
+    
+    <item>
+      <title>Karl&#39;s take on meetings</title>
+      <link>/2011/10/02/karls-take-on-meetings/</link>
+      <pubDate>Sun, 02 Oct 2011 21:47:00 +0000</pubDate>
+      
+      <guid>/2011/10/02/karls-take-on-meetings/</guid>
+      <description>Karl&amp;rsquo;s take on meetings</description>
+    </item>
+    
+    <item>
+      <title>Bits: Big Data: Sorting Reality From the Hype</title>
+      <link>/2011/10/01/bits-big-data-sorting-reality-from-the-hype/</link>
+      <pubDate>Sat, 01 Oct 2011 13:43:00 +0000</pubDate>
+      
+      <guid>/2011/10/01/bits-big-data-sorting-reality-from-the-hype/</guid>
+      <description>Bits: Big Data: Sorting Reality From the Hype</description>
+    </item>
+    
+    <item>
+      <title>Battling Bad Science</title>
+      <link>/2011/09/30/battling-bad-science/</link>
+      <pubDate>Fri, 30 Sep 2011 17:16:00 +0000</pubDate>
+      
+      <guid>/2011/09/30/battling-bad-science/</guid>
+      <description>Here is a pretty awesome TED talk by epidemiologist Ben Goldacre where he highlights how science can be used to deceive/mislead. It&amp;#8217;s sort of like epidemiology 101 in 15 minutes. This seems like a highly topical talk. Over on his blog, Steven Salzberg has pointed out that Dr. Oz has recently been engaging in some of these shady practices on his show. Too bad he didn&amp;#8217;t check out the video first.</description>
+    </item>
+    
+    <item>
+      <title>Obama recruiting analysts who know R</title>
+      <link>/2011/09/28/obama-recruiting-analysts-who-know-r/</link>
+      <pubDate>Wed, 28 Sep 2011 19:41:00 +0000</pubDate>
+      
+      <guid>/2011/09/28/obama-recruiting-analysts-who-know-r/</guid>
+      <description>Obama recruiting analysts who know R</description>
+    </item>
+    
+    <item>
+      <title>By poring over statistics ignored by conventional scouts, - 05.12.03 - SI Vault</title>
+      <link>/2011/09/26/by-poring-over-statistics-ignored-by-conventional/</link>
+      <pubDate>Mon, 26 Sep 2011 00:13:00 +0000</pubDate>
+      
+      <guid>/2011/09/26/by-poring-over-statistics-ignored-by-conventional/</guid>
+      <description>By poring over statistics ignored by conventional scouts, - 05.12.03 - SI Vault</description>
+    </item>
+    
+    <item>
+      <title>How do you spend your day?</title>
+      <link>/2011/09/24/how-do-you-spend-your-day/</link>
+      <pubDate>Sat, 24 Sep 2011 20:02:00 +0000</pubDate>
+      
+      <guid>/2011/09/24/how-do-you-spend-your-day/</guid>
+      <description>I&amp;#8217;ve seen visualizations of how people spend their time a couple of places. Here is a good one over at Flowing Data. </description>
+    </item>
+    
+    <item>
+      <title>Most popular infographics</title>
+      <link>/2011/09/22/most-popular-infographics/</link>
+      <pubDate>Thu, 22 Sep 2011 18:33:00 +0000</pubDate>
+      
+      <guid>/2011/09/22/most-popular-infographics/</guid>
+      <description>Thanks to Karl Broman via Andrew Gelman.</description>
+    </item>
+    
+    <item>
+      <title>Ideas/Data blogs I read</title>
+      <link>/2011/09/18/ideas-data-blogs-i-read/</link>
+      <pubDate>Sun, 18 Sep 2011 15:52:00 +0000</pubDate>
+      
+      <guid>/2011/09/18/ideas-data-blogs-i-read/</guid>
+      <description> R bloggers - good R blogs aggregator Flowing Data - interesting data visualizations Marginal Revolution - an econ blog with lots of interesting ideas Revolutions - another news about R blog Steven Salzberg&amp;#8217;s blog Andrew Gelman&amp;#8217;s blog  I&amp;#8217;m sure there are a ton more good blogs like this out there. Any suggestions of what I should be reading? </description>
+    </item>
+    
+    <item>
+      <title>Communicating uncertainty visually</title>
+      <link>/2011/09/15/communicating-uncertainty-visually/</link>
+      <pubDate>Thu, 15 Sep 2011 23:12:00 +0000</pubDate>
+      
+      <guid>/2011/09/15/communicating-uncertainty-visually/</guid>
+      <description>From a cool review about communicating risk to people without statistical/probabilistic training.
+ Despite the burgeoning interest in infographics, there is limited experimental evidence on how different types of visualizations are processed and understood, although the effectiveness of some graphics clearly depends on the relative numeracy of an audience. 
+ </description>
+    </item>
+    
+    <item>
+      <title>When overconfidence is good</title>
+      <link>/2011/09/15/when-overconfidence-is-good/</link>
+      <pubDate>Thu, 15 Sep 2011 15:40:00 +0000</pubDate>
+      
+      <guid>/2011/09/15/when-overconfidence-is-good/</guid>
+      <description>A paper came out in the latest issue of Nature called the &amp;#8220;Evolution of Confidence&amp;#8221;. The authors describe a simple model where two participants are competing for a resource. They can either both claim the resource, only one can claim the resource, or neither can. If the ratio of the value of the resource over the cost of competition is good enough, then it makes sense to be overconfident about your abilities to obtain it.</description>
+    </item>
+    
+    <item>
+      <title>The Duke Saga</title>
+      <link>/2011/09/11/the-duke-saga/</link>
+      <pubDate>Sun, 11 Sep 2011 04:15:00 +0000</pubDate>
+      
+      <guid>/2011/09/11/the-duke-saga/</guid>
+      <description>For those of you that don&amp;#8217;t know about the saga involving genomic signatures, I highly recommend reading this very good summary published in The Economist. Baggerly and Coombes are two statisticians that can confidently say they have made an impact on clinical research and actually saved lives. A paper by this pair describing the details was published in the Annals of Applied Statistics as most of the Biology journals refused to publish their letters to the editor.</description>
+    </item>
+    
+    <item>
+      <title>What is a Statistician?</title>
+      <link>/2011/09/10/what-is-a-statistician/</link>
+      <pubDate>Sat, 10 Sep 2011 03:07:00 +0000</pubDate>
+      
+      <guid>/2011/09/10/what-is-a-statistician/</guid>
+      <description>This Column was written by Terry Speed in 2006 and is reprinted with permission from the IMS Bulletin, http://bulletin.imstat.org
+In the generation of my teachers, say from 1935 to 1960, relatively few statisticians were trained for the profession. The majority seemed to come from mathematics, without any specialized statistical training. There was also a sizeable minority coming from other areas, such as astronomy (I can think of one prominent example), chemistry or chemical engineering (three), economics (several), history (one), medicine (several), physics (two), and psychology (several).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/2011/09/08/any-other-team-wins-the-world-series-good-for/</link>
+      <pubDate>Thu, 08 Sep 2011 23:12:00 +0000</pubDate>
+      
+      <guid>/2011/09/08/any-other-team-wins-the-world-series-good-for/</guid>
+      <description>[youtube http://www.youtube.com/watch?v=_tvh5edD22c?wmode=transparent&amp;amp;autohide=1&amp;amp;egm=0&amp;amp;hd=1&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;rel=0&amp;amp;showinfo=0&amp;amp;showsearch=0&amp;amp;w=500&amp;amp;h=375]
+&amp;#8220;Any other team wins the World Series, good for them&amp;#8230;if we win, with this team &amp;#8230; we&amp;#8217;ll have changed the game.&amp;#8221;
+Moneyball! Maybe the start of the era of data. Plus it is a feel good baseball movie where a statistician is the hero. I haven&amp;#8217;t been this stoked for a movie in a long time.
+(Source: http://www.youtube.com/)  </description>
+    </item>
+    
+    <item>
+      <title>Awesome Stat Ed Links</title>
+      <link>/2011/09/07/awesome-stat-ed-links/</link>
+      <pubDate>Wed, 07 Sep 2011 13:58:00 +0000</pubDate>
+      
+      <guid>/2011/09/07/awesome-stat-ed-links/</guid>
+      <description> Openintro - A free online introduction to stats textbook, even the latex is free! One of the authors is Chris Barr, a former postdoc at Hopkins. The undergraduate guide to R - A free intro to R at a super-beginners level, the most popular (and free) statistical programming language. Written by an undergrad at Princeton.   </description>
+    </item>
+    
+  </channel>
+</rss>

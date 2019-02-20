@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Interview with Nathan Yau of FlowingData &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Interview with Nathan Yau of FlowingData</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/12/16</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/flowingdata">FlowingData</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/interview">interview</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/nathan-yau">Nathan Yau</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/visualization">visualization</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <div class="im">
+  <strong>Nathan Yau</strong>
+</div>
+
+<div class="im">
+  <strong><br /></strong>
+</div>
+
+<div class="im">
+  <img height="400" src="http://directory.stat.ucla.edu/images/nathan-yau/1.jpg?1287095045" width="250" />
+</div>
+
+<div class="im">
+</div>
+
+<div class="im">
+</div>
+
+<div class="im">
+  Nathan Yau is a graduate student in statistics at UCLA and the author of the extremely popular data visualization blog <a href="http://flowingdata.com/" target="_blank">flowingdata.com</a>. He recently published a book <a href="http://book.flowingdata.com/" target="_blank">Visualize This</a>-a really nice guide to modern data visualization using R, Illustrator and Javascript - which should be on the bookshelf of any statistician working on data visualization.
+</div>
+
+<div class="im">
+</div>
+
+<div class="im">
+</div>
+
+<div class="im">
+</div>
+
+<div class="im">
+  <strong>Do you consider yourself a statistician/data scientist/or something else?</strong>
+</div>
+
+<p><span>Statistician. I feel like statisticians can call them data scientists, but not the other way around. Although with data scientists there&#8217;s an implied knowledge of programming, which statisticians need to get better at.</span></p>
+
+<div class="im">
+  <strong>Who have been good mentors to you and what qualities have been most helpful for you?</strong>
+  
+  <p>
+    I&#8217;m visualization-focused, and I really got into the area during a summer internship at The New York Times. Before that, I mostly made graphs in R for reports. I learned a lot about telling stories with data and presenting data to a general audience, and that has stuck with me ever since.
+  </p>
+</div>
+
+<p><span>Similarly, my adviser Mark Hansen has showed me how data is more free-flowing and intertwined with everything. It&#8217;s hard to describe. I mean coming into graduate school, I thought in terms of datasets and databases, but now I see it as something more organic. I think that helps me see what the data is about more clearly.</span></p>
+
+<div class="im">
+  <strong>How did you get into statistics/data visualization?</strong> 
+  
+  
+    In undergrad, an introduction to statistics (for engineering) actually pulled me in. The professor taught with so much energy, and the material sort of clicked with me. My friends who were also taking the course complained and had trouble with it, but I wanted more for some reason. I eventually switched from electrical engineering to statistics.
+  
+</div>
+
+<p><span>I got into visualization during my first year in grad school. My adviser gave a presentation on visualization, but from a media arts perspective rather than a charts-and-graphs-in-R-Tufte point of view. I went home after that class, googled visualization and that was that.</span></p>
+
+<div class="im">
+  <strong>Why do you think there has been an explosion of interest in data visualization?</strong>
+</div>
+
+<p><span>The Web is a really visual place, so it&#8217;s easy for good visualization to spread. It&#8217;s also easier for a general audience to read a graph than it is to understand statistical concepts. And from a more analytical point of view, there&#8217;s just a growing amount of data and visualization is a good way to poke around.</span></p>
+
+<div class="im">
+  <strong>Other than R, what tools should students learn to improve their data visualizations?</strong>
+</div>
+
+<p><span>For static graphics, I use Illustrator all the time to bring storytelling into the mix or to just provide some polish. For interactive graphics on the Web, it&#8217;s all about JavaScript nowadays. D3, Raphael.js, and Processing.js are all good libraries to get started.</span></p>
+
+<div class="im">
+  <strong>Do you think the rise of infographics has led to a &#8220;watering down&#8221; of data visualization?</strong>
+  
+    So I actually just wrote <a href="http://flowingdata.com/2011/12/08/on-low-quality-infographics" target="_blank">a post</a> along these lines. It&#8217;s true that there a lot of low-quality infographics, but I don&#8217;t think that takes away from visualization at all. It makes good work more obvious. I think the flood of infographics is a good indicator of people&#8217;s eagerness to read data.</div> 
+    <div class="im">
+      <strong>How did you decide to write your book &#8220;Visualize This&#8221;?</strong>
+    </div>
+    
+
+<pre><code>&lt;div class=&quot;im&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;im&quot;&gt;
+  Pretty simple. I get emails and comments all the time when I post graphics on FlowingData that ask how something was done. There aren&amp;#8217;t many resources that show people how to do that. There are books that describe what makes good graphics but don&amp;#8217;t say anything about how to actually go about doing it, and there are programming books for say, R, but are too technical for most and aren&amp;#8217;t visualization-centric. I wanted to write a book that I wish I had in the early days.
+&lt;/div&gt;
+
+&lt;div class=&quot;im&quot;&gt;
+  &lt;strong&gt;Any final thoughts on statistics, data and visualization? &lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;im&quot;&gt;
+  &lt;strong&gt;&lt;br /&gt;&lt;/strong&gt;Keep an open mind. Oftentimes, statisticians seem to box themselves into positions of analysis and reports. Statistics is an applied field though, and now more than ever, there are opportunities to work anywhere there is data, which is practically everywhere.
+&lt;/div&gt;
+</code></pre>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2011/12/14/dear-editors-associate-editors-referees-please-reject/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2011/12/14/dear-editors-associate-editors-referees-please-reject/">Dear editors/associate editors/referees, Please reject my papers quickly</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2011/12/16/in-greece-a-statistician-faces-life-in-prison-for/">In Greece, a statistician faces life in prison for doing his job: calculating and reporting a statistic</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2011/12/16/in-greece-a-statistician-faces-life-in-prison-for/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

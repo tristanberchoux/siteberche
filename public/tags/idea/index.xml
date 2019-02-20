@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Idea on Tristan Berchoux</title>
+    <link>/tags/idea/</link>
+    <description>Recent content in Idea on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Thu, 04 Oct 2012 13:54:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/idea/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Should we stop publishing peer-reviewed papers?</title>
+      <link>/2012/10/04/should-we-stop-publishing-peer-reviewed-papers/</link>
+      <pubDate>Thu, 04 Oct 2012 13:54:00 +0000</pubDate>
+      
+      <guid>/2012/10/04/should-we-stop-publishing-peer-reviewed-papers/</guid>
+      <description>Nate Silver, everyone&amp;#8217;s favorite statistician made good, just gave an interview where he said he thinks many journal articles should be blog posts. I have been thinking about this same issue for a while now, and I&amp;#8217;m not the only one. This is a really interesting post suggesting that although scientific journals once facilitated dissemination of ideas, they now impede the flow of information and make it more expensive. Two recent examples really drove this message home for me.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mayo on Tristan Berchoux</title>
+    <link>/tags/mayo/</link>
+    <description>Recent content in Mayo on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 29 Apr 2012 22:57:41 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/mayo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday data/statistics link roundup (4/29)</title>
+      <link>/2012/04/29/sunday-data-statistics-link-roundup-4-29/</link>
+      <pubDate>Sun, 29 Apr 2012 22:57:41 +0000</pubDate>
+      
+      <guid>/2012/04/29/sunday-data-statistics-link-roundup-4-29/</guid>
+      <description>Nature genetics has an editorial on the Mayo and Myriad cases. I agree with this bit: &amp;#8220;In our opinion, it is not new judgments or legislation that are needed but more innovation. In the era of whole-genome sequencing of highly variable genomes, it is increasingly hard to justify exclusive ownership of particularly useful parts of the genome, and method claims must be more carefully described.&amp;#8221; Via Andrew J. One of Tech Review&amp;#8217;s 10 emerging technologies from a February 2003 article?</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (4/8)</title>
+      <link>/2012/04/09/sunday-data-statistics-link-roundup-4-8/</link>
+      <pubDate>Mon, 09 Apr 2012 01:42:10 +0000</pubDate>
+      
+      <guid>/2012/04/09/sunday-data-statistics-link-roundup-4-8/</guid>
+      <description>This is a great article about the illusion of progress in machine learning. In part, I think it explains why the Leekasso (just using the top 10) isn&amp;#8217;t a totally silly idea. I also love how he talks about sources of uncertainty in real prediction problems that aren&amp;#8217;t part of the classical models when developing prediction algorithms. I think that this is a hugely underrated component of building an accurate classifier - just finding the quirks particular to a type of data.</description>
+    </item>
+    
+    <item>
+      <title>Supreme court vacates ruling on BRCA gene patent!</title>
+      <link>/2012/03/26/supreme-court-vacates-ruling-on-brca-gene-patent/</link>
+      <pubDate>Mon, 26 Mar 2012 15:53:56 +0000</pubDate>
+      
+      <guid>/2012/03/26/supreme-court-vacates-ruling-on-brca-gene-patent/</guid>
+      <description>As Reeves alluded to in his post about the Mayo personalized medicine case, the Supreme Court just vacated the lower court&amp;#8217;s ruling in Association for Molecular Pathology v. Myriad Genetics (No. 11-725). The case has been sent back down to the Federal Circuit for reconsideration in light of the Court&amp;#8217;s decision in Mayo. This means that the Supreme Court thought the two cases were sufficiently similar that the lower courts should take another look using the new direction from Mayo.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (3/25)</title>
+      <link>/2012/03/25/sunday-data-statistics-link-roundup-3-25/</link>
+      <pubDate>Sun, 25 Mar 2012 15:58:25 +0000</pubDate>
+      
+      <guid>/2012/03/25/sunday-data-statistics-link-roundup-3-25/</guid>
+      <description>The psychologist whose experiment didn&amp;#8217;t replicate then went off on the scientists who did the replication experiment is at it again. I don&amp;#8217;t see a clear argument about the facts of the matter in his post, just more name calling. This seems to be a case study in what not to do when your study doesn&amp;#8217;t replicate. More on &amp;#8220;conceptual replication&amp;#8221; in there too.  Berkeley is running a data science course with instructors Jeff Hammerbacher and Mike Franklin, I looked through the notes and it looks pretty amazing.</description>
+    </item>
+    
+    <item>
+      <title>Laws of Nature and the Law of Patents: Supreme Court Rejects Patents for Correlations</title>
+      <link>/2012/03/20/laws-of-nature-and-the-law-of-patents-supreme-court/</link>
+      <pubDate>Tue, 20 Mar 2012 22:40:00 +0000</pubDate>
+      
+      <guid>/2012/03/20/laws-of-nature-and-the-law-of-patents-supreme-court/</guid>
+      <description>This is a guest post by Reeves Anderson, an associate at Arnold and Porter LLP. Reeves Anderson is a member of the Appellate and Supreme Court practice group at Arnold &amp; Porter LLP in Washington, D.C. The views expressed herein are those of the author alone and not of Arnold &amp; Porter LLP or any of the firm’s clients. Stay tuned for follow-up posts by the Simply Statistics crowd on the implications of this ruling for statistics in general and personalized medicine in particular.</description>
+    </item>
+    
+  </channel>
+</rss>

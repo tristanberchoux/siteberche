@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2017/12/19/puerto-rico-s-governor-wants-recount-of-hurricane-death-toll/">Puerto Rico&#39;s governor wants recount of hurricane death toll</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/12/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A quick followup to Rafa&rsquo;s analysis of the death toll from Hurricane Maria, from Axios:
+ Puerto Rican Governor Ricardo Rosselló ordered a recount Monday of every death on the island since Hurricane Maria made landfall on September 20, as evidence continues to show that the official death toll grossly undercuts the true number, reports the New York Times.
+ There are at least two ways to do this. One way is inferential in nature, taking a look at what we might expect the mortality to be and looking at what was observed.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/12/19/puerto-rico-s-governor-wants-recount-of-hurricane-death-toll/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/12/18/data-analysis-and-engagement-does-caring-matter/">Data Analysis and Engagement - Does Caring About the Analysis Matter?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/12/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Sometimes, when you’re recording a podcast, it’s actually difficult to listen. That’s because while you’re recording you’re monitoring the network lag, the sound levels, the show notes, and the outline. On some episodes I’m just barely hanging on by a thread.
+While Hilary Parker and I were recording Episode 50 of Not So Standard Deviations we had a discussion about her experience doing A/B testing at Etsy and how one experiment, which involved showing customers their passwords as they typed them, resulted in an increase in the number of failed login attempts, which was not what they were expecting.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/12/18/data-analysis-and-engagement-does-caring-matter/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/12/15/this-is-a-brave-post-and-everyone-in-statistics-should-read-it/">This is a brave post and everyone in statistics should read it</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/12/15</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  This post by Kristian Lum is incredibly brave. It points out some awful behavior by people in our field and should be required reading for everyone.
+It took a lot of courage for Kristian to post this but we believe her, think this is a serious and critical issue for our field, and will not tolerate this kind of behavior among our colleagues.
+Her post has aleady inspired important discussions among the faculty at Johns Hopkins Biostatistics and is an important contribution to making sure our field is welcoming for everyone.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/12/15/this-is-a-brave-post-and-everyone-in-statistics-should-read-it/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/12/03/data-do-not-agree-with-hurricane-official-death-count/">Hurricane María official death count in conflict with mortality data</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/12/03</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A recent preprint by Alexis R. Santos-Lozada and Jeffrey T. Howard concludes that
+  The mortality burden may [be] higher than official counts, and may exceed the current official death toll by a factor of 10.
+  The authors used monthly death records from the Puerto Rico Vital Statistics system from 2010 to 2016. Although data for 2017 was apparently not available, they extracted data from a statement made by Héctor Pesquera, the Secretary of Public Safety:
+  </p>
+
+  
+  <footer>
+    <a href="/2017/12/03/data-do-not-agree-with-hurricane-official-death-count/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/11/27/some-roadblocks-to-the-broad-adoption-of-machine-learning-and-ai/">Some roadblocks to the broad adoption of machine learning and AI </a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/11/27</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I read two blog posts on AI over the Thanksgiving break. One was a nice post discussing the challenges for AI in medicine by Luke Oakden-Rayder and the other was about the need for increased focus on basic research in AI motivated by AlphaGo by Tim Harford.
+I&rsquo;ve had a lot of interactions with people lately who want to take advantage of machine learning/AI in their research or business. Despite the excitement around AI and the exciting results we see from sophisticated research teams almost daily - the actual extent and application of AI is much smaller.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/11/27/some-roadblocks-to-the-broad-adoption-of-machine-learning-and-ai/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/11/21/rr-sress/">A few things that would reduce stress around reproducibility/replicability in science</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/11/21</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I was listening to the Effort Report Episode on The Messy Execution of Reproducible Research where they were discussing the piece about Amy Cuddy in the New York Times. I think both the article and the podcast did a good job of discussing the nuances of the importance of reproducibility and the challenges of the social interactions around this topic. After listening to the podcast I realized that I see a lot of posts about reproducibility/replicability, but many of them are focused on the technical side.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/11/21/rr-sress/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/11/20/follow-up-on-reasoning-about-data/">Follow Up on Reasoning About Data</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/11/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Sometimes, when I write a really long blog post, I forget what the point was at the end. I suppose I could just update the previous post&hellip;but that feels wrong for some reason.
+I meant to make one final point in my last post about how better data analyses help you reason about the data. In particular, I meant to tie together the discussion about garbage collection to the section on data analysis.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/11/20/follow-up-on-reasoning-about-data/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/11/16/reasoning-about-data/">Reasoning About Data</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/11/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In my ongoing discussion in my mind about what makes for a good data analysis, one of the ideas that keeps coming back to me is this notion of being able to “reason about the data”. The idea here is that it’s important that a data analysis allow you to understand how the data, as opposed to other aspects of an analysis like assumptions or models, played a role in producing the outputs.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/11/16/reasoning-about-data/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/10/30/how-do-you-convince-others-to-use-r/">How do you convince other people to use R?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/10/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I just got back from the rOpenSci OzUnconf that was run in Melbourne last week. I’d like to give a big thanks to the organizers (Nick Tierney, Di Cook, Rob Hyndman and others) for putting on a great unconference. These events are always a great opportunity to meet people just getting started in the R community and to get them involved.
+As is typical for these unconferences, topic ideas were pitched via issues on the OzUnconf GitHub repo.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/10/30/how-do-you-convince-others-to-use-r/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2017/10/09/it-costs-money-to-get-it-right/">It Costs Money to Get It Right</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/10/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  On the latest episode of Not So Standard Deviations I talked with Hilary about Apple&rsquo;s efforts to train machine learning algorithms in their Face ID technology in the iPhone X. The gist of Face ID is that it recognizes your face using a mathematical representation and then unlocks the phone when it can confirm that it is you. In its keynote presentation, Apple mentioned that it&rsquo;s using machine learning to do this and even had developed its own custom chips to do the computations.
+  </p>
+
+  
+  <footer>
+    <a href="/2017/10/09/it-costs-money-to-get-it-right/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/4/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;5 / 104&nbsp;</span>
+  
+  <a href="/page/6/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

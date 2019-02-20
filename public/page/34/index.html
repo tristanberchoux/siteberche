@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2014/06/06/the-real-reason-reproducible-research-is-important/">The Real Reason Reproducible Research is Important</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/06/06</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Reproducible research has been on my mind a bit these days, partly because it has been in the news with the Piketty stuff, and also perhaps because I just published a book on it and I&rsquo;m teaching a class on it as we speak (as well as next month and the month after&hellip;).
+However, as I watch and read many discussions over the role of reproducibility in science, I often feel that many people miss the point.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/06/06/the-real-reason-reproducible-research-is-important/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/06/03/post-piketty-lessons/">Post-Piketty Lessons</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/06/03</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The latest crisis in data analysis comes to us (once again) from the field of Economics. Thomas Piketty, a French economist recently published a book titled Capital in the 21st Century that has been a best-seller. I have not read the book, but based on media reports, it appears to make the claim that inequality has increased in recent years and will likely increase into the future. The book argues that this increase in inequality is driven by capitalism’s tendency to reward capital more than labor.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/06/03/post-piketty-lessons/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/05/28/the-big-in-big-data-relates-to-importance-not-size/">The Big in Big Data relates to importance not size</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/05/28</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/big-data">big data</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In the past couple of years several non-statisticians have asked me &ldquo;what is Big Data exactly?&rdquo; or &ldquo;How big is Big Data?&rdquo;. My answer has been &ldquo;I think Big Data is much more about &ldquo;data&rdquo; than &ldquo;big&rdquo;. I explain below.
+       Since 2011 Big Data has been all over the news. The New York Times, The Economist, Science, Nature, etc.. have told us that the Big Data Revolution is upon us (see google trends figure above).
+  </p>
+
+  
+  <footer>
+    <a href="/2014/05/28/the-big-in-big-data-relates-to-importance-not-size/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/05/22/10-things-statistics-taught-us-about-big-data-analysis/">10 things statistics taught us about big data analysis</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/05/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In my previous post I pointed out a major problem with big data is that applied statistics have been left out. But many cool ideas in applied statistics are really relevant for big data analysis. So I thought I&rsquo;d try to answer the second question in my previous post: &ldquo;When thinking about the big data era, what are some statistical ideas we&rsquo;ve already figured out?&rdquo; Because the internet loves top 10 lists I came up with 10, but there are more if people find this interesting.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/05/22/10-things-statistics-taught-us-about-big-data-analysis/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/05/07/why-big-data-is-in-trouble-they-forgot-about-applied-statistics/">Why big data is in trouble: they forgot about applied statistics</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/05/07</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  This year the idea that statistics is important for big data has exploded into the popular media. Here are a few examples, starting with the Lazer et. al paper in Science that got the ball rolling on this idea.
+ The parable of Google Flu: traps in big data analysis Big data are we making a big mistake? Google Flu Trends: the limits of big data Eight (No, Nine!) Problems with Big Data  All of these articles warn about issues that statisticians have been thinking about for a very long time: sampling populations, confounders, multiple testing, bias, and overfitting.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/05/07/why-big-data-is-in-trouble-they-forgot-about-applied-statistics/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/05/05/jhu-data-science-more-is-more/">JHU Data Science: More is More</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/05/05</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Today Jeff Leek, Brian Caffo, and I are launching 3 new courses on Coursera as part of the Johns Hopkins Data Science Specialization. These courses are
+ Exploratory Data Analysis Reproducible Research Statistical Inference  I&rsquo;m particularly excited about Reproducible Research, not just because I&rsquo;m teaching it, but because I think it&rsquo;s essentially the first of its kind being offered in a massive open format. Given the rich discussions about reproducibility that have occurred over the past few years, I&rsquo;m happy to finally be able to offer this course for free to a large audience.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/05/05/jhu-data-science-more-is-more/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/04/30/confession-i-sometimes-enjoy-reading-the-fake-journalconference-spam/">Confession: I sometimes enjoy reading the fake journal/conference spam</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/04/30</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/humor">humor</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I've spent a considerable amount of time setting up filters to avoid getting spam from fake journals and conferences. Unfortunately, they are exceptionally good at thwarting my defenses. This does not annoy me as much as I pretend because, secretly, I enjoy reading some of these emails. Here are three of my favorites. 1) Over-the-top robot:  It gives us immense pleasure to invite you and your research allies to submit a manuscript for the journal “REDACTED”.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/04/30/confession-i-sometimes-enjoy-reading-the-fake-journalconference-spam/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/04/22/picking-a-biostatistics-thesis-topic-for-real-world-impact-and-transferable-skills/">Picking a (bio)statistics thesis topic for real world impact and transferable skills</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/04/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  One of the things that was hardest for me in graduate school was starting to think about my own research projects and not just the ideas my advisor fed me. I remember that it was stressful because I didn&rsquo;t quite know where to start. After having done this for a while and particularly after having read a bunch of papers by people who are way more successful than I am, I have come to the following algorithm as a means for finding a topic that will have real world impact and also give you skills to take on new problems in a flexible way.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/04/22/picking-a-biostatistics-thesis-topic-for-real-world-impact-and-transferable-skills/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/04/17/correlation-does-not-imply-causation-parental-involvement-edition/">Correlation does not imply causation (parental involvement edition)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/04/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The New York Times recently published an article on education titled &ldquo;Parental Involvement Is Overrated&rdquo;. Most research in this area supports the opposite view, but the authors claim that &ldquo;evidence from our research suggests otherwise&rdquo;. Before you stop helping your children understand long division or correcting their grammar, you should learn about one of the most basic statistical concepts: correlation does not imply causation. The first two chapters of this very popular text book describes the problem and even Khan Academy has a class on it.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/04/17/correlation-does-not-imply-causation-parental-involvement-edition/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/04/10/the-ropensci-hackathon-ropenhack/">The #rOpenSci hackathon #ropenhack</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/04/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Editor&rsquo;s note: This is a guest post by Alyssa Frazee, a graduate student in the Biostatistics department at Johns Hopkins and a participant in the recent rOpenSci hackathon. 
+Last week, I took a break from my normal PhD student schedule to participate in a hackathon in San Francisco. The two-day event was hosted by rOpenSci, an organization committed to developing R tools for open science. Working with several wonderful people from the R community was inspiring, humbling, and incredibly fun.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/04/10/the-ropensci-hackathon-ropenhack/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/33/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;34 / 104&nbsp;</span>
+  
+  <a href="/page/35/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

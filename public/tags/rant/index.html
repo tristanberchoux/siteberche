@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Rant &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/tags/rant/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Rant</h1>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2012/11/30/statistical-illiteracy-may-lead-to-parents-panicking-about-autism/">Statistical illiteracy may lead to parents panicking about Autism.</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/11/30</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/p-values">p-values</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rant">Rant</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/statistical-literacy">statistical literacy</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I just was doing my morning reading of a few news sources and stumbled across this Huffington Post article talking about research correlating babies cries to autism. It suggests that the sound of a babies cries may predict their future risk for autism. As the parent of a young son, this obviously caught my attention in a very lizard-brain, caveman sort of way. I couldn&rsquo;t find a link to the research paper in the article so I did some searching and found out this result is also being covered by Time, Science Daily, Medical Daily, and a bunch of other news outlets.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/11/30/statistical-illiteracy-may-lead-to-parents-panicking-about-autism/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/09/10/the-pebbles-of-academia/">The pebbles of academia</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/10</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/humor">humor</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rant">Rant</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I have just been awarded a certificate for successful completion of the Conflict of Interest Commitment training (I barely passed). Lately, I have been totally swamped by administrative duties and have had little time for actual research. The experience reminded me of something I read in this NYTimes article by Tyler Cowen
+ Michael Mandel, an economist with the Progressive Policy Institute, compares government regulation of innovation to the accumulation of pebbles in a stream.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/09/10/the-pebbles-of-academia/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/07/22/sunday-data-statistics-link-roundup-7-22-12/">Sunday Data/Statistics Link Roundup (7/22/12)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/07/22</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/coursera">coursera</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/data">data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/data-gravity">data gravity</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/facebook">facebook</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rant">Rant</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/sunday-links">sunday links</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  This paper is the paper describing how Uri Simonsohn identified academic misconduct using statistical analyses. This approach has received a huge amount of press in the scientific literature. The basic approach is that he calculates the standard deviations of mean/standard deviation estimates across groups being compared. Then he simulates from a Normal distribution and shows that under the Normal model, it is unlikely that the means/standard deviations are so similar.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/07/22/sunday-data-statistics-link-roundup-7-22-12/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/07/11/my-worst-recent-experience-with-peer-review/">My worst (recent) experience with peer review</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/07/11</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/peer-review">peer review</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rant">Rant</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/validation">validation</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  My colleagues and I just published a paper on validation of genomic results in BMC Bioinformatics. It is &#8220;highly accessed&#8221; and we are really happy with how it turned out. But it was brutal getting it published. Here is the line-up of places I sent the paper.  Science: Submitted 10/6/10, rejected 10/18/10 without review. I know this seems like a long shot, but this paper on validation was published in Science not too long after.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/07/11/my-worst-recent-experience-with-peer-review/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/04/09/what-is-a-major-revision/">What is a major revision?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/04/09</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/fast-journals">fast journals</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/major-revisions">major revisions</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/publishing">publishing</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rant">Rant</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/statistics">statistics</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I posted a little while ago on a proposal for a fast statistics journal. It generated a bunch of comments and even a really nice follow up post with some great ideas. Since then I&#8217;ve gotten reviews back on a couple of papers and I think I realized one of the key issues that is driving me nuts about the current publishing model. It boils down to one simple question: What is a major revision?
+  </p>
+
+  
+  <footer>
+    <a href="/2012/04/09/what-is-a-major-revision/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/03/18/sunday-data-statistics-link-roundup-3-18/">Sunday data/statistics link roundup (3/18)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/03/18</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/links">links</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rant">Rant</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/sunday-links">sunday links</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A really interesting proposal by Rafa (in Spanish - we&#8217;ll get on him to write a translation) for the University of Puerto Rico. The post concerns changing the focus from simply teaching to creating knowledge and the potential benefits to both the university and to Puerto Rico. It also has a really nice summary of the benefits that the university system in the United States has produced. Definitely worth a read.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/03/18/sunday-data-statistics-link-roundup-3-18/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/02/09/an-example-of-how-sending-a-paper-to-a-statistics/">An example of how sending a paper to a statistics journal can get you scooped</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/02/09</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/rant">Rant</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In a previous post I complained about statistics journals taking way too long rejecting papers. Today I am complaining because even when everything goes right &#8212;better than above average review time (for statistics), useful and insightful comments from reviewers&#8212; we can come out losing.
+In May 2011 we submitted a paper on removing GC bias from RNAseq data to Biostatistics. It was published on December 27. However, we were scooped by this BMC Bioinformatics paper published ten days earlier despite being submitted three months later and accepted 11 days after ours.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/02/09/an-example-of-how-sending-a-paper-to-a-statistics/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/01/08/where-do-you-get-your-data/">Where do you get your data?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/01/08</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/data">data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/data-sharing">data sharing</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rant">Rant</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/reproducibility">reproducibility</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/reproducible-research">reproducible research</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Here&#8217;s a question I get fairly frequently from various types of people: Where do you get your data? This is sometimes followed up quickly with &#8220;Can we use some of your data?&#8221;
+My contention is that if someone asks you these questions, start looking for the exits.
+There are of course legitimate reasons why someone might ask you this question. For example, they might be interested in the source of the data to verify its quality.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/01/08/where-do-you-get-your-data/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/01/06/p-values-and-hypothesis-testing-get-a-bad-rap-but-we/">P-values and hypothesis testing get a bad rap - but we sometimes find them useful.</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/01/06</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/education">education</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/p-value">p-value</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rant">Rant</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  This post written by Jeff Leek and Rafa Irizarry.
+The p-value is the most widely-known statistic. P-values are reported in a large majority of scientific publications that measure and report data. R.A. Fisher is widely credited with inventing the p-value. If he was cited every time a p-value was reported his paper would have, at the very least, 3&#160;million citations* - making it the most highly cited paper of all time.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/01/06/p-values-and-hypothesis-testing-get-a-bad-rap-but-we/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/12/14/dear-editors-associate-editors-referees-please-reject/">Dear editors/associate editors/referees, Please reject my papers quickly</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/12/14</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/humor">humor</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rant">Rant</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The review times for most journals in our field are ridiculous. Check out Figure 1&#160;here. A careful review takes time, but not six months. Let&#8217;s be honest, those papers are sitting on desks for the great majority of those six months. But here is what really kills me: waiting six months for a review basically saying the paper is not of sufficient interest to the readership of the journal. That decision you can come to in half a day.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/12/14/dear-editors-associate-editors-referees-please-reject/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/12/03/reverse-scooping/">Reverse scooping</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/12/03</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/advice">advice</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rant">Rant</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I would like to define a new term: reverse scooping is when someone publishes your idea after you, and doesn&#8217;t cite you. It has happened to me a few times. What does one do? I usually send a polite message to the authors with a link to my related paper(s). These emails are usually ignored, but not always. Most times I don&#8217;t think it is malicious though. In fact, I almost reverse scooped a colleague recently.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/12/03/reverse-scooping/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/10/05/submitting-scientific-papers-is-too-time-consuming/">Submitting scientific papers is too time consuming</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/10/05</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/rant">Rant</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  As an academic who does a lot of research for a living, I spend a lot of my time writing and submitting papers. Before my time, this process involved sending multiple physical copies of a paper by snail mail to the editorial office. New technology has changed this process. Now to submit a paper you generally have to: (1) find a Microsoft Word or Latex template for the journal and use it for your paper and (2) upload the manuscript and figures (usually separately).
+  </p>
+
+  
+  <footer>
+    <a href="/2011/10/05/submitting-scientific-papers-is-too-time-consuming/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/09/26/25-minute-seminars/">25 minute seminars</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/09/26</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/proposal">proposal</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rant">Rant</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Most Statistics and Biostatistics departments have weekly seminars. We usually invite outside speakers to share their knowledge via a 50 minute powerpoint (or beamer) presentation. This gives us the opportunity to meet colleagues from other Universities and pick their brains in small group meetings. This is all great. But, giving a good one hour seminar is hard. Really hard. Few people can pull it off. I propose to the statistical community that we cut the seminars to 25 minutes with 35 minutes for questions and further discussion.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/09/26/25-minute-seminars/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/09/19/meetings/">Meetings</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/09/19</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/advice">advice</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/rant">Rant</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In this TED talk Jason Fried explains why work doesn&#8217;t happen at work. He describes the evils of meetings. Meetings are particularly disruptive for applied statisticians, especially for those of us that hack data files, explore data for systematic errors, get inspiration from visual inspection, and thoroughly test our code. Why? Before I become productive I go through a ramp-up/boot-up stage. Scripts need to be found, data loaded into memory, and most importantly, my brains needs to re-familiarize itself with the data and the essence of the problem at hand.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/09/19/meetings/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2011/09/07/where-are-the-case-studies/">Where are the Case Studies?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/09/07</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/rant">Rant</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Many case studies I find interesting don&#8217;t appear in JASA Applications and Case Studies or other applied statistics journals for that matter. Some because the technical skill needed to satisfy reviewers is not sufficiently impressive, others because they lack mathematical rigor. But perhaps the main reason for this disconnect is that many interesting case studies are developed by people outside our field or outside academia.
+In this blog we will try to introduce readers to some of these case studies.
+  </p>
+
+  
+  <footer>
+    <a href="/2011/09/07/where-are-the-case-studies/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>

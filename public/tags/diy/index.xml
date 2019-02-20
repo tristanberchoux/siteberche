@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Diy on Tristan Berchoux</title>
+    <link>/tags/diy/</link>
+    <description>Recent content in Diy on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Mon, 15 Oct 2012 15:12:56 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/diy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A statistician loves the #insurancepoll...now how do we analyze it?</title>
+      <link>/2012/10/15/a-statistician-loves-the-insurancepoll-now-how-do-we/</link>
+      <pubDate>Mon, 15 Oct 2012 15:12:56 +0000</pubDate>
+      
+      <guid>/2012/10/15/a-statistician-loves-the-insurancepoll-now-how-do-we/</guid>
+      <description>Amanda Palmer broke Twitter yesterday with her insurance poll. She started off just talking about how hard it is for musicians who rarely have health insurance, but then wandered into polling territory. She sent out a request for people to respond with the following information:
+ quick twitter poll. 1) COUNTRY?! 2) profession? 3) insured? 4) if not, why not, if so, at what cost per month (or covered by job)?</description>
+    </item>
+    
+    <item>
+      <title>A deterministic statistical machine</title>
+      <link>/2012/08/27/a-deterministic-statistical-machine/</link>
+      <pubDate>Mon, 27 Aug 2012 14:00:06 +0000</pubDate>
+      
+      <guid>/2012/08/27/a-deterministic-statistical-machine/</guid>
+      <description>As Roger pointed out the most recent batch of Y Combinator startups included a bunch of data-focused companies. One of these companies, StatWing, is a web-based tool for data analysis that looks like an improvement on SPSS with more plain text, more visualization, and a lot of the technical statistical details &amp;#8220;under the hood&amp;#8221;. I first read about StatWing on TechCrunch, where the title, &amp;#8220;How Statwing Makes It Easier To Ask Questions About Data So You Don’t Have To Hire a Statistical Wizard&amp;#8221;.</description>
+    </item>
+    
+    <item>
+      <title>Statistics project ideas for students</title>
+      <link>/2012/02/29/statistics-project-ideas-for-students/</link>
+      <pubDate>Wed, 29 Feb 2012 13:50:05 +0000</pubDate>
+      
+      <guid>/2012/02/29/statistics-project-ideas-for-students/</guid>
+      <description>Here are a few ideas that might make for interesting student projects at all levels (from high-school to graduate school). I&amp;#8217;d welcome ideas/suggestions/additions to the list as well. All of these ideas depend on free or scraped data, which means that anyone can work on them. I&amp;#8217;ve given a ballpark difficulty for each project to give people some idea.
+Happy data crunching!
+Data Collection/Synthesis
+ Creating a webpage that explains conceptual statistical issues like randomization, margin of error, overfitting, cross-validation, concepts in data visualization, sampling.</description>
+    </item>
+    
+    <item>
+      <title>Why in-person education isn&#39;t dead yet...but a statistician could finish it off</title>
+      <link>/2012/01/30/why-in-person-education-isnt-dead-yet-but-a/</link>
+      <pubDate>Mon, 30 Jan 2012 14:02:05 +0000</pubDate>
+      
+      <guid>/2012/01/30/why-in-person-education-isnt-dead-yet-but-a/</guid>
+      <description>A growing tend in education is to put lectures online, for free. The Kahn Academy, Stanford&amp;#8217;s recent AI course, and Gary King&amp;#8217;s new quantitative government course at Harvard are three of the more prominent examples. This new pedagogical format is more democratic, free, and helps people learn at their own pace. It has led some, including us here at Simply Statistics, to suggest that the future of graduate education lies in online courses.</description>
+    </item>
+    
+    <item>
+      <title>An R function to map your Twitter Followers</title>
+      <link>/2011/12/21/an-r-function-to-map-your-twitter-followers/</link>
+      <pubDate>Wed, 21 Dec 2011 17:11:00 +0000</pubDate>
+      
+      <guid>/2011/12/21/an-r-function-to-map-your-twitter-followers/</guid>
+      <description>I wrote a little function to make a personalized map of who follows you or who you follow on Twitter. The idea for this function was inspired by some plots I discussed in a previous post. I also found a lot of really useful code over at flowing data here. The function uses the packages twitteR, maps, geosphere, and RColorBrewer. If you don&amp;#8217;t have the packages installed, when you source the twitterMap code, it will try to install them for you.</description>
+    </item>
+    
+    <item>
+      <title>Citizen science makes statistical literacy critical</title>
+      <link>/2011/12/03/citizen-science-makes-statistical-literacy-critical/</link>
+      <pubDate>Sat, 03 Dec 2011 17:20:13 +0000</pubDate>
+      
+      <guid>/2011/12/03/citizen-science-makes-statistical-literacy-critical/</guid>
+      <description>In today&amp;#8217;s Wall Street Journal, Amy Marcus has a piece on the Citizen Science movement, focusing on citizen science in health in particular. I am fully in support of this enthusiasm and a big fan of citizen science - if done properly. There have already been some pretty big success stories. As more companies like Fitbit and 23andMe spring up, it is really easy to collect data about yourself (right Chris?</description>
+    </item>
+    
+    <item>
+      <title>An R function to analyze your Google Scholar Citations page</title>
+      <link>/2011/11/23/an-r-function-to-analyze-your-google-scholar-citations/</link>
+      <pubDate>Wed, 23 Nov 2011 14:07:53 +0000</pubDate>
+      
+      <guid>/2011/11/23/an-r-function-to-analyze-your-google-scholar-citations/</guid>
+      <description>Google scholar has now made Google Scholar Citations profiles available to anyone. You can read about these profiles and set one up for yourself here.
+I asked John Muschelli and Andrew Jaffeto write me a function that would download my Google Scholar Citations data so I could play with it. Then they got all crazy on it and wrote a couple of really neat functions. All cool/interesting components of these functions are their ideas and any bugs were introduced by me when I was trying to fiddle with the code at the end.</description>
+    </item>
+    
+    <item>
+      <title>An R function to determine if you are a data scientist</title>
+      <link>/2011/10/10/datascientist/</link>
+      <pubDate>Mon, 10 Oct 2011 13:05:54 +0000</pubDate>
+      
+      <guid>/2011/10/10/datascientist/</guid>
+      <description>&amp;#8220;Data scientist&amp;#8221; is one of the buzzwords in the running for rebranding applied statistics mixed with some computing. David Champagne, over at Revolution Analytics, described the skills for being a data scientist with a Venn Diagram. Just for fun, I wrote a little R function for determining where you land on the data science Venn Diagram. Here is an example of a plot the function makes using the Simply Statistics bloggers as examples.</description>
+    </item>
+    
+    <item>
+      <title>Getting email responses from busy people</title>
+      <link>/2011/09/23/getting-email-responses-from-busy-people/</link>
+      <pubDate>Fri, 23 Sep 2011 15:39:00 +0000</pubDate>
+      
+      <guid>/2011/09/23/getting-email-responses-from-busy-people/</guid>
+      <description>I&amp;#8217;ve had the good fortune of working with some really smart and successful people during my career. As a young person, one problem with working with really successful people is that they get a _ton_ of email. Some only see the subject lines on their phone before deleting them. I&amp;#8217;ve picked up a few tricks for getting email responses from important/successful people: The SI Rules
+ Try to send no more than one email a day.</description>
+    </item>
+    
+    <item>
+      <title>The Killer App for Peer Review</title>
+      <link>/2011/09/22/the-killer-app-for-peer-review/</link>
+      <pubDate>Thu, 22 Sep 2011 16:10:00 +0000</pubDate>
+      
+      <guid>/2011/09/22/the-killer-app-for-peer-review/</guid>
+      <description>A little while ago, over at Genomes Unzipped, Joe Pickrell asked, &amp;#8220;Why publish science in peer reviewed journals?&amp;#8221; He points out the flaws with the current peer review system and suggests how we can do better. What he suggests is missing is the killer app for peer review. Well, PLoS has now developed an API, where you can easily access tons of data on the papers published in those journals including downloads, citations, number of social bookmarks, and mentions in major science blogs.</description>
+    </item>
+    
+    <item>
+      <title>Private health insurers to release data</title>
+      <link>/2011/09/20/private-health-insurers-to-release-data/</link>
+      <pubDate>Tue, 20 Sep 2011 13:37:00 +0000</pubDate>
+      
+      <guid>/2011/09/20/private-health-insurers-to-release-data/</guid>
+      <description>It looks like four major private health insurance companies will be releasing data for use by academic researchers. They will create a non-profit institute called the Health Care Cost Institute and deposit the data there. Researchers can request the data from the institute by (I&amp;#8217;m guessing) writing a short proposal.
+Health insurance billing claims data might not sound all that exciting, but they are a gold mine of very interesting information about population health.</description>
+    </item>
+    
+    <item>
+      <title>Google Fusion Tables</title>
+      <link>/2011/09/16/google-fusion-tables/</link>
+      <pubDate>Fri, 16 Sep 2011 11:37:00 +0000</pubDate>
+      
+      <guid>/2011/09/16/google-fusion-tables/</guid>
+      <description>Thanks to Hilary Parker for pointing out Google Fusion Tables. The coolest thing here, from my self-centered spatial statistics point of view, is that it automatically geocodes locations for you. So you can upload a spreadsheet of addresses and it will map them for you on Google Maps.
+Unfortunately, there doesn&amp;#8217;t seem to be an easy way to extract the latitude/longitude values, but I&amp;#8217;m hoping that&amp;#8217;s just a quick hack away&amp;#8230;.</description>
+    </item>
+    
+    <item>
+      <title>Build your own pre-cog</title>
+      <link>/2011/09/07/build-your-own-pre-cog/</link>
+      <pubDate>Wed, 07 Sep 2011 17:38:00 +0000</pubDate>
+      
+      <guid>/2011/09/07/build-your-own-pre-cog/</guid>
+      <description>Okay, this is not really about pre-cog, but just a pointer to some data that might be of interest to people. A number of cities post their crime data online, ready for scraping and data analysis. For example, the Baltimore Sun has a Google map of homicides in the city of Baltimore. There&amp;#8217;s also some data for Oakland.
+Looking at the map is fun, but not particularly useful from a data analysis standpoint.</description>
+    </item>
+    
+  </channel>
+</rss>

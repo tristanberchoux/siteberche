@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microarray on Tristan Berchoux</title>
+    <link>/tags/microarray/</link>
+    <description>Recent content in Microarray on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 22 Jan 2012 14:00:06 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/microarray/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (1/21)</title>
+      <link>/2012/01/22/sunday-data-statistics-link-roundup-1-21/</link>
+      <pubDate>Sun, 22 Jan 2012 14:00:06 +0000</pubDate>
+      
+      <guid>/2012/01/22/sunday-data-statistics-link-roundup-1-21/</guid>
+      <description>Is the microarray dead? Jeremey Leipzig seems to think that statistical methods for microarrays should be. I&amp;#8217;m not convinced, the technology has finally matured to the point we can use it for personalized medicine and we abandon it for the next hot thing? Not to Andrew for the link. Data from 5 billion webpages available from the Common Crawl. Want to build your own search tool - or just find out whats on the web?</description>
+    </item>
+    
+  </channel>
+</rss>

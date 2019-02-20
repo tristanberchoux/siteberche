@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leekasso on Tristan Berchoux</title>
+    <link>/tags/leekasso/</link>
+    <description>Recent content in Leekasso on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 31 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/leekasso/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Don&#39;t use deep learning your data isn&#39;t that big</title>
+      <link>/2017/05/31/deeplearning-vs-leekasso/</link>
+      <pubDate>Wed, 31 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/05/31/deeplearning-vs-leekasso/</guid>
+      <description>The other day Brian was at a National Academies meeting and he gave one of his usual classic quotes:
+Best quote from NAS DS Round Table: &amp;quot;I mean, do we need deep learning to analyze 30 subjects?&amp;quot; - B Caffo @simplystats #datascienceinreallife
+&amp;mdash; CMU Stats &amp;amp; DS (@CMU_Stats) May 1, 2017  When I saw that quote I was reminded of the blog post Don’t use hadoop - your data isn’t that big.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (4/8)</title>
+      <link>/2012/04/09/sunday-data-statistics-link-roundup-4-8/</link>
+      <pubDate>Mon, 09 Apr 2012 01:42:10 +0000</pubDate>
+      
+      <guid>/2012/04/09/sunday-data-statistics-link-roundup-4-8/</guid>
+      <description>This is a great article about the illusion of progress in machine learning. In part, I think it explains why the Leekasso (just using the top 10) isn&amp;#8217;t a totally silly idea. I also love how he talks about sources of uncertainty in real prediction problems that aren&amp;#8217;t part of the classical models when developing prediction algorithms. I think that this is a hugely underrated component of building an accurate classifier - just finding the quirks particular to a type of data.</description>
+    </item>
+    
+    <item>
+      <title>Prediction: the Lasso vs. just using the top 10 predictors</title>
+      <link>/2012/02/23/prediction-the-lasso-vs-just-using-the-top-10/</link>
+      <pubDate>Thu, 23 Feb 2012 16:07:00 +0000</pubDate>
+      
+      <guid>/2012/02/23/prediction-the-lasso-vs-just-using-the-top-10/</guid>
+      <description>One incredibly popular tool for the analysis of high-dimensional data is the lasso. The lasso is commonly used in cases when you have many more predictors than independent samples (the n &amp;#171;&amp;#160;p) problem. It is also often used in the context of prediction.
+Suppose you have an outcome Y and several predictors X1,&amp;#8230;,XM, the lasso fits a model:
+Y = B + B1 X1 + B2 X2 + &amp;#8230; + BM XM + E</description>
+    </item>
+    
+  </channel>
+</rss>

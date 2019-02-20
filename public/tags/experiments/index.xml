@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Experiments on Tristan Berchoux</title>
+    <link>/tags/experiments/</link>
+    <description>Recent content in Experiments on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 21 Oct 2012 13:30:56 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/experiments/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (10/21/12)</title>
+      <link>/2012/10/21/sunday-data-statistics-link-roundup-10-21-12/</link>
+      <pubDate>Sun, 21 Oct 2012 13:30:56 +0000</pubDate>
+      
+      <guid>/2012/10/21/sunday-data-statistics-link-roundup-10-21-12/</guid>
+      <description>This is scientific variant on the #whatshouldwecallme meme isn&amp;#8217;t exclusive to statistics, but it is hilarious.  This is a really interesting post that is a follow-up to the XKCD password security comic. The thing I find most interesting about this is that researchers realized the key problem with passwords was that we were looking at them purely from a computer science perspective. But _people _use passwords, so we need a person-focused approach to maximize security.</description>
+    </item>
+    
+    <item>
+      <title>An experimental foundation for statistics</title>
+      <link>/2012/09/13/an-experimental-foundation-for-statistics/</link>
+      <pubDate>Thu, 13 Sep 2012 13:55:16 +0000</pubDate>
+      
+      <guid>/2012/09/13/an-experimental-foundation-for-statistics/</guid>
+      <description>In a recent conversation with Brian (of abstraction fame) about the relationship between mathematics and statistics. Statistics, for historical reasons, has been treated as a mathematical sub-discipline (this is the NSF&amp;#8217;s view).
+One reason statistics is viewed as a sub-discipline of math is because the foundations of statistics are built on the basis of deductive reasoning, where you start with a few general propositions or foundations that you assume to be true and then systematically prove more specific results.</description>
+    </item>
+    
+  </channel>
+</rss>

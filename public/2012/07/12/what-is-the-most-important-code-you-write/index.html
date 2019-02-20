@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>What is the most important code you write? &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>What is the most important code you write?</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/07/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>These days, like most people, the research I do involves writing a lot of code. A lot of it. Usually, you need some code to</p>
+
+<ol>
+<li>Process the data to take it from its original format to the format that&#8217;s convenient for you</li>
+<li>Run exploratory data analyses creating plots, calculating summary statistics, etc.</li>
+<li>Try statistical model 1</li>
+<li>Try statistical model 2</li>
+<li>Try statistical model 3</li>
+<li>&#8230;</li>
+<li>Fit final statistical model; if this involves MCMC then there&#8217;s usually a ton of code to do this</li>
+<li>Make some more plots of results, make tables, more summary statistics of output</li>
+</ol>
+
+<p>My question is, of all this code, which is the most important? The code that fits the final model? The code that does that summarizes results? Often you just see the code that fit the final statistical model and maybe some of the code that summarizes the results. The code for fitting all of the previous models and doing the exploratory analysis is lost in the ether (or at least the version control ether). Now, I&#8217;m not saying I always want to see all that other code. Usually, I am just interested in the final model.</p>
+
+<p>The point is that the code for the final model only represents a small fraction of the work that was done to get there. This work is the bread and butter of applied statistics and it is essentially thrown out. Of course, life would be much easier if someone would just <em>tell</em> me what the final model would be every time. Then I would just fit it! But nooooo, hundreds or thousands of lines of code and numerous judgment calls go into figuring out what that last model is going to be. </p>
+
+<p>Yet when you read a paper, it more or less looks like the final model appeared out of thin air because there&#8217;s no space/time to tell the story about everything that came before. I would say the same is true for theoretical statistics too. It&#8217;s not as if theorems/proofs appear out of nowhere. Hard work goes into figuring out both the right theorem to prove and the right way to prove it.</p>
+
+<p>But I would argue that there&#8217;s one key difference between theoretical and applied statistics in this regard: Everyone seems to accept that theoretical statistics is hard. So when you see a theorem/proof in a paper you consciously or unconsciously realize that it must have been hard work to arrive at that point. But in a great applied statistics paper, all you get is an interesting scientific question and some graphs/tables that provide an answer. Who cares about that?</p>
+
+<p>Seriously though, even for a seasoned applied statistician, it&#8217;s sometimes easy to forget that everything looks easy once someone else has done all the work. It&#8217;s not clear to me whether we just need to change expectations or if we need a different method for communicating the effort involved (or both). Making research reproducible would be one approach as it would require all the code for the work be available. But that&#8217;s mostly just &#8220;final model&#8221; stuff plus some data processing code. Going one step further might require that a git repository be made available. That way you could see all the history in addition to the final stuff. I&#8217;m guessing there would be some resistance to universally adopting that approach!</p>
+
+<p>Another approach might be to allow applied stat papers to go into more of the details about the process. With strict space limitations these days, it&#8217;s often hard enough to talk about the final model. But in some cases I think I would enjoy reading the story behind the story. Some of that &#8220;backstory&#8221; would make for good instructional material for applied stat classes.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2012/07/12/statistical-reasoning-on-itunes-u/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2012/07/12/statistical-reasoning-on-itunes-u/">Statistical Reasoning on iTunes U</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2012/07/13/this-is-not-about-statistics-but-its-about/"></a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2012/07/13/this-is-not-about-statistics-but-its-about/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

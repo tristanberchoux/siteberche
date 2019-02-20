@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ny Times on Tristan Berchoux</title>
+    <link>/tags/ny-times/</link>
+    <description>Recent content in Ny Times on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Fri, 01 Jun 2012 14:57:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/ny-times/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Interview with Amanda Cox - Graphics Editor at the New York Times</title>
+      <link>/2012/06/01/interview-with-amanda-cox-graphics-editor-at-the-new/</link>
+      <pubDate>Fri, 01 Jun 2012 14:57:00 +0000</pubDate>
+      
+      <guid>/2012/06/01/interview-with-amanda-cox-graphics-editor-at-the-new/</guid>
+      <description>Amanda Cox   
+    
+  
+Amanda Cox received her M.S. in statistics from the University of Washington in 2005. She then moved to the New York Times, where she is a graphics editor. She, and the graphics team at the New York Times, are responsible for many of the cool, informative, and interactive graphics produced by the Times. For example, this, this and this (the last one, Olympic Symphony, is one of my all time favorites).</description>
+    </item>
+    
+  </channel>
+</rss>

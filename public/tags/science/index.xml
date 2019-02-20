@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Science on Tristan Berchoux</title>
+    <link>/tags/science/</link>
+    <description>Recent content in Science on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Tue, 20 Nov 2012 10:33:50 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A grand experiment in science funding</title>
+      <link>/2012/11/20/a-grand-experiment-in-science-funding/</link>
+      <pubDate>Tue, 20 Nov 2012 10:33:50 +0000</pubDate>
+      
+      <guid>/2012/11/20/a-grand-experiment-in-science-funding/</guid>
+      <description>Among all the young scientists I know, I think Ethan Perlstein is one of the most innovative in the way he has adapted to the internet era. His website is incredibly unique among academic websites, he is all over the social media and his latest experiment in crowd-funding his research is something I&amp;rsquo;m definitely keeping an eye on.
+The basic idea is that he has identified a project (giving meth to yeast mouse brains -see the comment by Ethan below-, I think) and put it up on Rockethub, which is a crowd funding platform.</description>
+    </item>
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (10/28/12)</title>
+      <link>/2012/10/28/sunday-data-statistics-link-roundup-10-28-12/</link>
+      <pubDate>Sun, 28 Oct 2012 13:39:00 +0000</pubDate>
+      
+      <guid>/2012/10/28/sunday-data-statistics-link-roundup-10-28-12/</guid>
+      <description>An important article about anti-science sentiment in the U.S. (via David S.). The politicization of scientific issues such as global warming, evolution, and healthcare (think vaccination) makes the U.S. less competitive. I think the lack of statistical literacy and training in the U.S. is one of the sources of the problem. People use/skew/mangle statistical analyses and experiments to support their view and without a statistically well trained public, it all looks &amp;#8220;reasonable and scientific&amp;#8221;.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (6/24)</title>
+      <link>/2012/06/24/sunday-data-statistics-link-roundup-6-24/</link>
+      <pubDate>Sun, 24 Jun 2012 14:16:23 +0000</pubDate>
+      
+      <guid>/2012/06/24/sunday-data-statistics-link-roundup-6-24/</guid>
+      <description>We&amp;#8217;ve got a new domain! You can still follow us on tumblr or here: http://simplystatistics.org/.  A cool article on MIT&amp;#8217;s annual sports statistics conference (via @storeylab). I love how the guy they chose to highlight created what I would consider a pretty simple visualization with known tools - but it turns out it is potentially a really new way of evaluating the shooting range of basketball players. This is my favorite kind of creativity in statistics.</description>
+    </item>
+    
+    <item>
+      <title>Peter Thiel on Peer Review/Science</title>
+      <link>/2012/02/11/peter-thiel-on-peer-review-science/</link>
+      <pubDate>Sat, 11 Feb 2012 23:07:07 +0000</pubDate>
+      
+      <guid>/2012/02/11/peter-thiel-on-peer-review-science/</guid>
+      <description>Peter Theil gives his take on science funding/peer review:
+ My libertarian views are qualified because I do think things worked better in the 1950s and 60s, but it’s an interesting question as to what went wrong with DARPA. It’s not like it has been defunded, so why has DARPA been doing so much less for the economy than it did forty or fifty years ago? Parts of it have become politicized.</description>
+    </item>
+    
+    <item>
+      <title>When should statistics papers be published in Science and Nature?</title>
+      <link>/2012/01/26/when-should-statistics-papers-be-published-in-science/</link>
+      <pubDate>Thu, 26 Jan 2012 14:00:05 +0000</pubDate>
+      
+      <guid>/2012/01/26/when-should-statistics-papers-be-published-in-science/</guid>
+      <description>Like many statisticians, I was amped to see a statistics paper appear in Science. Given the impact that statistics has on the scientific community, it is a shame that more statistics papers don&amp;#8217;t appear in the glossy journals like Science or Nature. As I pointed out in the previous post, if the paper that introduced the p-value was cited every time this statistic was used, the paper would have over 3 million citations!</description>
+    </item>
+    
+  </channel>
+</rss>

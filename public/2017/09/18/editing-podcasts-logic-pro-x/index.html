@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Editing Podcasts with Logic Pro X &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Editing Podcasts with Logic Pro X</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/09/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<p>I thought I&rsquo;d write a brief description of how I edit podcasts using Logic Pro X because when I was first getting into podcasts, I didn&rsquo;t find a lot of useful stuff out there. A lot of it was YouTube videos of advanced editing or very basic stuff. I don&rsquo;t consider myself a sound expert in any way, but I wanted a good workflow that would produce decent quality stuff. When I first started <a href="http://nssdeviations.com">Not So Standard Deviations</a> with <a href="https://twitter.com/hspter/">Hilary Parker</a> I actually edited the first few episodes using Final Cut Pro X, a video editor, because that&rsquo;s just what I was familiar with. Eventually, I learned Logic Pro X, which is Apple&rsquo;s digital audio workstation, largely because of <a href="https://sixcolors.com/post/2015/02/how-i-podcast-editing/">this post by Jason Snell</a>.</p>
+
+<p>On with the show. Unfortunately, this is going to be an Apple-heavy post given that Logic Pro X is only available on Macs. Sorry, rest of world!</p>
+
+<h2 id="recording-the-episode">Recording the Episode</h2>
+
+<p>I assume you&rsquo;ve recorded your podcast and that you have one file for each speaker. In both <a href="http://effortreport.libsyn.com">The Effort Report</a> and Not So Standard Deviations, I record with a co-host. As of this writing, both podcasts are recorded remotely because of geographic constraints. The way we do this is that each co-host records her microphone input locally and then sends me the audio file (I also record my own microphone input). This way, we don&rsquo;t have to worry about any noise going over the Internet connection (and there is a lot sometimes). Unfortunately, there is no way to deal with the connection delays that inevitably come up (more on that later). As a backup, I also record the combined conversation going over the Internet using <a href="https://rogueamoeba.com/audiohijack/">Audio Hijack</a>. Besides being a backup, this recording is also useful for synchronizing the separate tracks, but at the end of the day, I don&rsquo;t actually use it. I&rsquo;ll probable write a separate post on the details of how I record each podcast.</p>
+
+<h2 id="starting-the-project">Starting the Project</h2>
+
+<p>I start each project in Logic Pro X by selecting the &ldquo;Multi-Track&rdquo; option after clicking File &gt; New from Template&hellip;. This just opens you up in an empty project with a whole bunch of empty tracks setup.</p>
+
+<p><img src="/post/2017-09-18-editing-podcasts-with-logic-pro-x/startup.png" alt="Empty Project" /></p>
+
+<p>Next I import three audio files: One containing just my voice, another containing just my co-host&rsquo;s voice, and another containing our combined conversation. These tracks are then labeled according to the speaker&rsquo;s name. Below is an example from Episode 54 of The Effort Report after importing the audio.</p>
+
+<p><img src="/post/2017-09-18-editing-podcasts-with-logic-pro-x/import.png" alt="Initial audio file import" /></p>
+
+<p>At this point I don&rsquo;t worry about where the audio tracks are placed, I just get them into the project. This is a good time to <strong>save</strong> your project (and also give it a name).</p>
+
+<h2 id="synchronization">Synchronization</h2>
+
+<p>The first problem is that the audio tracks are not synchronized. For the most part this is not such a big deal as long as you have a recollection of how the conversation went. But it&rsquo;s easier if you have a recording of the combined (synchronized conversation). Here I can line up my voice in the separate audio file with the combined audio file, and then line up Elizabeth Matsui&rsquo;s voice in her audio file to the same combined audio. It takes a little trial and error, but doesn&rsquo;t take too long.</p>
+
+<p>Here is a screenshot after I&rsquo;ve synchronized the audio files. You can see that the waveforms nicely line up with each other in the combined audio file.</p>
+
+<p><img src="/post/2017-09-18-editing-podcasts-with-logic-pro-x/synchronized.png" alt="Synchronized audio tracks" /></p>
+
+<p>At this point I usually delete the combined audio track because it&rsquo;s no longer needed (and is of lower quality because it is recorded over the Internet).</p>
+
+<h2 id="strip-silence">Strip Silence</h2>
+
+<p>Perhaps the key reason I use Logic Pro X for podcast editing (a task for which is not particularly well-suited) is the strip silence feature. What this does is it takes an audio track and just deletes anything that it considers to be silence. What exactly is &ldquo;silence&rdquo; is configurable and you may need to play with it depending on your recording levels. You can run strip silence by first selecting the track in the window so that it is highlighted and then pressing Ctrl-X. You will be presented with this window:</p>
+
+<p><img src="/post/2017-09-18-editing-podcasts-with-logic-pro-x/stripsilence1.png" alt="Strip silence default configuration window" /></p>
+
+<p>I find the defaults don&rsquo;t work for me, so I modify them slightly. My parameters are:</p>
+
+<ul>
+<li>Threshold: 4%</li>
+<li>Minimum Time to accept as Silence: 1.0 sec</li>
+<li>Pre Attack-Time: 0.1 sec</li>
+<li>Post Release-Time: 0</li>
+</ul>
+
+<p>And I leave the &ldquo;Search Zero Crossing&rdquo; box checked. Once you hit &ldquo;OK&rdquo;, the track will look something like this.</p>
+
+<p><img src="/post/2017-09-18-editing-podcasts-with-logic-pro-x/stripsilence2.png" alt="After strip silence applied" /></p>
+
+<p>After doing it again to my track, your track editor window will look something like this.</p>
+
+<p><img src="/post/2017-09-18-editing-podcasts-with-logic-pro-x/stripsilence3.png" alt="After strip silence applied" /></p>
+
+<p>Now you can see that the only thing that remains of each track are the parts where one of us is talking. We are getting there!</p>
+
+<h2 id="dealing-with-delay-cross-talk-and-noise">Dealing with Delay, Cross talk, and Noise</h2>
+
+<p>At this point you might think we were done, given that the audio has been synchronized. However, there are a few issues left that need to be dealt with:</p>
+
+<ol>
+<li><strong>Cross talk</strong>. Especially on remote connections with a delay (or on recordings with multiple speakers), there will likely be moments when people talk over each other. This is unpleasant to listen to and it&rsquo;s nice to clean up those moments if possible.</li>
+<li><strong>Connectivity Delay</strong>. Often with remote recording, there is a delay as a person&rsquo;s voice is relayed by the Internet gnomes over thousands of miles. The fact that there is <em>only</em> a 1&ndash;3 second delay in a connection between Melbourne and Baltimore is, frankly, a miracle, but it&rsquo;s still annoying to listen to.</li>
+<li><strong>Conversational Noise</strong>. Often in remote conversations, the person <em>not</em> doing the talking is prone to say &ldquo;Uh uh&rdquo;, or &ldquo;yeah&rdquo;, just to indicate that they&rsquo;re still listening. This stuff is not necessary in the final recording and it&rsquo;s good to clean that up.</li>
+</ol>
+
+<p>The nice thing about all of the problems above is that they are easily dealt with after running strip silence. In partcular, in sections where a single person is just talking, there is nothing to do. So you can just skip over that. For example, in the section below, Elizabeth is speaking for just over a minute uninterrupted.</p>
+
+<p><img src="/post/2017-09-18-editing-podcasts-with-logic-pro-x/monologue.png" alt="Monologue" /></p>
+
+<p>There&rsquo;s nothing to edit here so you can skip to the next section.</p>
+
+<p>By contrast in the section below, I am speaking and Elizabeth is agreeing with me by saying &ldquo;right&rdquo; and &ldquo;yeah&rdquo;. With strip silence it&rsquo;s easy to recognize this pattern and I can just delete those little blurbs.</p>
+
+<p><img src="/post/2017-09-18-editing-podcasts-with-logic-pro-x/noise.png" alt="Conversational noise" /></p>
+
+<p>Finally, with connectivity delays, there will often be a gap between when one speaker finishes and another responds. In the example below, when I&rsquo;m done speaking, there&rsquo;s about a 2 second delay between when I stop and when Elizabeth responds. Sometimes that&rsquo;s on purpose, but usually it&rsquo;s because of the connectivity delay.</p>
+
+<p><img src="/post/2017-09-18-editing-podcasts-with-logic-pro-x/gap.png" alt="Connectivity delay" /></p>
+
+<p>This can be easily fixed by clicking on Elizabeth&rsquo;s track at that point, hitting Shift-F, which selects everything after that point, and then dragging the whole thing to the left a little bit. The result is below. It&rsquo;s important to use Shift-F in order to preserve synchronization in the rest of the recording!</p>
+
+<p><img src="/post/2017-09-18-editing-podcasts-with-logic-pro-x/shift.png" alt="Shifting a track to close a gap" /></p>
+
+<p>The nice thing about the strip slience feature is that you only need to navigate to all the points where one speaker stops and another starts. These boundaries are easy to find in the track editor. That doesn&rsquo;t mean that this process isn&rsquo;t tedious, especially in an hour-long episode. But it&rsquo;s faster than it would be otherwise and it makes for a much cleaner recording and a much more listenable episode.</p>
+
+<p>Lastly, cross talk is usually easy to spot because it looks something like this.</p>
+
+<p><img src="/post/2017-09-18-editing-podcasts-with-logic-pro-x/crosstalk.png" alt="Cross talk" /></p>
+
+<p>Here, both Elizabeth and I are talking at the same time and it looks messy. In these cases I&rsquo;ll listen to what was happening before and after the cross talk and see if I can clean it up. Usually, I just end up deleting the section with cross talk and try to paste together what came before to what comes after. Or if it makes sense, sometimes I can just shift one person&rsquo;s voice over just a little bit so that both speakers&rsquo; points are made, but just not at the same time.</p>
+
+<h2 id="exporting">Exporting</h2>
+
+<p>After all the editing is done, I export the final episode by bouncing to a file. You can hit Cmd-B to get the bounce menu. Typically I bounce to MP3 at 160 kpbs and I turn Normalize to &ldquo;Off&rdquo;.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>That&rsquo;s pretty much it for editing. There are a few extra things that I do (like sound compression), but they&rsquo;re not quite as important as getting the editing right. A lot of stuff out there encourages you to use free editors like Audacity or something similar&mdash;and that&rsquo;s a good place to start&mdash;but I think a professional tool like Logic Pro X is essential for dealing with problems like noise, cross talk, and delay, which I think are a feature of every remotely recorded podcast.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2017/09/11/specialization-and-communication-in-data-science/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2017/09/11/specialization-and-communication-in-data-science/">Specialization and Communication in Data Science</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2017/09/20/recording-podcasts-with-a-remote-cohost/">Recording Podcasts with a Remote Co-Host</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2017/09/20/recording-podcasts-with-a-remote-cohost/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

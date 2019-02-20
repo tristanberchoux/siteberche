@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Great scientist - statistics = lots of failed experiments &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Great scientist - statistics = lots of failed experiments</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/04/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p><a href="http://en.wikipedia.org/wiki/E._O._Wilson">E.O. Wilson</a> is a famous evolutionary biologist. He is currently an emeritus professor at Harvard and just this last week dropped <a href="http://online.wsj.com/article/SB10001424127887323611604578398943650327184.html">this little gem</a> in the Wall Street Journal. In the piece, he suggests that knowing mathematics is not important for becoming a great scientist. Wilson goes even further, suggesting that you can be mathematically semi-literate and still be an amazing scientist. There are two key quotes in the piece that I think deserve special attention:</p>
+
+<blockquote>
+<p>Fortunately, exceptional mathematical fluency is required in only a few disciplines, such as particle physics, astrophysics and information theory. Far more important throughout the rest of science is the ability to form concepts, during which the researcher conjures images and processes by intuition.</p>
+</blockquote>
+
+<p>I agree with this quote in general <a href="http://krugman.blogs.nytimes.com/2013/04/09/doing-the-math/">as does Paul Krugman</a>. Many scientific areas don&rsquo;t require advanced measure theory, differential geometry, or number theory to make big advances. It seems like this is is the kind of mathematics to which E.O. Wilson is referring to and on that point I think there is probably universal agreement that you can have a hugely successful scientific career without knowing about measurable spaces.</p>
+
+<p>Wilson doesn&rsquo;t stop there, however. He goes on to paint a much broader picture about how one can pursue science without the aid of even basic mathematics or statistics_ _and this is where I think he goes off the rails a bit:</p>
+
+<blockquote>
+<p>Ideas in science emerge most readily when some part of the world is studied for its own sake. They follow from thorough, well-organized knowledge of all that is known or can be imagined of real entities and processes within that fragment of existence. When something new is encountered, the follow-up steps usually require mathematical and statistical methods to move the analysis forward. If that step proves too technically difficult for the person who made the discovery, a mathematician or statistician can be added as a collaborator.</p>
+</blockquote>
+
+<p>I see two huge problems with this statement:</p>
+
+<ol>
+<li>Poor design of experiments is one of, if not the most, common reason for an experiment to fail. It is so important that Fisher said, &ldquo;To consult the statistician after an experiment is finished is often merely to ask him to conduct a _post mortem_ examination.  He can perhaps say what the experiment died of.&rdquo; Wilson is suggesting that with careful conceptual thought and some hard work you can do good science, but without a fundamental understanding of basic math, statistics, and study design even the best conceived experiments are likely to fail.</li>
+<li>While armchair science was likely the norm when Wilson was in his prime, huge advances have been made in both science and technology. Scientifically, it is difficult to synthesize and understand everything that has been done without some basic understanding of the statistical quality of previous experiments. Similarly, as data collection has evolved statistics and computation are playing a more and more central role. As Rafa has pointed out, <a href="http://simplystatistics.tumblr.com/post/21914291274/people-in-positions-of-power-that-dont-understand">people in positions of power who don&rsquo;t understand statistics are a big problem for science</a>.</li>
+</ol>
+
+<p>More importantly, as we live in an increasingly data rich environment both in the sciences and in the broader community - basic statistical and numerical literacy are becoming more and more important. While I agree with Wilson that we should try not to discourage people who have a difficult first encounter with math from pursuing careers in science, I think it is both disingenuous and potentially disastrous to downplay the importance of quantitative skill at the exact moment in history that those skills are most desperately needed.</p>
+
+<p>As a counter proposal to Wilson&rsquo;s idea that we should encourage people to disregard quantitative sciences I propose that we build a better infrastructure for ensuring all people interested in the sciences are able to improve their quantitative skills and literacy. Here at Simply Stats we are all about putting our money where our mouth is and we have already started by creating <a href="http://simplystatistics.org/courses/">free, online versions</a> of our quantitative courses. Maybe Wilson should take one&hellip;.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2013/04/10/climate-science-day-on-capitol-hill/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2013/04/10/climate-science-day-on-capitol-hill/">Climate Science Day on Capitol Hill</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2013/04/14/sunday-datastatistics-link-roundup-4142013/">Sunday data/statistics link roundup (4/14/2013)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2013/04/14/sunday-datastatistics-link-roundup-4142013/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

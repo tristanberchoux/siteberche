@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Tristan Berchoux</title>
+    <link>/tags/programming/</link>
+    <description>Recent content in Programming on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Fri, 02 Mar 2012 13:24:55 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An essay on why programmers need to learn statistics</title>
+      <link>/2012/03/02/an-essay-on-why-programmers-need-to-learn-statistics/</link>
+      <pubDate>Fri, 02 Mar 2012 13:24:55 +0000</pubDate>
+      
+      <guid>/2012/03/02/an-essay-on-why-programmers-need-to-learn-statistics/</guid>
+      <description>This is awesome. There are a few places with some strong language, but overall I think the message is pretty powerful. Via Tariq K. I agree with Tariq, one of the gems is:
+ If you want to measure something, then don&amp;#8217;t measure other sh**. 
+ </description>
+    </item>
+    
+  </channel>
+</rss>

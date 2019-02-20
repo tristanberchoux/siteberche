@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2019/02/18/interview-with-stephanie-hicks/">Interview with Stephanie Hicks</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2019/02/18</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Editor&rsquo;s note: For a while we ran an interview series for statisticians and data scientists, but things have gotten a little hectic around here so we&rsquo;ve dropped the ball! But we are re-introducing the series, starting with Stephanie Hicks. If you have recommendations of a (junior) person in academics or industry you would like to see promoted, reach out to Jeff (@jtleek) on Twitter!
+Stephanie Hicks received her PhD in statistics in 2013 at Rice University and has already made major contributions to the analysis of single cell sequencing data and the theory and practice of teaching data science.
+  </p>
+
+  
+  <footer>
+    <a href="/2019/02/18/interview-with-stephanie-hicks/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2019/01/18/the-tentpoles-of-data-science/">The Tentpoles of Data Science</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2019/01/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  What makes for a good data scientist? This is a question I asked a long time ago and am still trying to figure out the answer. Seven years ago, I wrote:
+ I was thinking about the people who I think are really good at data analysis and it occurred to me that they were all people I knew. So I started thinking about people that I don’t know (and there are many) but are equally good at data analysis.
+  </p>
+
+  
+  <footer>
+    <a href="/2019/01/18/the-tentpoles-of-data-science/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2019/01/09/how-data-scientists-think-a-mini-case-study/">How Data Scientists Think - A Mini Case Study</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2019/01/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In episode 71 of Not So Standard Deviations, Hilary Parker and I inaugurated our first “Data Science Design Challenge” segment where we discussed how we would solve a given problem using data science. The idea with calling it a “design challenge” was to contrast it with common “hackathon” type models where you are presented with an already-collected dataset and then challenged to find something interesting in the data. Here, we wanted to start with a problem and then talk about how data might be collected and analyzed to address the problem.
+  </p>
+
+  
+  <footer>
+    <a href="/2019/01/09/how-data-scientists-think-a-mini-case-study/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2018/12/19/the-netflix-data-war/">The Netflix Data War</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2018/12/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A recent article in the Wall Street Journal, &ldquo;At Netflix, Who Wins When It’s Hollywood vs. the Algorithm?&rdquo; by Shalini Ramachandran and Joe Flint details some of the internal debates within Netflix between the Los Angeles-based content team, which is in charge of developing and marketing new content for the streaming service, and the data team. The initial example described is an advertising image for a new show (“Grace and Frankie&rdquo;&ldquo;) starring Jane Fonda and Lily Tomlin.
+  </p>
+
+  
+  <footer>
+    <a href="/2018/12/19/the-netflix-data-war/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2018/12/11/the-role-of-theory-in-data-analysis/">The Role of Theory in Data Analysis</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2018/12/11</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In data analysis, we make use of a lot of theory, whether we like to admit it or not. In a traditional statistical training, things like the central limit theorem and the law of large numbers (and their many variations) are deeply baked into our heads. I probably use the central limit theorem everyday in my work, sometimes for the better, and sometimes for the worse. Even if I’m not directly applying a Normal approximation, knowledge of the central limit theorem will often guide my thinking and help me to decide what to do in a given data analytic situation.
+  </p>
+
+  
+  <footer>
+    <a href="/2018/12/11/the-role-of-theory-in-data-analysis/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2018/11/01/the-role-of-academia-in-data-science-education/">The role of academia in data science education</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2018/11/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I was recently asked to moderate an academic panel on the role of universities in training the data science workforce. I preceded each question with opinionated introductions which I have fused into this blog post. These are weakly held opinions so please consider commenting if you disagree with anything.
+To discuss data science education we first need to clearly state what it means. The panel organizers defined data science as &ldquo;an emerging discipline that draws upon knowledge in statistical methodology and computer science to create impactful predictions and insights for a wide range of traditional scholarly fields.
+  </p>
+
+  
+  <footer>
+    <a href="/2018/11/01/the-role-of-academia-in-data-science-education/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2018/10/11/guest-post-galin-jones-on-criteria-for-promotion-and-tenture-in-bio-statistics-departments/">Guest Post: Galin Jones on criteria for promotion and tenture in (bio)statistics departments</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2018/10/11</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Editor&rsquo;s Note: I attended an ASA Chair&rsquo;s meeting and spoke about ways we could support junior faculty in data science. After giving my talk Galin Jones, Professor and Director of Statistics at University of Minnesota, and I had an interesting conversation about how they had changed their promotion criteria in response to a faculty candidate being unique. I asked him to write about his experience and he kindly contributed the following post.
+  </p>
+
+  
+  <footer>
+    <a href="/2018/10/11/guest-post-galin-jones-on-criteria-for-promotion-and-tenture-in-bio-statistics-departments/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2018/10/08/the-economic-consequences-of-moocs/">The economic consequences of MOOCs</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2018/10/08</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  tl;dr check out our new paper on the relationship between MOOC completion and economic outcomes!
+Last Monday we launched our Chromebook Data Science Program so that anyone with an internet connection, a web browser, and the ability to read and follow instructions could become a data scientist.
+Why did we launch another MOOC program? Aren&rsquo;t MOOCs dead?
+Well we didn&rsquo;t think so :). We have been pretty excited about MOOCs for a while now and now run five different MOOC programs through the Johns Hopkins Data Science Lab.
+  </p>
+
+  
+  <footer>
+    <a href="/2018/10/08/the-economic-consequences-of-moocs/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2018/10/01/chromebook-data-science-an-online-data-science-program-for-anyone-with-a-web-browser/">Chromebook Data Science - a free online data science program for anyone with a web browser.</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2018/10/01</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The Johns Hopkins Data Science Lab has been teaching massive online open courses for more than 5 years now. During that time we&rsquo;ve reached more than 5 million learners who want to break into the number one rated job in America.
+While we have been incredibly excited about the results of these training programs, we&rsquo;ve also learned over the last 5+ years that there are still significant barriers to getting into data science.
+  </p>
+
+  
+  <footer>
+    <a href="/2018/10/01/chromebook-data-science-an-online-data-science-program-for-anyone-with-a-web-browser/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2018/09/28/the-complex-process-of-obtaining-puerto-rico-mortality-data-a-timeline/">The complex process of obtaining Puerto Rico mortality data: a timeline</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2018/09/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Rolando Acosta and I recently posted a manuscript on bioRxiv describing the effects of Hurricane María, based on an analysis of mortality data provided by the Demographic Registry. I was also an author on a paper published in May based on a survey of 3,000 households. These are very different datasets. Assuming it is complete, the Demographic Registry dataset provides much more precise quantitative information. However, this dataset was not made publicly available until June 1, 2018, three days after the paper based on the survey data was released.
+  </p>
+
+  
+  <footer>
+    <a href="/2018/09/28/the-complex-process-of-obtaining-puerto-rico-mortality-data-a-timeline/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <i class="fa fa-chevron-left"></i>
+  
+  <span>&nbsp;1 / 104&nbsp;</span>
+  
+  <a href="/page/2/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

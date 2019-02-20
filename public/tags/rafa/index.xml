@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rafa on Tristan Berchoux</title>
+    <link>/tags/rafa/</link>
+    <description>Recent content in Rafa on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 19 Dec 2012 11:47:10 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/rafa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rafa interviewed about statistical genomics</title>
+      <link>/2012/12/19/rafa-interviewed-about-statistical-genomics/</link>
+      <pubDate>Wed, 19 Dec 2012 11:47:10 +0000</pubDate>
+      
+      <guid>/2012/12/19/rafa-interviewed-about-statistical-genomics/</guid>
+      <description>He talks about the problems created by the speed of increase in data sizes in molecular biology, the way that genomics is hugely driven by data analysis/statistics, how Bioconductor is an example of bottom up science, Simply Statistics gets a shout out, how new data are going to lead to new modeling/statistical challenges, and gives an ode to boxplots. It&amp;rsquo;s worth watching the whole thing&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

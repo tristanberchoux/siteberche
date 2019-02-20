@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nsf on Tristan Berchoux</title>
+    <link>/tags/nsf/</link>
+    <description>Recent content in Nsf on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Thu, 13 Sep 2012 13:55:16 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/nsf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An experimental foundation for statistics</title>
+      <link>/2012/09/13/an-experimental-foundation-for-statistics/</link>
+      <pubDate>Thu, 13 Sep 2012 13:55:16 +0000</pubDate>
+      
+      <guid>/2012/09/13/an-experimental-foundation-for-statistics/</guid>
+      <description>In a recent conversation with Brian (of abstraction fame) about the relationship between mathematics and statistics. Statistics, for historical reasons, has been treated as a mathematical sub-discipline (this is the NSF&amp;#8217;s view).
+One reason statistics is viewed as a sub-discipline of math is because the foundations of statistics are built on the basis of deductive reasoning, where you start with a few general propositions or foundations that you assume to be true and then systematically prove more specific results.</description>
+    </item>
+    
+  </channel>
+</rss>

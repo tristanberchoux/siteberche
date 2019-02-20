@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2015/08/24/the-next-national-library-of-medicine-director-can-help-define-the-future-of-data-science/">The Next National Library of Medicine Director Can Help Define the Future of Data Science</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/08/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The main motivation for starting this blog was to share our enthusiasm about the increased importance of data and data analysis in science, industry, and society in general. Based on recent initiatives, such as BD2k, it is clear that the NIH is also enthusiastic and very much interested in supporting data science. For those that don&rsquo;t know, the National Institutes of Health (NIH) is the largest public funder of biomedical research in the world.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/08/24/the-next-national-library-of-medicine-director-can-help-define-the-future-of-data-science/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/08/21/interview-with-sherri-rose-and-laura-hatfied/">Interview with Sherri Rose and Laura Hatfield</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/08/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  &nbsp;
+
+Rose/Hatfield © Savannah Bergquist Laura Hatfield and Sherri Rose are Assistant Professors specializing in biostatistics at Harvard Medical School in the Department of Health Care Policy. Laura received her PhD in Biostatistics from the University of Minnesota and Sherri completed her PhD in Biostatistics at UC Berkeley. They are developing novel statistical methods for health policy problems.
+_SimplyStats: Do you consider yourselves statisticians, data scientists, machine learners, or something else?
+  </p>
+
+  
+  <footer>
+    <a href="/2015/08/21/interview-with-sherri-rose-and-laura-hatfied/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/08/20/if-you-ask-different-quetions-you-get-different-asnwers-one-more-way-science-isnt-broken-it-is-just-really-hard/">If you ask different questions you get different answers - one more way science isn&#39;t broken it is just really hard</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/08/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  If you haven&rsquo;t already read the amazing piece by Christie Aschwanden on why Science isn&rsquo;t Broken you should do so immediately. It does an amazing job of capturing the nuance of statistics as applied to real data sets and how that can be misconstrued as science being &ldquo;broken&rdquo; without falling for the easy &ldquo;everything is wrong&rdquo; meme.
+One thing that caught my eye was how the piece highlighted a crowd-sourced data analysis of soccer red cards.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/08/20/if-you-ask-different-quetions-you-get-different-asnwers-one-more-way-science-isnt-broken-it-is-just-really-hard/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/08/19/p-0-05-i-can-make-any-p-value-statistically-significant-with-adaptive-fdr-procedures/">P &gt; 0.05? I can make any p-value statistically significant with adaptive FDR procedures</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/08/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Everyone knows now that you have to correct for multiple testing when you calculate many p-values otherwise this can happen:
+ http://xkcd.com/882/  &nbsp;
+One of the most popular ways to correct for multiple testing is to estimate or control the false discovery rate. The false discovery rate attempts to quantify the fraction of made discoveries that are false. If we call all p-values less than some threshold t significant, then borrowing notation from this great introduction to false discovery rates
+  </p>
+
+  
+  <footer>
+    <a href="/2015/08/19/p-0-05-i-can-make-any-p-value-statistically-significant-with-adaptive-fdr-procedures/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/08/12/ucla-statistics-2015-commencement-address/">UCLA Statistics 2015 Commencement Address</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/08/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I was asked to speak at the UCLA Department of Statistics Commencement Ceremony this past June. As one of the first graduates of that department back in 2003, I was tremendously honored to be invited to speak to the graduates. When I arrived I was just shocked at how much the department had grown. When I graduated I think there were no more than 10 of us between the PhD and Master&rsquo;s programs.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/08/12/ucla-statistics-2015-commencement-address/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/08/12/correlation-is-not-a-measure-of-reproducibility/">Correlation is not a measure of reproducibility</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/08/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Biologists make wide use of correlation as a measure of reproducibility. Specifically, they quantify reproducibility with the correlation between measurements obtained from replicated experiments. For example, the ENCODE data standards document states
+ A typical R2 (Pearson) correlation of gene expression (RPKM) between two biological replicates, for RNAs that are detected in both samples using RPKM or read counts, should be between 0.92 to 0.98. Experiments with biological correlations that fall below 0.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/08/12/correlation-is-not-a-measure-of-reproducibility/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/08/10/rafalib-package-now-on-cran/">rafalib package now on CRAN</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/08/10</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  For the last several years I have been collecting functions I routinely use during exploratory data analysis in a private R package. Mike Love and I used some of these in our HarvardX course and now, due to popular demand, I have created man pages and added the rafalib package to CRAN. Mike has made several improvements and added some functions of his own. Here is quick descriptions of the rafalib functions I most use:
+  </p>
+
+  
+  <footer>
+    <a href="/2015/08/10/rafalib-package-now-on-cran/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/08/09/interested-in-analyzing-images-of-brains-get-started-with-open-access-data/">Interested in analyzing images of brains? Get started with open access data.</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/08/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Editor's note: This is a guest post by Ani Eloyan. She is an Assistant Professor of Biostatistics at Brown University. Dr. Eloyan’s work focuses on semi-parametric likelihood based methods for matrix decompositions, statistical analyses of brain images, and the integration of various types of complex data structures for analyzing health care data. She received her PhD in statistics from North Carolina State University and subsequently completed a postdoctoral fellowship in the Department of Biostatistics at Johns Hopkins University.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/08/09/interested-in-analyzing-images-of-brains-get-started-with-open-access-data/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/08/09/statistical-theory-is-our-write-once-run-anywhere/">Statistical Theory is our &#34;Write Once, Run Anywhere&#34;</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/08/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Having followed the software industry as a casual bystander, I periodically see the tension flare up between the idea of writing &ldquo;native apps&rdquo;, software that is tuned to a particular platform (Windows, Mac, etc.) and more cross-platform apps, which run on many platforms without too much modification. Over the years it has come up in many different forms, but they fundamentals are the same. Back in the day, there was Java, which was supposed to be the platform that ran on any computing device.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/08/09/statistical-theory-is-our-write-once-run-anywhere/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/07/30/autonomous-killing-machines-wont-look-like-the-terminator-and-that-is-why-they-are-so-scary/">Autonomous killing machines won&#39;t look like the Terminator...and that is why they are so scary</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/07/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Just a few days ago many of the most incredible minds in science and technology urged governments to avoid using artificial intelligence to create autonomous killing machines. One thing that always happens when such a warning is put into place is you see the inevitable Terminator picture:
+&nbsp;
+
+&nbsp;
+The reality is that robots that walk and talk are getting better but still have a ways to go:
+&nbsp;
+  </p>
+
+  
+  <footer>
+    <a href="/2015/07/30/autonomous-killing-machines-wont-look-like-the-terminator-and-that-is-why-they-are-so-scary/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/21/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;22 / 104&nbsp;</span>
+  
+  <a href="/page/23/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

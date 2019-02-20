@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Google&#39;s brainteasers (that don&#39;t work) and Johns Hopkins Biostatistics Data Analysis &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Google&#39;s brainteasers (that don&#39;t work) and Johns Hopkins Biostatistics Data Analysis</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/06/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p><a href="http://www.nytimes.com/2013/06/20/business/in-head-hunting-big-data-may-not-be-such-a-big-deal.html?pagewanted=all&amp;_r=0">This article</a> is getting some attention, because Google&rsquo;s VP for people operations at Google has made public a few insights that the Google HR team has come to over the last several years. The most surprising might be:</p>
+
+<ol>
+<li><span style="line-height: 16px;">They don&rsquo;t collect GPAs except for new candidates</span></li>
+<li>Test scores are worthless</li>
+<li>Interview scores weren&rsquo;t correlated with success.</li>
+<li>Brainteasers that Google is so famous for are worthless</li>
+<li>Behavioral interviews are the most effective</li>
+</ol>
+
+<p>The reason the article is getting so much attention is how surprising these facts may be to people who have little experience hiring/managing in technical fields. But I thought this quote was really telling:</p>
+
+<blockquote>
+<p> One of my own frustrations when I was in college and grad school is that you knew the professor was looking for a specific answer. You could figure that out, but it’s much more interesting to solve problems where there isn’t an obvious answer.</p>
+</blockquote>
+
+<p>Interestingly, <a href="http://simplystatistics.org/2011/10/22/graduate-student-data-analysis-inspired-by-a/">that is the whole point</a> of my data analysis course here at Hopkins. Over my relatively limited time as a faculty member I realized there were two key qualities that made students in biostatistics stand out: (1) that they were hustlers - willing to just work until the problem is solved even if it was frustrating and (2) that they were willing/able to try new approaches or techniques they weren&rsquo;t comfortable with. I don&rsquo;t have the quantitative data that Google does, but I would venture to guess those two traits explain 80%+ of the variation in success rates for graduate students in statistics/computing/data analysis.</p>
+
+<p>Once that realization is made, it becomes clear pretty quickly that textbook problems or re-analysis of well known data sets measure something orthogonal to traits (1) and (2). So I went about redesigning the types of problems our students had to tackle. Instead of assigning problems out of a book I redesigned the questions to have the following characteristics:</p>
+
+<ol>
+<li><span style="line-height: 16px;">The were based on live data sets. I define a &ldquo;live&rdquo; data set as a data set that has not been used to answer the question of interest previously. </span></li>
+<li>The questions are <a href="http://simplystatistics.org/2013/05/29/what-statistics-should-do-about-big-data-problem-forward-not-solution-backward/">problem forward, not solution backward</a>. I would have an idea of what would likely work and what would likely not work. But I defined the question without thinking about what methods the students might use.</li>
+<li>The answer was open ended (and often not known to me in advance).</li>
+<li>The problems often had to do with unique scenarios not encountered frequently in statistics (e.g. you have a data census instead of just a sample).</li>
+<li>The problems involved methods application/development, coding, and writing/communication.</li>
+</ol>
+
+<p>I have found that problems with these characteristics more precisely measure hustle and flexibility, like Google is looking for in their hiring practices. Of course, there are some down sides to this approach. I think it can be more frustrating for students, who don&rsquo;t have as clearly defined a path through the homework. It also means dramatically more work for the instructor in terms of analyzing the data to find the quirks, creating personalized feedback for students, and being able to properly estimate the amount of work a project will take.</p>
+
+<p><a href="http://simplystatistics.org/2013/03/26/an-instructors-thoughts-on-peer-review-for-data-analysis-in-coursera/">We have started thinking</a> about how to do this same thing at scale on Coursera. In the meantime, Google will just have to send their recruiters to Hopkins Biostats to find students who meet the characteristics they are looking for :-).</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2013/06/16/sunday-datastatistics-link-roundup-61613-fathers-day-edition/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2013/06/16/sunday-datastatistics-link-roundup-61613-fathers-day-edition/">Sunday data/statistics link roundup (6/16/13 - Father&#39;s day edition!)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2013/06/21/interview-with-miriah-meyer-microsoft-faculty-fellow-and-visualization-expert/">Interview with Miriah Meyer - Microsoft Faculty Fellow and Visualization Expert</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2013/06/21/interview-with-miriah-meyer-microsoft-faculty-fellow-and-visualization-expert/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

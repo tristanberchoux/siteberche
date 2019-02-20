@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Human Rights on Tristan Berchoux</title>
+    <link>/tags/human-rights/</link>
+    <description>Recent content in Human Rights on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Thu, 01 Mar 2012 14:02:05 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/human-rights/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A cool profile of a human rights statistician</title>
+      <link>/2012/03/01/a-cool-profile-of-a-human-rights-statistician/</link>
+      <pubDate>Thu, 01 Mar 2012 14:02:05 +0000</pubDate>
+      
+      <guid>/2012/03/01/a-cool-profile-of-a-human-rights-statistician/</guid>
+      <description>Via AL Daily, this dude collects data and analyzes it to put war criminals away. The idea of using statistics to quantify mass testimony is interesting.  With statistical methods and the right kind of data, he can make what we know tell us what we don&amp;#8217;t know. He has shown human rights groups, truth commissions, and international courts how to take a collection of thousands of testimonies and extract from them the magnitude and pattern of violence &amp;#8212; to lift the fog of war.</description>
+    </item>
+    
+  </channel>
+</rss>

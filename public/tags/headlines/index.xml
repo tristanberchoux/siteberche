@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Headlines on Tristan Berchoux</title>
+    <link>/tags/headlines/</link>
+    <description>Recent content in Headlines on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 11 Apr 2012 13:52:42 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/headlines/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Statistics is not math...</title>
+      <link>/2012/04/11/statistics-is-not-math/</link>
+      <pubDate>Wed, 11 Apr 2012 13:52:42 +0000</pubDate>
+      
+      <guid>/2012/04/11/statistics-is-not-math/</guid>
+      <description>Statistics depends on math, like a lot of other disciplines (physics, engineering, chemistry, computer science). But just like those other disciplines, statistics is not math; math is just a tool used to solve statistical problems. Unlike those other disciplines, statistics gets lumped in with math in headlines. Whenever people use statistical analysis to solve an interesting problem, the headline reads:
+&amp;#8220;Math can be used to solve amazing problem X&amp;#8221;
+or</description>
+    </item>
+    
+  </channel>
+</rss>

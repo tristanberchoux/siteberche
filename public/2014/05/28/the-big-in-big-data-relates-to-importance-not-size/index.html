@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>The Big in Big Data relates to importance not size &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>The Big in Big Data relates to importance not size</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/05/28</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/big-data">big data</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <p>In the past couple of years several non-statisticians have asked me &ldquo;what is Big Data exactly?&rdquo; or &ldquo;How big is Big Data?&rdquo;. My answer has been &ldquo;I think Big Data is much more about &ldquo;data&rdquo; than &ldquo;big&rdquo;. I explain below.</p>
+
+<table border="1" align="center">
+  <tr>
+    <td>
+    <img src=https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2014/05/Screen-Shot-2014-05-28-at-10.14.53-AM.png>
+    </td>
+    <td>
+     <img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2014/05/https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2014/05/Screen-Shot-2014-05-28-at-10.15.04-AM.png">
+    </td>
+  </tr>
+</table>  
+
+<p>Since 2011 Big Data has been all over the news. The New York Times, The Economist, Science, Nature, etc.. have told us that the Big Data Revolution is upon us (see google trends figure above). But was this really a revolution? What happened to the Massive Data Revolution (see figure above)? For this to be called a revolution, there must be some a drastic change, a discontinuity, or a quantum leap of some kind.  So has there been such a discontinuity in the rate of growth of data? Although this may be true for some fields (for example in genomics, next generation sequencing <a href="http://www.genome.gov/sequencingcosts/">did introduce a discontinuity around 2007</a>), overall, data size seems to have been growing at a steady rate for decades. For example, in the  <a href="http://www.singularity.com/charts/page80.html">graph below</a> (see <a href="http://www.dtc.umn.edu/~odlyzko/doc/oft.internet.growth.pdf">this paper</a> for source) note the trend in internet traffic data (which btw dwarfs genomics data). There does seem to be a change of rate but during the 1990s which brings me to my main point.</p>
+
+<p><img alt="internet data traffic" src="http://www.singularity.com/images/charts/InternetDataTraffic2b.jpg" width="500" /></p>
+
+<p>Although several fields (including Statistics) are having to innovate to keep up with growing data size, I don&rsquo;t see this as something that new. But I do think that we are in the midst of a Big Data revolution.  Although the media only noticed it recently,  it started about 30 years ago. The discontinuity is not in the size of data, but in the percent of fields (across academia, industry and government) that use data. At some point in the 1980s with the advent of cheap computers, data were moved from the file cabinet to the disk drive. Then in the 1990s, with the democratization of the internet, these data started to become easy to share. All of the sudden, people could use data to answer questions that were previously answered only by experts, theory or intuition.</p>
+
+<p>In this blog we like to point out examples but let me review a few. Credit card companies started using purchase data to detect fraud. Baseball teams started scraping data and evaluating players without ever seeing them. Financial companies started analyzing  stock market data to develop investment strategies. Environmental scientists started to gather and analyze data from air pollution monitors. Molecular biologists started quantifying outcomes of interest into matrices of numbers (as opposed to looking at stains on nylon membranes) to discover new tumor types and develop diagnostics tools. Cities started using crime data to guide policing strategies. Netflix started using costumer ratings to recommend movies. Retail stores started mining bonus card data to deliver targeted advertisements. Note that all the data sets mentioned were tiny in comparison to, for example, sky survey data collected by astronomers. But, I still call this phenomenon Big Data because the percent of people using data was in fact Big.</p>
+
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2014/05/https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2014/05/IMG_5053.jpg" alt="bigdata" /></p>
+
+<p>I borrowed the title of this talk from a <a href="http://www.slideshare.net/kuonen/big-datadatascience-may2014">very nice presentation</a> by Diego Kuonen</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2014/05/22/10-things-statistics-taught-us-about-big-data-analysis/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2014/05/22/10-things-statistics-taught-us-about-big-data-analysis/">10 things statistics taught us about big data analysis</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2014/06/03/post-piketty-lessons/">Post-Piketty Lessons</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2014/06/03/post-piketty-lessons/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

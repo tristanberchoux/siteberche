@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Revolution on Tristan Berchoux</title>
+    <link>/tags/data-revolution/</link>
+    <description>Recent content in Data Revolution on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Fri, 27 Apr 2012 15:16:29 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/data-revolution/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>People in positions of power that don&#39;t understand statistics are a big problem for genomics</title>
+      <link>/2012/04/27/people-in-positions-of-power-that-dont-understand/</link>
+      <pubDate>Fri, 27 Apr 2012 15:16:29 +0000</pubDate>
+      
+      <guid>/2012/04/27/people-in-positions-of-power-that-dont-understand/</guid>
+      <description>I finally got around to reading the IOM report on translational omics and it is very good. The report lays out problems with current practices and how these led to undesired results such as the now infamous Duke trials and the growth in retractions in the scientific literature. Specific recommendations are provided related to reproducibility and validation. I expect the report will improve things. Although I think bigger improvements will come as a result of retirements.</description>
+    </item>
+    
+  </channel>
+</rss>

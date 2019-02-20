@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Education on Tristan Berchoux</title>
+    <link>/tags/education/</link>
+    <description>Recent content in Education on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Tue, 08 Jan 2013 10:00:17 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>By introducing competition open online education will improve teaching at top universities</title>
+      <link>/2013/01/08/by-introducing-competition-open-online-education-will-improve-teaching-at-top-universities/</link>
+      <pubDate>Tue, 08 Jan 2013 10:00:17 +0000</pubDate>
+      
+      <guid>/2013/01/08/by-introducing-competition-open-online-education-will-improve-teaching-at-top-universities/</guid>
+      <description>It is no secret that faculty evaluations at top universities weigh research much more than teaching. This is not surprising given that, among other reasons, global visibility comes from academic innovation (think Nobel Prizes) not classroom instruction. Come promotion time the peer review system carefully examines your publication record and ability to raise research funds. External experts within your research area are asked if you are a leader in the field.</description>
+    </item>
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (10/21/12)</title>
+      <link>/2012/10/21/sunday-data-statistics-link-roundup-10-21-12/</link>
+      <pubDate>Sun, 21 Oct 2012 13:30:56 +0000</pubDate>
+      
+      <guid>/2012/10/21/sunday-data-statistics-link-roundup-10-21-12/</guid>
+      <description>This is scientific variant on the #whatshouldwecallme meme isn&amp;#8217;t exclusive to statistics, but it is hilarious.  This is a really interesting post that is a follow-up to the XKCD password security comic. The thing I find most interesting about this is that researchers realized the key problem with passwords was that we were looking at them purely from a computer science perspective. But _people _use passwords, so we need a person-focused approach to maximize security.</description>
+    </item>
+    
+    <item>
+      <title>This is an awesome paper all students in statistics should read</title>
+      <link>/2012/10/03/this-is-an-awesome-paper-all-students-in-statistics/</link>
+      <pubDate>Wed, 03 Oct 2012 15:24:46 +0000</pubDate>
+      
+      <guid>/2012/10/03/this-is-an-awesome-paper-all-students-in-statistics/</guid>
+      <description>The paper is a review of how to do software development for academics. I saw it via C. Titus Brown (who we have interviewed), he is also a co-author. How to write software (particularly for other people) is something that is under emphasized in many curricula. But it turns out this is also one of the more important components of disseminating your work in modern applied statistics. My only wish is that there was an accompanying website with resources/links for people to chase down.</description>
+    </item>
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (9/9/12)</title>
+      <link>/2012/09/09/sunday-data-statistics-link-roundup-9-9-12/</link>
+      <pubDate>Sun, 09 Sep 2012 13:32:00 +0000</pubDate>
+      
+      <guid>/2012/09/09/sunday-data-statistics-link-roundup-9-9-12/</guid>
+      <description>Not necessarily statistics related, but pretty appropriate now that the school year is starting. Here is a little introduction to &amp;#8220;how to google&amp;#8221; (via Andrew J.). Being able to &amp;#8220;just google it&amp;#8221; and find answers for oneself without having to resort to asking folks is maybe the #1 most useful skill as a statistician.  A really nice presentation on interactive graphics with the googleVis package. I think one of the most interesting things about the presentation is that it was built with markdown/knitr/slidy (see slide 53).</description>
+    </item>
+    
+    <item>
+      <title>A non-exhaustive list of things I have failed to accomplish</title>
+      <link>/2012/08/09/a-non-exhaustive-list-of-things-i-have-failed-to/</link>
+      <pubDate>Thu, 09 Aug 2012 19:07:37 +0000</pubDate>
+      
+      <guid>/2012/08/09/a-non-exhaustive-list-of-things-i-have-failed-to/</guid>
+      <description>A few years ago I stumbled across a blog post that described a person&amp;#8217;s complete cv. The idea was that the cv listed both the things they had accomplished and the things they had failed to accomplish. At the time, it really helped me to see that to be successful you have to be willing to fail over and over. I use my website to show the things I have accomplished career-wise.</description>
+    </item>
+    
+    <item>
+      <title>On the relative importance of mathematical abstraction in graduate statistical education</title>
+      <link>/2012/08/08/on-the-relative-importance-of-mathematical-abstraction/</link>
+      <pubDate>Wed, 08 Aug 2012 15:40:15 +0000</pubDate>
+      
+      <guid>/2012/08/08/on-the-relative-importance-of-mathematical-abstraction/</guid>
+      <description>_Editor’s Note: This is the counterpoint in our series of posts on the value of abstraction in graduate education. See Brian’s defense of abstraction on Monday and the comments on his post, as well as the comments on our original teaser post for more. See below for a full description of the T-bone inside joke*._**
+Brian did a good job at defining abstraction. In a cagey debater’s move, he provided an incredibly broad definition of abstraction that includes the reason we call a a smiley face, the reason why we can apply least squares to a variety of data types, and the reason we write functions when programming.</description>
+    </item>
+    
+    <item>
+      <title>Online education: many academics are missing the point</title>
+      <link>/2012/07/26/online-education-many-academics-are-missing-the-point/</link>
+      <pubDate>Thu, 26 Jul 2012 13:45:00 +0000</pubDate>
+      
+      <guid>/2012/07/26/online-education-many-academics-are-missing-the-point/</guid>
+      <description>Many academics are complaining about online education and warning us about how it can lead to a lower quality product. For example, the New York Times recently published this op-ed piece wondering if &amp;#8220;online education [will] ever be education of the very best sort?&amp;#8221;. Although pretty much every controlled experiment comparing online and in-class education finds that students learn just about the same under both approaches, I do agree that in-person lectures are more enjoyable to both faculty and students.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (6/24)</title>
+      <link>/2012/06/24/sunday-data-statistics-link-roundup-6-24/</link>
+      <pubDate>Sun, 24 Jun 2012 14:16:23 +0000</pubDate>
+      
+      <guid>/2012/06/24/sunday-data-statistics-link-roundup-6-24/</guid>
+      <description>We&amp;#8217;ve got a new domain! You can still follow us on tumblr or here: http://simplystatistics.org/.  A cool article on MIT&amp;#8217;s annual sports statistics conference (via @storeylab). I love how the guy they chose to highlight created what I would consider a pretty simple visualization with known tools - but it turns out it is potentially a really new way of evaluating the shooting range of basketball players. This is my favorite kind of creativity in statistics.</description>
+    </item>
+    
+    <item>
+      <title>An essay on why programmers need to learn statistics</title>
+      <link>/2012/03/02/an-essay-on-why-programmers-need-to-learn-statistics/</link>
+      <pubDate>Fri, 02 Mar 2012 13:24:55 +0000</pubDate>
+      
+      <guid>/2012/03/02/an-essay-on-why-programmers-need-to-learn-statistics/</guid>
+      <description>This is awesome. There are a few places with some strong language, but overall I think the message is pretty powerful. Via Tariq K. I agree with Tariq, one of the gems is:
+ If you want to measure something, then don&amp;#8217;t measure other sh**. 
+ </description>
+    </item>
+    
+    <item>
+      <title>Statistics project ideas for students</title>
+      <link>/2012/02/29/statistics-project-ideas-for-students/</link>
+      <pubDate>Wed, 29 Feb 2012 13:50:05 +0000</pubDate>
+      
+      <guid>/2012/02/29/statistics-project-ideas-for-students/</guid>
+      <description>Here are a few ideas that might make for interesting student projects at all levels (from high-school to graduate school). I&amp;#8217;d welcome ideas/suggestions/additions to the list as well. All of these ideas depend on free or scraped data, which means that anyone can work on them. I&amp;#8217;ve given a ballpark difficulty for each project to give people some idea.
+Happy data crunching!
+Data Collection/Synthesis
+ Creating a webpage that explains conceptual statistical issues like randomization, margin of error, overfitting, cross-validation, concepts in data visualization, sampling.</description>
+    </item>
+    
+    <item>
+      <title>Why in-person education isn&#39;t dead yet...but a statistician could finish it off</title>
+      <link>/2012/01/30/why-in-person-education-isnt-dead-yet-but-a/</link>
+      <pubDate>Mon, 30 Jan 2012 14:02:05 +0000</pubDate>
+      
+      <guid>/2012/01/30/why-in-person-education-isnt-dead-yet-but-a/</guid>
+      <description>A growing tend in education is to put lectures online, for free. The Kahn Academy, Stanford&amp;#8217;s recent AI course, and Gary King&amp;#8217;s new quantitative government course at Harvard are three of the more prominent examples. This new pedagogical format is more democratic, free, and helps people learn at their own pace. It has led some, including us here at Simply Statistics, to suggest that the future of graduate education lies in online courses.</description>
+    </item>
+    
+    <item>
+      <title>The end of in-class lectures is closer than I thought</title>
+      <link>/2012/01/25/the-end-of-in-class-lectures-is-closer-than-i-thought/</link>
+      <pubDate>Wed, 25 Jan 2012 19:18:28 +0000</pubDate>
+      
+      <guid>/2012/01/25/the-end-of-in-class-lectures-is-closer-than-i-thought/</guid>
+      <description>Our previous post on future of (statistics) graduate education was motivated by he Stanford online course on Artificial Intelligence. Here is an update on the class that had 160,000 people enroll. Some highlights: 1- Sebastian Thrun has given up his tenure at Stanford and he’s started a new online university called Udacity. 2- 248 students got a perfect score: they never got a single question wrong, over the entire course of the class.</description>
+    </item>
+    
+    <item>
+      <title>P-values and hypothesis testing get a bad rap - but we sometimes find them useful.</title>
+      <link>/2012/01/06/p-values-and-hypothesis-testing-get-a-bad-rap-but-we/</link>
+      <pubDate>Fri, 06 Jan 2012 16:54:52 +0000</pubDate>
+      
+      <guid>/2012/01/06/p-values-and-hypothesis-testing-get-a-bad-rap-but-we/</guid>
+      <description>This post written by Jeff Leek and Rafa Irizarry.
+The p-value is the most widely-known statistic. P-values are reported in a large majority of scientific publications that measure and report data. R.A. Fisher is widely credited with inventing the p-value. If he was cited every time a p-value was reported his paper would have, at the very least, 3&amp;#160;million citations* - making it the most highly cited paper of all time.</description>
+    </item>
+    
+    <item>
+      <title>Why all #academics should have professional @twitter accounts</title>
+      <link>/2012/01/05/why-all-academics-should-have-professional-twitter/</link>
+      <pubDate>Thu, 05 Jan 2012 16:24:14 +0000</pubDate>
+      
+      <guid>/2012/01/05/why-all-academics-should-have-professional-twitter/</guid>
+      <description>I started my professional Twitter account @leekgroup about a year and half ago at the suggestion of a colleague of mine, John Storey (@storeylab). I started using the account to post updates on papers/software my group was publishing. Basically, everything I used to report on my webpage as &amp;#8220;News&amp;#8221;. I started to give talks where the title slide included my Twitter name, rather than my webpage. It frequently drew the biggest laugh in the talk, and I would get comments like, &amp;#8220;Do you really think people care what you are thinking every moment of every day?</description>
+    </item>
+    
+    <item>
+      <title>Grad students in (bio)statistics - do a postdoc!</title>
+      <link>/2011/12/28/grad-students-in-bio-statistics-do-a-postdoc/</link>
+      <pubDate>Wed, 28 Dec 2011 19:25:00 +0000</pubDate>
+      
+      <guid>/2011/12/28/grad-students-in-bio-statistics-do-a-postdoc/</guid>
+      <description>Up until about 20 years ago, postdocs were scarce in Statistics. In contrast, during the same time period, it was rare for a Biology PhD to go straight into a tenure track position.
+Driven mostly by the availability of research funding for those working in applied areas, postdocs are becoming much more common in our field and I think this is great. It is great for PhD students to expand their horizons during two years in which they don&amp;#8217;t have to worry about teaching, committee meetings, or grant writing.</description>
+    </item>
+    
+    <item>
+      <title>Citizen science makes statistical literacy critical</title>
+      <link>/2011/12/03/citizen-science-makes-statistical-literacy-critical/</link>
+      <pubDate>Sat, 03 Dec 2011 17:20:13 +0000</pubDate>
+      
+      <guid>/2011/12/03/citizen-science-makes-statistical-literacy-critical/</guid>
+      <description>In today&amp;#8217;s Wall Street Journal, Amy Marcus has a piece on the Citizen Science movement, focusing on citizen science in health in particular. I am fully in support of this enthusiasm and a big fan of citizen science - if done properly. There have already been some pretty big success stories. As more companies like Fitbit and 23andMe spring up, it is really easy to collect data about yourself (right Chris?</description>
+    </item>
+    
+    <item>
+      <title>Is Statistics too darn hard?</title>
+      <link>/2011/11/07/is-statistics-too-darn-hard/</link>
+      <pubDate>Mon, 07 Nov 2011 15:33:00 +0000</pubDate>
+      
+      <guid>/2011/11/07/is-statistics-too-darn-hard/</guid>
+      <description>In this NY Times article, Christopher Drew points out that many students planning engineering and science majors end up switching to other subjects or fail to get any degree. He argues that this is partly due todo the difficulty of classes. In a previous post we lamented the anemic growth in math and statistics majors in comparison to other majors. I do not think we should make our classes easier just to keep these students.</description>
+    </item>
+    
+    <item>
+      <title>The 5 Most Critical Statistical Concepts</title>
+      <link>/2011/10/29/the-5-most-critical-statistical-concepts/</link>
+      <pubDate>Sat, 29 Oct 2011 16:05:05 +0000</pubDate>
+      
+      <guid>/2011/10/29/the-5-most-critical-statistical-concepts/</guid>
+      <description>It seems like everywhere we look, data is being generated - from politics, to biology, to publishing, to social networks. There are also diverse new computational tools, like GPGPU and cloud computing, that expand the statistical toolbox. Statistical theory is more advanced than its ever been, with exciting work in a range of areas. With all the excitement going on around statistics, there is also increasing diversity. It is increasingly hard to define &amp;#8220;statistician&amp;#8221; since the definition ranges from very mathematical to very applied.</description>
+    </item>
+    
+    <item>
+      <title>Graduate student data analysis inspired by a high-school teacher</title>
+      <link>/2011/10/22/graduate-student-data-analysis-inspired-by-a/</link>
+      <pubDate>Sat, 22 Oct 2011 13:02:06 +0000</pubDate>
+      
+      <guid>/2011/10/22/graduate-student-data-analysis-inspired-by-a/</guid>
+      <description>I love watching TED talks. One of my absolute favorites is the talk by Dan Meyer on how math class needs a makeover. Dan also has one of the more fascinating blogs I have read. He talks about math education, primarily K-12 education. His posts on curriculum design, assessment , work ethic, and homework are really, really good. In fact, just go read all his author choices. You won&amp;#8217;t regret it.</description>
+    </item>
+    
+    <item>
+      <title>The future of graduate education</title>
+      <link>/2011/09/28/the-future-of-graduate-education/</link>
+      <pubDate>Wed, 28 Sep 2011 11:49:00 +0000</pubDate>
+      
+      <guid>/2011/09/28/the-future-of-graduate-education/</guid>
+      <description>Stanford is offering a free online course and more than 100,000 students have registered. This got the blogosphere talking about the future of universities. Matt Yglesias thinks that &amp;#8220;colleges are the next newspaper and are destined for some very uncomfortable adjustments&amp;#8221;. Tyler Cowen reminded us that since 2003 he has been saying that professors are becoming obsolete. His main point is that thanks to the internet, the need for lecturers will greatly diminish.</description>
+    </item>
+    
+  </channel>
+</rss>

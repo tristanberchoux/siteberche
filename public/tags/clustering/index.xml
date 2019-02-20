@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clustering on Tristan Berchoux</title>
+    <link>/tags/clustering/</link>
+    <description>Recent content in Clustering on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 06 Jan 2013 11:08:07 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/clustering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday data/statistics link roundup (1/6/2013)</title>
+      <link>/2013/01/06/sunday-datastatistics-link-roundup-162013/</link>
+      <pubDate>Sun, 06 Jan 2013 11:08:07 +0000</pubDate>
+      
+      <guid>/2013/01/06/sunday-datastatistics-link-roundup-162013/</guid>
+      <description>Not really statistics, but this is an interesting article about how rational optimization by individual actors does not always lead to an optimal solutiohn. Related, ere is the coolest street sign I think I&amp;rsquo;ve ever seen, with a heatmap of traffic density to try to influence commuters. An interesting paper that talks about how clustering is only a really hard problem when there aren&amp;rsquo;t obvious clusters. I was a little disappointed in the paper, because it defines the &amp;ldquo;obviousness&amp;rdquo; of clusters only theoretically by a distance metric.</description>
+    </item>
+    
+  </channel>
+</rss>

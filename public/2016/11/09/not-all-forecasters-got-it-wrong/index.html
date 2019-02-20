@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Not all forecasters got it wrong: Nate Silver does it again (again) &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Not all forecasters got it wrong: Nate Silver does it again (again)</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/11/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>Four years ago we
+<a href="http://simplystatistics.org/2012/11/07/nate-silver-does-it-again-will-pundits-finally-accept/">posted</a>
+on Nate Silver&rsquo;s, and other forecasters&rsquo;, triumph over pundits. In
+contrast, after yesterday&rsquo;s presidential election, results contradicted
+most polls and data-driven forecasters, several news articles came out
+wondering how this happened. It is important to point
+out that not all forecasters got it wrong. Statistically
+speaking, Nate Silver, once again, got it right.</p>
+
+<p>To show this, below I include a plot showing the expected margin of
+victory for Clinton versus the actual results for the most competitive states provided by 538. It includes the uncertainty bands provided by 538 in
+<a href="http://projects.fivethirtyeight.com/2016-election-forecast/">this site</a>
+(I eyeballed the band sizes to make the plot in R, so they are not
+exactly like 538&rsquo;s).</p>
+
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/_images/us-election-2016-538-prediction.png" alt="538-2016-election" /></p>
+
+<p>Note that if these are 95% confidence/credible intervals, 538 got 1
+wrong. This is exactly what we expect since <sup>15</sup>&frasl;<sub>16</sub> is about
+95%. Furthermore, judging by the plot <a href="http://projects.fivethirtyeight.com/2016-election-forecast/">here</a>, 538 estimated the popular vote margin to be 3.6%
+with a confidence/credible interval of about 5%.
+This too was an accurate
+prediction since Clinton is going to win the popular vote by
+about 1% <del>0.5%</del> (note this final result is in the margin of error of
+several traditional polls as well). Finally, when other forecasters were
+giving Trump between 14% and 0.1% chances of winning, 538 gave
+him about a
+30% chance which is slightly more than what a team has when down 3-2
+in the World Series. In contrast, in 2012 538 gave Romney only a 9%
+chance of winning. Also, remember, if in ten election cycles you
+call it for someone with a 70% chance, you should get it wrong 3
+times. If you get it right every time then your 70% statement was wrong.</p>
+
+<p>So how did 538 outperform all other forecasters? First, as far as I
+can tell they model the possibility of an overall bias, modeled as a
+random effect, that affects
+every state. This bias can be introduced by systematic
+lying to pollsters or under sampling some group. Note that this bias
+can&rsquo;t be estimated from data from
+one election cycle but it&rsquo;s variability can be estimated from
+historical data. 538 appear
+to estimate the standard error of this term to be
+about 2%. More details on this are included <a href="http://simplystatistics.org/html/midterm2012.html">here</a>. In 2016 we saw this bias and you can see it in
+the plot above (more points are above the line than below). The
+confidence bands account for this source of variabilty and furthermore
+their simulations account for the strong correlation you will see
+across states: the chance of seeing an upset in Pennsylvania, Wisconsin,
+and Michigan is <strong>not</strong> the product of an upset in each. In
+fact it&rsquo;s much higher. Another advantage 538 had is that they somehow
+were able to predict a systematic, not random, bias against
+Trump. You can see this by
+comparing their adjusted data to the raw data (the adjustment favored
+Trump about 1.5 on average). We can clearly see this when comparing the 538
+estimates to The Upshots&rsquo;:</p>
+
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/_images/us-election-2016-538-v-upshot.png" alt="538-2016-election" /></p>
+
+<p>The fact that 538 did so much better than other forecasters should
+remind us how hard it is to do data analysis in real life. Knowing
+math, statistics and programming is not enough. It requires experience
+and a deep understanding of the nuances related to the specific
+problem at hand. Nate Silver and the 538 team seem to understand this
+more than others.</p>
+
+<p>Update: Jason Merkin points out (via Twitter) that 538 provides 80% credible
+intervals.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2016/11/08/chromebook-part2/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2016/11/08/chromebook-part2/">Data scientist on a chromebook take two</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2016/11/11/im-not-moving-to-canada/">Open letter to my lab: I am not &#34;moving to Canada&#34;</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2016/11/11/im-not-moving-to-canada/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

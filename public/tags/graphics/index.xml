@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graphics on Tristan Berchoux</title>
+    <link>/tags/graphics/</link>
+    <description>Recent content in Graphics on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 03 Oct 2012 14:00:14 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2-D author lists</title>
+      <link>/2012/10/03/2-d-author-lists/</link>
+      <pubDate>Wed, 03 Oct 2012 14:00:14 +0000</pubDate>
+      
+      <guid>/2012/10/03/2-d-author-lists/</guid>
+      <description>The order of authors on scientific papers matters a lot. The best places to be on a paper vary by field. But typically the first and the corresponding (usually last) authors are the prime real estate. When people are evaluated on the job market, for promotion, or to get grants, the number of first/corresponding author papers can be the difference between success and failure. At the same time, many journals list &amp;#8220;authors contributions&amp;#8221; at the end of the manuscript, but this is rarely prominently displayed.</description>
+    </item>
+    
+    <item>
+      <title>Interview with Amanda Cox - Graphics Editor at the New York Times</title>
+      <link>/2012/06/01/interview-with-amanda-cox-graphics-editor-at-the-new/</link>
+      <pubDate>Fri, 01 Jun 2012 14:57:00 +0000</pubDate>
+      
+      <guid>/2012/06/01/interview-with-amanda-cox-graphics-editor-at-the-new/</guid>
+      <description>Amanda Cox   
+    
+  
+Amanda Cox received her M.S. in statistics from the University of Washington in 2005. She then moved to the New York Times, where she is a graphics editor. She, and the graphics team at the New York Times, are responsible for many of the cool, informative, and interactive graphics produced by the Times. For example, this, this and this (the last one, Olympic Symphony, is one of my all time favorites).</description>
+    </item>
+    
+    <item>
+      <title>How do I know if my figure is too complicated?</title>
+      <link>/2012/04/25/how-do-i-know-if-my-figure-is-too-complicated/</link>
+      <pubDate>Wed, 25 Apr 2012 17:01:36 +0000</pubDate>
+      
+      <guid>/2012/04/25/how-do-i-know-if-my-figure-is-too-complicated/</guid>
+      <description>One of the key things every statistician needs to learn is how to create informative figures and graphs. Sometimes, it is easy to use off-the-shelf plots like barplots, histograms, or if one is truly desperate a pie-chart. But sometimes the information you are trying to communicate requires the development of a new graphic. I am currently working on a project with a graduate student where the standard illustration are Venn Diagrams - including complicated Venn Diagrams with 5 or 10 circles.</description>
+    </item>
+    
+  </channel>
+</rss>

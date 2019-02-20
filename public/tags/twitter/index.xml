@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Twitter on Tristan Berchoux</title>
+    <link>/tags/twitter/</link>
+    <description>Recent content in Twitter on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Thu, 05 Jan 2012 16:24:14 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why all #academics should have professional @twitter accounts</title>
+      <link>/2012/01/05/why-all-academics-should-have-professional-twitter/</link>
+      <pubDate>Thu, 05 Jan 2012 16:24:14 +0000</pubDate>
+      
+      <guid>/2012/01/05/why-all-academics-should-have-professional-twitter/</guid>
+      <description>I started my professional Twitter account @leekgroup about a year and half ago at the suggestion of a colleague of mine, John Storey (@storeylab). I started using the account to post updates on papers/software my group was publishing. Basically, everything I used to report on my webpage as &amp;#8220;News&amp;#8221;. I started to give talks where the title slide included my Twitter name, rather than my webpage. It frequently drew the biggest laugh in the talk, and I would get comments like, &amp;#8220;Do you really think people care what you are thinking every moment of every day?</description>
+    </item>
+    
+    <item>
+      <title>An R function to map your Twitter Followers</title>
+      <link>/2011/12/21/an-r-function-to-map-your-twitter-followers/</link>
+      <pubDate>Wed, 21 Dec 2011 17:11:00 +0000</pubDate>
+      
+      <guid>/2011/12/21/an-r-function-to-map-your-twitter-followers/</guid>
+      <description>I wrote a little function to make a personalized map of who follows you or who you follow on Twitter. The idea for this function was inspired by some plots I discussed in a previous post. I also found a lot of really useful code over at flowing data here. The function uses the packages twitteR, maps, geosphere, and RColorBrewer. If you don&amp;#8217;t have the packages installed, when you source the twitterMap code, it will try to install them for you.</description>
+    </item>
+    
+    <item>
+      <title>Statisticians on Twitter...help me find more!</title>
+      <link>/2011/11/09/statisticians-on-twitter-help-me-find-more/</link>
+      <pubDate>Wed, 09 Nov 2011 17:10:06 +0000</pubDate>
+      
+      <guid>/2011/11/09/statisticians-on-twitter-help-me-find-more/</guid>
+      <description>In honor of our blog finally dragging itself into the 21st century and jumping onto Twitter/Facebook, I have been compiling a list of statistical people on Twitter. I couldn&amp;#8217;t figure out an easy way to find statisticians in one go (which could be because I don&amp;#8217;t have Twitter skills). So here is my very informal list of statisticians I found in a half hour of searching. I know I missed a ton of people; let me know who I missed so I can update!</description>
+    </item>
+    
+  </channel>
+</rss>

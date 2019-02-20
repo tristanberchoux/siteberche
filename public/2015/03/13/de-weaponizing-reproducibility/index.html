@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>De-weaponizing reproducibility &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>De-weaponizing reproducibility</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/03/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <div>
+  A couple of weeks ago Roger and I went to a <a href="http://sites.nationalacademies.org/DEPS/BMSA/DEPS_153236">conference on statistical reproducibility </a>held at the National Academy of Sciences. The discussion was pretty wide ranging and I love that the thinking about reproducibility is coming back to statistics. There was pretty widespread support for the idea that prevention is the <a href="http://arxiv.org/abs/1502.03169">right way to approach reproducibility</a>.
+</div>
+
+<div>
+</div>
+
+<div>
+  It turns out I was the last speaker of the whole conference. This is an unenviable position to be in with so many bright folks speaking first as they covered a huge amount of what I wanted to say. <a href="http://www.slideshare.net/jtleek/evidence-based-data-analysis">My talk focused on three key points:</a>
+</div>
+
+<div>
+</div>
+
+<ol>
+<li>The tools for reproducibility already exist, the barrier isn&rsquo;t tools</li>
+<li>We need to de-weaponize reproducibility</li>
+<li>Prevention is the right approach to reproducibility</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p>In terms of the first point, <a href="http://simplystatistics.org/2014/09/04/why-the-three-biggest-positive-contributions-to-reproducible-research-are-the-ipython-notebook-knitr-and-galaxy/">tools like iPython, knitr, and Galaxy </a>can be used to all but the absolutely largest analysis reproducible right now.  Our group does this all the time with our papers and so do many others. The problem isn&rsquo;t a lack of tools.</p>
+
+<p>Speaking to point two, I think many people would agree that part of the issue is culture change. One issue that is increasingly concerning to me is the &ldquo;weaponization&rdquo; of reproducibility.  I have been noticing is that some of us (like me, my students, other folks at JHU, and lots of particularly junior computational people elsewhere) are trying really hard to be reproducible. Most of the time this results in really positive reactions from the community. But when a co-author of mine and I wrote that paper about the <a href="http://biostatistics.oxfordjournals.org/content/early/2013/09/24/biostatistics.kxt007.abstract">science-wise false discovery rate</a>, one of the discussants used our code (great), improved on it (great), identified a bug (great), and then did his level best to humiliate us both in front of the editor and the general public because of that bug (<a href="http://simplystatistics.org/2013/09/26/how-could-code-review-discourage-code-disclosure-reviewers-with-motivation/">not so great</a>).</p>
+
+<div>
+</div>
+
+<div>
+  I have seen this happen several times. Most of the time if a paper is reproducible the authors get a pat on the back and their code is either ignored, or used in a positive way. But for high-profile and important problems, people  largely use eproducibility to:
+</div>
+
+<div>
+</div>
+
+<ol>
+<li> Impose regulatory hurdles in the short term while people transition to reproducibility. One clear example of this is the <a href="https://www.congress.gov/bill/113th-congress/house-bill/4012">Secret Science Reform Act</a> which is a bill that imposes strict reproducibility conditions on all science before it can be used as evidence for regulation.</li>
+<li>Humiliate people who aren&rsquo;t good coders or who make mistakes in their code. This is what happened in my paper when I produced reproducible code for my analysis, but has also happened <a href="http://simplystatistics.org/2014/01/28/marie-curie-says-stop-hating-on-quilt-plots-already/">to other people</a>.</li>
+<li>Take advantage of people&rsquo;s code to plagiarize/straight up steal work. I have stories about this I&rsquo;d rather not put on the internet</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p>Of the three, I feel like (1) and (2) are the most common. Plagiarism and scooping by theft I think are actually relatively rare based on my own anecdotal experience. But I think that the &ldquo;weaponization&rdquo; of reproducibility to block regulation or to humiliate folks who are new to computational sciences is more common than I&rsquo;d like it to be. Until reproducibility is the standard for everyone - which I think is possible now and will happen as the culture changes -  the people who are the early adopters are at risk of being bludgeoned with their own reproducibility. As a community, if we want widespread reproducibility adoption we have to be ferocious about not allowing this to happen.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2015/03/03/the-elements-of-data-analytic-style-so-much-for-a-soft-launch/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2015/03/03/the-elements-of-data-analytic-style-so-much-for-a-soft-launch/">The elements of data analytic style - so much for a soft launch</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2015/03/14/%CF%80-day-special-how-to-use-bioconductor-to-find-empirical-evidence-in-support-of-%CF%80-being-a-normal-number/">π day special: How to use Bioconductor to find empirical evidence in support of π being a normal number</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2015/03/14/%CF%80-day-special-how-to-use-bioconductor-to-find-empirical-evidence-in-support-of-%CF%80-being-a-normal-number/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

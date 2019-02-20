@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>The Law and Order of Data Science &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>The Law and Order of Data Science</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2018/08/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<p>One conversation I’ve had a few times revolves around the question, “What’s the difference between science and data science?” If I were to come up with a simple distinction, I might say that</p>
+
+<blockquote>
+<p>Science starts with a question; data science starts with the data.</p>
+</blockquote>
+
+<p>What makes data science so difficult is that it starts in the <em>wrong place</em>. As a result, a certain amount of extra work must be done to understand the context surrounding a dataset before we can do anything useful.</p>
+
+<h2 id="procedure-for-procedurals">Procedure for procedurals</h2>
+
+<p>One of my favorite shows growing up was <em>Law &amp; Order</em>, one of the longest running &ldquo;procedural&rdquo; shows that also produced a number of spinoffs. I remember coming home from school in the afternoon, flipping on TNT and watching whatever <em>Law &amp; Order</em> marathon was currently being aired (there was always something).</p>
+
+<p>One distinct feature of the show is that pretty much every episode followed the exact same format:</p>
+
+<ol>
+<li>The episode starts with the discovery that a crime has occurred, usually a murder.</li>
+<li>The first half of the episode involves the police retracing history trying to figure out who committed the crime (the “Order” part).</li>
+<li>The police catch a suspect at exactly 22 minutes into the episode.</li>
+<li>In the second half of the episode, the district attorneys take over and prosecute the suspect in court (the &ldquo;Law&rdquo; part). Usually, they win.</li>
+</ol>
+
+<p>The format of the show is in fact highly unusual. While it starts off with a mystery (who committed this murder?) as many shows do, the mystery is solved half way through the episode! I can imagine some TV executive 30 years ago wondering, &ldquo;What the heck are you going to do for the rest of the episode if you solve the mystery half way through?&rdquo;</p>
+
+<p>What made the show interesting to me was that in the second half of every episode, the lawyers for the government had to convince a jury that they had the right suspect. They had to present evidence and make an argument that this person was guilty. Of course, because this is TV, they usually won the argument, but I think many TV shows would have been satisfied with just catching the criminal. In most shows, presenting the data and the evidence to an audience is not interesting, but on <em>Law &amp; Order</em>, it was.</p>
+
+<h2 id="the-law-order-metaphor">The Law &amp; Order metaphor</h2>
+
+<p>Many data science projects essentially follow this format, because we start with the data. Data are available. We often don’t get to participate in its generation. Perhaps the data were collected as part of some administrative records system, or as part of some logging system, or as part of some other project addressing a different question. The initial challenge of any data science project is figuring out the <em>context</em> around the data and <em>question</em> that motivated its origination. A key milestone is then figuring out how exactly the data came to be (i.e. who committed this “crime”?).</p>
+
+<p>Once we’ve figured out the context around the data, essentially retracing the history of the data, we can then ask “Are these data appropriate for the question that <strong>I want to ask</strong>?” Answering this question involves comparing the context surrounding the original data and then ensuring that it is <a href="https://simplystatistics.org/2018/05/24/context-compatibility-in-data-analysis/">compatible with the context for your question</a>. If there is compatibility, or we can <em>create</em> compatibility via statistical modeling or assumptions, then we can intelligently move forward to analyze the data and generate evidence concerning a different question. We will then have to make a separate argument to some audience regarding the evidence in the data and any conclusions we may make. Even though the data may have been convincing for one question, it doesn’t mean that the data will be convincing for a different question.</p>
+
+<p>Data science often starts with the data, but in an ideal world it wouldn’t. In an ideal world, we would ask questions and carefully design experiments to collect data specific to those questions. But this is simply not practical and data need to be shared across contexts. The difficulty of the data scientist’s job is understanding each dataset’s context, making sure it is compatible with the <em>current</em> question, developing the evidence from the data, and then getting an audience to <a href="https://simplystatistics.org/2018/04/17/what-is-a-successful-data-analysis/">accept the results</a>.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2018/08/09/the-trillion-dollar-question/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2018/08/09/the-trillion-dollar-question/">The Trillion Dollar Question</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2018/08/24/constructing-a-data-analysis/">Constructing a Data Analysis</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2018/08/24/constructing-a-data-analysis/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

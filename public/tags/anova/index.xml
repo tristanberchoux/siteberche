@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anova on Tristan Berchoux</title>
+    <link>/tags/anova/</link>
+    <description>Recent content in Anova on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 07 Mar 2012 16:00:05 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/anova/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R.A. Fisher is the most influential scientist ever</title>
+      <link>/2012/03/07/r-a-fisher-is-the-most-influential-scientist-ever/</link>
+      <pubDate>Wed, 07 Mar 2012 16:00:05 +0000</pubDate>
+      
+      <guid>/2012/03/07/r-a-fisher-is-the-most-influential-scientist-ever/</guid>
+      <description>You can now see profiles of famous scientists on Google Scholar citations. Here are links to a few of them (via Ben L.). Von Neumann, Einstein, Newton, Feynman
+But their impact on science pales in comparison (with the possible exception of Newton) to the impact of one statistician: R.A. Fisher. Many of the concepts he developed are so common and are considered so standard, that he is never cited/credited. Here are some examples of things he invented along with a conservative number of citations they would have received calculated via Google Scholar*.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on Tristan Berchoux</title>
+    <link>/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Fri, 13 Apr 2012 13:31:21 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Interview with Drew Conway - Author of &#34;Machine Learning for Hackers&#34;</title>
+      <link>/2012/04/13/interview-with-drew-conway-author-of-machine/</link>
+      <pubDate>Fri, 13 Apr 2012 13:31:21 +0000</pubDate>
+      
+      <guid>/2012/04/13/interview-with-drew-conway-author-of-machine/</guid>
+      <description>Drew Conway
+
+Drew Conway is a Ph.D. student in Politics at New York University and the co-ordinator of the New York Open Statistical Programming Meetup. He is the creator of the famous (or infamous) data science Venn diagram, the basis for our R function to determine if your a data scientist. He is also the co-author of Machine Learning for Hackers, a book of case studies that illustrates data science from a hacker&amp;#8217;s perspective.</description>
+    </item>
+    
+    <item>
+      <title>Kindle Fire and Machine Learning</title>
+      <link>/2011/09/29/kindle-fire-and-machine-learning/</link>
+      <pubDate>Thu, 29 Sep 2011 14:05:00 +0000</pubDate>
+      
+      <guid>/2011/09/29/kindle-fire-and-machine-learning/</guid>
+      <description>Amazon released it&amp;#8217;s new iPad competitor, the Kindle Fire, today. A quick read through the description shows it has some interesting features, including a custom-built web browser called Silk. One innovation that they claim is that the browser works in conjunction with Amazon&amp;#8217;s EC2 cloud computing platform to speed up the web-surfing experience by doing some computing on your end and some on their end. Seems cool, if it really does make things faster.</description>
+    </item>
+    
+  </channel>
+</rss>

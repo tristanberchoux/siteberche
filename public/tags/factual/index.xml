@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Factual on Tristan Berchoux</title>
+    <link>/tags/factual/</link>
+    <description>Recent content in Factual on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 25 Mar 2012 15:58:25 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/factual/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday data/statistics link roundup (3/25)</title>
+      <link>/2012/03/25/sunday-data-statistics-link-roundup-3-25/</link>
+      <pubDate>Sun, 25 Mar 2012 15:58:25 +0000</pubDate>
+      
+      <guid>/2012/03/25/sunday-data-statistics-link-roundup-3-25/</guid>
+      <description>The psychologist whose experiment didn&amp;#8217;t replicate then went off on the scientists who did the replication experiment is at it again. I don&amp;#8217;t see a clear argument about the facts of the matter in his post, just more name calling. This seems to be a case study in what not to do when your study doesn&amp;#8217;t replicate. More on &amp;#8220;conceptual replication&amp;#8221; in there too.  Berkeley is running a data science course with instructors Jeff Hammerbacher and Mike Franklin, I looked through the notes and it looks pretty amazing.</description>
+    </item>
+    
+  </channel>
+</rss>

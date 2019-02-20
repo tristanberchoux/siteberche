@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rpackage on Tristan Berchoux</title>
+    <link>/tags/rpackage/</link>
+    <description>Recent content in Rpackage on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 26 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/rpackage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Announcing the tidypvals package</title>
+      <link>/2017/07/26/announcing-the-tidypvals-package/</link>
+      <pubDate>Wed, 26 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/07/26/announcing-the-tidypvals-package/</guid>
+      <description>A few years ago I helped write a paper where we proposed scraping p-values from the medical literature to try to estimate the science-wise false discovery rate. The paper generated a ton of interesting discussion and inspired other groups to start collecting p-values from the literature.
+As I&amp;rsquo;ve mentioned before the p-value is the most popular statistic ever invented so there are a lot of published p-values out there.
+The tidypvals package is an effort to find previous collections of published p-values, synthesize them, and tidy them into one analyzable data set.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Citations on Tristan Berchoux</title>
+    <link>/tags/citations/</link>
+    <description>Recent content in Citations on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Fri, 04 Jan 2013 10:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/citations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Does NIH fund innovative work?  Does Nature care about publishing accurate articles?</title>
+      <link>/2013/01/04/does-nih-fund-innovative-work-does-nature-care-about-publishing-accurate-articles/</link>
+      <pubDate>Fri, 04 Jan 2013 10:00:00 +0000</pubDate>
+      
+      <guid>/2013/01/04/does-nih-fund-innovative-work-does-nature-care-about-publishing-accurate-articles/</guid>
+      <description>_Editor&amp;rsquo;s Note: In a recent post we disagreed with a Nature article claiming that NIH doesn&amp;rsquo;t support innovation. Our colleague Steven Salzberg actually looked at the data and wrote the guest post below. _
+Nature published an article last month with the provocative title &amp;ldquo;Research grants: Conform and be funded.&amp;rdquo; The authors looked at papers with over 1000 citations to find out whether scientists &amp;ldquo;who do the most influential scientific work get funded by the NIH.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (12/30/12)</title>
+      <link>/2012/12/30/sunday-datastatistics-link-roundup-123012/</link>
+      <pubDate>Sun, 30 Dec 2012 10:32:45 +0000</pubDate>
+      
+      <guid>/2012/12/30/sunday-datastatistics-link-roundup-123012/</guid>
+      <description>An interesting new app called 100plus, which looks like it uses public data to help determine how little decisions (walking more, one more glass of wine, etc.) lead to more or less health. Here&amp;rsquo;s a post describing it on the heathdata.gov blog. As far as I can tell, the app is still in beta, so only the folks who have a code can download it. Data on mass shootings from the Mother Jones investigation.</description>
+    </item>
+    
+    <item>
+      <title>A plot of my citations in Google Scholar vs. Web of Science</title>
+      <link>/2012/03/08/a-plot-of-my-citations-in-google-scholar-vs-web-of/</link>
+      <pubDate>Thu, 08 Mar 2012 16:00:05 +0000</pubDate>
+      
+      <guid>/2012/03/08/a-plot-of-my-citations-in-google-scholar-vs-web-of/</guid>
+      <description>There has been some discussion about whether Google Scholar or one of the proprietary software companies numbers are better for citation counts. I personally think Google Scholar is better for a number of reasons:
+ Higher numbers, but consistently/adjustably higher  It&amp;#8217;s free and the data are openly available.  It covers more ground (patents, theses, etc.) to give a better idea of global impact It&amp;#8217;s easier to use  I haven&amp;#8217;t seen a plot yet relating Web of Science citations to Google Scholar citations, so I made one for my papers.</description>
+    </item>
+    
+    <item>
+      <title>R.A. Fisher is the most influential scientist ever</title>
+      <link>/2012/03/07/r-a-fisher-is-the-most-influential-scientist-ever/</link>
+      <pubDate>Wed, 07 Mar 2012 16:00:05 +0000</pubDate>
+      
+      <guid>/2012/03/07/r-a-fisher-is-the-most-influential-scientist-ever/</guid>
+      <description>You can now see profiles of famous scientists on Google Scholar citations. Here are links to a few of them (via Ben L.). Von Neumann, Einstein, Newton, Feynman
+But their impact on science pales in comparison (with the possible exception of Newton) to the impact of one statistician: R.A. Fisher. Many of the concepts he developed are so common and are considered so standard, that he is never cited/credited. Here are some examples of things he invented along with a conservative number of citations they would have received calculated via Google Scholar*.</description>
+    </item>
+    
+  </channel>
+</rss>

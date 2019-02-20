@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Disseminating reproducible research is fundamentally a language and communication problem &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Disseminating reproducible research is fundamentally a language and communication problem</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/05/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>Just about 10 years ago, I wrote my <a href="http://www.ncbi.nlm.nih.gov/pubmed/16510544">first</a> of many articles about the importance of reproducible research. Since that article, one of the points I&rsquo;ve made is that the key issue to resolve was one of tools and infrastructure. At the time, many people were concerned that people would not want to share data and that we had to spend a lot of energy finding ways to either compel or incentivize them to do so. But the reality was that it was difficult to answer the question &ldquo;What should I do if I desperately want to make my work reproducible?&rdquo; Back then, even if you could convince a clinical researcher to use R and LaTeX to create a <a href="https://en.wikipedia.org/wiki/Sweave">Sweave</a> document (!), it was not immediately obvious where they should host the document, code, and data files.</p>
+
+<p>Much has happened since then. We now have knitr and Markdown for live documents (as well as iPython notebooks and the like). We also have git, GitHub, and friends, which provide free code sharing repositories in a distributed manner (unlike older systems like CVS and Subversion). With the recent announcement of the <a href="http://www.arfon.org/announcing-the-journal-of-open-source-software">Journal of Open Source Software</a>, posting code on GitHub can now be recognized within the current system of credits and incentives. Finally, the number of <a href="http://dataverse.org">data</a> <a href="https://osf.io">repositories</a> has grown, providing more places for researchers to deposit their data files.</p>
+
+<p>Is the tools and infrastructure problem solved? I&rsquo;d say yes. One thing that has become clear is that disseminating reproducible research is <strong>no longer a software problem</strong>. At least in R land, building live documents that can be executed by others is straightforward and not too difficult to pick up (thank you <a href="https://daringfireball.net/projects/markdown/">John Gruber</a>!). For other languages there many equivalent (if not better) tools for writing documents that mix code and text. For this kind of thing, there&rsquo;s just no excuse anymore. Could things be optimized a bit for some edge cases? Sure, but the tools are prefectly fine for the vast majority of use cases.</p>
+
+<p>But now there is a bigger problem that needs to be solved, which is that <strong>we do not have an effective way to communicate data analyses</strong>. One might think that publishing the full code and datasets is the perfect way to communicate a data analysis, but in a way, it is too perfect. That approach can provide too much information.</p>
+
+<p>I find the following analogy useful for discussing this problem. If you look at music, one way to communicate music is to provide an audio file, a standard WAV file or something similar. In a way, that is a near-perfect representation of the music&mdash;bit-for-bit&mdash;that was produced by the performer. If I want to experience a Beethoven symphony the way that it was meant to be experienced, I&rsquo;ll listen to a <a href="https://itun.es/us/TudVe?i=79443286">recording of it</a>.</p>
+
+<p>But if I want to understand how Beethoven wrote the piece&mdash;the process and the details&mdash;the recording is not a useful tool. What I look at instead is <a href="http://www.amazon.com/dp/0486260348">the score</a>. The recording is a serialization of the music. The score provides an expanded representation of the music that shows all of the different pieces and how they fit together. A person with a good ear can often reconstruct the score, but this is a difficult and time-consuming task. Better to start with what the composer wrote originally.</p>
+
+<p>Over centuries, classical music composers developed a language and system for communicating their musical ideas so that</p>
+
+<ol>
+<li>there was enough detail that a 3rd party could interpret the music and perform it to a level of accuracy that satisfied the composer; but</li>
+<li>it was not so prescriptive or constraining so that different performers could not build on the work and incorporate their own ideas</li>
+</ol>
+
+<p>It would seem that traditional computer code satisfies those criteria, but I don&rsquo;t think so. Traditional computer code (even R code) is designed to communicate programming concepts and constructs, not to communicate data analysis constructs. For example, a <code>for</code> loop is not a data analysis concept, even though we may use <code>for</code> loops all the time in data analysis.</p>
+
+<p>Because of this disconnect between computer code and data analysis, I often find it difficult to understand what a data analysis is doing, even if it is coded very well. I imagine this is what programmers felt like when programming in processor-specific <a href="https://en.wikipedia.org/wiki/Assembly_language">assembly language</a>. Before languages like C were developed, where high-level concepts could be expressed, you had to know the gory details of how each CPU operated.</p>
+
+<p>The closest thing that I can see to a solution emerging is the work that Hadley Wickham is doing with packages like <a href="https://github.com/hadley/dplyr">dplyr</a> and <a href="https://github.com/hadley/ggplot2">ggplot2</a>. The <code>dplyr</code> package&rsquo;s verbs (<code>filter</code>, <code>arrange</code>, etc.) represent data manipulation concepts that are meaningful to analysts. But we still have a long way to go to cover all of data analysis in this way.</p>
+
+<p>Reproducible research is important because it is fundamentally about communicating what you have done in your work. Right now we have a sub-optimal way to communicate what was done in a data analysis, via traditional computer code. I think developing a new approach to communicating data analysis could have a few benefits:</p>
+
+<ol>
+<li>It would provide greater transparency</li>
+<li>It would allow others to more easily build on what was done in an analysis by extending or modifying specific elements</li>
+<li>It would make it easier to understand what common elements there were across many different data analyses</li>
+<li>It would make it easier to teach data analysis in a systematic and scalable way</li>
+</ol>
+
+<p>So, any takers?</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2016/05/11/palantir-struggles/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2016/05/11/palantir-struggles/">The Real Lesson for Data Science That is Demonstrated by Palantir&#39;s Struggles</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2016/05/18/software-engineering-data-science/">What is software engineering for data science?</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2016/05/18/software-engineering-data-science/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

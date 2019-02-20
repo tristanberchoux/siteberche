@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Colors in R &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Colors in R</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/10/17</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <p>One of my favorite R packages that I use all the time is the <a href="http://cran.r-project.org/package=RColorBrewer" target="_blank">RColorBrewer</a> package. The package has been around for a while now and is written/maintained by Erich Neuwirth. The guts of the package are based on <a href="http://www.personal.psu.edu/cab38/" target="_blank">Cynthia Brewer&#8217;s</a> very cool work on the use of color in cartography (check out the <a href="http://colorbrewer2.org/" target="_blank">colorbrewer web site)</a>.</p>
+
+<p>As a side note, I think the ability to manipulate colors in plots/graphs/maps is one of R&#8217;s many great strengths. My personal experience is that getting the right color scheme can make a difference in how data are perceived in a plot.</p>
+
+<p><!-- more -->RColorBrewer basically provides one function, brewer.pal, that generates different types of color palettes. There are three types of palettes: sequential, diverging, and qualitative. Roughly speaking, sequential palettes are for continuous data where low is less important and high is more important, diverging palettes are for continuous data where both low and high are important (i.e. deviation from some reference point), and qualitative palettes are for categorical data where there is no logical order (i.e. male/female).</p>
+
+<p>To use the brewer.pal function, it&#8217;s often useful to combine it with another R function, colorRampPalette. This function is built into R and is part of the grDevices package. It takes a palette of colors and interpolates between the colors to give you an entire spectrum. Think of a painter&#8217;s palette with 4 or 5 color blotches on it, and then think of the painter taking a brush and blending the colors together. That&#8217;s what colorRampPalette does. So brewer.pal gives you the colors and colorRampPalette mashes them together. It&#8217;s a happy combination.</p>
+
+<p>So, how do we use these functions? My basic approach is to first set the palette depending on the type of data. Suppose we have continuous sequential data and we want the &#8220;Blue-Purple&#8221; palette</p>
+
+<pre>colors &lt;- brewer.pal(4, "BuPu")
+</pre>
+
+<p>Here, I&#8217;ve taken 4 colors from the &#8220;BuPu&#8221; palette, so there are now 4 blotches on my palette. To interpolate these colors, I can call colorRampPalette, which actually returns a <em>function</em>.</p>
+
+<pre>pal &lt;- colorRampPalette(colors)
+</pre>
+
+<p>Now, pal is a function that takes a positive integer argument and returns that number of colors from the palette. So for example</p>
+
+<pre>&gt; pal(5)
+[1] "#EDF8FB" "#C1D7E9" "#9FB1D4" "#8B80BB" "#88419D"
+</pre>
+
+<p>I got 5 different colors from the palette, with their red, green, and blue values coded in hexadecimal. If I wanted 20 colors I could have called pal(20).</p>
+
+<p>The pal function is useful in other functions like image or wireframe (in the lattice package). In both of those functions, the &#8216;col&#8217; argument can be given a set of colors generated by the pal function. For example, you could call</p>
+
+<pre>data(volcano)
+image(volcano, col = pal(30))
+</pre>
+
+<p>and you would plot the &#8216;volcano&#8217; data using 30 colors from the &#8220;BuPu&#8221; palette.</p>
+
+<p>If you&#8217;re wondering what all the different palettes are and what colors are in them, here&#8217;s a handy reference:</p>
+
+<p><img src="http://media.tumblr.com/tumblr_lsyvc6tZ9U1r08wvg.jpg" alt="" /></p>
+
+<p>Or you can just call</p>
+
+<pre>display.brewer.all()</pre>
+
+<p>There&#8217;s been a lot of interesting work done on colors in R and this is just scratching the surface. I&#8217;ll probably return to this subject in a future post.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2011/10/17/competing-through-data-three-experts-offer-their-game/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2011/10/17/competing-through-data-three-experts-offer-their-game/">Competing through data: Three experts offer their game plan</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2011/10/18/caffo-ninjas-awesome/">Caffo &#43; Ninjas = Awesome</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2011/10/18/caffo-ninjas-awesome/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>What statistics should do about big data: problem forward not solution backward &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>What statistics should do about big data: problem forward not solution backward</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/05/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>There has been a lot of discussion among statisticians about big data and what statistics should do to get involved. Recently <a href="http://normaldeviate.wordpress.com/2013/05/28/steve-marron-on-big-data/">Steve M. and Larry W.</a> took up the same issue on their blog. I have been thinking about this for a while, since I work in genomics, which almost always comes with &ldquo;big data&rdquo;. It is also one area of big data where statistics and statisticians have played a huge role.</p>
+
+<p>A question that naturally arises is, &ldquo;why have statisticians been so successful in genomics?&rdquo; I think a major reason is the phrase I borrowed from <a href="http://www.bcaffo.com/">Brian C. </a>(who may have borrowed it from <a href="http://www.biostat.ucla.edu/Directory/Brookmeyer">Ron B</a>.)</p>
+
+<blockquote>
+<p>problem first, not solution backward</p>
+</blockquote>
+
+<p>One of the reasons that &ldquo;big data&rdquo; is even a term is that there is that data are less expensive than they were a few years ago. One example is the dramatic drop in the price of <a href="http://genomebiology.com/2010/11/5/207">DNA-sequencing</a>. But there are many many more examples. The quantified self movement and Fitbits, Google Books, social network data from Twitter, etc. are all areas where data that cost us a huge amount to collect 10 years ago can now be collected and stored very cheaply.</p>
+
+<p>As statisticians we look for generalizable principles; I would say that you have to zoom pretty far out to generalize from social networks to genomics but here are two:</p>
+
+<ol>
+<li>The data can&rsquo;t be easily analyzed in an R session on a simple laptop (say low Gigs to Terabytes)</li>
+<li>The data are generally quirky and messy (unstructured text, json files with lots of missing data, fastq files with quality metrics, etc.)</li>
+</ol>
+
+<p>So how does one end up at the &ldquo;leading edge&rdquo; of big data? By being willing to <a href="http://simplystatistics.org/2012/05/28/schlep-blindness-in-statistics/">deal with the schlep</a> and work out the knitty gritty of how you apply even standard methods to data sets where taking the mean takes hours. Or taking the time to learn all the kinks that are specific to say, how does one process a microarray, and then taking the time to fix them. This is why statisticians were so successful in genomics, they focused on the practical problems and this gave them access to data no one else had/could use properly.</p>
+
+<p>Doing these things requires a lot of effort that isn&rsquo;t elegant. It also isn&rsquo;t &ldquo;statistics&rdquo; by the definition that only mathematical methodology is statistics. Steve alludes to this in his post when he says:</p>
+
+<blockquote>
+<p>Frankly I am a little disappointed that there does not seem to be any really compelling new idea (e.g. as in neural nets or the kernel embedding idea that drove machine learning).</p>
+</blockquote>
+
+<p>I think this is a view shared by many statisticians. That since there isn&rsquo;t a new elegant theory yet, there aren&rsquo;t &ldquo;new ideas&rdquo; in big data. That focus is solution backward. We want an elegant theory that we can then apply to specific problems if they happen to come up.</p>
+
+<p>The alternative is problem forward. The fact that we can collect data so cheaply means we can measure and study things we never could before. Computer scientists, physicists, genome biologists, and others are leading in big data precisely because they aren&rsquo;t thinking about the statistical solution. They are thinking about solving an important scientific problem and are willing to deal with all the dirty details to get there. This allows them to work on data sets and problems that haven&rsquo;t been considered by other people.</p>
+
+<p>In genomics, this has happened before. In that case, the invention of microarrays revolutionized the field and statisticians jumped on board, working closely with scientists, handling the dirty details, and <a href="http://www.bioconductor.org/">building software so others could too</a>. As a discipline if we want to be part of the &ldquo;big data&rdquo; revolution I think we need to focus on the scientific problems and let methodology come second. That requires a rethinking of what it means to be statistics. Things like parallel computing, data munging, reproducibility, and software development have to be accepted as equally important to methods development.</p>
+
+<p>The good news is that there is plenty of room for statisticians to bring our unique skills in dealing with uncertainty to these new problems; but we will only get a seat at the table if we are willing to deal with <a href="http://simplystatistics.org/2012/06/22/statistics-and-the-science-club/">the mess that comes with doing real science</a>.</p>
+
+<p>I&rsquo;ll close by listing a few things I&rsquo;d love to see:</p>
+
+<ol>
+<li><span style="line-height: 16px;">A Bioconductor-like project for social network data. Tyler M. and Ali S. <a href="http://www.csss.washington.edu/Papers/wp127.pdf">have a paper </a>that would make for an awesome package for this project. </span></li>
+<li><a href="http://smart-stats.org/">Statistical pre-processing</a> for fMRI and other brain imaging data. Keep an eye on our smart group for that.</li>
+<li>Data visualization for translational applications, dealing with all the niceties of human-data interfaces. See <a href="http://healthvis.org/">healthvis</a> or the stuffy <a href="http://www.cs.utah.edu/~miriah/">Miriah Meyer</a> is doing.</li>
+<li>Most importantly, starting with specific, unsolved scientific problems. Seeking novel ways to collect cheap data, and analyzing them, even with known and straightforward statistical methods to deepen our understanding about ourselves or the universe.</li>
+</ol>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2013/05/19/sunday-datastatistics-link-roundup-5192013/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2013/05/19/sunday-datastatistics-link-roundup-5192013/">Sunday data/statistics link roundup (5/19/2013)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2013/06/02/sunday-datastatistics-link-roundup-6213/">Sunday data/statistics link roundup (6/2/13)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2013/06/02/sunday-datastatistics-link-roundup-6213/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

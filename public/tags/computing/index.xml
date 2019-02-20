@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computing on Tristan Berchoux</title>
+    <link>/tags/computing/</link>
+    <description>Recent content in Computing on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 09 Dec 2012 10:14:57 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/computing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday data/statistics link roundup (12/9/12)</title>
+      <link>/2012/12/09/sunday-datastatistics-link-roundup-12912/</link>
+      <pubDate>Sun, 09 Dec 2012 10:14:57 +0000</pubDate>
+      
+      <guid>/2012/12/09/sunday-datastatistics-link-roundup-12912/</guid>
+      <description>Some interesting data/data visualizations about working conditions in the apparel industry. Here is the full report. Whenever I see reports like this, I wish the raw data were more clearly linked. I want to be able to get in, play with the data, and see if I notice something that doesn&amp;rsquo;t appear in the infographics.  This is an awesome plain-language discussion of how a bunch of methods (CS and Stats) with fancy names relate to each other.</description>
+    </item>
+    
+    <item>
+      <title>Cleveland&#39;s (?) 2001 plan for redefining statistics as &#34;data science&#34;
+</title>
+      <link>/2012/02/02/clevelands-2001-plan-for-redefining-statistics-as/</link>
+      <pubDate>Thu, 02 Feb 2012 12:36:58 +0000</pubDate>
+      
+      <guid>/2012/02/02/clevelands-2001-plan-for-redefining-statistics-as/</guid>
+      <description>This plan has been making the rounds on Twitter and is being attributed to William Cleveland in 2001 (thanks to Kasper for the link). I&amp;#8217;m not sure of the provenance of the document but it has some really interesting ideas and is worth reading in its entirety. I actually think that many Biostatistics departments follow the proposed distribution of effort pretty closely. One of the most interesting sections is the discussion of computing (emphasis mine):  Data analysis projects today rely on databases, computer and network hardware, and computer and network software.</description>
+    </item>
+    
+    <item>
+      <title>Do you own or rent?</title>
+      <link>/2012/01/10/do-you-own-or-rent/</link>
+      <pubDate>Tue, 10 Jan 2012 12:00:05 +0000</pubDate>
+      
+      <guid>/2012/01/10/do-you-own-or-rent/</guid>
+      <description>When it comes to computing, history has gone back and forth between what I would call the &amp;#8220;owner model&amp;#8221; and the &amp;#8220;renter model&amp;#8221;. The question is what&amp;#8217;s the best approach and how do you determine that?
+Back in the day when people like John von Neumann were busy inventing the computer to work out H-bomb calculations, there was more or less a renter model in place. Computers were obviously quite expensive and so not everyone could have one.</description>
+    </item>
+    
+    <item>
+      <title>Apple this is ridiculous - you gotta upgrade to upgrade!?</title>
+      <link>/2011/11/27/apple-this-is-ridiculous-you-gotta-upgrade-to/</link>
+      <pubDate>Sun, 27 Nov 2011 19:34:11 +0000</pubDate>
+      
+      <guid>/2011/11/27/apple-this-is-ridiculous-you-gotta-upgrade-to/</guid>
+      <description>So along with a few folks here around Hopkins we have been kicking around the idea of developing an app for the iPhone/Android. I&amp;#8217;ll leave the details out for now (other than to say stay tuned!).
+But to start developing an app for the iPhone, you need a version of Xcode, Apple&amp;#8217;s development environment. The latest version of Xcode is version 4, which can only be installed with the latest version of Mac OS X Lion (10.</description>
+    </item>
+    
+    <item>
+      <title>Data Scientist vs. Statistician</title>
+      <link>/2011/11/22/data-scientist-vs-statistician/</link>
+      <pubDate>Tue, 22 Nov 2011 12:41:00 +0000</pubDate>
+      
+      <guid>/2011/11/22/data-scientist-vs-statistician/</guid>
+      <description>There&amp;#8217;s in interesting discussion over at reddit on the difference between a data scientist and a statistician. My crude summary of the discussion seems to be that by and large they are the same but the phrase &amp;#8220;data scientist&amp;#8221; is just the hip new name for statistician that will probably sound stupid 5 years from now.
+My question is why isn&amp;#8217;t &amp;#8220;statistician&amp;#8221; hip? The comments don&amp;#8217;t seem to address that much (although a few go in that direction).</description>
+    </item>
+    
+    <item>
+      <title>Amazon EC2 is #42 on Top 500 supercomputer list</title>
+      <link>/2011/11/16/amazon-ec2-is-42-on-top-500-supercomputer-list/</link>
+      <pubDate>Wed, 16 Nov 2011 17:05:00 +0000</pubDate>
+      
+      <guid>/2011/11/16/amazon-ec2-is-42-on-top-500-supercomputer-list/</guid>
+      <description>Amazon EC2 is #42 on Top 500 supercomputer list</description>
+    </item>
+    
+  </channel>
+</rss>

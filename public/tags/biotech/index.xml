@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Biotech on Tristan Berchoux</title>
+    <link>/tags/biotech/</link>
+    <description>Recent content in Biotech on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Thu, 20 Sep 2012 17:53:32 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/biotech/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>In data science - it&#39;s the problem, stupid!</title>
+      <link>/2012/09/20/in-data-science-its-the-problem-stupid/</link>
+      <pubDate>Thu, 20 Sep 2012 17:53:32 +0000</pubDate>
+      
+      <guid>/2012/09/20/in-data-science-its-the-problem-stupid/</guid>
+      <description>I just saw this article talking about how in the biotech world, you can&amp;#8217;t get caught chasing the latest technology. You have to start with a problem you are solving for people and then work your way back. This reminds me a lot of Type B problems in data science/statistics. We have a pile of data, so we don&amp;#8217;t need to have a problem to solve, it will come to us later.</description>
+    </item>
+    
+  </channel>
+</rss>

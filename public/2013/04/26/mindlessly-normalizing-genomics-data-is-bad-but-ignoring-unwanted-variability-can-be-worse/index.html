@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Mindlessly normalizing genomics data is bad - but ignoring unwanted variability can be worse &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Mindlessly normalizing genomics data is bad - but ignoring unwanted variability can be worse</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/04/26</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/genomics">genomics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/quantile-normalization">quantile normalization</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <p>Yesterday, and bleeding over into today, <a href="http://www.ncbi.nlm.nih.gov/pubmed/12538238">quantile normalization</a> (QN) was being discussed on Twitter. This is the <a href="https://twitter.com/mbeisen/status/327563522185764864">Yesterday, and bleeding over into today, <a href="http://www.ncbi.nlm.nih.gov/pubmed/12538238">quantile normalization</a> (QN) was being discussed on Twitter. This is the</a> that started the whole thing off. The conversation went a bunch of different directions and then this happened:</p>
+
+<blockquote>
+<p>well, this happens all over bio-statistics - ie, naive use in seemingly undirected ways until you get a &ldquo;good&rdquo; pvalue. And then end</p>
+</blockquote>
+
+<p>So Jeff and I felt it was important to respond - since we are biostatisticians that work in genomics. We felt a couple of points were worth making:</p>
+
+<ol>
+<li><strong>Most statisticians we know, including us, know QN&rsquo;s limitations and are always nervous about using QN</strong>. But with most datasets we see, unwanted variability is overwhelming  and we are left with no choice but to normalize in orde to extract anything useful from the data.  In fact, many times QN is not enough and we have to apply further transformations, e.g., to remove <a href="http://www.ncbi.nlm.nih.gov/pubmed/20838408">batch effects</a>.</li>
+</ol>
+
+<p>2. <strong>We would be curious to know which biostatisticians were being referred to. </strong>We would like some examples, because most of the genomic statisticians we know work very closely with biologists to aid them in cleaning dirty data to help them find real sources of signal. Furthermore, we encourage biologists to validate their results. In many cases, quantile normalization (or other transforms) are critical to finding results that validate and there is a long literature (both biological and statistical) supporting the importance of appropriate normalization.</p>
+
+<p>3. <strong>Assuming the data that you get (sequences, probe intensities, etc.) from high-throughput tech = direct measurement of abundance is incorrect.</strong> Before worrying about QN (or other normalization) being an arbitrary transformation that distorts the data, keep in mind that what you want to measure has already been distorted by PCR, the imperfections of the microarray, scanner measurement error, image bleeding, cross hybridization or alignment artifacts, ozone effects, etc&hellip;</p>
+
+<p>To go into a little more detail about the reasons that normalization may be important in many cases, so I have written a little more detail below with data if you are interested.</p>
+
+<p>Most, if not all, the high throughput data we have analyzed needs some kind of normalization. This applies to both microarrays and next-gen sequencing. To demonstrate why, below I include 5 boxplots of log intensities from 5 microarrays that were hybridized to the same RNA (technical replicates).</p>
+
+<p><a href="http://simplystatistics.org/2013/04/26/mindlessly-normalizing-genomics-data-is-bad-but-ignoring-unwanted-variability-can-be-worse/screen-shot-2013-04-25-at-11-12-20-pm/" rel="attachment wp-att-1216"><img class="wp-image-1216 alignleft" alt="Screen shot 2013-04-25 at 11.12.20 PM" src="http://simplystatistics.org/wp-content/uploads/2013/04/Screen-shot-2013-04-25-at-11.12.20-PM.png" width="285" height="271" srcset="http://simplystatistics.org/wp-content/uploads/2013/04/Screen-shot-2013-04-25-at-11.12.20-PM-300x285.png 300w, http://simplystatistics.org/wp-content/uploads/2013/04/Screen-shot-2013-04-25-at-11.12.20-PM.png 475w" sizes="(max-width: 285px) 100vw, 285px" /></a></p>
+
+<p>See the problem? If we took the data at face value we would conclude that there is a large (almost 2 fold) global change in expression when comparing, say, samples C and E. But they are technical replicates so the observed difference is not biologically driven. Discrepancies like these are the rule rather than the exception. Biologists seem to underestimate the amount of unwanted variability present in the data they produce. Look at enough data and you will quickly learn that, in most cases, unwanted experimental variability dwarfs the biological differences we are interested in discovering. Normalization is the statistical technique that saves biologists millions of dollars  a year by fixing this problem in silico rather than redoing the experiment.</p>
+
+<p>For the data above you might be tempted to simply standardize the data by subtracting the median. But the problem is more complicated than that as shown in the plot below. This plot shows the log ratio (M) versus the average of the logs intensities (A) for two technical replicates in which 16 probes (red dots) have been &ldquo;spiked-in&rdquo; to have true fold changes of 2. The other ~20,000 probesets (blue streak) are supposed to be unchanged (M=0). See the curvature of the genes that are supposed to be at 0?  Taken at face value, thousands of the low expressed probes exhibit larger differential expression than the only 16 that are actually different. That&rsquo;s a problem. And standardizing by the subtracting the median won&rsquo;t fix it. Non-linear biases such as this one are also quite common.<a href="http://simplystatistics.org/2013/04/26/mindlessly-normalizing-genomics-data-is-bad-but-ignoring-unwanted-variability-can-be-worse/screen-shot-2013-04-25-at-11-14-20-pm/" rel="attachment wp-att-1218"><img class=" wp-image-1218 alignright" alt="Screen shot 2013-04-25 at 11.14.20 PM" src="http://simplystatistics.org/wp-content/uploads/2013/04/Screen-shot-2013-04-25-at-11.14.20-PM.png" width="483" height="275" /></a></p>
+
+<p>QN offers one solution to this problem  if you can assume that the true distribution of what you are measuring is roughly the same across samples. Briefly, QN forces each sample to have the same distribution. The after picture above is the result of QN. It removes the curvature but preserves most of the real differences.</p>
+
+<p>So why should we be nervous? QN and other normalization techniques risk throwing the baby out with the bath water. What if there is a real global difference? If there is, and you use QN, you will miss it and you may introduce artifacts. <em>But the assumptions are no secret and it&rsquo;s up to the biologists to decide if they are reasonable.</em> At the same time, we have to be very careful about interpreting large scale changes given that we see large scale changes when we know there are none. Other than cases were global differences are forced or simulated, I have yet to see a good example in which QN causes more harm than good. I&rsquo;m sure there are some real data examples out there, so if you have one please share, as I would love to use it as an example in class.</p>
+
+<p>Also note that statisticians (including me) are working hard at deciphering ways  to normalize without the need for such strong assumptions. Although in their first incarnation they were useless, current control probes/transcripts techniques are promising. We have used them in the past to <a href="http://www.ncbi.nlm.nih.gov/pubmed/20858772">normalize methylation data</a> (a similar approach was used <a href="http://www.ncbi.nlm.nih.gov/pubmed/23101621">here</a> for gene expression data). And then there is <a style="font-size: 16px;" href="http://www.ncbi.nlm.nih.gov/pubmed/20976876">subset quantile normalization</a>. I am sure there are others and more to come. So Biologists, don&rsquo;t worry, we have your backs and serve at your pleasure. In the meantime don&rsquo;t be so afraid of QN: at least give it a try before you knock it.</p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2013/04/23/interview-at-yale-center-for-environmental-law-policy/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2013/04/23/interview-at-yale-center-for-environmental-law-policy/">Interview at Yale Center for Environmental Law &amp;amp; Policy</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2013/04/28/sunday-datastatistics-link-roundup-4282013/">Sunday data/statistics link roundup (4/28/2013)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2013/04/28/sunday-datastatistics-link-roundup-4282013/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

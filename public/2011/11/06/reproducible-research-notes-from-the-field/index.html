@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Reproducible research: Notes from the field &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Reproducible research: Notes from the field</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/11/06</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/reproducibility">reproducibility</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <p>Over the past year, I&#8217;ve been doing a lot of talking about reproducible research. Talking to people, talking on panel discussions, and talking about <a href="http://simplystatistics.tumblr.com/post/12243614318/i-gave-a-talk-on-reproducible-research-back-in" target="_blank">some of my own work</a>. It seems to me that interest in the topic has exploded recently, in part due to some recent scandals, such as the <a href="http://simplystatistics.tumblr.com/post/10068195751/the-duke-saga" target="_blank">Duke clinical trials fiasco</a>.</p>
+
+<p>If you are unfamiliar with the term &#8220;reproducible research&#8221;, the basic idea is that authors of published research should make available the necessary materials so that others may reproduce to a very high degree of similarity the published findings. If that definitions seems imprecise, well that&#8217;s because it is.</p>
+
+<p><!-- more -->I think reproducibility becomes easier to define in the context of a specific field or application. Reproducibility often comes up in the context of computational science. In computational science fields, often much of the work is done on the computer using often very large amounts of data. In other words, the analysis of the data is of comparable difficulty as the collection of the data (maybe even more complicated). Then the notion of reproducibility typically comes down to the idea of making the analytic data and the computer code available to others. That way, knowledgeable people can run your code on your data and presumably get your results. If others do not get your results, then that may be a sign of a problem, or perhaps a misunderstanding. In either case, a resolution needs to be found. Reproducibility is key to science much the way it is key to programming. When bugs are found in software, being able to reproduce the bug is an important step to fixing it. Anyone learning to program in C knows the pain of dealing with a memory-related bug, which will often exhibit seemingly random and non-reproducible behavior.</p>
+
+<p>My discussions with others about the need for reproducibility in science often range far and wide. One reason is that many people have very different ideas what (a) what is reproducibility and (b) why we need it. Here is my take on various issues.</p>
+
+<ul>
+<li><strong>Reproducibility is not replication</strong>. There&#8217;s often honest confusion between the notion of reproducibility and what I would call a &#8220;full replication&#8221;. A full replication doesn&#8217;t analyze the same dataset, but rather involves an independent investigator collecting an independent dataset conducting an independent analysis. Full replication has been a fundamental component of science for a long time now and will continue to be the primary yardstick for measuring the plausibility of scientific claims. I think most would agree that full replication is preferable, but often it is simply not possible.</li>
+<li><strong>Reproducibility is not needed solely to prevent fraud</strong>. I&#8217;ve heard many people emphasize reproducibility as a means to prevent fraud. Journal editors seem to think this is the main reason for demanding reproducibility. It is<em> one</em> reason, but to be honest, I&#8217;m not sure it&#8217;s all that useful for detecting fraud. If someone truly wants to commit fraud, then it&#8217;s possible to make the fraud reproducible. If I just generate a bunch of numbers and claim it as data that I collected, any analysis from that dataset can be reproducible. While demanding reproducibility may be useful for ferreting out certain types of fraud, it&#8217;s not a general solution and it&#8217;s not the primary reason we need it. </li>
+<li><strong>Reproducibility is not as easy as it sounds</strong>. Making one&#8217;s research reproducible is hard. It&#8217;s especially hard when you try to do it _after_ the research has been done. In that case it&#8217;s more like an audit, and I&#8217;m guessing for most people the word &#8220;audit&#8221; is NOT synonymous with &#8220;fun&#8221;. Even if you set out to make your work reproducible from the get go, it&#8217;s easy to miss things. Code can get lost (even with a version control system) and metadata can slip through the cracks. Even when you&#8217;ve done everything right, computers and software can change. Virtual machines like Amazon EC2 and others seem to have some potential. The single most useful tool that I have found is a good version control system, like <a href="http://git-scm.com/" target="_blank">git</a>. </li>
+<li><strong>At this point, anything would be better than nothing</strong>. Right now, I think the bar for reproducibility is quite low in the sense that most published work is not reproducible. Even if data are available, often the code that analyzed the data is not available. So if you&#8217;re publishing research and you want to make it at least partially reproducible, just put what you can out there. On the web, on <a href="http://github.com" target="_blank">github</a>, in a data repository, wherever you can. If you can&#8217;t publish the data, make your code available. Even that is better than nothing. In fact, I find reading someone&#8217;s code to be very informative and often questions can arise without looking at the data. Until we have a better infrastructure for distributing reproducible research, we will have to make do with what we have. But if we all start putting stuff out there, the conversation will turn from &#8220;Why should I make stuff available?&#8221; to &#8220;Why wouldn&#8217;t I make stuff available?&#8221;</li>
+</ul>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2011/11/05/new-ways-to-follow-simply-statistics/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2011/11/05/new-ways-to-follow-simply-statistics/">New ways to follow Simply Statistics</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2011/11/07/is-statistics-too-darn-hard/">Is Statistics too darn hard?</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2011/11/07/is-statistics-too-darn-hard/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

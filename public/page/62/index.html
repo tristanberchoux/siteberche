@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/07/sunday-data-statistics-link-roundup-10-7-12/">Sunday Data/Statistics Link Roundup (10/7/12)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/07</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/baseball">baseball</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/conspiracy-theory">conspiracy theory</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/evidence-based-policy">evidence based policy</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/gender-bias">gender bias</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/jack-welch">jack welch</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/peer-review">peer review</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/stats-chat">stats chat</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Jack Welch got a little conspiracy-theory crazy with the job numbers. Thomas Lumley over at StatsChat makes a pretty good case for debunking the theory. I think the real take home message of Thomas&#8217; post and one worth celebrating/highlighting is that agencies that produce the jobs report do so based on a fixed and well-defined study design. Careful efforts by government statistics agencies make it hard to fudge/change the numbers.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/10/07/sunday-data-statistics-link-roundup-10-7-12/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/07/fraud-in-the-scientific-literature/">Fraud in the Scientific Literature</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/07</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Fraud in the Scientific Literature
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/05/not-just-one-statistics-interview-john-mcgready-is/">Not just one statistics interview...John McGready is the Jon Stewart of statistics</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/05</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/biostatistics">biostatistics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/interview">interview</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/mcgready">mcgready</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/youtube">youtube</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  _Editor&#8217;s Note: We usually reserve Friday&#8217;s for posting Simply Statistics Interviews. This week, we have a special guest post by John McGready, a colleague of ours who has been doing interviews with many of us in the department and has some cool ideas about connecting students in their first statistics class with cutting edge researchers wrestling with many of the same concepts applied to modern problems. I&#8217;ll let him explain&#8230;_
+  </p>
+
+  
+  <footer>
+    <a href="/2012/10/05/not-just-one-statistics-interview-john-mcgready-is/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/04/statistics-project-ideas-for-students-part-2/">Statistics project ideas for students (part 2)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/04</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/aggregator">aggregator</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/coursera">coursera</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/fitbit">Fitbit</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/project-ideas">project ideas</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/r-package">R package</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A little while ago I wrote a post on statistics projects ideas for students. In honor of the first Simply Statistics Coursera offering, Computing for Data Analysis, here is a new list of student projects for folks excited about trying out those new R programming skills. Again we have rated each project with my best guess difficulty and effort required. Happy computing!
+Data Analysis
+ Use city data to predict areas with the highest risk for parking tickets.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/10/04/statistics-project-ideas-for-students-part-2/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/04/should-we-stop-publishing-peer-reviewed-papers/">Should we stop publishing peer-reviewed papers?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/04</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/blogging">blogging</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/idea">idea</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/peer-review">peer review</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/question">question</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Nate Silver, everyone&#8217;s favorite statistician made good, just gave an interview where he said he thinks many journal articles should be blog posts. I have been thinking about this same issue for a while now, and I&#8217;m not the only one. This is a really interesting post suggesting that although scientific journals once facilitated dissemination of ideas, they now impede the flow of information and make it more expensive. Two recent examples really drove this message home for me.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/10/04/should-we-stop-publishing-peer-reviewed-papers/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/03/this-is-an-awesome-paper-all-students-in-statistics/">This is an awesome paper all students in statistics should read</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/03</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/coding">coding</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/education">education</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/review">review</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/software">software</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The paper is a review of how to do software development for academics. I saw it via C. Titus Brown (who we have interviewed), he is also a co-author. How to write software (particularly for other people) is something that is under emphasized in many curricula. But it turns out this is also one of the more important components of disseminating your work in modern applied statistics. My only wish is that there was an accompanying website with resources/links for people to chase down.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/10/03/this-is-an-awesome-paper-all-students-in-statistics/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/03/2-d-author-lists/">2-D author lists</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/03</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/2-d-author-lists">2-d author lists</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/authors">authors</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/graphics">graphics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/publishing">publishing</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The order of authors on scientific papers matters a lot. The best places to be on a paper vary by field. But typically the first and the corresponding (usually last) authors are the prime real estate. When people are evaluated on the job market, for promotion, or to get grants, the number of first/corresponding author papers can be the difference between success and failure. At the same time, many journals list &#8220;authors contributions&#8221; at the end of the manuscript, but this is rarely prominently displayed.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/10/03/2-d-author-lists/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/10/02/the-more-statistics-blogs-the-better/">The more statistics blogs the better</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/10/02</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Good friend and friend of the blog Rob Gould has started a statistics blog called Citizen Statistician. What is a citizen statistician, you ask?
+ What is a citizen statistician? A citizen statistician participates in formal and informal data gathering. A citizen statistician is aware of his or her data trail, and is aware of the harm that could be done to themselves or to others through data aggregation. Citizen statisticians recognize opportunities to improve their personal or professional lives through analyzing data, and know how to share data with others.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/10/02/the-more-statistics-blogs-the-better/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/09/28/john-mcgready-interviews-the-esteemed-jeff-leek/">John McGready interviews Jeff Leek</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  John McGready interviews the esteemed Jeff Leek. This is bearded Jeff, in case you were wondering.
+(Source: http://www.youtube.com/)  
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/09/27/john-mcgready-a-fellow-faculty-member-in-the/">John McGready interviews Roger Peng</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/09/27</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  John McGready, a fellow faculty member in the Department of Biostatistics, interviewed me for his Statistical Reasoning class. In the interview we talk about some statistical contributions to air pollution epidemiology.
+(Source: http://www.youtube.com/)  
+  </p>
+
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/61/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;62 / 104&nbsp;</span>
+  
+  <a href="/page/63/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

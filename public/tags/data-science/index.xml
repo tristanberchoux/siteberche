@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science on Tristan Berchoux</title>
+    <link>/tags/data-science/</link>
+    <description>Recent content in Data Science on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Tue, 04 Feb 2014 09:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My Online Course Development Workflow</title>
+      <link>/2014/02/04/my-online-course-development-workflow/</link>
+      <pubDate>Tue, 04 Feb 2014 09:30:00 +0000</pubDate>
+      
+      <guid>/2014/02/04/my-online-course-development-workflow/</guid>
+      <description>One of the nice things about developing 9 new courses for the JHU Data Science Specialization in a short period of time is that you get to learn all kinds of cool and interesting tools. One of the ways that we were able to push out so much content in just a few months was that we did most of the work ourselves, rather than outsourcing things like video production and editing.</description>
+    </item>
+    
+    <item>
+      <title>NIH is looking for an Associate Director for Data Science: Statisticians should consider applying</title>
+      <link>/2013/04/08/nih-is-looking-for-an-associate-director-for-data-science-statisticians-should-consider-applying/</link>
+      <pubDate>Mon, 08 Apr 2013 16:22:07 +0000</pubDate>
+      
+      <guid>/2013/04/08/nih-is-looking-for-an-associate-director-for-data-science-statisticians-should-consider-applying/</guid>
+      <description>NIH understands the importance of data and several months ago they announced this new position. Here is an excerpt from the add:
+ The ADDS will focus on the urgent need and increased opportunities for capitalizing on the expanding collections of biomedical data to advance NIH’s mission. In doing so, the incumbent will provide programmatic NIH-wide leadership for areas of data science that relate to data emanating from many areas of study (e.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (1/6/2013)</title>
+      <link>/2013/01/06/sunday-datastatistics-link-roundup-162013/</link>
+      <pubDate>Sun, 06 Jan 2013 11:08:07 +0000</pubDate>
+      
+      <guid>/2013/01/06/sunday-datastatistics-link-roundup-162013/</guid>
+      <description>Not really statistics, but this is an interesting article about how rational optimization by individual actors does not always lead to an optimal solutiohn. Related, ere is the coolest street sign I think I&amp;rsquo;ve ever seen, with a heatmap of traffic density to try to influence commuters. An interesting paper that talks about how clustering is only a really hard problem when there aren&amp;rsquo;t obvious clusters. I was a little disappointed in the paper, because it defines the &amp;ldquo;obviousness&amp;rdquo; of clusters only theoretically by a distance metric.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (11/25/2012)</title>
+      <link>/2012/11/25/sunday-datastatistics-link-roundup-11252012/</link>
+      <pubDate>Sun, 25 Nov 2012 09:11:03 +0000</pubDate>
+      
+      <guid>/2012/11/25/sunday-datastatistics-link-roundup-11252012/</guid>
+      <description>My wife used to teach at Grinnell College, so we were psyched to see that a Grinnell player set the NCAA record for most points in a game. We used to go to the games, which were amazing to watch, when we lived in Iowa. The system the coach has in place there is a ton of fun to watch and is based on statistics! Someone has to vet the science writers at the Huffpo.</description>
+    </item>
+    
+    <item>
+      <title>How important is abstract thinking for graduate students in statistics?</title>
+      <link>/2012/07/27/how-important-is-abstract-thinking-for-graduate/</link>
+      <pubDate>Fri, 27 Jul 2012 13:57:01 +0000</pubDate>
+      
+      <guid>/2012/07/27/how-important-is-abstract-thinking-for-graduate/</guid>
+      <description>A recent lunchtime discussion here at Hopkins brought up the somewhat-controversial topic of abstract thinking in our graduate program. We, like a lot of other biostatistics/statistics programs, require our students to take measure theoretic probability as part of the curriculum. The discussion started as a conversation about whether we should require measure theoretic probability for our students. It evolved into a discussion of the value of abstract thinking (and whether measure theoretic probability was a good tool to measure abstract thinking).</description>
+    </item>
+    
+    <item>
+      <title>A disappointing response from @NatureMagazine about folks with statistical skills</title>
+      <link>/2012/04/30/a-disappointing-response-from-naturemagazine-about/</link>
+      <pubDate>Mon, 30 Apr 2012 15:02:56 +0000</pubDate>
+      
+      <guid>/2012/04/30/a-disappointing-response-from-naturemagazine-about/</guid>
+      <description>Last week I linked to an ad for a Data Editor position at Nature Magazine. I was super excited that Nature was recognizing data as an important growth area. But the ad doesn&amp;#8217;t mention anything about statistical analysis skills; it focuses exclusively on data management expertise. As I pointed out in the earlier post, managing data is only half the equation - figuring out what to do with the data is the other half.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (4/29)</title>
+      <link>/2012/04/29/sunday-data-statistics-link-roundup-4-29/</link>
+      <pubDate>Sun, 29 Apr 2012 22:57:41 +0000</pubDate>
+      
+      <guid>/2012/04/29/sunday-data-statistics-link-roundup-4-29/</guid>
+      <description>Nature genetics has an editorial on the Mayo and Myriad cases. I agree with this bit: &amp;#8220;In our opinion, it is not new judgments or legislation that are needed but more innovation. In the era of whole-genome sequencing of highly variable genomes, it is increasingly hard to justify exclusive ownership of particularly useful parts of the genome, and method claims must be more carefully described.&amp;#8221; Via Andrew J. One of Tech Review&amp;#8217;s 10 emerging technologies from a February 2003 article?</description>
+    </item>
+    
+    <item>
+      <title>Interview with Drew Conway - Author of &#34;Machine Learning for Hackers&#34;</title>
+      <link>/2012/04/13/interview-with-drew-conway-author-of-machine/</link>
+      <pubDate>Fri, 13 Apr 2012 13:31:21 +0000</pubDate>
+      
+      <guid>/2012/04/13/interview-with-drew-conway-author-of-machine/</guid>
+      <description>Drew Conway
+
+Drew Conway is a Ph.D. student in Politics at New York University and the co-ordinator of the New York Open Statistical Programming Meetup. He is the creator of the famous (or infamous) data science Venn diagram, the basis for our R function to determine if your a data scientist. He is also the co-author of Machine Learning for Hackers, a book of case studies that illustrates data science from a hacker&amp;#8217;s perspective.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (3/25)</title>
+      <link>/2012/03/25/sunday-data-statistics-link-roundup-3-25/</link>
+      <pubDate>Sun, 25 Mar 2012 15:58:25 +0000</pubDate>
+      
+      <guid>/2012/03/25/sunday-data-statistics-link-roundup-3-25/</guid>
+      <description>The psychologist whose experiment didn&amp;#8217;t replicate then went off on the scientists who did the replication experiment is at it again. I don&amp;#8217;t see a clear argument about the facts of the matter in his post, just more name calling. This seems to be a case study in what not to do when your study doesn&amp;#8217;t replicate. More on &amp;#8220;conceptual replication&amp;#8221; in there too.  Berkeley is running a data science course with instructors Jeff Hammerbacher and Mike Franklin, I looked through the notes and it looks pretty amazing.</description>
+    </item>
+    
+    <item>
+      <title>Cleveland&#39;s (?) 2001 plan for redefining statistics as &#34;data science&#34;
+</title>
+      <link>/2012/02/02/clevelands-2001-plan-for-redefining-statistics-as/</link>
+      <pubDate>Thu, 02 Feb 2012 12:36:58 +0000</pubDate>
+      
+      <guid>/2012/02/02/clevelands-2001-plan-for-redefining-statistics-as/</guid>
+      <description>This plan has been making the rounds on Twitter and is being attributed to William Cleveland in 2001 (thanks to Kasper for the link). I&amp;#8217;m not sure of the provenance of the document but it has some really interesting ideas and is worth reading in its entirety. I actually think that many Biostatistics departments follow the proposed distribution of effort pretty closely. One of the most interesting sections is the discussion of computing (emphasis mine):  Data analysis projects today rely on databases, computer and network hardware, and computer and network software.</description>
+    </item>
+    
+    <item>
+      <title>Data Scientist vs. Statistician</title>
+      <link>/2011/11/22/data-scientist-vs-statistician/</link>
+      <pubDate>Tue, 22 Nov 2011 12:41:00 +0000</pubDate>
+      
+      <guid>/2011/11/22/data-scientist-vs-statistician/</guid>
+      <description>There&amp;#8217;s in interesting discussion over at reddit on the difference between a data scientist and a statistician. My crude summary of the discussion seems to be that by and large they are the same but the phrase &amp;#8220;data scientist&amp;#8221; is just the hip new name for statistician that will probably sound stupid 5 years from now.
+My question is why isn&amp;#8217;t &amp;#8220;statistician&amp;#8221; hip? The comments don&amp;#8217;t seem to address that much (although a few go in that direction).</description>
+    </item>
+    
+  </channel>
+</rss>

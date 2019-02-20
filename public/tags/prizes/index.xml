@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prizes on Tristan Berchoux</title>
+    <link>/tags/prizes/</link>
+    <description>Recent content in Prizes on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 15 Apr 2012 17:30:14 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/prizes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday data/statistics link roundup (4/15)</title>
+      <link>/2012/04/15/sunday-data-statistics-link-roundup-4-15/</link>
+      <pubDate>Sun, 15 Apr 2012 17:30:14 +0000</pubDate>
+      
+      <guid>/2012/04/15/sunday-data-statistics-link-roundup-4-15/</guid>
+      <description>Incredibly cook, dynamic real-time maps of wind patterns in the United States. (Via Flowing Data) A d3.js coding tool that updates automatically as you update the code. This is going to be really useful for beginners trying to learn about D3. Real time coding (Via Flowing Data) An interesting blog post describing why the winning algorithm in the Netflix prize hasn&amp;#8217;t actually been implemented! It looks like it was too much of an engineering hassle.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Why I Indent My Code 8 Spaces &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Why I Indent My Code 8 Spaces</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2018/07/27</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+
+<p>Jenny Bryan recently gave a wonderful talk at the Use R! 2018 meeting in Brisbane about “Code Smells and Feels” (I recommend you <a href="https://youtu.be/7oyiPBjLAWY">watch a video of that talk</a>). Her talk covers various ways to detect when your code “smells” and how to fix those smells through refactoring. While there is quite a bit of literature on this with respect to other programming languages, it’s not well-covered with respect to R.</p>
+<p>In the video version of the talk (not in the slides) Jenny calls out my particular indentation rule, which is to use 8 spaces. In my experience, people tend to find this a rather extreme indentation policy, with maybe 4 spaces being at the outer limit of what they could imagine. But I’ve been using 8 spaces for a long time now and I’ve found that it has a number of benefits.</p>
+<p>First off, I did not make up the 8 space indent. I got it from the <a href="https://www.kernel.org/doc/Documentation/process/coding-style.rst">Linux kernal coding style document</a>. Chapter 1 says:</p>
+<blockquote>
+<p>Tabs are 8 characters, and thus indentations are also 8 characters. There are heretic movements that try to make indentations 4 (or even 2!) characters deep, and that is akin to trying to define the value of PI to be 3.</p>
+</blockquote>
+<p>I’ve found the Linux kernal coding style to be pretty useful for my R programming, but a lot of it is C-specific and so not relevant. Nevertheless, it’s worth a quick peruse.</p>
+<p>Personally, I’ve found 8 spaces is good for my aging eyes. I think my rule is that the appropriate number of spaces of indentation is proportional to the square of my age (I’m still working on that model though). At this point, code with a 2 space indent is indistinguishable from flush left.</p>
+<p>Before going on, I have to emphasize that the 8 space indent cannot exist in isolation. It has to be coupled with a right-hand side limit of 80 columns. Otherwise, you could just indent yourself off to infinity and there would be no consequences. An 80 column limit forces you to keep your code within reasonable limits. Also, if someone ever needs to read your code on a PDP/11 you’ll be A-okay.</p>
+<p>Most importantly though, I’ve found that the 8 space indent serves as a kind of early warning system for “smelly” code. Jenny gave some smelly examples in her talk and I thought I’d reproduce them here. This first example, as Jenny describes, suffers from not using the available class predicate functions to test for “numeric” or “integer”. Here’s the example with a 2 space indent.</p>
+<pre class="r"><code>bizarro &lt;- function(x) {
+  if (class(x)[[1]] == &quot;numeric&quot; || class(x)[[1]] == &quot;integer&quot;) {
+    -x
+  } else if (class(x)[[1]] == &quot;logical&quot;) {
+    !x
+  } else { 
+    stop(...) 
+  }
+}</code></pre>
+<p>That first <code>if</code> state sticks out a little bit because it’s rather long. Better code might use the <code>is.numeric()</code> and <code>is.integer()</code> functions.</p>
+<p>Here’s the same example with an 8 space indent.</p>
+<pre class="r"><code>bizarro &lt;- function(x) {
+        if (class(x)[[1]] == &quot;numeric&quot; || class(x)[[1]] == &quot;integer&quot;) {
+                -x
+        } else if (class(x)[[1]] == &quot;logical&quot;) {
+                !x
+        } else { 
+                stop(...) 
+        }
+}</code></pre>
+<p>Although, it’s not egregious, that first line is pushing up against the 80 column limit on the right-hand side. You might not do anything about it in this case, but the purpose of the indenting system is to at least trigger a reaction.</p>
+<p>The next example from Jenny’s talk is a bit more obvious. Here she gives a lesson in excessive <code>if-else</code> statements. The original code with 2 space indent is here.</p>
+<pre class="r"><code>get_some_data &lt;- function(config, outfile) {
+  if (config_ok(config)) {
+    if (can_write(outfile)) {
+      if (can_open_network_connection(config)) {
+        data &lt;- parse_something_from_network()
+        if(makes_sense(data)) {
+          data &lt;- beautify(data)
+          write_it(data, outfile)
+          return(TRUE)
+        } else {
+          return(FALSE)
+        }
+      } else {
+        stop(&quot;Can&#39;t access network&quot;)
+      }
+    } else {
+      ## uhm. What was this else for again?
+    }
+  } else {
+    ## maybe, some bad news about ... the config?
+  } 
+}</code></pre>
+<p>Now, it’s fair to say that this code already looks a bit smelly (fishy?), but it’s maybe passable from a visual standpoint. Let’s take a look at it with 8 space indents.</p>
+<pre class="r"><code>get_some_data &lt;- function(config, outfile) {
+        if (config_ok(config)) {
+                if (can_write(outfile)) {
+                        if (can_open_network_connection(config)) {
+                                data &lt;- parse_something_from_network()
+                                if(makes_sense(data)) {
+                                        data &lt;- beautify(data)
+                                        write_it(data, outfile)
+                                        return(TRUE)
+                                } else {
+                                        return(FALSE)
+                                }
+                        } else {
+                                stop(&quot;Can&#39;t access network&quot;)
+                        }
+                } else {
+                        ## uhm. What was this else for again?
+                }
+        } else {
+                ## maybe, some bad news about ... the config?
+        } 
+}</code></pre>
+<p>Now the code looks downright absurd, practically crying out for refactoring, and rightly so! The five levels of nesting will be unreadable as soon as you blink your eyes.</p>
+<p>That’s basically it. I’ve found zero downsides to using an 8 space indent and a number of upsides, including cleaner, more modular code. Because the visual indicator penalizes against lots of indenting, you are usually forced to write out separate functions to handle different tasks rather than go one more level in. This not only has the benefit of being modular, but it’s also useful for things like profiling (it can be very uninformative to profile a single monolithic function).</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2018/07/23/partitioning-the-variation-in-data/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2018/07/23/partitioning-the-variation-in-data/">Partitioning the Variation in Data</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2018/08/09/the-trillion-dollar-question/">The Trillion Dollar Question</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2018/08/09/the-trillion-dollar-question/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

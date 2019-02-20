@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Crowdsourcing on Tristan Berchoux</title>
+    <link>/tags/crowdsourcing/</link>
+    <description>Recent content in Crowdsourcing on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 11 Jan 2012 13:19:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/crowdsourcing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Help us rate health news reporting with citizen-science powered http://www.healthnewsrater.com</title>
+      <link>/2012/01/11/healthnewsrater/</link>
+      <pubDate>Wed, 11 Jan 2012 13:19:00 +0000</pubDate>
+      
+      <guid>/2012/01/11/healthnewsrater/</guid>
+      <description>We here at Simply Statistics are big fans of science news reporting. We read newspapers, blogs, and the news sections of scientific journals to keep up with the coolest new research. But health science reporting, although exciting, can also be incredibly frustrating to read. Many articles have sensational titles, like &amp;#8220;How using Facebook could raise your risk of cancer&amp;#8221;. The articles go on to describe some research and interview a few scientists, then typically make fairly large claims about what the research means.</description>
+    </item>
+    
+  </channel>
+</rss>

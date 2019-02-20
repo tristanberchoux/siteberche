@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fdr on Tristan Berchoux</title>
+    <link>/tags/fdr/</link>
+    <description>Recent content in Fdr on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Thu, 26 Jan 2012 14:00:05 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/fdr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>When should statistics papers be published in Science and Nature?</title>
+      <link>/2012/01/26/when-should-statistics-papers-be-published-in-science/</link>
+      <pubDate>Thu, 26 Jan 2012 14:00:05 +0000</pubDate>
+      
+      <guid>/2012/01/26/when-should-statistics-papers-be-published-in-science/</guid>
+      <description>Like many statisticians, I was amped to see a statistics paper appear in Science. Given the impact that statistics has on the scientific community, it is a shame that more statistics papers don&amp;#8217;t appear in the glossy journals like Science or Nature. As I pointed out in the previous post, if the paper that introduced the p-value was cited every time this statistic was used, the paper would have over 3 million citations!</description>
+    </item>
+    
+  </channel>
+</rss>

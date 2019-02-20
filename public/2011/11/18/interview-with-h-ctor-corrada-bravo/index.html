@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Interview with Héctor Corrada Bravo &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Interview with Héctor Corrada Bravo</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2011/11/18</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/computer-science">computer science</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/h%C3%A9ctor-corrada-bravo">Héctor Corrada Bravo</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/interview">interview</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/peer-review">peer review</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  <p><strong>Héctor Corrada Bravo</strong></p>
+
+<p><strong><img height="200" src="http://biostat.jhsph.edu/~jleek/hcb.jpg" width="300" /></strong></p>
+
+<p>Héctor Corrada Bravo is an assistant professor in the Department of Computer Science and the Center for Bioinformatics and Computational Biology at the University of Maryland, College Park. He moved to College Park after finishing his Ph.D. in computer science at the University of Wisconsin and a postdoc in biostatistics at the Johns Hopkins Bloomberg School of Public Health. He has done outstanding work at the intersection of molecular biology, computer science, and statistics. For more info check out his <a href="http://www.cbcb.umd.edu/~hcorrada/" target="_blank">webpage</a>.</p>
+
+<!-- more -->
+
+<p><strong><span>Which term applies to you: statistician/data scientist/computer</span></strong><br />
+<strong><span>scientist/machine learner?</span></strong></p>
+
+<p><span>I want to understand interesting phenomena (in my case mostly in</span><br />
+<span>biology and medicine) and I </span><span>believe that our ability to collect a large number of relevant</span><br />
+<span>measurements and infer characteristics of these phenomena can drive</span><br />
+<span>scientific discovery and commercial innovation in the near future.</span><br />
+<span>Perhaps that makes me a data scientist and means that depending on the</span><br />
+<span>task at hand one or more of the other terms apply.</span></p>
+
+<p><span>A lot of the distinctions many people make between these terms are</span><br />
+<span>vacuous and unnecessary, but some are nonetheless useful to think</span><br />
+<span>about. For example, both statisticians and machine learners [sic] know</span><br />
+<span>how to create statistical algorithms </span><span>that compute interesting and informative objects using measurements </span><span>(perhaps) obtained through some stochastic or partially observed</span><br />
+<span>process. These objects could be genomic tools for cancer screening, or</span><br />
+<span>statistics that better reflect the relative impact of baseball players</span><br />
+<span>on team success.</span><br />
+<span> </span></p>
+
+<p><span>Both fields also give us ways to evaluate and characterize these objects.</span><br />
+<span>However, there are times when these objects are tools that fulfill an</span><br />
+<span>immediately utilitarian purpose and thinking like an engineer might</span><br />
+<span>(as many people in Machine Learning do) is the right approach.</span><br />
+<span>Other times, these objects are there to help us get insights about our</span><br />
+<span>world and thinking in ways that many statisticians do is the right</span><br />
+<span>approach.  You need both of these ways of thinking to do interesting</span><br />
+<span>science and dogmatically avoiding either of them is a terrible idea.</span></p>
+
+<p><strong><span>How did you get into statistics/data science (i.e. your history)?</span></strong></p>
+
+<p><span>I got interested in Artificial Intelligence at one point, and found</span><br />
+<span>that my mathematics background was nicely suited to work on this. Once</span><br />
+<span>I got into it, thinking about statistics and how to analyze and</span><br />
+<span>interpret data was natural and necessary. I started working with two</span><br />
+<span>wonderful advisors a</span><span>t Wisconsin, Raghu Ramakrishnan (CS) and Grace Wahba (Statistics)</span><br />
+<span>that helped shape the way I approach problems from different angles</span><br />
+<span>and with different goals. The last piece was discovering that</span><br />
+<span>computational biology is a fantastic setting in which to apply and</span><br />
+<span>devise these methods </span><span>to answer really interesting questions.</span></p>
+
+<p><strong><span>What is the problem currently driving you?</span></strong></p>
+
+<p><span>I&#8217;ve been working on cancer epigenetics to find specific genomic</span><br />
+<span>measurements for which increased stochasticity appears to be general</span><br />
+<span>across multiple cancer types. Right now, I&#8217;m really wondering how far</span><br />
+<span>into the clinic can these discoveries be taken, if at all. For</span><br />
+<span>example, can we build tools that use these genomic measurements to</span><br />
+<span>improve cancer screening?</span></p>
+
+<p><strong><span>How do you see CS/statistics merging in the future?</span></strong></p>
+
+<p><span>I think that future got here some time ago, but is about to get much</span><br />
+<span>more interesting.</span></p>
+
+<p><span>Here is one example: Computer Science is about creating and analyzing</span><br />
+<span>algorithms and building the systems that can implement them. Some of</span><br />
+<span>what </span><span>many computer scientists have done looks at problems concerning how to</span><br />
+<span>keep, find and ship around information (Operating Systems, Networks,</span><br />
+<span>Databases, etc.). Many times these have been driven by very specific</span><br />
+<span>needs, e.g., commercial transactions in databases. In some ways,</span><br />
+<span>companies have moved from from asking how do I use data to keep track</span><br />
+<span>of my activities to how do I use data to decide which activities to do</span><br />
+<span>and how to do them. Statistical tools should be used to answer these</span><br />
+<span>questions, and systems built by computer scientists have statistical</span><br />
+<span>algorithms at their core.</span></p>
+
+<p><strong><span>Beyond R, what are some really useful computational tools for</span></strong><br />
+<strong><span>statisticians to know about?</span></strong></p>
+
+<p><span>I think a computational tool that everyone can benefit a lot from</span><br />
+<span>understanding better is algorithm design and analysis. This doesn&#8217;t</span><br />
+<span>have to be at a particularly deep level, but just getting a sense of</span><br />
+<span>how long a particular process might take, </span><span>and how to devise a different way of doing it that might make it more </span><span>efficient is really useful. I&#8217;ve been toying with the idea of creating </span><span>a CS course called (something like) &#8220;Highlights of continuous</span><br />
+<span>mathematics for computer science&#8221; that reminds everyone of the cool</span><br />
+<span>stuff that one learns in math </span><span>now that we can appreciate their usefulness. Similarily, I think</span><br />
+<span>statistics students can benefit from &#8220;Highlights of discrete</span><br />
+<span>mathematics for statisticians&#8221;.</span></p>
+
+<p><span>Now a request for comments below from you and readers: (5a) Beyond R,</span><br />
+<span>what are some really useful statistical tools for computer scientists</span><br />
+<span>to know about?</span></p>
+
+<p><strong><span>Review times in statistics journals are long, should statisticians</span></strong><br />
+<strong><span>move to conference papers?</span></strong></p>
+
+<p><span>I don&#8217;t think so. Long review times (anything more than 3 weeks) are</span><br />
+<span>really not necessary. We tend to publish in journals with fairly quick</span><br />
+<span>review times that produce (for the most part) really useful and</span><br />
+<span>insightful reviews.</span><br />
+<span> </span></p>
+
+<p><span>I was recently talking to senior members in my field who were telling</span><br />
+<span>me stories about the &#8220;old times&#8221; when CS was moving from mainly</span><br />
+<span>publishing in journals to now mainly publishing in conferences. But</span><br />
+<span>now, people working </span><span>in collaborative projects (like computational biology) work in fields</span><br />
+<span>that primarily publish in journals, so the field needs to be able to</span><br />
+<span>properly evaluate their impact and productivity. There is no perfect</span><br />
+<span>system.</span><br />
+<span> </span></p>
+
+<p><span>For instance, review requests in fields where conferences are the main</span><br />
+<span>publication venue come in waves (dictated by conference schedule).</span><br />
+<span>Reviewers have a lot of papers to go over in a relatively short time</span><br />
+<span>which makes their job of providing really helpful and fair reviews not</span><br />
+<span>so easy. So, in that respect, </span><span>the journal system can be better. </span><span>The one thing that is universally </span><span>true is that you don&#8217;t need long review times.</span></p>
+
+<p><span><strong>Previous Interviews:</strong> <a href="http://simplystatistics.tumblr.com/post/11436138110/interview-with-daniela-witten" target="_blank">Daniela Witten</a>, <a href="http://simplystatistics.tumblr.com/post/11729003971/interview-with-chris-barr" target="_blank">Chris Barr</a>, <a href="http://simplystatistics.tumblr.com/post/12328728291/interview-with-victoria-stodden" target="_blank">Victoria Stodden</a></span></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2011/11/17/google-scholar-pages/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2011/11/17/google-scholar-pages/">Google Scholar Pages</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2011/11/20/show-em-the-data/">Show &#39;em the data!</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2011/11/20/show-em-the-data/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

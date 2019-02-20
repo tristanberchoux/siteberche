@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Competition on Tristan Berchoux</title>
+    <link>/tags/competition/</link>
+    <description>Recent content in Competition on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 16 Sep 2012 13:59:53 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/competition/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (9/16/12)</title>
+      <link>/2012/09/16/sunday-data-statistics-link-roundup-9-16-12/</link>
+      <pubDate>Sun, 16 Sep 2012 13:59:53 +0000</pubDate>
+      
+      <guid>/2012/09/16/sunday-data-statistics-link-roundup-9-16-12/</guid>
+      <description>There has been a lot of talk about the Michael Lewis (of Moneyball fame) profile of Obama in Vanity fair. One interesting quote I think deserves a lot more discussion is: &amp;#8220;On top of all of this, after you have made your decision, you need to feign total certainty about it. People being led do not want to think probabilistically.&amp;#8221; This is a key issue that is only going to get worse going forward.</description>
+    </item>
+    
+    <item>
+      <title>Guest Post: SMART thoughts on the ADHD 200 Data Analysis Competition</title>
+      <link>/2011/11/02/guest-post-smart-thoughts-on-the-adhd-200-data/</link>
+      <pubDate>Wed, 02 Nov 2011 15:37:42 +0000</pubDate>
+      
+      <guid>/2011/11/02/guest-post-smart-thoughts-on-the-adhd-200-data/</guid>
+      <description>Note: _This is a guest post by our colleagues Brian Caffo, Ani Eloyan, Fang Han, Han Liu,John Muschelli, Mary Beth Nebel, Tuo Zhao and Ciprian Crainiceanu. They won the ADHD 200 imaging data analysis competition. There has been some controversy around the results because one team obtained a higher score without using any of the imaging data. Our colleagues have put together a very clear discussion of the issues raised by the competition so we are publishing it here to contribute to the discussion.</description>
+    </item>
+    
+  </channel>
+</rss>

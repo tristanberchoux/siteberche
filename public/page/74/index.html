@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2012/06/26/hilary-mason-from-tiny-links-big-insights/">Hilary Mason: From Tiny Links, Big Insights</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/06/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Hilary Mason: From Tiny Links, Big Insights
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/06/25/the-evolution-of-music/">The Evolution of Music</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/06/25</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/music">Music</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The Evolution of Music
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/06/25/a-specific-suggestion-to-help-recruit-retain-women/">A specific suggestion to help recruit/retain women faculty at Hopkins</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/06/25</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/women-in-science">women in science</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A recent article by a former Obama administration official has stirred up debate over the obstacles women face in balancing work/life. This reminded me of this report written by a committee here at Hopkins to help resolve the current gender-based career obstacles for women faculty. The report is great, but in practice we have a long way to go. For example, my department has not hired a woman at the tenure track level in 15 years.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/06/25/a-specific-suggestion-to-help-recruit-retain-women/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/06/24/sunday-data-statistics-link-roundup-6-24/">Sunday data/statistics link roundup (6/24)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/06/24</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/credentials">credentials</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/education">education</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/methods">methods</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/science">science</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/sports">sports</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/statistics-and-the-science-club">statistics and the science club</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  We&#8217;ve got a new domain! You can still follow us on tumblr or here: http://simplystatistics.org/.  A cool article on MIT&#8217;s annual sports statistics conference (via @storeylab). I love how the guy they chose to highlight created what I would consider a pretty simple visualization with known tools - but it turns out it is potentially a really new way of evaluating the shooting range of basketball players. This is my favorite kind of creativity in statistics.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/06/24/sunday-data-statistics-link-roundup-6-24/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/06/22/statistics-and-the-science-club/">Statistics and the Science Club</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/06/22</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  One of my favorite movies is Woody Allen&#8217;s Annie Hall. If you&#8217;re my age and you haven&#8217;t seen it, I usually tell people it&#8217;s like When Harry Met Sally, except really good. The movie opens with Woody Allen&#8217;s character Alvy Singer explaining that he would &#8220;never want to belong to any club that would have someone like me for a member&#8221;, a quotation he attributes to Groucho Marx (or Freud).
+  </p>
+
+  
+  <footer>
+    <a href="/2012/06/22/statistics-and-the-science-club/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/06/20/pro-tips-for-grad-students-in-statistics-biostatistics/">Pro Tips for Grad Students in Statistics/Biostatistics (Part 2)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/06/20</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/go-getter">go getter</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/pro-tips">pro tips</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/seminars">seminars</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  This is the second in my series on pro tips for graduate students in statistics/biostatistics. For more tips, see part 1.  Meet with seminar speakers. When you go on the job market face recognition is priceless. I met Scott Zeger at UW when I was a student. When I came for an interview I already knew him (and Ingo, and Rafa, and &#8230;.). An even better idea&#8230;ask a question during the seminar.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/06/20/pro-tips-for-grad-students-in-statistics-biostatistics/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/06/19/e-p-a-casts-new-soot-standard-as-easily-met/">E.P.A. Casts New Soot Standard as Easily Met</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/06/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  E.P.A. Casts New Soot Standard as Easily Met
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/06/18/pro-tips-for-grad-students-in-statistics-biostatistics-2/">Pro Tips for Grad Students in Statistics/Biostatistics (Part 1)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/06/18</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/advice">advice</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/data-analysis">data analysis</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/pro-tips">pro tips</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/reproducible-research">reproducible research</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/sensible-models">sensible models</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I just finished teaching a Ph.D. level applied statistical methods course here at Hopkins. As part of the course, I gave one &#8220;pro-tip&#8221; a day; something I wish I had learned in graduate school that has helped me in becoming a practicing applied statistician. Here are the first three, more to come soon.   A major component of being a researcher is knowing what&#8217;s going on in the research community.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/06/18/pro-tips-for-grad-students-in-statistics-biostatistics-2/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/06/17/sunday-data-statistics-link-roundup-6-17/">Sunday data/statistics link roundup (6/17)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/06/17</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/asa">ASA</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/consumer-genome">Consumer Genome</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/peer-review">peer review</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/peerj">PeerJ</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/sunday-links">sunday links</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/terms-and-conditions">Terms and Conditions</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/tesla">Tesla</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Happy Father&#8217;s Day!
+ A really interesting read on randomized controlled trials (RCTs) and public policy. The examples in the boxes are fantastic. This seems to be one of the cases where the public policy folks are borrowing ideas from Biostatistics, which has been involved in randomized controlled trials for a long time. It&#8217;s a cool example of adapting good ideas in one discipline to the specific challenges of another.  Roger points to this link in the NY Times about the &#8220;Consumer Genome&#8221;, which basically is a collection of information about your purchases and consumer history.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/06/17/sunday-data-statistics-link-roundup-6-17/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2012/06/15/statisticians-asa-and-big-data/">Statisticians, ASA, and Big Data</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Admin</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/06/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Today I got my copy of Amstat News and eagerly opened it before I realized it was not the issue with the salary survey&#8230;.
+But the President&#8217;s Corner section had the following column on big data by ASA president Robert Rodriguez.
+ Big Data is big news. It is the focus of stories in The New York Times and the subject of technology blogs, business forums, and economic studies. This column describes how statisticians can prepare for opportunities in Big Data and explains the distinctive value our profession can provide.
+  </p>
+
+  
+  <footer>
+    <a href="/2012/06/15/statisticians-asa-and-big-data/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/73/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;74 / 104&nbsp;</span>
+  
+  <a href="/page/75/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

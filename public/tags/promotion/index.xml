@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Promotion on Tristan Berchoux</title>
+    <link>/tags/promotion/</link>
+    <description>Recent content in Promotion on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Thu, 24 May 2012 15:57:37 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/promotion/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>&#34;How do we evaluate statisticians working in genomics? Why don&#39;t they publish in stats journals?&#34; Here is my answer
+</title>
+      <link>/2012/05/24/how-do-we-evaluate-statisticians-working-in-genomics/</link>
+      <pubDate>Thu, 24 May 2012 15:57:37 +0000</pubDate>
+      
+      <guid>/2012/05/24/how-do-we-evaluate-statisticians-working-in-genomics/</guid>
+      <description>During the past couple of years I have been asked these questions by several department chairs and other senior statisticians interested in hiring or promoting faculty working in genomics. The main difficulty stems from the fact that we (statisticians working in genomics) publish in journals outside the mainstream statistical journals. This can be a problem during evaluation because a quick-and-dirty approach to evaluating an academic statistician is to count papers in the Annals of Statistics, JASA, JRSS and Biometrics.</description>
+    </item>
+    
+  </channel>
+</rss>

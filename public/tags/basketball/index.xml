@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Basketball on Tristan Berchoux</title>
+    <link>/tags/basketball/</link>
+    <description>Recent content in Basketball on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Mon, 28 Jan 2013 11:33:26 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/basketball/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data supports claim that if Kobe stops ball hogging the Lakers will win more</title>
+      <link>/2013/01/28/data-supports-claim-that-if-kobe-stops-ball-hogging-the-lakers-will-win-more/</link>
+      <pubDate>Mon, 28 Jan 2013 11:33:26 +0000</pubDate>
+      
+      <guid>/2013/01/28/data-supports-claim-that-if-kobe-stops-ball-hogging-the-lakers-will-win-more/</guid>
+      <description>The Lakers recently snapped a four game losing streak. In that game Kobe, the league leader in field goal attempts and missed shots, had a season low of 14 points but a season high of 14 assists. This makes sense to me since Kobe shooting less means more efficient players are shooting more. Kobe has a lower career true shooting % than Gasol, Howard and Nash (ranked 17,3 and 2 respectively).</description>
+    </item>
+    
+    <item>
+      <title>Why don&#39;t we hear more about Adrian Dantley on ESPN? This graph makes me think he was as good an offensive player as Michael Jordan.</title>
+      <link>/2012/02/03/why-dont-we-hear-more-about-adrian-dantley-on-espn/</link>
+      <pubDate>Fri, 03 Feb 2012 14:02:00 +0000</pubDate>
+      
+      <guid>/2012/02/03/why-dont-we-hear-more-about-adrian-dantley-on-espn/</guid>
+      <description>In my last post I complained about efficiency not being discussed enough by NBA announcers and commentators. I pointed out that some of the best scorers have relatively low FG% or TS%. However, via the comments it was pointed out that top scorers need to take more difficult shots and thus are expected to have lower efficiency. The plot below (made with this R script) seems to confirm this (click image to enlarge) .</description>
+    </item>
+    
+    <item>
+      <title>This graph makes me think Kobe is not that good, he just shoots a lot</title>
+      <link>/2012/01/31/this-graph-makes-me-think-kobe-is-not-that-good-he/</link>
+      <pubDate>Tue, 31 Jan 2012 14:02:00 +0000</pubDate>
+      
+      <guid>/2012/01/31/this-graph-makes-me-think-kobe-is-not-that-good-he/</guid>
+      <description>I find it surprising that NBA commentators rarely talk about field goal percentage. Everybody knows that the more you shoot the more you score. But players that score a lot are admired without consideration of their FG%. Of course having a high FG% is not necessarily admirable as many players only take easy shots, while top-scorers need to take difficult ones. Regardless, missing is undesirable and players that miss more than usual are not criticized enough.</description>
+    </item>
+    
+  </channel>
+</rss>

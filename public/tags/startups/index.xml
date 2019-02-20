@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Startups on Tristan Berchoux</title>
+    <link>/tags/startups/</link>
+    <description>Recent content in Startups on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Thu, 20 Sep 2012 13:55:58 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/startups/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Every professor is a startup</title>
+      <link>/2012/09/20/every-professor-is-a-startup/</link>
+      <pubDate>Thu, 20 Sep 2012 13:55:58 +0000</pubDate>
+      
+      <guid>/2012/09/20/every-professor-is-a-startup/</guid>
+      <description>There has been a lot of discussion lately about whether to be in academia or industry. Some of it I think is a bit unfair to academia. Then I saw this post on Quora asking what Hilary Mason&amp;#8217;s contributions were to machine learning, like she hadn&amp;#8217;t done anything. It struck me as a bit of academia hating on industry*. I don&amp;#8217;t see why one has to be better/worse than the other, as Roger points out, there is no perfect job and it just depends on what you want to do.</description>
+    </item>
+    
+    <item>
+      <title>Schlep blindness in statistics</title>
+      <link>/2012/05/28/schlep-blindness-in-statistics/</link>
+      <pubDate>Mon, 28 May 2012 14:19:24 +0000</pubDate>
+      
+      <guid>/2012/05/28/schlep-blindness-in-statistics/</guid>
+      <description>This is yet another outstanding post by Paul Graham, this time on &amp;#8220;Schlep Blindness&amp;#8221;. He talks about how there are great startup ideas that no one considers because they are too much of a &amp;#8220;schlep&amp;#8221; (a tedious unpleasant task). He talks about how most founders of startups want to put up a clever bit of code they wrote and just watch the money flow in. But of course it doesn&amp;#8217;t work like that, you need to advertise, interact with customers, raise money, go out and promote your work, fix bugs at 3am, etc.</description>
+    </item>
+    
+    <item>
+      <title>Interview with Amy Heineike - Director of Mathematics at Quid</title>
+      <link>/2012/03/19/interview-with-amy-heineike-director-of-mathematics/</link>
+      <pubDate>Mon, 19 Mar 2012 14:00:00 +0000</pubDate>
+      
+      <guid>/2012/03/19/interview-with-amy-heineike-director-of-mathematics/</guid>
+      <description>Amy Heineike  &amp;lt;div&amp;gt; &amp;lt;strong&amp;gt;&amp;lt;img src=&amp;quot;http://media.tumblr.com/tumblr_m1588osxOV1r08wvg.jpg&amp;quot; /&amp;gt;&amp;lt;/strong&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;strong&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;/strong&amp;gt;Amy Heineike is the Director of Mathematics at &amp;lt;a href=&amp;quot;http://quid.com/&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;Quid&amp;lt;/a&amp;gt;, a startup that seeks to understand technology development and dissemination through data analysis. She was the first employee at Quid, where she helped develop their technology early on. She has been recognized as one of the &amp;lt;a href=&amp;quot;http://thephenomlist.com/lists/8/people/32&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;top Big Data Scientists&amp;lt;/a&amp;gt;. As a part of our ongoing &amp;lt;a href=&amp;quot;http://simplystatistics.</description>
+    </item>
+    
+    <item>
+      <title>Why statisticians should join and launch startups</title>
+      <link>/2012/01/23/why-statisticians-should-join-and-launch-startups/</link>
+      <pubDate>Mon, 23 Jan 2012 14:00:05 +0000</pubDate>
+      
+      <guid>/2012/01/23/why-statisticians-should-join-and-launch-startups/</guid>
+      <description>The tough economic times we live in, and the potential for big paydays, have made entrepreneurship cool. From the venture capitalist-in-chief, to the javascript coding mayor of New York, everyone is on board. No surprise there, successful startups lead to job creation which can have a major positive impact on the economy. The game has been dominated for a long time by the folks over in CS. But the value of many recent startups is either based on, or can be magnified by, good data analysis.</description>
+    </item>
+    
+    <item>
+      <title>Data analysis companies getting gobbled up</title>
+      <link>/2011/09/08/data-analysis-companies-getting-gobbled-up/</link>
+      <pubDate>Thu, 08 Sep 2011 12:36:00 +0000</pubDate>
+      
+      <guid>/2011/09/08/data-analysis-companies-getting-gobbled-up/</guid>
+      <description>Companies that specialize in data analysis, or essentially, statistics, are getting gobbled up by larger companies. IBM bought SPSS, then later Algorithmics. MSCI bought RiskMetrics. HP bought Autonomy. Who&amp;#8217;s next? SAS?</description>
+    </item>
+    
+  </channel>
+</rss>

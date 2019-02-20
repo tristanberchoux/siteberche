@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 D Author Lists on Tristan Berchoux</title>
+    <link>/tags/2-d-author-lists/</link>
+    <description>Recent content in 2 D Author Lists on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 03 Oct 2012 14:00:14 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/2-d-author-lists/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2-D author lists</title>
+      <link>/2012/10/03/2-d-author-lists/</link>
+      <pubDate>Wed, 03 Oct 2012 14:00:14 +0000</pubDate>
+      
+      <guid>/2012/10/03/2-d-author-lists/</guid>
+      <description>The order of authors on scientific papers matters a lot. The best places to be on a paper vary by field. But typically the first and the corresponding (usually last) authors are the prime real estate. When people are evaluated on the job market, for promotion, or to get grants, the number of first/corresponding author papers can be the difference between success and failure. At the same time, many journals list &amp;#8220;authors contributions&amp;#8221; at the end of the manuscript, but this is rarely prominently displayed.</description>
+    </item>
+    
+  </channel>
+</rss>

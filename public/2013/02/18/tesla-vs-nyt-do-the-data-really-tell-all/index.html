@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tesla vs. NYT: Do the Data Really Tell All? &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tesla vs. NYT: Do the Data Really Tell All?</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/02/18</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>I&rsquo;ve enjoyed so far the back and forth between Tesla Motors and New York Times reporter John Broder. The short version is</p>
+
+<ul>
+<li>Broder <a href="http://www.nytimes.com/2013/02/10/automobiles/stalled-on-the-ev-highway.html?smid=pl-share">tested one of Tesla&rsquo;s new Model S all-electric sedans</a> on a drive from Washington, D.C. to Groton, CT. Part of the reason for this specific trip was to make use of Tesla&rsquo;s new supercharger stations along the route (one in Delaware and one in Connecticut).</li>
+<li>Broder&rsquo;s trip appeared to have some bumps, including running out of electricity at one point and requiring a tow.</li>
+<li>After the review was published in the New York Times, Elon Musk, the CEO/Founder of Tesla, was apparently livid. He published a <a href="http://www.teslamotors.com/blog/most-peculiar-test-drive">detailed response</a> on the Tesla blog explaining that what Broder wrote in his review was not true and that &ldquo;he simply did not accurately capture what happened and worked very hard to force our car to stop running&rdquo;.</li>
+<li>Broder has since <a href="http://wheels.blogs.nytimes.com/2013/02/14/that-tesla-data-what-it-says-and-what-it-doesnt/">responded to Musk&rsquo;s response</a> with further explanation.</li>
+</ul>
+
+<p>Of course, the most interesting aspect of Musk&rsquo;s response on the Tesla blog was that he published the data collected by the car during Broder&rsquo;s test drive. When revelations of this data came about, I thought it was a bit creepy, but Musk makes clear in his post that they require data collection for all reviewers because of a previous bad experience. So, the fact that data were being collected on speed, cabin temperature, battery charge %, and rated range remaining, was presumably known to all, especially Broder. Given that you know Big Brother Musk is watching, it seems odd to deliberately lie in a widely read publication like the Times.</p>
+
+<p>Having read the original article, Musk&rsquo;s response, and Broder&rsquo;s rebuttal, one things is clear to me&ndash;there&rsquo;s more than one way to see the data. The challenge here is that Broder had the car, but not the data, so had to rely on his personal recollection and notes. Musk has the data, but wasn&rsquo;t there, and so has to rely on peering at graphs to interpret what happened on the trip.</p>
+
+<p>One graph in particular was fascinating. Musk shows a <a href="http://www.teslamotors.com/sites/default/files/blog_images/speedmph0.jpg">periodic-looking segment of the speed graph</a> and concludes</p>
+
+<blockquote>
+<p>Instead of plugging in the car, <span style="text-decoration: underline;">he drove in circles</span> for over half a mile in a tiny, 100-space parking lot. When the Model S valiantly refused to die, he eventually plugged it in.</p>
+</blockquote>
+
+<p>Broder claims</p>
+
+<blockquote>
+<p>I drove around the Milford service plaza in the dark looking for the Supercharger, which is not prominently marked. I was not trying to drain the battery. (It was already on reserve power.) As soon as I found the Supercharger, I plugged the car in.</p>
+</blockquote>
+
+<p>Okay, so who&rsquo;s right? Isn&rsquo;t the data supposed to settle this?</p>
+
+<p>In a few other cases in this story, the data support both people. In particular, it seems that there was some serious miscommunication between Broder and Tesla&rsquo;s staff. I&rsquo;m sure they also have recordings of those telephone calls too but they were not reproduced in Musk&rsquo;s response.</p>
+
+<p>The bottom line here, in my opinion, is that sometimes the data don&rsquo;t tell all, especially &ldquo;big data&rdquo;. In the end, data are one thing, interpretation is another. Tesla had reams of black-box data from the car and yet some of the data still appear to be open to interpretation. My guess is that the data Tesla collects is not collected specifically to root out liars, and so is maybe not optimized for this purpose. Which leads to another key point about big data&ndash;they are often used &ldquo;off-label&rdquo;, i.e. not for the purpose they were originally designed.</p>
+
+<p>I read this story with interest because I actually think Tesla is a fascinating company that makes cool products (that sadly, I could never afford). This episode will surely not be the end of Tesla or of the New York Times, but it illustrates to me that simply &ldquo;having the data&rdquo; doesn&rsquo;t necessarily give you what you want.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2013/02/17/sunday-datastatistics-link-roundup-2172013/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2013/02/17/sunday-datastatistics-link-roundup-2172013/">Sunday data/statistics link roundup (2/17/2013)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2013/02/24/sunday-datastatistics-link-roundup-2242013/">Sunday data/statistics link roundup (2/24/2013)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2013/02/24/sunday-datastatistics-link-roundup-2242013/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

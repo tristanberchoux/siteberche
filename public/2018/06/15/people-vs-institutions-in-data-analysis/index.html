@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>People vs. Institutions in Data Analysis &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>People vs. Institutions in Data Analysis</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2018/06/15</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  
+
+<p>In my post about <a href="https://simplystatistics.org/2018/04/30/relationships-in-data-analysis/">relationships in data analysis</a> I got a little push back regarding whether human relationships would ever <em>not</em> be important in data analysis and whether that has anything to do with the &ldquo;maturity&rdquo; of the field. I believe human beings will always play a role in data analysis, but it’s possible that over time they will play different roles. I wanted to discuss in this post what I meant about &ldquo;institutions&rdquo; and &ldquo;institutional knowledge&rdquo; in the context of data analysis and when the specific <em>person</em> who does the analysis is critical to how the analysis is done.</p>
+
+<h2 id="some-lessons-from-finance">Some lessons from finance</h2>
+
+<p>Peter Lynch, the legendary investor and manager of the Fidelity Magellan Fund, <a href="http://buffettfaq.com">once said</a></p>
+
+<blockquote>
+<p>Invest in businesses any idiot could run because someday one will.</p>
+</blockquote>
+
+<p>A perhaps more detailed version of this sentiment comes from fellow legendary investor Warren Buffett, in his testimony before the U.S. Financial Crisis Inquiry Commission in 2010,</p>
+
+<blockquote>
+<p>I knew nothing about the management of Moody’s [a bond rating agency]. The—I’ve also said many times in reports and elsewhere that when a management with reputation for brilliance gets hooked up with a business with a reputation for bad economics, it’s the reputation of the business that remains intact.</p>
+
+<p>If you’ve got a good enough business, if you have a monopoly newspaper, if you have a network television station—I’m talking of the past—you know, your idiot nephew could run it. And if you’ve got a really good business, it doesn’t make any difference.</p>
+</blockquote>
+
+<p>In both cases, they are talking about businesses that are generally thought to be &ldquo;boring&rdquo;. This is because they are mature, have well-established (good) economics, and are not highly depended on the <em>people</em> running the company. In this sense, a business is mature of you don’t care who the CEO is (within reason, of course). Christopher Mims made the <a href="https://www.wsj.com/articles/the-age-of-tech-superheroes-must-end-1528387420?emailToken=b6be8f2b54a3953d4991cdb04eb5bffcLZGPd/1/T04rWTjtJZ9b4NBNmsC4JrLquJ9jUfTXXYVaXcN/dZpu4JbBT0S+6AKjfrMLcM+rtQObILto+5G9Fg%3D%3D&amp;reflink=article_copyURL_share">latest version of this argument ($)</a> in the Wall Street Journal in reference to tech founder &ldquo;superheroes&rdquo; and how they are ultimately bad for business.</p>
+
+<p>I would argue that in data analysis, for better or for worse, you <em>do</em> care who is doing your data analysis.</p>
+
+<h2 id="maturity-of-data-analysis">Maturity of Data Analysis</h2>
+
+<p>My thinking along these lines was that mature organizations or countries tend to replace people with institutions with the hope that the organization can continue forward regardless of who is running the institution, as long as the institution itself can keep functioning. Large corporations can replace their CEO and still continue to make money. Many large companies turnover much of their staff every year and continue to grow and profit. If you go to a startup company with three employees and replace the CEO, what you are left with is a completely different company. I believe the field of data analysis is closer to the startup company end of the spectrum than the mature company end. I don’t think we have much &ldquo;institutional knowledge&rdquo; about what to do in data analysis, largely because I believe we have a flawed model for what is a data analysis and because we do not have a transparent means of communicating to others what exactly we do in a data analysis.</p>
+
+<p>Many data analysts have likely had the experience of a collaborator approaching them with some data and telling them something along the lines of, &ldquo;This is easy, just run the regression on the data.&rdquo; Collaborators like these think of data analysis as having deep institutional knowledge, whereby everyone has the exact same understanding of what it means to &ldquo;run the regression&rdquo;. But the reality is the regression modeling is a complex task that typically requires iterating repeatedly with collaborators over what should be done. This is because &ldquo;running the regression&rdquo; is intricately tied up with the context in which the data were generated and the audience to which the results will be presented. All of this is to say that the <em>person</em> doing the analysis is critical to the analysis itself, in part because they will have to manage the relationships with other parties involved. If &ldquo;running the regression&rdquo; were in fact as simple as calling the <code>lm()</code> function in R and spitting out the summary, then yes, it would hardly matter which person called that function.</p>
+
+<p>By contrast, let’s take a look at a different task: matrix inversion. Matrix inversion is a critical task for any statistical modeling. For one, it lies at the heart of regression modeling! However, most analysts probably don’t think twice about doing it; the <code>lm()</code> function just does it for you (buried somewhere down in all that Fortran code). In the past, one might have had to call up the numerical analyst to develop a deep understanding of our design matrices and implement the best possible approach to inverting its cross product. Now we can just call <code>solve()</code> (although you should <a href="https://bookdown.org/rdpeng/advstatcomp/textbooks-vs-computers.html">probably not do that for other reasons!</a>). Knowledge of matrix inversion has gotten to the point where for most cases, and in most reasonable situations, we can do it without much thinking. It is in that sense that we have &ldquo;institutional knowledge&rdquo;. We can leverage that institutional knowledge and implement it in R code that anyone can call. If someone came to me and say &ldquo;Hey, invert this matrix,” I would happily push the button to do so. The result would be the same no matter who called the <code>solve()</code> function. There are obviously some corner cases in which we might want to talk with a numerical analyst, but the number of those cases is small (and probably shrinking).</p>
+
+<p>The beauty of linear regression is that it is so general that it can be applied to a myriad of problems and questions. But its generality is what makes it difficult to formalize the &ldquo;regression modeling&rdquo; process because every single context in which linear regression is applied is different. Furthermore, regression modeling is typically not a single procedure, but rather a collection of procedures, including visualization, model diagnostics, and uncertainty quantification. It may be possible to automate the process within a very narrow context, it’s unlikely that knowledge gained in that narrow context could be brought over to a different context.</p>
+
+<h2 id="the-dream">The Dream</h2>
+
+<p>I’ve <a href="https://simplystatistics.org/2016/05/11/palantir-struggles/">written previously</a> about how the dream of many companies today is to completely “institutionalize&rdquo; the process of data analysis (I think I used the word “productize” before). If the process of data analysis were so mature that its critical elements could be coded in software, then yes, I think that could be a money-making idea. But the problem is that we still have much to learn about data analysis. Sure, individual components are well understood, but we are far from being able to push a button and “run the regression”. We will still need people involved in the process for the near future.</p>
+
+<p><em>You can hear more from me and the JHU Data Science Lab by subscribing to our weekly newsletter <a href="http://jhudatascience.us16.list-manage.com/subscribe?u=5ea551600fcdf84334e5aa6b0&amp;id=26c0b7221a">Monday Morning Data Science</a></em>.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2018/06/10/an-ode-to-king-james/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2018/06/10/an-ode-to-king-james/">An ode to King James</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2018/06/18/the-role-of-resources-in-data-analysis/">The Role of Resources in Data Analysis</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2018/06/18/the-role-of-resources-in-data-analysis/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

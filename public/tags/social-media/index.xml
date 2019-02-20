@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Social Media on Tristan Berchoux</title>
+    <link>/tags/social-media/</link>
+    <description>Recent content in Social Media on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 27 May 2012 17:09:06 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/social-media/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday data/statistics link roundup (5/27)</title>
+      <link>/2012/05/27/sunday-data-statistics-link-roundup-5-27/</link>
+      <pubDate>Sun, 27 May 2012 17:09:06 +0000</pubDate>
+      
+      <guid>/2012/05/27/sunday-data-statistics-link-roundup-5-27/</guid>
+      <description>Amanda Cox on the process they went through to come up with this graphic about the Facebook IPO. So cool to see how R is used in the development process. A favorite quote of mine, &amp;#8220;But rather than bringing clarity, it just sort of looked chaotic, even to the seasoned chart freaks of 620 8th Avenue.&amp;#8221; One of the more interesting things about posts like this is you get to see how statistics versus a deadline works.</description>
+    </item>
+    
+  </channel>
+</rss>

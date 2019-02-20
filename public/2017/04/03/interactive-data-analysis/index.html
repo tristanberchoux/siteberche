@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>The Importance of Interactive Data Analysis for Data-Driven Discovery &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>The Importance of Interactive Data Analysis for Data-Driven Discovery</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/04/03</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>Data analysis workflows and recipes are commonly used in science. They
+are actually indispensable since reinventing the wheel for each
+project would result in a colossal waste of time. On the other hand,
+mindlessly applying a workflow can result in
+totally wrong conclusions if the required assumptions don&rsquo;t hold.
+This is why successful data analysts rely heavily on interactive
+data analysis (IDA). I write today because I am somewhat
+concerned that the importance of IDA is not fully appreciated by many
+of the policy makers and thought leaders that will influence how we
+access and work with data in the future.</p>
+
+<p>I start by constructing a very simple example to illustrate the
+importance of IDA. Suppose that as
+part of a demographic study you are asked to summarize male heights
+across several counties. Since sample sizes are large and heights are
+known to be well approximated by a normal distribution you feel
+comfortable using a true and tested recipe:
+report the average and standard deviation as a summary. You are
+surprised to find a county with average heights of 6.1 feet with a
+standard deviation (SD) of 7.8 feet. Do you start writing a paper and a
+press release to describe this very interesting finding? Here,
+interactive data analysis saves us from naively reporting this.
+First, we note that the standard deviation is impossibly big if data is in
+fact normally distributed: more than 15% of heights would be
+negative. Given this nonsensical result, the next
+obvious step for an experienced data analyst is to explore the data,
+say with a boxplot (see below). This immediately reveals a problem, it
+appears one value was reported in centimeters: 180 centimeters not
+feet. After fixing this, the summary changes to an average height
+of 5.75 and with a 3 inch SD.</p>
+
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/_images/heights-with-outlier.png" alt="European Outlier" /></p>
+
+<p>Years of data analysis experience will show you that examples like this are
+common. Unfortunately, as data and analyses get more complex, workflow
+failures are harder to detect and often go unnoticed. An important
+principle many of us teach our trainees is to carefully check for
+hidden problems when data analysis leads you to unexpected results,
+especialy when the unexpected results holding up benefits us
+professionally, for example by leading to a publication.</p>
+
+<p>Interactive data analysis is also indispensable for the
+development of new methodology. For example, in my field of research, exploring
+the data has led to the discovery of the need for new methods and
+motivated new approaches that handle specific cases that existing
+workflows can&rsquo;t handle.</p>
+
+<p>So why I am concerned?
+As public datasets become larger and more
+numerous, many funding agencies, policy makers and industry leaders are
+advocating for using cloud computing to bring computing to the
+data. If done correctly, this would provide a great improvement over
+the current redundant and unsystematic approach of everybody downloading data and working with it locally. However, after
+looking into the details of some of these plans, I have become a bit
+concerned that perhaps the importance of IDA is not fully appreciated by decision makers.</p>
+
+<p>As an example consider the NIH efforts to promote data-driven discovery
+that center around plans for the
+<a href="https://datascience.nih.gov/commons"><em>Data Commons</em></a>. The linked page
+describes an ecosystem with four components one of which is
+&ldquo;Software&rdquo;. According to the description, the software component of
+<em>The Commons</em> should provide &ldquo;[a]ccess to and deployment of scientific analysis
+tools and pipeline workflows&rdquo;. There is no mention of a strategy that
+will grant access to the
+raw data. Without this, carefully checking the workflow output and
+developing the analysis tools and pipeline workflows of the future
+will be difficult.</p>
+
+<p>I note that data analysis workflows are very popular in fields in which data
+analysis is indispensible, as is the case in biomedical research, my
+focus area. In this field, data generators, which typically
+lead the scientific enterprise, are not always trained data
+analysts. But the literature is overflowing with proposed workflows.
+You can gauge the popularity of these by the vast number
+published in the nature journals as demonstrated by this
+<a href="https://www.google.com/search?q=workflow+site:nature.com&amp;biw=1706&amp;bih=901&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwi3usL8-dDPAhUDMSYKHaBFBTAQ_AUIBigB#tbm=isch&amp;q=analysis+workflow+site:nature.com">google search</a>:</p>
+
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/_images/many-workflows.png" alt="Nature workflows" /></p>
+
+<p>In a field in which data generators are not data analysis experts, the
+workflow has the added allure that it removes the need to think deeply about
+data analysis and instead shifts the responsibility to pre-approved
+software. Note that these workflows are not always described with the
+mathematical language or computer coded needed to truly understand it
+but rather with a series of PowerPoint shapes. The gist of the typical
+data analysis workflow can be simplified into the following:</p>
+
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/_images/workflow.png" alt="workflows" /></p>
+
+<p>This simplification of the data analysis process makes it particularly
+worrisome that the intricacies of IDA are not fully appreciated.</p>
+
+<p>As mentioned above, data analysis workflows are a necessary component of
+the scientific enterprise. Without them the process would slow down to
+a halt. However, workflows should only be implemented once consensus
+is reached regarding its optimality. And even then, IDA is needed to
+assure that the process is performing as expected. The career of many of my
+colleagues has been dedicated mostly to the development of such
+analysis tools. We have learned that rushing to implement workflows
+before they are mature enough can have widespread negative
+consequences. And, at least in my experience, developing rigorous tools is
+impossible without interactive data analysis. So I hope that this post
+helps make a case for the importance of interactive data analysis and
+that it continues to be a part of the scientific enterprise.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2017/03/16/evo-ds-class/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2017/03/16/evo-ds-class/">The levels of data science class</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2017/04/06/march-for-science/">Redirect</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2017/04/06/march-for-science/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

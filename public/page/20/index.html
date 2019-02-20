@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2015/11/09/biostatistics-its-not-what-you-think-it-is/">Biostatistics: It&#39;s not what you think it is</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/11/09</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  My department recently sent me on a recruitment trip for our graduate program. I had the opportunity to chat with undergrads interested in pursuing a career related to data analysis. I found that several did not know about the existence of Departments of _Biostatistics_ and most of the rest thought _Biostatistics_ was the study of clinical trials. We have posted on the need for better marketing for Statistics, but Biostatistics needs it even more.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/11/09/biostatistics-its-not-what-you-think-it-is/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/11/07/not-so-standard-deviations-episode-4-a-gajillion-time-series/">Not So Standard Deviations: Episode 4 - A Gajillion Time Series</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/11/07</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Episode 4 of Not So Standard Deviations is hot off the audio editor. In this episode Hilary first explains to me what heck is DevOps and then we talk about the statistical challenges in detecting rare events in an enormous set of time series data. There&rsquo;s also some discussion of Ben and Jerry&rsquo;s and the t-test, so you&rsquo;ll want to hang on for that.
+Notes:
+ Nobody Loves Graphite Anymore A response Why Gosset is awesome  &nbsp;
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/11/06/how-i-decide-when-to-trust-an-r-package/">How I decide when to trust an R package</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/11/06</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  One thing that I&rsquo;ve given a lot of thought to recently is the process that I use to decide whether I trust an R package or not. Kasper Hansen took a break from trolling me on Twitter to talk about how he trusts packages on Github less than packages that are on CRAN and particularly Bioconductor. A couple of points he makes that I think are very relevant. First, that having a package on CRAN/Bioconductor raises trust in that package:
+  </p>
+
+  
+  <footer>
+    <a href="/2015/11/06/how-i-decide-when-to-trust-an-r-package/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/10/30/the-statistics-identity-crisis-am-i-a-data-scientist/">The Statistics Identity Crisis: Am I a Data Scientist</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/10/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The joint ASA/Simply Statistics webinar on the statistics identity crisis is now live!
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/10/30/facultypostdoc-job-opportunities-in-genomics-across-johns-hopkins/">Faculty/postdoc job opportunities in genomics across Johns Hopkins</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/10/30</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  It&rsquo;s pretty exciting to be in genomics at Hopkins right now with three new Bloomberg professors in genomics areas, a ton of stellar junior faculty, and a really fun group of students/postdocs. If you want to get in on the action here is a non-comprehensive list of great opportunities.
+Faculty Jobs Job: Multiple tenure track faculty positions in all areas including in genomics
+Department:  Biostatistics
+To apply: http://www.jhsph.edu/departments/biostatistics/_docs/faculty-ad-2016-combined-large-final.pdf
+  </p>
+
+  
+  <footer>
+    <a href="/2015/10/30/facultypostdoc-job-opportunities-in-genomics-across-johns-hopkins/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/10/29/the-statistics-identity-crisis-am-i-really-a-data-scientist/">The statistics identity crisis: am I really a data scientist?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/10/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  &nbsp;
+&nbsp;
+&nbsp;
+
+&nbsp;
+Tl;dr: We will host a Google Hangout of our popular JSM session October 30th 2-4 PM EST. 
+&nbsp;
+I organized a session at JSM 2015 called &ldquo;The statistics identity crisis: am I really a data scientist?&rdquo; The session turned out to be pretty popular:
+Packed room of statisticians with identity crises at #JSM2015 session: are we really data scientists? pic.twitter.com/eLsGosoTCt  &mdash; Dr Ruth Etzioni (@retzioni) August 11, 2015  but it turns out not everyone fit in the room:
+  </p>
+
+  
+  <footer>
+    <a href="/2015/10/29/the-statistics-identity-crisis-am-i-really-a-data-scientist/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/10/28/discussion-of-the-theranos-controversy-with-elizabeth-matsui/">Discussion of the Theranos Controversy with Elizabeth Matsui</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/10/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Theranos is a Silicon Valley diagnostic testing company that has been in the news recently. The story of Theranos has fascinated me because I think it represents a perfect collision of the tech startup culture and the health care culture and how combining them together can generate unique problems.
+I talked with Elizabeth Matsui, a Professor of Pediatrics in the Division of Allergy and Immunology here at Johns Hopkins, to discuss Theranos, the realities of diagnostic testing, and the unique challenges that a health-tech startup faces with respect to doing good science and building products people want to buy.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/10/28/discussion-of-the-theranos-controversy-with-elizabeth-matsui/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/10/24/not-so-standard-deviations-episode-3-gilmore-girls/">Not So Standard Deviations: Episode 3 - Gilmore Girls</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/10/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I just uploaded Episode 3 of Not So Standard Deviations so check your feeds. In this episode Hilary and I talk about our jobs and the life of the data scientist in both academia and the tech industry. It turns out that they&rsquo;re not as different as I would have thought.
+Download the audio file for this episode.
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/10/20/we-need-a-statistically-rigorous-and-scientifically-meaningful-definition-of-replication/">We need a statistically rigorous and scientifically meaningful definition of replication</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/10/20</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Replication and confirmation are indispensable concepts that help define scientific facts. However, the way in which we reach scientific consensus on a given finding is rather complex. Although some press releases try to convince us otherwise, rarely is one publication enough. In fact, most published results go unnoticed and no attempts to replicate them are made. These are not debunked either; they simply get discarded to the dustbin of history. The very few results that garner enough attention for others to spend time and energy on them are assessed by an ad-hoc process involving a community of peers.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/10/20/we-need-a-statistically-rigorous-and-scientifically-meaningful-definition-of-replication/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2015/10/16/thorns-runs-head-first-into-the-realities-of-diagnostic-testing/">Theranos runs head first into the realities of diagnostic testing</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/10/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  The Wall Street Journal has published a lengthy investigation into the diagnostic testing company Theranos.
+ The company offers more than 240 tests, ranging from cholesterol to cancer. It claims its technology can work with just a finger prick. Investors have poured more than $400 million into Theranos, valuing it at $9 billion and her majority stake at more than half that. The 31-year-old Ms. Holmes’s bold talk and black turtlenecks draw comparisons to AppleInc.
+  </p>
+
+  
+  <footer>
+    <a href="/2015/10/16/thorns-runs-head-first-into-the-realities-of-diagnostic-testing/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/19/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;20 / 104&nbsp;</span>
+  
+  <a href="/page/21/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

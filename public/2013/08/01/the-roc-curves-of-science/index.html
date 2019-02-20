@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>The ROC curves of science &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>The ROC curves of science</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/01</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>Andrew Gelman&rsquo;s <a href="http://andrewgelman.com/2013/07/24/too-good-to-be-true-the-scientific-mass-production-of-spurious-statistical-significance/">recent post</a> on what he calls the &ldquo;scientific mass production of spurious statistical significance&rdquo; reminded me of a thought I had back when I read John Ioannidis&rsquo; paper claiming that <a href="http://simplystatistics.org/2013/05/06/why-the-current-over-pessimism-about-science-is-the-perfect-confirmation-bias-vehicle-and-we-should-proceed-rationally/">most published research finding are false</a>. Many authors, which I will refer to as <em>the pessimists</em>, have joined Ioannidis in making similar claims and repeatedly blaming the current state of affairs on the mindless use of frequentist inference. The gist of my thought is that, for some scientific fields, the pessimist&rsquo;s criticism is missing a critical point: that in practice, there is an inverse relationship between increasing rates of true discoveries and decreasing rates of false discoveries and that true discoveries from fields such as the biomedical sciences provide an enormous benefit to society. Before I explain this in more detail, I want to be very clear that I do think that reducing false discoveries is an important endeavor and that some of these false discoveries are completely avoidable. But, as I describe below, a general solution that improves the current situation is much more complicated than simply abandoning the frequentist inference that currently dominates.</p>
+
+<p>Few will deny that our current system, with all its flaws, still produces important discoveries. Many of the pessimists&rsquo; proposals for reducing false positives seem to be, in one way or another, a call for being more conservative in reporting findings. Example of recommendations include that we require larger effect sizes or smaller p-values, that we correct for the &ldquo;<a href="http://www.slate.com/articles/health_and_science/science/2013/07/statistics_and_psychology_multiple_comparisons_give_spurious_results.html">researcher degrees of freedom</a>&rdquo;, and that we use Bayesian analyses with pessimistic priors. I tend to agree with many of these recommendations but I have yet to see a specific proposal on exactly how conservative we should be. Note that we could easily bring the false positives all the way down to 0 by simply taking this recommendation to its extreme and stop publishing biomedical research results all together. This absurd proposal brings me to receiver operating characteristic (ROC) curves.</p>
+
+<p><img src="https://raw.githubusercontent.com/simplystats/simplystats.github.io/master/wp-content/uploads/2013/07/Slide1.png" alt="ROC curves of science" /></p>
+
+<p>ROC curves plot true positive rates (TPR) versus false positive rates (FPR) for a given classifying procedure. For example, suppose a regulatory agency that runs randomized trials on drugs (e.g. FDA) classifies a drug as effective when a pre-determined statistical test produces a p-value &lt; 0.05 or a posterior probability &gt; 0.95. This procedure will have a historical false positive rate and true positive rate pair: one point in an ROC curve. We can change the 0.05 to, say, 0.2 (or the 0.95 to 0.80) and we would move up the ROC curve: higher FPR and TPR. Not doing research would put us at the useless bottom left corner. It is important to keep in mind that biomedical science is done by imperfect humans on imperfect and stochastic measurements so to make discoveries the field has to tolerate some false discoveries (ROC curves don&rsquo;t shoot straight up from 0% to 100%). Also note that it can take years to figure out which publications report important true discoveries.</p>
+
+<p>I am going to use the concept of ROC curve to distinguish between reducing FPR by being statistically more conservative and reducing FPR via more general improvements. In my ROC curve the y-axis represents the number of important discoveries per decade and the x-axis the number of false positives per decade (to avoid confusion I will continue to use the acronyms TPR and FPR). The current state of biomedical research is represented by one point on the red curve: one TPR,FPR pair. The pessimist argue that the FPR is close to 100% of all results but they rarely comment on the TPR. Being more conservative lowers our FPR, which saves us time and money, but it also lowers our TPR, which could reduce the number of important discoveries that improve human health. So what is the optimal balance and how far are we from it? I don&rsquo;t think this is an easy question to answer.</p>
+
+<p>Now, one thing we can all agree on is that moving the ROC curve up is a good thing, since it means that we get a higher TPR for any given FPR. Examples of ways we can achieve this are developing better measurement technologies, statistically improving the quality of these measurements, augmenting the statistical training of researchers, thinking harder about the hypotheses we test, and making less coding or experimental mistakes. However, applying a more conservative procedure does not move the ROC up, it moves our point left on the existing ROC: we reduce our FPR but reduce our TPR as well.</p>
+
+<p>In the plot above I draw two imagined ROC curves: one for physics and one for biomedical research. The physicists&rsquo; curve looks great. Note that it shoots up really fast which means they can make most available discoveries with very few false positives. Perhaps due to the maturity of the field, physicists can afford and tend to use <a href="http://www.guardian.co.uk/science/2012/jul/04/higgs-boson-cern-scientists-discover">very stringent criteria</a>. The biomedical research curve does not look as good. This is mainly due to the fact that biology is way more complex and harder to model mathematically than physics. However, because there is a larger uncharted territory and more research funding, I argue that the rate of discoveries is higher in biomedical research than in physics. But, to achieve this higher TPR, biomedical research has to tolerate a higher FPR. According to my imaginary ROC curves, if we become as stringent as physicists our TPR would be five times smaller. It is not obvious to me that this would result in a better situation than the current one. At the same time, note that the red ROC suggests that increasing the FPR, with the hopes of increasing our TPR, is not a good idea because the curve is quite flat beyond our current location on the curve.</p>
+
+<p>Clearly I am oversimplifying a very complicated issue, but I think it is important to point out that there are two discussions to be had: 1) where should we be on the ROC curve (keeping in mind the relationship between FPR and TPR)? and 2) what can we do to improve the ROC curve? My own view is that we can probably move down the ROC curve some and reduce the FPR without much loss in TPR (for example, by raising awareness of the <a href="http://www.slate.com/articles/health_and_science/science/2013/07/statistics_and_psychology_multiple_comparisons_give_spurious_results.html">researcher degrees of freedom</a>). But I also think that most our efforts should go to reducing the FPR by improving the ROC. In general, I think statisticians can add to the conversation about 1) while at the same time continue collaborating to move the red ROC curve up.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2013/07/31/the-researcher-degrees-of-freedom-recipe-tradeoff-in-data-analysis/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2013/07/31/the-researcher-degrees-of-freedom-recipe-tradeoff-in-data-analysis/">The researcher degrees of freedom - recipe tradeoff in data analysis</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2013/08/02/that-causal-inference-came-out-of-nowhere/">That causal inference came out of nowhere</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2013/08/02/that-causal-inference-came-out-of-nowhere/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistics on Tristan Berchoux</title>
+    <link>/tags/statistics/</link>
+    <description>Recent content in Statistics on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Mon, 25 Mar 2013 13:34:01 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Podcast #6: Data Analysis MOOC Post-mortem</title>
+      <link>/2013/03/25/podcast-6-data-analysis-mooc-post-mortem/</link>
+      <pubDate>Mon, 25 Mar 2013 13:34:01 +0000</pubDate>
+      
+      <guid>/2013/03/25/podcast-6-data-analysis-mooc-post-mortem/</guid>
+      <description>Jeff and I talk about Jeff&amp;rsquo;s recently completed MOOC on Data Analysis.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (1/20/2013)</title>
+      <link>/2013/01/20/sunday-datastatistics-link-roundup-1202013/</link>
+      <pubDate>Sun, 20 Jan 2013 10:00:32 +0000</pubDate>
+      
+      <guid>/2013/01/20/sunday-datastatistics-link-roundup-1202013/</guid>
+      <description>This might be short. I have a couple of classes starting on Monday. The first is our 1. This might be short. I have a couple of classes starting on Monday. The first is our class. This is one of my favorite classes to teach, our Ph.D. students are pretty awesome and they always amaze me with what they can do. The other is my Coursera debut in Data Analysis.</description>
+    </item>
+    
+    <item>
+      <title>Should the Cox Proportional Hazards model get the Nobel Prize in Medicine?</title>
+      <link>/2012/12/17/should-the-cox-proportional-hazards-model-get-the-nobel-prize-in-medicine/</link>
+      <pubDate>Mon, 17 Dec 2012 15:26:16 +0000</pubDate>
+      
+      <guid>/2012/12/17/should-the-cox-proportional-hazards-model-get-the-nobel-prize-in-medicine/</guid>
+      <description>I&amp;rsquo;m not the first one to suggest that Biostatistics has been undervalued in the scientific community, and some of the shortcomings of epidemiology and biostatistics have been noted elsewhere. But this previous work focuses primarily on the contributions of statistics/biostatistics at the purely scientific level.
+The Cox Proportional Hazards model is one of the most widely used statistical models in the analysis of data from clinical trials and other medical studies.</description>
+    </item>
+    
+    <item>
+      <title>Podcast #5: Coursera Debrief</title>
+      <link>/2012/11/19/podcast-5-coursera-debrief-2/</link>
+      <pubDate>Mon, 19 Nov 2012 10:00:08 +0000</pubDate>
+      
+      <guid>/2012/11/19/podcast-5-coursera-debrief-2/</guid>
+      <description>Jeff and I talk with Brian Caffo about teaching MOOCs on Coursera.</description>
+    </item>
+    
+    <item>
+      <title>How important is abstract thinking for graduate students in statistics?</title>
+      <link>/2012/07/27/how-important-is-abstract-thinking-for-graduate/</link>
+      <pubDate>Fri, 27 Jul 2012 13:57:01 +0000</pubDate>
+      
+      <guid>/2012/07/27/how-important-is-abstract-thinking-for-graduate/</guid>
+      <description>A recent lunchtime discussion here at Hopkins brought up the somewhat-controversial topic of abstract thinking in our graduate program. We, like a lot of other biostatistics/statistics programs, require our students to take measure theoretic probability as part of the curriculum. The discussion started as a conversation about whether we should require measure theoretic probability for our students. It evolved into a discussion of the value of abstract thinking (and whether measure theoretic probability was a good tool to measure abstract thinking).</description>
+    </item>
+    
+    <item>
+      <title>Statistics is not math...</title>
+      <link>/2012/04/11/statistics-is-not-math/</link>
+      <pubDate>Wed, 11 Apr 2012 13:52:42 +0000</pubDate>
+      
+      <guid>/2012/04/11/statistics-is-not-math/</guid>
+      <description>Statistics depends on math, like a lot of other disciplines (physics, engineering, chemistry, computer science). But just like those other disciplines, statistics is not math; math is just a tool used to solve statistical problems. Unlike those other disciplines, statistics gets lumped in with math in headlines. Whenever people use statistical analysis to solve an interesting problem, the headline reads:
+&amp;#8220;Math can be used to solve amazing problem X&amp;#8221;
+or</description>
+    </item>
+    
+    <item>
+      <title>What is a major revision?</title>
+      <link>/2012/04/09/what-is-a-major-revision/</link>
+      <pubDate>Mon, 09 Apr 2012 15:01:34 +0000</pubDate>
+      
+      <guid>/2012/04/09/what-is-a-major-revision/</guid>
+      <description>I posted a little while ago on a proposal for a fast statistics journal. It generated a bunch of comments and even a really nice follow up post with some great ideas. Since then I&amp;#8217;ve gotten reviews back on a couple of papers and I think I realized one of the key issues that is driving me nuts about the current publishing model. It boils down to one simple question: What is a major revision?</description>
+    </item>
+    
+    <item>
+      <title>Why statisticians should join and launch startups</title>
+      <link>/2012/01/23/why-statisticians-should-join-and-launch-startups/</link>
+      <pubDate>Mon, 23 Jan 2012 14:00:05 +0000</pubDate>
+      
+      <guid>/2012/01/23/why-statisticians-should-join-and-launch-startups/</guid>
+      <description>The tough economic times we live in, and the potential for big paydays, have made entrepreneurship cool. From the venture capitalist-in-chief, to the javascript coding mayor of New York, everyone is on board. No surprise there, successful startups lead to job creation which can have a major positive impact on the economy. The game has been dominated for a long time by the folks over in CS. But the value of many recent startups is either based on, or can be magnified by, good data analysis.</description>
+    </item>
+    
+    <item>
+      <title>Help us rate health news reporting with citizen-science powered http://www.healthnewsrater.com</title>
+      <link>/2012/01/11/healthnewsrater/</link>
+      <pubDate>Wed, 11 Jan 2012 13:19:00 +0000</pubDate>
+      
+      <guid>/2012/01/11/healthnewsrater/</guid>
+      <description>We here at Simply Statistics are big fans of science news reporting. We read newspapers, blogs, and the news sections of scientific journals to keep up with the coolest new research. But health science reporting, although exciting, can also be incredibly frustrating to read. Many articles have sensational titles, like &amp;#8220;How using Facebook could raise your risk of cancer&amp;#8221;. The articles go on to describe some research and interview a few scientists, then typically make fairly large claims about what the research means.</description>
+    </item>
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup</title>
+      <link>/2012/01/08/sunday-data-statistics-link-roundup-2/</link>
+      <pubDate>Sun, 08 Jan 2012 19:35:42 +0000</pubDate>
+      
+      <guid>/2012/01/08/sunday-data-statistics-link-roundup-2/</guid>
+      <description>A few data/statistics related links of interest:
+ Eric Lander Profile The math of lego (should be &amp;#8220;The statistics of lego&amp;#8221;) Where people are looking for homes. Hans Rosling&amp;#8217;s Ted Talk on the Developing world (an oldie but a goodie) Elsevier is trying to make open-access illegal (not strictly statistics related, but a hugely important issue for academics who believe government funded research should be freely accessible), more here.   </description>
+    </item>
+    
+    <item>
+      <title>Data Scientist vs. Statistician</title>
+      <link>/2011/11/22/data-scientist-vs-statistician/</link>
+      <pubDate>Tue, 22 Nov 2011 12:41:00 +0000</pubDate>
+      
+      <guid>/2011/11/22/data-scientist-vs-statistician/</guid>
+      <description>There&amp;#8217;s in interesting discussion over at reddit on the difference between a data scientist and a statistician. My crude summary of the discussion seems to be that by and large they are the same but the phrase &amp;#8220;data scientist&amp;#8221; is just the hip new name for statistician that will probably sound stupid 5 years from now.
+My question is why isn&amp;#8217;t &amp;#8220;statistician&amp;#8221; hip? The comments don&amp;#8217;t seem to address that much (although a few go in that direction).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/2011/11/17/the-history-of-nonlinear-principal-components/</link>
+      <pubDate>Thu, 17 Nov 2011 17:13:00 +0000</pubDate>
+      
+      <guid>/2011/11/17/the-history-of-nonlinear-principal-components/</guid>
+      <description>[youtube http://www.youtube.com/watch?v=V-hFORcBj44?wmode=transparent&amp;amp;autohide=1&amp;amp;egm=0&amp;amp;hd=1&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;rel=0&amp;amp;showinfo=0&amp;amp;showsearch=0&amp;amp;w=500&amp;amp;h=375]
+The History of Nonlinear Principal Components Analysis, a lecture given by Jan de Leeuw. For those that have ~45 minutes to spare, it&amp;#8217;s a very nice talk given in Jan&amp;#8217;s characteristic style.
+(Source: http://www.youtube.com/)  </description>
+    </item>
+    
+    <item>
+      <title>Coarse PM and measurement error paper</title>
+      <link>/2011/11/08/coarse-pm-and-measurement-error-paper/</link>
+      <pubDate>Tue, 08 Nov 2011 17:05:05 +0000</pubDate>
+      
+      <guid>/2011/11/08/coarse-pm-and-measurement-error-paper/</guid>
+      <description>Howard Chang, a former PhD student of mine now at Emory, just published a paper on a measurement error model for estimating the health effects of coarse particulate matter (PM). This is a cool paper that deals with the problem that coarse PM tends to be very spatially heterogeneous. Coarse PM is a bit of a hot topic now because there is currently no national ambient air quality standard for coarse PM specifically.</description>
+    </item>
+    
+    <item>
+      <title>Do we really need applied statistics journals?</title>
+      <link>/2011/10/19/do-we-really-need-applied-statistics-journals/</link>
+      <pubDate>Wed, 19 Oct 2011 16:05:06 +0000</pubDate>
+      
+      <guid>/2011/10/19/do-we-really-need-applied-statistics-journals/</guid>
+      <description>All statisticians in academia are constantly confronted with the question of where to publish their papers. Sometimes it&amp;#8217;s obvious: A theoretical paper might go to the Annals of Statistics orJASA Theory &amp;amp; Methods or Biometrika. A more &amp;#8220;methods-y&amp;#8221; paper might go to JASA or JRSS-B orBiometrics or maybe even Biostatistics (where all three of us are or have been associate editors).
+But where should the applied papers go? I think this is an increasingly large category of papers being produced by statisticians.</description>
+    </item>
+    
+  </channel>
+</rss>

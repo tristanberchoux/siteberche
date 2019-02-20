@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drew Conway on Tristan Berchoux</title>
+    <link>/tags/drew-conway/</link>
+    <description>Recent content in Drew Conway on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Fri, 13 Apr 2012 13:31:21 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/drew-conway/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Interview with Drew Conway - Author of &#34;Machine Learning for Hackers&#34;</title>
+      <link>/2012/04/13/interview-with-drew-conway-author-of-machine/</link>
+      <pubDate>Fri, 13 Apr 2012 13:31:21 +0000</pubDate>
+      
+      <guid>/2012/04/13/interview-with-drew-conway-author-of-machine/</guid>
+      <description>Drew Conway
+
+Drew Conway is a Ph.D. student in Politics at New York University and the co-ordinator of the New York Open Statistical Programming Meetup. He is the creator of the famous (or infamous) data science Venn diagram, the basis for our R function to determine if your a data scientist. He is also the co-author of Machine Learning for Hackers, a book of case studies that illustrates data science from a hacker&amp;#8217;s perspective.</description>
+    </item>
+    
+  </channel>
+</rss>

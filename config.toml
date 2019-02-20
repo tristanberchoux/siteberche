@@ -1,10 +1,21 @@
 baseurl = "https://tristanberchoux.netlify.com/"
 languageCode = "en-us"
-title = "Tristan Berchoux"
 theme = "blackburn"
 author = "Tristan Berchoux"
 copyright = "&copy; 2019 by Tristan Berchoux"
 paginate = 10
+
+[languages]
+  [languages.en]
+  LanguageName = "English"
+  title = "Tristan's website"
+  subtitle = "Spatial Planning • Economic Geography • Rural Development"
+  weight = 1
+
+  [languages.fr]
+    weight = 2
+    title "Le site de Tristan"
+    subtitle="Aménagement du territoire • Géographie Économique • Développement Rural"
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"
@@ -40,18 +51,23 @@ paginate = 10
     identifier = "about"
     url = "/about/"
   [[menu.main]]
+    name = "Teaching"
+    pre = "<i class='fa fa-university fa-fw'></i>"
+    weight = 3
+    identifier = "teaching"
+    url = "/teaching/"
+  [[menu.main]]
     name = "Research"
     pre = "<i class='fa fa-area-chart fa-fw'></i>"
-    weight = 3
+    weight = 4
     identifier = "research"
     url = "/research/"
   [[menu.main]]
-    name = "Teaching"
-    pre = "<i class='fa fa-university fa-fw'></i>"
-    weight = 4
-    identifier = "teaching"
-    url = "/teaching/"
-
+    name = "Publications"
+    pre = "<i class='fa fa-newspaper-o fa-fw'></i>"
+    weight = 5
+    identifier = "papers"
+    url = "/papers/"
 
 [social]
   # Link your social networking accouns to the side menu

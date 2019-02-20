@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graduate Education on Tristan Berchoux</title>
+    <link>/tags/graduate-education/</link>
+    <description>Recent content in Graduate Education on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Mon, 06 Aug 2012 16:09:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/graduate-education/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>In which Brian debates abstraction with T-Bone</title>
+      <link>/2012/08/06/in-which-brian-debates-abstraction-with-t-bone/</link>
+      <pubDate>Mon, 06 Aug 2012 16:09:00 +0000</pubDate>
+      
+      <guid>/2012/08/06/in-which-brian-debates-abstraction-with-t-bone/</guid>
+      <description>_Editor&amp;#8217;s Note: This is the first in a set of point-counterpoint posts related to the value of abstract thinking in graduate education that we teased a few days ago. Brian Caffo, recently installed Graduate Program Director at the best Biostat department in the country, has kindly agreed to lead off with the case for abstraction. We&amp;#8217;ll follow up later in the week with my counterpoint. In the meantime, there have already been a number of really interesting and insightful comments inspired by our teaser post that are well worth reading.</description>
+    </item>
+    
+  </channel>
+</rss>

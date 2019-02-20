@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Features on Tristan Berchoux</title>
+    <link>/tags/features/</link>
+    <description>Recent content in Features on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 18 Dec 2011 20:42:51 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/features/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New features on Simply Statistics</title>
+      <link>/2011/12/18/new-features-on-simply-statistics/</link>
+      <pubDate>Sun, 18 Dec 2011 20:42:51 +0000</pubDate>
+      
+      <guid>/2011/12/18/new-features-on-simply-statistics/</guid>
+      <description>Check out our Editor&amp;#8217;s Picks and Interviews pages. </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2014/02/05/just-a-thought-on-peer-reviewing-i-cant-help-myself/">Just a thought on peer reviewing - I can&#39;t help myself.</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/02/05</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Today I was thinking about reviewing, probably because I was handling a couple of papers as AE and doing tasks associated with reviewing several other papers. I know that this is idle thinking, but suppose peer review was just a drop down ranking with these 6 questions.
+ How close is this paper to your area of expertise? Does the paper appear to be technically right? Does the paper use appropriate statistics/computing?
+  </p>
+
+  
+  <footer>
+    <a href="/2014/02/05/just-a-thought-on-peer-reviewing-i-cant-help-myself/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/02/04/my-online-course-development-workflow/">My Online Course Development Workflow</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/02/04</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/coursera">coursera</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/data-science">data science</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  One of the nice things about developing 9 new courses for the JHU Data Science Specialization in a short period of time is that you get to learn all kinds of cool and interesting tools. One of the ways that we were able to push out so much content in just a few months was that we did most of the work ourselves, rather than outsourcing things like video production and editing.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/02/04/my-online-course-development-workflow/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/02/03/the-three-tables-for-genomics-collaborations/">The three tables for genomics collaborations</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/02/03</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Collaborations between biologists and statisticians are very common in genomics. For the data analysis to be fruitful, the statistician needs to understand what samples are being analyzed. For the analysis report to make sense to the biologist, it needs to be properly annotated with information such as gene names, genomic location, etc&hellip; In a recent post, Jeff laid out his guidefor such collaborations, here I describe an approach that has helped me in mine.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/02/03/the-three-tables-for-genomics-collaborations/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/01/29/not-teaching-computing-and-statistics-in-our-public-schools-will-make-upward-mobility-even-harder/">Not teaching computing and statistics in our public schools will make upward mobility even harder</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/01/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  In his book Average Is Over, Tyler Cowen predicts that as automatization becomes more common, modern economies will eventually be composed of two groups: 1) a highly educated minority involved in the production of automated services and 2) a vast majority earning very little but enough to consume some of the low-priced products created by group 1. Not everybody will agree with this view, but we can&rsquo;t ignore the fact that automatization has already eliminated many middle class jobs in, for example, manufacturing and the automotive industries.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/01/29/not-teaching-computing-and-statistics-in-our-public-schools-will-make-upward-mobility-even-harder/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/01/28/swirl-2/">Announcing the Release of swirl 2.0</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/01/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Editor&rsquo;s note: This post was written by Nick Carchedi, a Master&rsquo;s degree student in the Department of Biostatistics at Johns Hopkins. He is working with us to develop the Data Science Specialization as well as software for interactive learning of R and statistics.
+Official swirl website: swirlstats.com
+On September 27, 2013, I wrote a guest blog post on Simply Statistics to announce the creation of Statistics with Interactive R Learning (swirl), an R package for teaching and learning statistics and R simultaneously and interactively.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/01/28/swirl-2/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/01/28/marie-curie-says-stop-hating-on-quilt-plots-already/">Marie Curie says stop hating on quilt plots already.</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/01/28</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  &ldquo;There are sadistic scientists who hurry to hunt down error instead of establishing the truth.&rdquo; -Marie Curie (http://en.wikiquote.org/wiki/Marie_Curie)
+ Thanks to Kasper H. for that quote. I think it is a perfect fit for today&rsquo;s culture of academic put down as academic contribution. One perfect example is the explosion of hate against the quilt plot. A quilt plot is a heatmap with several parameters selected in advance; that&rsquo;s it. This simplification of R&rsquo;s heatmap function appeared in the journal PLoS One.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/01/28/marie-curie-says-stop-hating-on-quilt-plots-already/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/01/21/the-johns-hopkins-data-science-specialization-on-coursera/">The Johns Hopkins Data Science Specialization on Coursera</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/01/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  We are very proud to announce the the Johns Hopkins Data Science Specialization on Coursera. You can see the official announcement from the Coursera folks here. This is the main reason Simply Statistics has been a little quiet lately.
+The three of us (Brian Caffo, Roger Peng, and Jeff Leek) along with a couple of incredibly hard working graduate students (Nick Carchedi of swirl fame and Sean Kross) have put together nine new one-month classes to run on the Coursera platform.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/01/21/the-johns-hopkins-data-science-specialization-on-coursera/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/01/19/sunday-datastatistics-link-roundup-1192014/">Sunday data/statistics link roundup (1/19/2014)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/01/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Tesla is hiring a data scientist. That is all. I&rsquo;m not sure I buy the idea that Python is taking over for R among people who actually do regular data science. I think it is still context dependent. A huge fraction of genomics happens in R and there is a steady stream of new packages that allow R users to push farther and farther back into the processing pipeline. On the other hand, I think language diversity is clearly a plus for someone who works with data.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/01/19/sunday-datastatistics-link-roundup-1192014/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/01/17/missing-not-at-random-data-makes-some-facebook-users-feel-sad/">Missing not at random data makes some Facebook users feel sad</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/01/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  This article, published last week, explained how &ldquo;some younger users of Facebook say that using the site often leaves them feeling sad, lonely and inadequate&rdquo;. Being a statistician gives you an advantage here because we know that naive estimates from missing not at random (MNAR) data can be very biased. The posts you see on Facebook are not a random sample from your friends&rsquo; lives. We see pictures of their vacations, abnormally flattering pictures of themselves, reports on their major achievements, etc&hellip; but no view of the mundane typical daily occurrences.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/01/17/missing-not-at-random-data-makes-some-facebook-users-feel-sad/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2014/01/16/edge-org-asks-famous-scientists-what-scientific-concept-to-throw-out-they-say-statistics/">edge.org asks famous scientists what scientific concept to throw out &amp;#038; they say statistics</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/01/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I don&rsquo;t think I&rsquo;ve ever been forwarded one link on the web more than I have been forwarded the edge.org post on &ldquo;What scientific idea is ready for retirement?&rdquo;. Here are a few of the comments with my responses. I&rsquo;m going to keep them brief because I think the edge.org crowd pushes people to say outrageous things, so it isn&rsquo;t even clear they mean what they say.
+I think the whole conceit of the question is a little silly.
+  </p>
+
+  
+  <footer>
+    <a href="/2014/01/16/edge-org-asks-famous-scientists-what-scientific-concept-to-throw-out-they-say-statistics/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/36/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;37 / 104&nbsp;</span>
+  
+  <a href="/page/38/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

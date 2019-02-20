@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Data analysis subcultures &middot; Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Data analysis subcultures</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/04/29</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  <p>Roger and I responded to the controversy around the journal that banned p-values today <a href="http://www.nature.com/news/statistics-p-values-are-just-the-tip-of-the-iceberg-1.17412">in Nature.</a> A piece like this requires a lot of information packed into very little space but I thought one idea that deserved to be talked about more was the idea of data analysis subcultures. From the paper:</p>
+
+<blockquote>
+<p>Data analysis is taught through an apprenticeship model, and different disciplines develop their own analysis subcultures. Decisions are based on cultural conventions in specific communities rather than on empirical evidence. For example, economists call data measured over time &lsquo;panel data&rsquo;, to which they frequently apply mixed-effects models. Biomedical scientists refer to the same type of data structure as &lsquo;longitudinal data&rsquo;, and often go at it with generalized estimating equations.</p>
+</blockquote>
+
+<p>I think this is one of the least appreciated components of modern data analysis. Data analysis is almost entirely taught through an apprenticeship culture with completely different behaviors taught in different disciplines. All of these disciplines agree about the mathematical optimality of specific methods under very specific conditions. That is why you see <a href="http://psychclassics.yorku.ca/Peirce/small-diffs.htm">methods</a> like <a href="http://en.wikipedia.org/wiki/Statistical_Methods_for_Research_Workers">randomized trials</a> [Roger and I responded to the controversy around the journal that banned p-values today <a href="http://www.nature.com/news/statistics-p-values-are-just-the-tip-of-the-iceberg-1.17412">in Nature.</a> A piece like this requires a lot of information packed into very little space but I thought one idea that deserved to be talked about more was the idea of data analysis subcultures. From the paper:</p>
+
+<blockquote>
+<p>Data analysis is taught through an apprenticeship model, and different disciplines develop their own analysis subcultures. Decisions are based on cultural conventions in specific communities rather than on empirical evidence. For example, economists call data measured over time &lsquo;panel data&rsquo;, to which they frequently apply mixed-effects models. Biomedical scientists refer to the same type of data structure as &lsquo;longitudinal data&rsquo;, and often go at it with generalized estimating equations.</p>
+</blockquote>
+
+<p>I think this is one of the least appreciated components of modern data analysis. Data analysis is almost entirely taught through an apprenticeship culture with completely different behaviors taught in different disciplines. All of these disciplines agree about the mathematical optimality of specific methods under very specific conditions. That is why you see <a href="http://psychclassics.yorku.ca/Peirce/small-diffs.htm">methods</a> like <a href="http://en.wikipedia.org/wiki/Statistical_Methods_for_Research_Workers">randomized trials</a>](<a href="http://www.ted.com/talks/esther_duflo_social_experiments_to_fight_poverty?language=en">http://www.ted.com/talks/esther_duflo_social_experiments_to_fight_poverty?language=en</a>) across <a href="http://www.badscience.net/category/evidence-based-policy/">multiple disciplines</a>.</p>
+
+<p>But any real data analysis is always a multi-step process involving data cleaning and tidying, exploratory analysis, model fitting and checking, summarization and communication. If you gave someone from economics, biostatistics, statistics, and applied math an identical data set they&rsquo;d give you back <strong>very</strong> different reports on what they did, why they did it, and what it all meant. Here are a few examples I can think of off the top of my head:</p>
+
+<ul>
+<li>Economics calls longitudinal data panel data and uses mostly linear mixed effects models, while generalized estimating equations are more common in biostatistics (this is the example from Roger/my paper).</li>
+<li>In genome wide association studies the family wise error rate is the most common error rate to control. In gene expression studies people frequently use the false discovery rate.</li>
+<li>This is changing a bit, but if you learned statistics at Duke you are probably a Bayesian and if you learned at Berkeley you are probably a frequentist.</li>
+<li>Psychology has a history of using <a href="http://en.wikipedia.org/wiki/Psychological_statistics">parametric statistics</a>, genomics is big into <a href="http://www.bioconductor.org/packages/release/bioc/html/limma.html">empirical Bayes</a>, and you see a lot of Bayesian statistics in <a href="https://www1.ethz.ch/iac/people/knuttir/papers/meinshausen09nat.pdf">climate studies</a>.</li>
+<li>You see [Roger and I responded to the controversy around the journal that banned p-values today <a href="http://www.nature.com/news/statistics-p-values-are-just-the-tip-of-the-iceberg-1.17412">in Nature.</a> A piece like this requires a lot of information packed into very little space but I thought one idea that deserved to be talked about more was the idea of data analysis subcultures. From the paper:</li>
+</ul>
+
+<blockquote>
+<p>Data analysis is taught through an apprenticeship model, and different disciplines develop their own analysis subcultures. Decisions are based on cultural conventions in specific communities rather than on empirical evidence. For example, economists call data measured over time &lsquo;panel data&rsquo;, to which they frequently apply mixed-effects models. Biomedical scientists refer to the same type of data structure as &lsquo;longitudinal data&rsquo;, and often go at it with generalized estimating equations.</p>
+</blockquote>
+
+<p>I think this is one of the least appreciated components of modern data analysis. Data analysis is almost entirely taught through an apprenticeship culture with completely different behaviors taught in different disciplines. All of these disciplines agree about the mathematical optimality of specific methods under very specific conditions. That is why you see <a href="http://psychclassics.yorku.ca/Peirce/small-diffs.htm">methods</a> like <a href="http://en.wikipedia.org/wiki/Statistical_Methods_for_Research_Workers">randomized trials</a> [Roger and I responded to the controversy around the journal that banned p-values today <a href="http://www.nature.com/news/statistics-p-values-are-just-the-tip-of-the-iceberg-1.17412">in Nature.</a> A piece like this requires a lot of information packed into very little space but I thought one idea that deserved to be talked about more was the idea of data analysis subcultures. From the paper:</p>
+
+<blockquote>
+<p>Data analysis is taught through an apprenticeship model, and different disciplines develop their own analysis subcultures. Decisions are based on cultural conventions in specific communities rather than on empirical evidence. For example, economists call data measured over time &lsquo;panel data&rsquo;, to which they frequently apply mixed-effects models. Biomedical scientists refer to the same type of data structure as &lsquo;longitudinal data&rsquo;, and often go at it with generalized estimating equations.</p>
+</blockquote>
+
+<p>I think this is one of the least appreciated components of modern data analysis. Data analysis is almost entirely taught through an apprenticeship culture with completely different behaviors taught in different disciplines. All of these disciplines agree about the mathematical optimality of specific methods under very specific conditions. That is why you see <a href="http://psychclassics.yorku.ca/Peirce/small-diffs.htm">methods</a> like <a href="http://en.wikipedia.org/wiki/Statistical_Methods_for_Research_Workers">randomized trials</a>](<a href="http://www.ted.com/talks/esther_duflo_social_experiments_to_fight_poverty?language=en">http://www.ted.com/talks/esther_duflo_social_experiments_to_fight_poverty?language=en</a>) across <a href="http://www.badscience.net/category/evidence-based-policy/">multiple disciplines</a>.</p>
+
+<p>But any real data analysis is always a multi-step process involving data cleaning and tidying, exploratory analysis, model fitting and checking, summarization and communication. If you gave someone from economics, biostatistics, statistics, and applied math an identical data set they&rsquo;d give you back <strong>very</strong> different reports on what they did, why they did it, and what it all meant. Here are a few examples I can think of off the top of my head:</p>
+
+<ul>
+<li>Economics calls longitudinal data panel data and uses mostly linear mixed effects models, while generalized estimating equations are more common in biostatistics (this is the example from Roger/my paper).</li>
+<li>In genome wide association studies the family wise error rate is the most common error rate to control. In gene expression studies people frequently use the false discovery rate.</li>
+<li>This is changing a bit, but if you learned statistics at Duke you are probably a Bayesian and if you learned at Berkeley you are probably a frequentist.</li>
+<li>Psychology has a history of using <a href="http://en.wikipedia.org/wiki/Psychological_statistics">parametric statistics</a>, genomics is big into <a href="http://www.bioconductor.org/packages/release/bioc/html/limma.html">empirical Bayes</a>, and you see a lot of Bayesian statistics in <a href="https://www1.ethz.ch/iac/people/knuttir/papers/meinshausen09nat.pdf">climate studies</a>.</li>
+<li>You see](<a href="http://en.wikipedia.org/wiki/White_test">http://en.wikipedia.org/wiki/White_test</a>) used a lot in econometrics, but that is hardly ever done through formal hypothesis testing in biostatistics.</li>
+<li>Training sets and test sets are used in machine learning for prediction, but rarely used for inference.</li>
+</ul>
+
+<p>This is just a partial list I thought of off the top of my head, there are a ton more. These decisions matter <strong>a lot</strong> in a data analysis.  The problem is that the behavioral component of a data analysis is incredibly strong, no matter how much we&rsquo;d like to think of the process as mathematico-theoretical. Until we acknowledge that the most common reason a method is chosen is because, &ldquo;I saw it in a widely-cited paper in journal XX from my field&rdquo; it is likely that little progress will be made on resolving the statistical problems in science.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2015/04/13/why-is-there-so-much-university-administration-we-kind-of-asked-for-it/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2015/04/13/why-is-there-so-much-university-administration-we-kind-of-asked-for-it/">Why is there so much university administration? We kind of asked for it.</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2015/04/30/figuring-out-learning-objectives-the-hard-way/">Figuring Out Learning Objectives the Hard Way</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2015/04/30/figuring-out-learning-objectives-the-hard-way/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

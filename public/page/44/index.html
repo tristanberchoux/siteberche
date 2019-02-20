@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2013/09/26/how-could-code-review-discourage-code-disclosure-reviewers-with-motivation/">How could code review discourage code disclosure? Reviewers with motivation.</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/09/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  [](http://www.nature.com/news/mozilla-plan-seeks-to-debug-scientific-code-1.13812) appeared a couple of days ago in Nature describing Mozilla&rsquo;s efforts to implement code review for scientific papers. As anyone who follows our blog knows, we are in favor of reproducible research, in favor of disclosing code, and in favor of open science.
+So people were surprised when they saw this quote from Roger at the end of the Nature piece:
+ “One worry I have is that, with reviews like this, scientists will be even more discouraged from publishing their code.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/09/26/how-could-code-review-discourage-code-disclosure-reviewers-with-motivation/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/09/25/is-most-science-false-the-titans-weigh-in/">Is most science false? The titans weigh in.</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/09/25</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Some of you may recall that a few months ago my colleague and I posted a paper to the ArXiv on estimating the rate of false discoveries in the scientific literature. The paper was picked up by the Tech Review and led to a post on Andrew G.&rsquo;s blog, on Discover blogs, and on our blog. One other interesting feature of our paper was that we put all the code/data we collected on Github.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/09/25/is-most-science-false-the-titans-weigh-in/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/09/24/how-i-view-an-academic-talk-like-a-sports-game/">How I view an academic talk: like a sports game</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/09/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I know this is a little random/non-statisticsy but I have been thinking about it a lot lately. Over the last couple of weeks I have been giving a bunch of talks and guest lectures here locally around the Baltimore/DC area. Each one of them was to a slightly different audience.
+As I was preparing/giving all of these talks I realized I have a few habits that I have developed in the way I view the talks and in the way that I give them.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/09/24/how-i-view-an-academic-talk-like-a-sports-game/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/09/23/the-limiting-reagent-for-big-data-is-often-small-well-curated-data/">The limiting reagent for big data is often small, well-curated data</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/09/23</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I&rsquo;ve been working on &ldquo;big&rdquo; data in genomics since I was a first year student in graduate school (a longer time than I&rsquo;d rather admit). At the time, &ldquo;big&rdquo; meant microarray studies with a couple of hundred patients. Of course, that is now a really small drop in the pond compared to the huge sequencing data sets, like the one published recently in Nature.
+Despite the exploding size of these genomic data sets, the discovery process is almost always limited by the quality and quantity of useful metadata that go along with them.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/09/23/the-limiting-reagent-for-big-data-is-often-small-well-curated-data/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/09/17/announcing-the-simply-statistics-unconference-on-the-future-of-statistics-futureofstats/">Announcing the Simply Statistics Unconference on the Future of Statistics #futureofstats</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/09/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Sign up here!
+We here at Simply Statistics are pumped about the Statistics 2013 Future of Statistical Sciences Workshop (Nov. 11-12). It is a great time to be a statistician and discussing the future of our discipline is of utmost importance to us. In fact, we liked the idea so much that we decided to get in the game ourselves. We are super excited to announce the first ever “Unconference” hosted by Simply Statistics.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/09/17/announcing-the-simply-statistics-unconference-on-the-future-of-statistics-futureofstats/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/09/16/data-analysis-in-the-top-9-courses-in-lifetime-enrollment-at-coursera/">Data Analysis in the top 9 courses in lifetime enrollment at Coursera!</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/09/16</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Holy cow I just saw this, my Coursera class is in the top 9 by all time enrollment!
+ Top 9 courses on #coursera by lifetime enrollment current as of 9/16- check out & enroll: http://t.co/2X0EJoetoC! pic.twitter.com/d0Sko1KhoD  &mdash; Coursera (@coursera) September 16, 2013  Only problem is those pesky other classes ahead of me. Help me take down Creativity, Innovation and Change (what good is all that anyway by signing up here!
+  </p>
+
+  
+  <footer>
+    <a href="/2013/09/16/data-analysis-in-the-top-9-courses-in-lifetime-enrollment-at-coursera/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/09/13/so-youre-moving-to-baltimore/">So you&#39;re moving to Baltimore</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/09/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Editor&rsquo;s Note: This post was written by Brian Caffo, occasional Simply Statistics contributor and Director of Graduate Studies in the Department of Biostatistics at Johns Hopkins. This was written primarily for incoming graduate students, but if you&rsquo;re planning on moving to Baltimore anyway, feel free to use it to your advantage!
+Congratulations on picking Hopkins Biostatistics for your graduate studies. Now that you’re either here or coming to to Baltimore, I’m guessing that you’ll need some start-up knowledge for this quirky, fun city.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/09/13/so-youre-moving-to-baltimore/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/09/12/help-needed-for-establishing-an-asa-statistical-genetics-and-genomics-section/">Help needed for establishing an ASA statistical genetics and genomics section</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/09/12</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  To promote research and education in statistical genetics and genomics, some of us in the community would like to establish a statistical genetics and genomics section of the American Statistical Association (ASA). Having an ASA section gives us certain advantages, such as having allocated invited sessions at JSM, young investigator and student awards, and senior investigator awards in statistical genetics and genomics, as well as a community to interact and exchange information.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/09/12/help-needed-for-establishing-an-asa-statistical-genetics-and-genomics-section/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/09/05/implementing-evidence-based-data-analysis-treading-a-new-path-for-reproducible-research-part-3/">Implementing Evidence-based Data Analysis: Treading a New Path for Reproducible Research (Part 3)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/09/05</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Last week I talked about how we might be able to improve data analyses by moving towards &ldquo;evidence-based&rdquo; data analysis and to use data analytic techniques that are proven to be useful based on statistical research rather. My feeling was this approach attacks the most &ldquo;upstream&rdquo; aspect of data analysis before problems have the chance to filter down into things like publications, or even worse, clinical decision-making.
+In this third (and final!
+  </p>
+
+  
+  <footer>
+    <a href="/2013/09/05/implementing-evidence-based-data-analysis-treading-a-new-path-for-reproducible-research-part-3/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/09/04/repost-a-proposal-for-a-really-fast-statistics-journal/">Repost: A proposal for a really fast statistics journal</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/09/04</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Editor&rsquo;s note: This is a repost of a previous Simply Statistics column that seems to be relevant again in light of Marie Davidian&rsquo;s really important column on the peer review process. You should also check out Yihui&rsquo;s thoughts on this, which verge on the creation of a very fast/dynamic stats journal. 
+I know we need a new journal like we need a good poke in the eye. But I got fired up by the recent discussion of open science (by Paul Krugman and others) and the seriously misguided Research Works Act- that aimed to make it illegal to deposit published papers funded by the government in Pubmed central or other open access databases.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/09/04/repost-a-proposal-for-a-really-fast-statistics-journal/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/43/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;44 / 104&nbsp;</span>
+  
+  <a href="/page/45/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

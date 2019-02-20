@@ -2,14 +2,14 @@
 title = "Research"
 date = "2019-02-20"
 sidemenu = "true"
-description = "Research interests and selected publications"
+description = "Current Interests and Future Plans"
 
 +++
 
 My work uses a combination of empirical spatial approach with participatory research and quantitative economic modelling to advance knowledge on sustainable and inclusive development of rural territories.
 The following is a summary of my ongoing research contributions and some information about my future research plans.
 
-[Click here to get to a list of publications](#publications)
+[Click here to get to a list of publications](/papers/)
 
 # Current research
 
@@ -23,7 +23,7 @@ Marginalised rural communities, either geographically or socio-economically, are
 Improving the marketing of agricultural products is essential to increase farmers' incomes and agricultural production, thus reducing rural poverty and food insecurity. The model of bulk markets, based on the economic theory of free markets, is supposed to lead to the regulation of supply and demand by bringing sellers and buyers together in the same place, thus reducing agricultural market imperfections and increasing smallholders' bargaining power. In order to characterise the impact of this model on rural development, I conducted country-level analyses of agricultural marketing systems in Tanzania and Uganda by conducting rapid diagnosis in several rural territories and analysing time series of agricultural prices to characterise the impact of bulk markets on poverty and price volatility. My findings showed that `bulk markets induce positive effects on farmers' incomes and galvanise agricultural channels only when there is a high number of agents using the market`, as it increases farmers' incomes to the detriment of brokers.  Active atomistic markets can lead to an activity specialisation of the different service providers, thus reducing the cost of services and increasing farmers' incomes. My conclusions recommended that `wholesale markets should provide services that farmers need and usually get from brokers, such as financial and transport services`.
 
 
-	
+​	
 
 ## Rural territory resources and Sustainable Development Goals.
 
@@ -43,7 +43,7 @@ Spatial factors, such as environmental conditions, distance to natural resources
 
 Rural territories face significant challenges to supply urban areas with agricultural commodities while ensuring livelihoods and providing living space to their growing population in the context of climate change and high uncertainty. One of the key challenges to achieving a sustainable and inclusive development is to identify plausible future changes in socio-ecological systems based on different strategies of territorial management and to characterise their impacts on both the environment, economy and human societies. Based on participatory workshops with local and national stakeholders and an extensive political economy analysis, my research simulates alternative futures for the Vietnamese Mekong Delta arising from the combinations of two axes: the level of engagement of locals in the economy and the type of development pursued by the government. As the scenarios differ from each other significantly regarding the handling of major challenges that the delta will be facing in the future, I quantify them using changes in demand and different prioritisation of land systems. These parameters reflect the multi-functionality of landscapes by taking into account land use, land management, economic sector, irrigation and livestock density. Using Generalised Linear Models, I demonstrate that each land system can only provide secure livelihoods to a certain number of households. Furthermore, I predict future changes in land systems using the CLUMondo model, while accounting for the government's economic targets. The estimated impacts of each scenario on the provision of livelihoods show that pro-environmental policies would ensure a more equal repartition of wealth, while pro-liberal policies would trigger rural outmigration, thus exacerbating poverty in urban areas. My preliminary results indicate that `co-ordinating environmental policies with appropriate management of water resources and market access are needed to secure livelihoods while ensuring food security and inclusive economic development`.
 
-# Future research plans and funding
+# Future research plans
 
 In the coming years, I plan to pursue research on the role of territorial resources in determining unemployment and migration, with a particular focus on youth unemployment in Mediterranean rural territories and on sustainable management of natural resources. An important issue is how to find a satisfactory balance between environmental stability and economic growth while ensuring an inclusive development of rural territories. Another area which particularly interests me is policy-oriented research through the evaluation of rural development policies in different Mediterranean territories to quantify their economic, social and environmental outcomes.
 

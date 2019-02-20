@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Simulation on Tristan Berchoux</title>
+    <link>/tags/simulation/</link>
+    <description>Recent content in Simulation on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Wed, 06 Mar 2013 12:35:04 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/simulation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The importance of simulating the extremes</title>
+      <link>/2013/03/06/the-importance-of-simulating-the-extremes/</link>
+      <pubDate>Wed, 06 Mar 2013 12:35:04 +0000</pubDate>
+      
+      <guid>/2013/03/06/the-importance-of-simulating-the-extremes/</guid>
+      <description>Simulation is commonly used by statisticians/data analysts to: (1) estimate variability/improve predictors, (2) to evaluate the space of potential outcomes, and (3) to evaluate the properties of new algorithms or procedures. Over the last couple of days, discussions of simulation have popped up in a couple of different places.
+First, the reviewers of a paper that my student is working on had asked a question about the behavior of the method in different conditions.</description>
+    </item>
+    
+    <item>
+      <title>On weather forecasts, Nate Silver, and the politicization of statistical illiteracy</title>
+      <link>/2012/10/30/on-weather-forecasts-nate-silver-and-the/</link>
+      <pubDate>Tue, 30 Oct 2012 14:00:35 +0000</pubDate>
+      
+      <guid>/2012/10/30/on-weather-forecasts-nate-silver-and-the/</guid>
+      <description>As you know, we have a thing for statistical literacy here at Simply Stats. So of course this column over at Politico got our attention (via Chris V. and others). The column is an attack on Nate Silver, who has a blog where he tries to predict the outcome of elections in the U.S., you may have heard of it&amp;#8230;
+The argument that Dylan Byers makes in the Politico column is that Nate Silver is likely to be embarrassed by the outcome of the election if Romney wins.</description>
+    </item>
+    
+    <item>
+      <title>The self-assessment trap</title>
+      <link>/2011/10/21/the-self-assessment-trap/</link>
+      <pubDate>Fri, 21 Oct 2011 14:35:00 +0000</pubDate>
+      
+      <guid>/2011/10/21/the-self-assessment-trap/</guid>
+      <description>Several months ago I was sitting next to my colleague Ben Langmead at the Genome Informatics meeting. Various talks were presented on short read alignments and every single performance table showed the speaker&amp;#8217;s method as #1 and Ben&amp;#8217;s Bowtie as #2 among a crowded field of lesser methods. It was fun to make fun of Ben for getting beat every time, but the reality was that all I could conclude was that Bowtie was best and speakers were falling into the the self-assessment trap: each speaker had tweaked the assessment to make their method look best.</description>
+    </item>
+    
+  </channel>
+</rss>

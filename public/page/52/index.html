@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <title>Tristan Berchoux</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  <link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script async src="https://use.fontawesome.com/32c3d13def.js"></script>
+
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Tristan Berchoux" href="/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/"><img src="/img/ciheam.png" alt="CIHEAM" /></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/teaching/"><i class='fa fa-university fa-fw'></i>Teaching</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/research/"><i class='fa fa-area-chart fa-fw'></i>Research</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/papers/"><i class='fa fa-newspaper-o fa-fw'></i>Publications</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:tristan.berchoux@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tristanberchoux" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/TristanBerchoux" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/Tristan_Berchoux" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user=shdhPjcAAAAJ%26hl%3den" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/0000-0003-4095-2164" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    
+
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 by Tristan Berchoux</small>
+  </div>
+  <div class="small-print">
+    <small>Built with <a href="https://github.com/rstudio/blogdown" target="_blank">blogdown</a> and <a href="https://gohugo.io/" target="_blank">Hugo</a>. Theme <a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a>.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Tristan Berchoux</h1>
+  <h2>Spatial Planning • Economic Geography • Rural Development</h2>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2013/04/08/nih-is-looking-for-an-associate-director-for-data-science-statisticians-should-consider-applying/">NIH is looking for an Associate Director for Data Science: Statisticians should consider applying</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Rafael Irizarry</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/04/08</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/data-science">data science</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/jobs">jobs</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/nih">NIH</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  NIH understands the importance of data and several months ago they announced this new position. Here is an excerpt from the add:
+ The ADDS will focus on the urgent need and increased opportunities for capitalizing on the expanding collections of biomedical data to advance NIH’s mission. In doing so, the incumbent will provide programmatic NIH-wide leadership for areas of data science that relate to data emanating from many areas of study (e.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/04/08/nih-is-looking-for-an-associate-director-for-data-science-statisticians-should-consider-applying/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/04/02/introducing-the-healthvis-r-package-one-line-d3-graphics-with-r/">Introducing the healthvis R package  - one line D3 graphics with R</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/04/02</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/healthvis">healthvis</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/interactive-visualization">interactive visualization</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/shiny">shiny</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/visualization">visualization</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  We have been a little slow on the posting for the last couple of months here at Simply Stats. That’s bad news for the blog, but good news for our research programs! Today I’m announcing the new healthvis R package that is being developed by my student Prasad Patil (who needs a website like yesterday), Hector Corrada Bravo, and myself*. The basic idea is that I have loved D3 interactive graphics for a while.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/04/02/introducing-the-healthvis-r-package-one-line-d3-graphics-with-r/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/03/26/an-instructors-thoughts-on-peer-review-for-data-analysis-in-coursera/">An instructor&#39;s thoughts on peer-review for data analysis in Coursera</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/03/26</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I used peer-review for the data analysis course I just finished. As I mentioned in the post-mortem podcast I knew in advance that it was likely to be the most controversial component of the class. So it wasn&rsquo;t surprising that based on feedback in the discussion boards and on this blog, the peer review process is by far the thing students were most concerned about.
+But to evaluate complete data analysis projects at scale there is no other alternative that is economically feasible.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/03/26/an-instructors-thoughts-on-peer-review-for-data-analysis-in-coursera/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/03/25/podcast-6-data-analysis-mooc-post-mortem/">Podcast #6: Data Analysis MOOC Post-mortem</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/03/25</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/coursera">coursera</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/mooc">MOOC</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/statistics">statistics</a>
+    
+  </div>
+  
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Jeff and I talk about Jeff&rsquo;s recently completed MOOC on Data Analysis.
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/03/24/sunday-datastatistics-link-roundup-3242013/">Sunday data/statistics link roundup (3/24/2013)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/03/24</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  My Coursera Data Analysis class is done for now! All the lecture notes are on Githuball the videos are on Youtube. They are tagged by week with tags &ldquo;Week x&rdquo;. After ENAR the comments on how to have better stats conferences started flowing. Check out Frazee, Xie, and Broman. My favorite cherry picked ideas: conference app (frazee), giving the poster session more focus (frazee), free and announced wifi (broman), more social media (i loved following ENAR on twitter but wish there had been more tweeting) (xie), add some jokes to talks (xie).
+  </p>
+
+  
+  <footer>
+    <a href="/2013/03/24/sunday-datastatistics-link-roundup-3242013/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/03/21/youtube-should-check-its-checksums/">Youtube should check its checksums</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/03/21</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  I am in the process of uploading the video lectures for Data Analysis. I am getting ready to send out the course wrap-up email and I wanted to include the link to the Youtube playlist as well.
+Unfortunately, Youtube keeps reporting that a pair of the videos in week 2 are duplicates. This is true despite them being different lengths (12:15 vs. 16:58), having different titles, and having dramatically different content.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/03/21/youtube-should-check-its-checksums/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/03/19/call-for-papers-for-a-special-issue-of-statistical-analysis-and-data-mining/">Call for papers for a special issue of Statistical Analysis and Data Mining</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/03/19</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  David Madigan sends the following. It looks like a really interesting place to submit papers for both statisticians and data scientists, so submit away!
+ Statistical Analysis and Data Mining, An American Statistical Association Journal
+ Call for Papers   Special Issue on Observational Healthcare Data     Guest Editors: Patrick Ryan, J&J and Marc Suchard, UCLA     Due date: July 1, 2013     Data sciences is the rapidly evolving field that integrates   mathematical and statistical knowledge, software engineering and large-scale data management skills, and domain expertise to tackle difficult problems that typically cannot be solved by any one discipline alone.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/03/19/call-for-papers-for-a-special-issue-of-statistical-analysis-and-data-mining/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/03/17/sunday-datastatistics-link-roundup-31713/">Sunday data/statistics link roundup (3/17/13)</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Jeff Leek</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/03/17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  A post on the Revolutions blog about an analysis of the worldwide email traffic patterns. The corresponding paper is alsopretty interesting. The best part is the whole analysis was done in R.  A bill in California that would require faculty approved online classes to be given credit. I think this is potentially game changing if it passes - depending on who has to do the approving. If there is local control within departments it could be huge.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/03/17/sunday-datastatistics-link-roundup-31713/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/03/14/postdoctoral-fellow-position-in-reproducible-research/">Postdoctoral fellow position in reproducible research</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/03/14</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  We are looking to recruit a postdoctoral fellow to work on developing tools to make scientific research more easily reproducible. We&rsquo;re looking for someone who wants to work on (and solve!) real research problems in the biomedical sciences and address the growing need for reproducible research tools. The position would be in the Department of Biostatistics at the Johns Hopkins Bloomberg School of Public Health and would be jointly advised by Jeff and myself.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/03/14/postdoctoral-fellow-position-in-reproducible-research/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2013/03/13/heres-my-enar2013-wednesday-schedule/">Here&#39;s my #ENAR2013 Wednesday schedule</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Roger Peng</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/03/13</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+
+  </header>
+
+  <p>
+  Here are my picks for ENAR sessions today (Wednesday):
+ 8:30-10:15am: Large Data Visualization and Exploration, Grand Ballroom 4 (make sure you stay till the end to see Karl Broman); Innovative Methods in Causal Inference with Applications to Mediation, Neuroimaging, and Infectious Diseases, Grand Ballroom 8A; Next Generation Sequencing, Grand Ballroom 5 10:30am-12:15pm: Statistical Information Integration of -Omics Data, Grand Ballrooms 1 &amp; 2  Okay, so this schedule actually requires me to split myself in to three separate entities.
+  </p>
+
+  
+  <footer>
+    <a href="/2013/03/13/heres-my-enar2013-wednesday-schedule/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+
+  
+
+
+<nav class="pagination" role="pagination">
+  
+  <a href="/page/51/"><i class="fa fa-chevron-left"></i></a>
+  
+  <span>&nbsp;52 / 104&nbsp;</span>
+  
+  <a href="/page/53/"><i class="fa fa-chevron-right"></i></a>
+  
+</nav>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
+

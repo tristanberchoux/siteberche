@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Links on Tristan Berchoux</title>
+    <link>/tags/links/</link>
+    <description>Recent content in Links on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Sun, 28 Oct 2012 13:39:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/links/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (10/28/12)</title>
+      <link>/2012/10/28/sunday-data-statistics-link-roundup-10-28-12/</link>
+      <pubDate>Sun, 28 Oct 2012 13:39:00 +0000</pubDate>
+      
+      <guid>/2012/10/28/sunday-data-statistics-link-roundup-10-28-12/</guid>
+      <description>An important article about anti-science sentiment in the U.S. (via David S.). The politicization of scientific issues such as global warming, evolution, and healthcare (think vaccination) makes the U.S. less competitive. I think the lack of statistical literacy and training in the U.S. is one of the sources of the problem. People use/skew/mangle statistical analyses and experiments to support their view and without a statistically well trained public, it all looks &amp;#8220;reasonable and scientific&amp;#8221;.</description>
+    </item>
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (10/14/12)</title>
+      <link>/2012/10/14/sunday-data-statistics-link-roundup-10-14-12/</link>
+      <pubDate>Sun, 14 Oct 2012 13:35:00 +0000</pubDate>
+      
+      <guid>/2012/10/14/sunday-data-statistics-link-roundup-10-14-12/</guid>
+      <description>A fascinating article about the debate on whether to regulate sugary beverages. One of the protagonists is David Allison, a statistical geneticist, among other things. It is fascinating to see the interplay of statistical analysis and public policy. Yet another example of how statistics/data will drive some of the most important policy decisions going forward.  A related article is this one on the way risk is reported in the media.</description>
+    </item>
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (7/15/12)</title>
+      <link>/2012/07/15/sunday-data-statistics-link-roundup-7-15-12/</link>
+      <pubDate>Sun, 15 Jul 2012 13:23:19 +0000</pubDate>
+      
+      <guid>/2012/07/15/sunday-data-statistics-link-roundup-7-15-12/</guid>
+      <description>A really nice list of journals software/data release policies from Titus&amp;#8217; blog. Interesting that he couldn&amp;#8217;t find a data/release policy for the New England Journal of Medicine. I wonder if that is because it publishes mostly clinical studies, where the data are often protected for privacy reasons? It seems like there is going to eventually be a big discussion of the relative importance of privacy and open data in the clinical world.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (6/10)</title>
+      <link>/2012/06/10/sunday-data-statistics-link-roundup-6-10/</link>
+      <pubDate>Sun, 10 Jun 2012 21:31:47 +0000</pubDate>
+      
+      <guid>/2012/06/10/sunday-data-statistics-link-roundup-6-10/</guid>
+      <description>Yelp put a data set online for people to play with, including reviews, star ratings, etc. This could be a really neat data set for a student project. The data they have made available focuses on the area around 30 universities. My alma mater is one of them.  A sort of goofy talk about how to choose the optimal marriage partner when viewing the problem as an optimal stopping problem.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (5/27)</title>
+      <link>/2012/05/27/sunday-data-statistics-link-roundup-5-27/</link>
+      <pubDate>Sun, 27 May 2012 17:09:06 +0000</pubDate>
+      
+      <guid>/2012/05/27/sunday-data-statistics-link-roundup-5-27/</guid>
+      <description>Amanda Cox on the process they went through to come up with this graphic about the Facebook IPO. So cool to see how R is used in the development process. A favorite quote of mine, &amp;#8220;But rather than bringing clarity, it just sort of looked chaotic, even to the seasoned chart freaks of 620 8th Avenue.&amp;#8221; One of the more interesting things about posts like this is you get to see how statistics versus a deadline works.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (4/29)</title>
+      <link>/2012/04/29/sunday-data-statistics-link-roundup-4-29/</link>
+      <pubDate>Sun, 29 Apr 2012 22:57:41 +0000</pubDate>
+      
+      <guid>/2012/04/29/sunday-data-statistics-link-roundup-4-29/</guid>
+      <description>Nature genetics has an editorial on the Mayo and Myriad cases. I agree with this bit: &amp;#8220;In our opinion, it is not new judgments or legislation that are needed but more innovation. In the era of whole-genome sequencing of highly variable genomes, it is increasingly hard to justify exclusive ownership of particularly useful parts of the genome, and method claims must be more carefully described.&amp;#8221; Via Andrew J. One of Tech Review&amp;#8217;s 10 emerging technologies from a February 2003 article?</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (4/8)</title>
+      <link>/2012/04/09/sunday-data-statistics-link-roundup-4-8/</link>
+      <pubDate>Mon, 09 Apr 2012 01:42:10 +0000</pubDate>
+      
+      <guid>/2012/04/09/sunday-data-statistics-link-roundup-4-8/</guid>
+      <description>This is a great article about the illusion of progress in machine learning. In part, I think it explains why the Leekasso (just using the top 10) isn&amp;#8217;t a totally silly idea. I also love how he talks about sources of uncertainty in real prediction problems that aren&amp;#8217;t part of the classical models when developing prediction algorithms. I think that this is a hugely underrated component of building an accurate classifier - just finding the quirks particular to a type of data.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (3/25)</title>
+      <link>/2012/03/25/sunday-data-statistics-link-roundup-3-25/</link>
+      <pubDate>Sun, 25 Mar 2012 15:58:25 +0000</pubDate>
+      
+      <guid>/2012/03/25/sunday-data-statistics-link-roundup-3-25/</guid>
+      <description>The psychologist whose experiment didn&amp;#8217;t replicate then went off on the scientists who did the replication experiment is at it again. I don&amp;#8217;t see a clear argument about the facts of the matter in his post, just more name calling. This seems to be a case study in what not to do when your study doesn&amp;#8217;t replicate. More on &amp;#8220;conceptual replication&amp;#8221; in there too.  Berkeley is running a data science course with instructors Jeff Hammerbacher and Mike Franklin, I looked through the notes and it looks pretty amazing.</description>
+    </item>
+    
+    <item>
+      <title>Sunday data/statistics link roundup (3/18)</title>
+      <link>/2012/03/18/sunday-data-statistics-link-roundup-3-18/</link>
+      <pubDate>Sun, 18 Mar 2012 14:58:00 +0000</pubDate>
+      
+      <guid>/2012/03/18/sunday-data-statistics-link-roundup-3-18/</guid>
+      <description>A really interesting proposal by Rafa (in Spanish - we&amp;#8217;ll get on him to write a translation) for the University of Puerto Rico. The post concerns changing the focus from simply teaching to creating knowledge and the potential benefits to both the university and to Puerto Rico. It also has a really nice summary of the benefits that the university system in the United States has produced. Definitely worth a read.</description>
+    </item>
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup (3/11)</title>
+      <link>/2012/03/12/sunday-data-statistics-link-roundup-3-11/</link>
+      <pubDate>Mon, 12 Mar 2012 19:40:00 +0000</pubDate>
+      
+      <guid>/2012/03/12/sunday-data-statistics-link-roundup-3-11/</guid>
+      <description>This is the big one. ESPN has opened up access to their API! It looks like there may only be access to some of the data for the general public though, does anyone know more?  Looks like ESPN isn&amp;#8217;t the only sports-related organization in the API mood, Nike plans to open up an API too. It would be great if they had better access to individual, downloadable data.  Via Leonid K.</description>
+    </item>
+    
+    <item>
+      <title>figshare and don&#39;t trust celebrities stating facts</title>
+      <link>/2012/01/17/figshare-and-dont-trust-celebrities-stating-facts/</link>
+      <pubDate>Tue, 17 Jan 2012 17:48:58 +0000</pubDate>
+      
+      <guid>/2012/01/17/figshare-and-dont-trust-celebrities-stating-facts/</guid>
+      <description>A couple of links:
+ figshare is a site where scientists can share data sets/figures/code. One of the goals is to encourage researchers to share negative results as well. I think this is a great idea - I often find negative results and this could be a place to put them. It also uses a tagging system, like Flickr. I think this is a great idea for scientific research discovery. They give you unlimited public space and 1GB of private space.</description>
+    </item>
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup</title>
+      <link>/2012/01/15/sunday-data-statistics-link-roundup/</link>
+      <pubDate>Sun, 15 Jan 2012 15:38:00 +0000</pubDate>
+      
+      <guid>/2012/01/15/sunday-data-statistics-link-roundup/</guid>
+      <description>Statistics help for journalists (don&amp;#8217;t forget to keep rating stories!) This is the kind of thing that could grow into a statisteracy page. The author also has a really nice plug for public schools.  An interactive graphic to determine if you are in the 1% from the New York Times (I&amp;#8217;m not&amp;#8230;). Mike Bostock&amp;#8217;s d3.js presentation, this is some really impressive visualization software. You have to change the slide numbers manually but it is totally worth it.</description>
+    </item>
+    
+    <item>
+      <title>Sunday Data/Statistics Link Roundup</title>
+      <link>/2012/01/08/sunday-data-statistics-link-roundup-2/</link>
+      <pubDate>Sun, 08 Jan 2012 19:35:42 +0000</pubDate>
+      
+      <guid>/2012/01/08/sunday-data-statistics-link-roundup-2/</guid>
+      <description>A few data/statistics related links of interest:
+ Eric Lander Profile The math of lego (should be &amp;#8220;The statistics of lego&amp;#8221;) Where people are looking for homes. Hans Rosling&amp;#8217;s Ted Talk on the Developing world (an oldie but a goodie) Elsevier is trying to make open-access illegal (not strictly statistics related, but a hugely important issue for academics who believe government funded research should be freely accessible), more here.   </description>
+    </item>
+    
+  </channel>
+</rss>

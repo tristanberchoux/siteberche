@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assessment on Tristan Berchoux</title>
+    <link>/tags/assessment/</link>
+    <description>Recent content in Assessment on Tristan Berchoux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <lastBuildDate>Mon, 30 Jan 2012 14:02:05 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/assessment/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why in-person education isn&#39;t dead yet...but a statistician could finish it off</title>
+      <link>/2012/01/30/why-in-person-education-isnt-dead-yet-but-a/</link>
+      <pubDate>Mon, 30 Jan 2012 14:02:05 +0000</pubDate>
+      
+      <guid>/2012/01/30/why-in-person-education-isnt-dead-yet-but-a/</guid>
+      <description>A growing tend in education is to put lectures online, for free. The Kahn Academy, Stanford&amp;#8217;s recent AI course, and Gary King&amp;#8217;s new quantitative government course at Harvard are three of the more prominent examples. This new pedagogical format is more democratic, free, and helps people learn at their own pace. It has led some, including us here at Simply Statistics, to suggest that the future of graduate education lies in online courses.</description>
+    </item>
+    
+  </channel>
+</rss>

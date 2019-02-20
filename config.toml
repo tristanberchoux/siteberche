@@ -15,7 +15,7 @@ paginate = 10
 
 [params]
   # Shown in the home page
-  subtitle = "Landscapes and Livelihoods"
+  subtitle = "Rural landscapes and livelihoods"
   brand = "![CIHEAM](/img/ciheam.png)"
   # CSS name for highlight.js
   highlightjs = "github"

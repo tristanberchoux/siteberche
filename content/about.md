@@ -2,17 +2,27 @@
 title = "About"
 date = "2019-02-20"
 sidemenu = "true"
-description = "About me and this site"
+description = "Welcome to my website and thank you for dropping by."
 
 +++
 
-Welcome to my website and thank you for dropping by. I am a Research Fellow within Geography and Environmental Science at the University of Southampton. My principal research interests lie in the field of spatial planning and sustainable rural development. I am a postdoctoral research fellow in economic geography applied to rural territories. My current work looks at the impact of climate change on landscapes and livelihoods under different policy scenarios in the Mekong Delta using spatial modelling. I have a particular expertise in quantitative modelling applied to rural territories from a social, environmental and economic perspective.
+I am a Research Fellow within Geography and Environmental Science at the University of Southampton. My principal research interests lie in the field of spatial planning and sustainable rural development. I am a postdoctoral research fellow in economic geography applied to rural territories. My current work looks at the impact of climate change on landscapes and livelihoods under different policy scenarios in the Mekong Delta using spatial modelling. I have a particular expertise in quantitative modelling applied to rural territories from a social, environmental and economic perspective.
+
+I am currently working with Professor Steve Darby and Professor Craig Hutton on the project “Building Resilient Agricultural Systems: Sustainable Livelihoods in Mega Deltas Under Environmental Change (BRAgS).” The project is funded by the Biotechnology and Biological Sciences Research Council under a GCRF Foundation Award for Global Agriculture and Food Systems Research. The aim of the project is to establish a new international and multidisciplinary collaboration between UK and Vietnamese universities, international agencies and key end users that is capable of delivering new insight into the trade-offs between flooding, sediment and nutrient deposition, agricultural systems and associated livelihood strategies in the Vietnamese Mekong Delta.
+
+### Research interests
+
+- **Economic geography** (livelihoods, employment, territorial impact of climate change, quantitative modelling of rural territories, political economy of livelihoods)
+- **Landscape planning and land systems** (policies, management)
+- **Agricultural economics** (agricultural prices, markets, family farming, microfinance, migration)
 
 ---
 
 ### Research experience
 
 **2017-2019** -- Postdoctoral Research Fellow in Economic Geography • [University of Southampton](https://www.southampton.ac.uk/geography) • UK
+
+**2014-2018** -- Research Assistant in Geography • [DECCMA](www.deccma.com) • UK
 
 **2013** -- Research Associate in Agricultural Economics • [GRET](https://www.gret.org/?lang=en) • Tanzania & Uganda
 
@@ -35,21 +45,3 @@ Welcome to my website and thank you for dropping by. I am a Research Fellow with
 **2018** -- Ph.D. in Economic and Social Geography • [University of Southampton](https://www.southampton.ac.uk/geography/postgraduate/index.page?) • UK
 
 **2013** -- MSc (Dipl. Ing.) in Rural Development • [Montpellier SupAgro](http://www.supagro.fr/web/en/) • France
-
----
-
-### Research interests
-
-- **Economic geography** (livelihoods, employment, territorial impact of climate change, quantitative modelling of rural territories, political economy of livelihoods)
-- **Landscape planning and land systems** (policies, management)
-- **Agricultural economics** (agricultural prices, markets, family farming, microfinance, migration)
-
-### Current Research Project
-
-Tristan is currently working with Professor Steve Darby and Professor Craig Hutton on the project “Building Resilient Agricultural Systems: Sustainable Livelihoods in Mega Deltas Under Environmental Change (BRAgS).” The project is funded by the Biotechnology and Biological Sciences Research Council under a GCRF Foundation Award for Global Agriculture and Food Systems Research. The aim of the project is to establish a new international and multidisciplinary collaboration between UK and Vietnamese universities, international agencies and key end users that is capable of delivering new insight into the trade-offs between flooding, sediment and nutrient deposition, agricultural systems and associated livelihood strategies in the Vietnamese Mekong Delta.
-
-### Previous Research Projects
-
-- [DECCMA](www.deccma.com) - Deltas, vulnerability and Climate Change: Migration and Adaptation (2014-2018)
-- Marketing systems in Tanzania and Uganda: role of wholesale markets in reducing market imperfections and improving small-scale farmers’ bargaining power (2013)
-- Physical capital accumulation in Vietnamese rural households: development strategies, practices and risks – Evolution trajectories and strategies for resorting to credit in the rural households of Phu Tho Province, North Vietnam (2011-2012)

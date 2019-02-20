@@ -18,23 +18,17 @@ Welcome to my website and thank you for dropping by. I am a Research Fellow with
 
 **2011-2012** -- Research Associate in Rural Development • [CIRAD](https://www.cirad.fr/en) • Vietnam
 
----
-
 ### Teaching experience
 
 **2016-2018** -- Teaching Fellow in Applied Social Sciences • [University of Winchester](https://www.winchester.ac.uk) • UK
 
 **2014-2017** -- Teaching Assistant in Geography • [University of Southampton](https://www.southampton.ac.uk/geography) • UK
 
----
-
 ### Development cooperation experience
 
 **2017** -- Knowledge Transfer Officer • [IRD](https://en.ird.fr/ird.fr) • France & Morocco
 
 **2012** -- Appraisal, Monitoring and Evaluation Manager • [ACTED](https://www.acted.org/en/) • Chad
-
----
 
 ### Qualifications
 

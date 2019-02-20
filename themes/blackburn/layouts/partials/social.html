@@ -1,0 +1,60 @@
+<div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    <!-- SNS microblogging -->
+
+    {{ with .Site.Social.email }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:{{ . }}" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+    </li>
+    {{ end }}
+
+    {{ with .Site.Social.linkedin }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/{{ . }}" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    {{ end }}
+
+    {{ with .Site.Social.twitter }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/{{ . }}" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    {{ end }}
+
+    {{ with .Site.Social.github }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/{{ . }}" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    {{ end }}
+
+    {{ with .Site.Social.keybase }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://keybase.io/{{ . }}" target="_blank"><i class="fa fa-key fa-fw"></i>Keybase</a>
+    </li>
+    {{ end }}
+
+    {{ with .Site.Social.researchgate }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.researchgate.net/profile/{{ . }}" target="_blank"><i class="fa fa-flask fa-fw"></i>ResearchGate</a>
+    </li>
+    {{ end }}
+
+    {{ with .Site.Social.scholar }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.co.uk/citations?user={{ . }}" target="_blank"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    {{ end }}
+
+
+    {{ with .Site.Social.orcid }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://orcid.org/{{ . }}" target="_blank"><i class="fa fa-id-badge fa-fw"></i>ORCID</a>
+    </li>
+    {{ end }}
+
+
+    <!-- Other -->
+
+
+  </ul>
+</div>

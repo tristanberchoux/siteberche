@@ -1,0 +1,64 @@
+baseurl = "https://tristanberchoux.netlify.com/"
+languageCode = "en-us"
+title = "Tristan Berchoux"
+theme = "blackburn"
+author = "Tristan Berchoux"
+copyright = "&copy; 2019 by Tristan Berchoux"
+paginate = 10
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+
+[indexes]
+  tag = "tags"
+  topic = "topics"
+
+[params]
+  # Shown in the home page
+  subtitle = "Spatial Planning • Economic Geography • Rural Development"
+  brand = "![CIHEAM](/img/ciheam.png)"
+  # CSS name for highlight.js
+  highlightjs = "github"
+  highlightjsVersion = "9.11.0"
+  highlightjsCDN = "//cdn.bootcss.com"
+  highlightjsLang = ["r", "yaml"]
+  highlightjsTheme = "monokai"
+  dateFormat = "2006/01/02"
+
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "About"
+    pre = "<i class='fa fa-user fa-fw'></i>"
+    weight = 2
+    identifier = "about"
+    url = "/about/"
+  [[menu.main]]
+    name = "Research"
+    pre = "<i class='fa fa-area-chart fa-fw'></i>"
+    weight = 3
+    identifier = "research"
+    url = "/research/"
+  [[menu.main]]
+    name = "Teaching"
+    pre = "<i class='fa fa-university fa-fw'></i>"
+    weight = 4
+    identifier = "teaching"
+    url = "/teaching/"
+
+
+[social]
+  # Link your social networking accouns to the side menu
+  # by entering your username or ID.
+  email = "tristan.berchoux@gmail.com"
+  twitter = "TristanBerchoux"
+  linkedin = "tristanberchoux"
+  researchgate = "Tristan_Berchoux"
+  scholar = "shdhPjcAAAAJ&hl=en"
+  orcid = "0000-0003-4095-2164"

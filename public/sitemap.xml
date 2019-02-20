@@ -38,6 +38,10 @@
   </url>
   
   <url>
+    <loc>/forteaching/</loc>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
     <lastmod>2017-10-02T00:00:00+00:00</lastmod>
     <priority>0</priority>

@@ -49,8 +49,7 @@ Current research My ongoing research into the economic analysis of rural territo
       <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/teaching/</guid>
-      <description>QGIS Tutorial QGIS is a well-developed, open source GIS program, with a wide range of features and great compatability with numerous formats. Furthermore, basic installation includes linkages with other open source GIS tools such as GRASS GIS and SAGA (among others). It is one primary software packages that I use in research and teach in classes.
-This tutorial is designed to familiarize GIS users with the general layout, features and tools of QGIS, through working with sample datasets that are provided.</description>
+      <description>In progress</description>
     </item>
     
     <item>
@@ -78,6 +77,16 @@ This tutorial is designed to familiarize GIS users with the general layout, feat
       
       <guid>/2015/05/06/seminars/</guid>
       <description>As part of DECCMA, a group of postgraduate research students has been established across the project partners. In total, there are about 20 PhD students working within the project, with a substantial and vibrant group of six based at the University of Southampton. Their work complements one another by examining how people are adapting to the physical effects of climate change, covering a broad range of topics from the physical aspects of deltas to their socio-economical dynamics.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/forteaching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/forteaching/</guid>
+      <description>QGIS Tutorial QGIS is a well-developed, open source GIS program, with a wide range of features and great compatability with numerous formats. Furthermore, basic installation includes linkages with other open source GIS tools such as GRASS GIS and SAGA (among others). It is one primary software packages that I use in research and teach in classes.
+This tutorial is designed to familiarize GIS users with the general layout, features and tools of QGIS, through working with sample datasets that are provided.</description>
     </item>
     
   </channel>

@@ -6,4 +6,5 @@ description = "Trainings and Course Materials"
 
 +++
 
-In progress
+### [Territorial Diagnosis](https://diagter.netlify.com)
+

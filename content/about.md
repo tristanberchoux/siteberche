@@ -6,8 +6,6 @@ description = "Welcome to my website and thank you for dropping by."
 
 +++
 
-I am a Research Fellow within Geography and Environmental Science at the University of Southampton. My principal research interests lie in the field of spatial planning and sustainable rural development. I am a postdoctoral research fellow in economic geography applied to rural territories. My current work looks at the impact of climate change on landscapes and livelihoods under different policy scenarios in the Mekong Delta using spatial modelling. I have a particular expertise in quantitative modelling applied to rural territories from a social, environmental and economic perspective.
-
 I am currently working with Professor Steve Darby and Professor Craig Hutton on the project “Building Resilient Agricultural Systems: Sustainable Livelihoods in Mega Deltas Under Environmental Change (BRAgS).” The project is funded by the Biotechnology and Biological Sciences Research Council under a GCRF Foundation Award for Global Agriculture and Food Systems Research. The aim of the project is to establish a new international and multidisciplinary collaboration between UK and Vietnamese universities, international agencies and key end users that is capable of delivering new insight into the trade-offs between flooding, sediment and nutrient deposition, agricultural systems and associated livelihood strategies in the Vietnamese Mekong Delta.
 
 ### Research interests

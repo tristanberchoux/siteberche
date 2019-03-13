@@ -18,6 +18,6 @@ DOI:[10.1016/j.apgeog.2019.01.002](https://doi.org/10.1016/j.apgeog.2019.01.002)
 
 # 2018
 
-Roger Tyers, __Tristan Berchoux__, Kun Xiang, Xu Yi Yao. 2018. [China-to-UK student migration and pro-environmental behaviour change: a social practice perspective.](/pdf/2018_SRO.pdf) _Sociological Research Online_. <br>
+R. Tyers, __T. Berchoux__, K. Xiang, X.Y. Yao. 2018. [China-to-UK student migration and pro-environmental behaviour change: a social practice perspective.](/pdf/2018_SRO.pdf) _Sociological Research Online_. <br>
 DOI: [10.1177/ 1360780418794194](https://doi.org/10.1177/1360780418794194)
 

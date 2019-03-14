@@ -12,7 +12,7 @@ __T. Berchoux__, G.R. Watmough, F. Amoako Johnson, C.W. Hutton, P.M. Atkinson. 2
 DOI: [10.1007/s13280-019-01150-9](https://doi.org/10.1007/s13280-019-01150-9)
 
 __T. Berchoux__, C.W. Hutton. 2019. [Spatial associations between household and community livelihood capitals in rural territories: An example from the Mahanadi Delta, India.](/pdf/2019_JAPG.pdf) _Applied Geography_. <br>
-DOI:[10.1016/j.apgeog.2019.01.002](https://doi.org/10.1016/j.apgeog.2019.01.002)
+DOI: [10.1016/j.apgeog.2019.01.002](https://doi.org/10.1016/j.apgeog.2019.01.002)
 
 ---
 

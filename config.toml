@@ -1,7 +1,7 @@
 baseurl = "https://tristanberchoux.rbind.io/"
 languageCode = "en-us"
 theme = "blackburn"
-title = "Worldhoods"
+title = "Liveliscapes"
 author = "Tristan Berchoux"
 copyright = "&copy; 2019 by Tristan Berchoux"
 paginate = 10

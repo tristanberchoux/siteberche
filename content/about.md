@@ -38,4 +38,4 @@ COOPERATION
 QUALIFICATIONS
 
 - 2018 • **Ph.D.** in Geography • [University of Southampton](https://www.southampton.ac.uk/geography/postgraduate/index.page?) (UK)
-- 2013 • **MSc** (Dipl. Ing.) in Rural Development • [Montpellier SupAgro](http://www.supagro.fr/web/en/) (France)
+- 2013 • **M.Sc.** (Dipl. Ing.) in Rural Development • [Montpellier SupAgro](http://www.supagro.fr/web/en/) (France)

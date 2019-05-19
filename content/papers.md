@@ -9,7 +9,7 @@ description = "in peer-reviewed journals"
 # 2019
 
 __T. Berchoux__, G.R. Watmough, C.W. Hutton, P.M. Atkinson. 2019. [Agricultural shocks and drivers of livelihood precariousness across Indian rural communities.](/pdf/2019_LAND.pdf) _Landscape and Urban Planning_. <br>
-DOI: [10.​1016/​j.​landurbplan.​2019.​04.​014](https://doi.org/10.​1016/​j.​landurbplan.​2019.​04.​014)
+DOI: [10.​1016/​j.​landurbplan.​2019.​04.​014](https://doi.org/10.1016/j.landurbplan.2019.04.014)
 
 __T. Berchoux__, G.R. Watmough, F. Amoako Johnson, C.W. Hutton, P.M. Atkinson. 2019. [Collective influence of household and community capitals on agricultural employment as a measure of rural poverty in the Mahanadi Delta, India.](/pdf/2019_AMBIO_inpress.pdf) _Ambio_. <br>
 DOI: [10.1007/s13280-019-01150-9](https://doi.org/10.1007/s13280-019-01150-9)

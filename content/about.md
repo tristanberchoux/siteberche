@@ -12,26 +12,17 @@ description = "Welcome to my website and thank you for dropping by."
 
 ---
 
-RESEARCH
+PROFESSIONAL EXPERIENCE
 
+- Since 2019 • **Lecturer** in Economic Geography • [CIHEAM-IAMM](http://iamm.ciheam.org) (France)
 - 2017 - 2019 • **Postdoctoral Research Fellow** in Economic Geography • [University of Southampton](https://www.southampton.ac.uk/geography/about/staff/tjmb1n17.page) (UK)
-- 2014 - 2018 • **Research Assistant** in Geography • [DECCMA](http://generic.wordpress.soton.ac.uk/deccma/) (UK)
-- 2013 - 2014 • **Research Associate** in Agricultural Economics • [GRET](https://www.gret.org/?lang=en) (Tanzania & Uganda)
-- 2011 - 2012 • **Research Associate** in Rural Development • [CIRAD](https://www.cirad.fr/en) (Vietnam)
-
----
-
-TEACHING
-
 - 2016 - 2018 • **Teaching Fellow** in Applied Social Sciences • [University of Winchester](https://www.winchester.ac.uk) (UK)
-- 2014 - 2017 • **Teaching Assistant** in Geography • [University of Southampton](https://www.southampton.ac.uk/geography) (UK)
-
----
-
-COOPERATION
-
+- 2014 - 2018 • **Research Assistant** in Geography • [DECCMA](http://generic.wordpress.soton.ac.uk/deccma/) (UK)
 - 2017 *(5 months)* • **Knowledge Transfer** Officer • [IRD](https://en.ird.fr/ird.fr) (France & Morocco)
+- 2014 - 2017 • **Teaching Assistant** in Geography • [University of Southampton](https://www.southampton.ac.uk/geography) (UK)
+- 2013 - 2014 • **Research Associate** in Agricultural Economics • [GRET](https://www.gret.org/?lang=en) (Tanzania & Uganda)
 - 2012 (*6 months*) • **Appraisal, Monitoring and Evaluation** Manager • [ACTED](https://www.acted.org/en/) (Chad)
+- 2011 - 2012 • **Research Associate** in Rural Development • [CIRAD](https://www.cirad.fr/en) (Vietnam)
 
 ---
 

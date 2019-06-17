@@ -14,7 +14,7 @@ description = "Welcome to my website and thank you for dropping by."
 
 PROFESSIONAL EXPERIENCE
 
-- Since 2019 • **Lecturer** in Economic Geography • [CIHEAM-IAMM](http://iamm.ciheam.org) (France)
+- Since 2019 • **Lecturer** in Economic Geography • [CIHEAM-IAMM](http://www.iamm.ciheam.org) (France)
 - 2017 - 2019 • **Postdoctoral Research Fellow** in Economic Geography • [University of Southampton](https://www.southampton.ac.uk/geography/about/staff/tjmb1n17.page) (UK)
 - 2016 - 2018 • **Teaching Fellow** in Applied Social Sciences • [University of Winchester](https://www.winchester.ac.uk) (UK)
 - 2014 - 2018 • **Research Assistant** in Geography • [DECCMA](http://generic.wordpress.soton.ac.uk/deccma/) (UK)

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Topics on Liveliscapes</title>
+    <title>Topics on Landhood</title>
     <link>/topics/</link>
-    <description>Recent content in Topics on Liveliscapes</description>
+    <description>Recent content in Topics on Landhood</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <copyright>&amp;copy; 2020 by Tristan Berchoux</copyright>
     
 	<atom:link href="/topics/index.xml" rel="self" type="application/rss+xml" />
     

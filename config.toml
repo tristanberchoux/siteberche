@@ -1,9 +1,9 @@
 baseurl = "https://tristanberchoux.rbind.io/"
 languageCode = "en-us"
 theme = "blackburn"
-title = "Liveliscapes"
+title = "Landhood"
 author = "Tristan Berchoux"
-copyright = "&copy; 2019 by Tristan Berchoux"
+copyright = "&copy; 2020 by Tristan Berchoux"
 paginate = 10
 
 [permalinks]
@@ -15,7 +15,7 @@ paginate = 10
 
 [params]
   # Shown in the home page
-  subtitle = "Rural livelihoods • Landscapes"
+  subtitle = "Landscapes • Rural livelihoods • Territorial development"
   brand = "![TB](/img/perso.png) </br> Tristan </br> Berchoux"
   googleAnalytics = "UA-136785508-1"
   # CSS name for highlight.js

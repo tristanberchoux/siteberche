@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Liveliscapes</title>
+    <title>Posts on Landhood</title>
     <link>/post/</link>
-    <description>Recent content in Posts on Liveliscapes</description>
+    <description>Recent content in Posts on Landhood</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2019 by Tristan Berchoux</copyright>
+    <copyright>&amp;copy; 2020 by Tristan Berchoux</copyright>
     <lastBuildDate>Mon, 02 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +18,7 @@
       <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/02/video/</guid>
-      <description>In 2017, following the showcase of a video summarising my research at the yearly DECCMA Consortium Meeting, I was commissioned to designed and make an outreach video to present the outputs from the Climate Change and Vulnerability Handbook to the Governments and development practitioners of southern African countries. This work was produced following a collaboration between Kulima and CSIR. Please find below a link to the video.</description>
+      <description>In 2017, following the showcase of a video summarising my research at the yearly DECCMA Consortium Meeting, I was commissioned to design and produce an outreach video to present the outputs from the Climate Change and Vulnerability Handbook to the Governments and development practitioners of southern African countries. This work was produced following a collaboration between Kulima and CSIR. Please find below a link to the video.</description>
     </item>
     
     <item>

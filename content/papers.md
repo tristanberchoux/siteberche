@@ -8,7 +8,7 @@ description = "in peer-reviewed journals"
 
 # 2020
 
-__T. Berchoux__, G.R. Watmough, F. Amoako Johnson, C.W. Hutton, P.M. Atkinson. 2020. [Collective influence of household and community capitals on agricultural employment as a measure of rural poverty in the Mahanadi Delta, India.](/pdf/2019_AMBIO_inpress.pdf) _Ambio_. <br>
+__T. Berchoux__, G.R. Watmough, F. Amoako Johnson, C.W. Hutton, P.M. Atkinson. 2020. [Collective influence of household and community capitals on agricultural employment as a measure of rural poverty in the Mahanadi Delta, India.](/pdf/2020_AMBIO.pdf) _Ambio_. <br>
 DOI: [10.1007/s13280-019-01150-9](https://doi.org/10.1007/s13280-019-01150-9)
 
 ---

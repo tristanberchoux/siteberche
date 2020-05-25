@@ -1,9 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>/about/</loc>
+    <lastmod>2019-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
     <lastmod>2019-02-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -28,6 +33,11 @@
   </url>
   
   <url>
+    <loc>/post/</loc>
+    <lastmod>2017-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2017/10/02/video/</loc>
     <lastmod>2017-10-02T00:00:00+00:00</lastmod>
   </url>
@@ -44,28 +54,15 @@
   
   <url>
     <loc>/forteaching/</loc>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2019-02-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2017-10-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/topics/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

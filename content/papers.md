@@ -13,8 +13,6 @@ DOI: [10.1007/s13280-019-01150-9](https://doi.org/10.1007/s13280-019-01150-9)
 
 ---
 
-#
-
 # 2019
 
 __T. Berchoux__, G.R. Watmough, C.W. Hutton, P.M. Atkinson. 2019. [Agricultural shocks and drivers of livelihood precariousness across Indian rural communities.](/pdf/2019_LAND.pdf) _Landscape and Urban Planning_. <br>
